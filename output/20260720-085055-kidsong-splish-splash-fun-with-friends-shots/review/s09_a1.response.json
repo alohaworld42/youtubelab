@@ -1,0 +1,14 @@
+{
+  "accept": false,
+  "score": 0.3,
+  "reasons": [
+    "Dimension 4 (WARDROBE) reject-on-sight: Kofi is shirtless/undressed in frames 1-3 despite cast_text specifying a blue t-shirt; the shirt only appears starting in frame 4.",
+    "Dimension 7 (TEMPORAL COHERENCE): outfit is inconsistent across the 5 frames of the same shot — bare chest in frames 1-3, blue/green-trimmed t-shirt in frames 4-5 — a mid-shot wardrobe change rather than a stable outfit.",
+    "Positive: skin tone, hair (short dark natural curls) match cast_text for Kofi in all frames; single child matches expected_children=1; setting (bubbly tub, rubber duck on tub edge, striped towels, step stool) matches spec; no extra/off-model children; no staging or wholesomeness issues."
+  ],
+  "retry_hints": {
+    "seed_bump": true,
+    "simplify_action": false,
+    "force_i2v": false
+  }
+}

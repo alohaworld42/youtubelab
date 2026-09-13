@@ -1,0 +1,64 @@
+{
+  "title": "Here We Go Round the Mulberry Bush - An Action Sing-Along for Toddlers",
+  "description": "This is the way we wash our hands, clap our hands and brush our teeth! Sing and copy along. #kidssong #nurseryrhyme #toddlersongs #singalong #actionsong",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler song",
+    "sing along",
+    "mulberry bush",
+    "action song",
+    "washing hands",
+    "brushing teeth",
+    "preschool",
+    "kids music"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "verses": [
+    {
+      "lines": [
+        "Here we go round the mulberry bush",
+        "The mulberry bush, the mulberry bush"
+      ],
+      "scene": "The three toddlers hold hands and walk in a wide circle around a big round leafy bush in a sunny garden."
+    },
+    {
+      "lines": [
+        "This is the way we wash our hands",
+        "Wash our hands, wash our hands"
+      ],
+      "scene": "Two toddlers rub soapy bubbles between their hands at a low bathroom sink, sleeves pushed up."
+    },
+    {
+      "lines": [
+        "Round and round and clap with me",
+        "Round the mulberry bush, one, two, three"
+      ],
+      "scene": "The toddlers skip in a circle around the bush, clapping their hands and counting on their fingers."
+    },
+    {
+      "lines": [
+        "This is the way we brush our teeth",
+        "Brush our teeth, brush our teeth"
+      ],
+      "scene": "The toddlers stand at the sink with colourful toothbrushes, brushing in big cheerful circles."
+    },
+    {
+      "lines": [
+        "Round and round and clap with me",
+        "Round the mulberry bush, one, two, three"
+      ],
+      "scene": "The toddlers skip in a circle around the bush, clapping their hands and counting on their fingers."
+    }
+  ],
+  "pd_song_id": "here_we_go_round_the_mulberry_bush",
+  "pd_source": {
+    "text": "Here We Go Round the Mulberry Bush",
+    "author": "Traditional (English)",
+    "year": 1849,
+    "publication": "James Orchard Halliwell, Popular Rhymes and Nursery Tales (London, 1849), where it is recorded as a children's ring game.",
+    "public_domain": "Anonymous traditional text collected and printed in 1849; expired copyright in the US (pre-1929) and worldwide.",
+    "adaptation": "Verse 1 and the 'This is the way we...' verse pattern are the traditional text verbatim. The chosen actions (wash our hands, brush our teeth) are drawn from the traditional list, which has always been an open-ended set of everyday actions. The hook is NEWLY WRITTEN."
+  },
+  "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, marching bouncy tempo, playful, bright, warm"
+}

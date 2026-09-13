@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "score": 0.2,
+  "reasons": [
+    "Dimension 3 (head-count, hard reject): expected_children=1 but every frame shows 2-3 children — frame 1 shows three kids (girl in pink dress left, Zuri-like girl center, boy in blue right), frame 2 shows three, frames 3-5 still show two children even as the push-in tightens framing. This is a closeup of Zuri alone per spec; background/side children must not be present.",
+    "Dimension 4 (wardrobe, hard reject — garment/silhouette mismatch, applies at any shot_type): cast_text specifies Zuri in a sunny yellow t-shirt and denim dungaree shorts, but the on-screen girl wears a sleeveless yellow tank top with orange floral print over a yellow floral skirt — wrong garment type/silhouette entirely, not a color-only drift, so the wide-shot colour carve-out does not apply here (and this is a closeup regardless).",
+    "Dimension 3 (identity, secondary): the two additional children (pink-dress girl, blue-top boy) do not match any single-entry cast_text for this shot and should not be in frame at all for a 1-character closeup.",
+    "Action text 'The kids sing along...' (plural) conflicts with characters:['Zuri'] and expected_children:1, which plausibly drove the model to render a group scene instead of a solo closeup — likely a prompt/shot-spec issue rather than a sampling issue."
+  ],
+  "retry_hints": {
+    "seed_bump": false,
+    "simplify_action": true,
+    "force_i2v": false
+  }
+}

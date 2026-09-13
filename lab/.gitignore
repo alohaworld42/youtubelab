@@ -1,0 +1,11 @@
+# schwere/temporaere Ordner - nie ins Repo
+Claudetempfiles/
+.hf_cache/
+__pycache__/
+*.pyc
+logs/*.log
+logs/*.err.log
+logs/*.out.log
+# grosse Zwischen-Frames der QC (aus report ableitbar)
+runs/*/qc/frames/
+runs/*/graphs/

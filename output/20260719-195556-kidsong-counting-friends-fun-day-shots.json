@@ -1,0 +1,325 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 4.087,
+      "shot_type": "wide",
+      "characters": [
+        "Maya"
+      ],
+      "action": "Maya and friends laughing together in the backyard",
+      "camera": "static",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "planned"
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 4.087,
+      "end": 8.24,
+      "shot_type": "medium",
+      "characters": [
+        "Jaden",
+        "Maya"
+      ],
+      "action": "Maya clapping for Jaden with two hands up high",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20297536,
+      "status": "planned"
+    },
+    {
+      "id": "s02",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 8.24,
+      "end": 11.842,
+      "shot_type": "medium",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "planned"
+    },
+    {
+      "id": "s03",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 11.842,
+      "end": 15.418,
+      "shot_type": "closeup",
+      "characters": [
+        "Jaden"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20290340,
+      "status": "planned"
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 15.418,
+      "end": 19.737,
+      "shot_type": "medium",
+      "characters": [
+        "Ava"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20326938,
+      "status": "planned"
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 19.737,
+      "end": 23.29,
+      "shot_type": "closeup",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "planned"
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 23.29,
+      "end": 26.97,
+      "shot_type": "medium",
+      "characters": [
+        "Jaden"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20290340,
+      "status": "planned"
+    },
+    {
+      "id": "s07",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 26.97,
+      "end": 30.511,
+      "shot_type": "medium",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "planned"
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 30.511,
+      "end": 34.087,
+      "shot_type": "closeup",
+      "characters": [
+        "Jaden"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20290340,
+      "status": "planned"
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 34.087,
+      "end": 37.64,
+      "shot_type": "medium",
+      "characters": [
+        "Ava"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20326938,
+      "status": "planned"
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.64,
+      "end": 41.215,
+      "shot_type": "closeup",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "planned"
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 41.215,
+      "end": 45.0,
+      "shot_type": "medium",
+      "characters": [
+        "Jaden"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20290340,
+      "status": "planned"
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 45.0,
+      "end": 48.75,
+      "shot_type": "medium",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "planned"
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 48.75,
+      "end": 52.5,
+      "shot_type": "closeup",
+      "characters": [
+        "Jaden"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20290340,
+      "status": "planned"
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 52.5,
+      "end": 56.25,
+      "shot_type": "medium",
+      "characters": [
+        "Ava"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20326938,
+      "status": "planned"
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 56.25,
+      "end": 60.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids count along on their fingers",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "planned"
+    }
+  ]
+}

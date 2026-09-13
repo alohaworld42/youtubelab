@@ -1,0 +1,23 @@
+Write a short, creepy single-narrator scary-story brainrot script.
+
+Premise / setting: {{TOPIC}}
+
+Rules:
+- First-person unsettling story with a slow-building dread and a twist near the end.
+- Hook with an ominous first line.
+- 110-150 words total. Many SHORT narrator lines (3-9 words) for tension and pacing.
+- Spooky but not gory; PG-13, no real names.
+- All lines use speaker "narrator".
+- "title" = eerie clickbait YouTube Short title with 1 emoji.
+- "description" = 1-2 sentences + 3-5 hashtags.
+- "tags" = 8-12 lowercase tags.
+
+Reply with ONLY this JSON:
+{
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."],
+  "lines": [
+    {"speaker": "narrator", "text": "..."}
+  ]
+}

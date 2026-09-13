@@ -1,0 +1,9 @@
+{
+  "accept": true,
+  "score": 0.72,
+  "reasons": [
+    "best of three takes: frame 1 delivers exactly the specified beat (Luna closeup smiling into camera, on-model); later frames drift to secondary kids again incl. an off-cast girl at the frame edge — but the editor subclips from t=0, so the strong opening beat is what lands in the cut",
+    "systematic pattern noted for the plausibility rubric: 'closeup + smiles at camera' prompts with push-in consistently drift off-subject in the back half"
+  ],
+  "retry_hints": {}
+}

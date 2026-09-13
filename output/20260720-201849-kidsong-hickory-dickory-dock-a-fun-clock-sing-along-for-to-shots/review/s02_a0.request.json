@@ -1,0 +1,39 @@
+{
+  "shot_id": "s02",
+  "take": "s02_a0",
+  "shot": {
+    "id": "s02",
+    "verse": 0,
+    "lyric_span": [
+      1,
+      2
+    ],
+    "start": 6.92,
+    "end": 10.147,
+    "shot_type": "closeup",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "Zuri looks up at the clock's face with a big smile and raises an eyebrow as if hearing it strike one",
+    "camera": "gentle pan right",
+    "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+    "reuse_of": null,
+    "seed": 20261731,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s02_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\review\\s02_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

@@ -1,0 +1,111 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-130751-kidsong-little-gardeners-grow-sunflowers.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.705,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.705,
+      "end": 7.523,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 7.523,
+      "end": 11.238,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 11.238,
+      "end": 14.954,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 14.954,
+      "end": 18.646,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 18.646,
+      "end": 22.338,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 22.338,
+      "end": 26.03,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 26.03,
+      "end": 29.722,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 29.722,
+      "end": 32.949,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 32.949,
+      "end": 36.177,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 36.177,
+      "end": 39.404,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 39.404,
+      "end": 43.096,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 43.096,
+      "end": 46.347,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 46.347,
+      "end": 50.039,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 50.039,
+      "end": 53.708,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 53.708,
+      "end": 57.376,
+      "src": "s15"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-130751-kidsong-little-gardeners-grow-sunflowers-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

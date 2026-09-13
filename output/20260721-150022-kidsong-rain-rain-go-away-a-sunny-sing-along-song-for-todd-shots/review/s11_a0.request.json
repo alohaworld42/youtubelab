@@ -1,0 +1,42 @@
+{
+  "shot_id": "s11",
+  "take": "s11_a0",
+  "shot": {
+    "id": "s11",
+    "verse": 2,
+    "lyric_span": [
+      1,
+      2
+    ],
+    "start": 31.835,
+    "end": 34.575,
+    "shot_type": "closeup",
+    "characters": [
+      "Nala"
+    ],
+    "action": "Nala sings along with a happy face, moving to the beat, leaning in a little closer",
+    "camera": "slow pull-back",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20263758,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-150022-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s11_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-150022-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\review\\s11_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

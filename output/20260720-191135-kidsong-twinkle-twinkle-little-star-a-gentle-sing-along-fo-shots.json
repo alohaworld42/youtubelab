@@ -1,0 +1,464 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 2.763,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers sit on a soft blanket in a garden at dusk, looking up at the sky.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 2.763,
+      "end": 5.526,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri points up at the stars with her finger.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 5.526,
+      "end": 8.29,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 8.29,
+      "end": 10.94,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala counts on her fingers.",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 10.94,
+      "end": 13.375,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "...",
+      "camera": "static",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 13.375,
+      "end": 16.138,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, tilting their head with a giggle",
+      "camera": "gentle pan left",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 16.138,
+      "end": 18.82,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, leaning in a little closer, looking straight at the camera",
+      "camera": "slow pull-back",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20263759,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 18.82,
+      "end": 21.687,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20261731,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 21.687,
+      "end": 24.451,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat, clapping once on the beat, bouncing gently on the spot",
+      "camera": "gentle pan right",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 24.451,
+      "end": 27.191,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20263759,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s09_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 27.191,
+      "end": 29.977,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, looking straight at the camera, swaying from side to side",
+      "camera": "slow push-in",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20261731,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 29.977,
+      "end": 32.94,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, bouncing gently on the spot, tilting their head with a giggle",
+      "camera": "gentle pan left",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s11_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 32.94,
+      "end": 35.527,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20261731,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 35.527,
+      "end": 37.849,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, swaying from side to side, leaning in a little closer",
+      "camera": "gentle pan left",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.849,
+      "end": 40.52,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, tilting their head with a giggle, clapping once on the beat",
+      "camera": "slow pull-back",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": null,
+      "seed": 20263759,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s14_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s15",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 40.52,
+      "end": 43.375,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": "s07",
+      "seed": 20261731,
+      "status": "planned"
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 43.375,
+      "end": 46.161,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": "s08",
+      "seed": 20262745,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 46.161,
+      "end": 49.342,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": "s09",
+      "seed": 20263759,
+      "status": "planned"
+    },
+    {
+      "id": "s18",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 49.342,
+      "end": 52.152,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": "s10",
+      "seed": 20261731,
+      "status": "planned"
+    },
+    {
+      "id": "s19",
+      "verse": 4,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 52.152,
+      "end": 55.054,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a cozy backyard at night with a deep blue starry sky, a soft picnic blanket on the grass and warm lantern light",
+      "reuse_of": "s11",
+      "seed": 20262745,
+      "status": "planned"
+    }
+  ]
+}

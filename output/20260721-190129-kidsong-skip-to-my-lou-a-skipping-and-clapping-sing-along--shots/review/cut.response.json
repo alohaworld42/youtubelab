@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "score": 0.4,
+  "reasons": [
+    "creepy"
+  ],
+  "retry_hints": {
+    "seed_bump": false,
+    "simplify_action": false,
+    "force_i2v": false
+  }
+}

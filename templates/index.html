@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+{% set active = 'quick' %}
+{% block title %}Quick Generate — Brainrot Studio{% endblock %}
+
+{% block head %}
+<style>
+  .tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(min-width:620px){.tiles{grid-template-columns:repeat(3,1fr)}}
+  .tile{
+    background:var(--surface);border:2px solid var(--line);border-radius:16px;
+    padding:18px 14px;cursor:pointer;text-align:left;color:var(--text);
+    transition:transform .08s,border-color .12s,background .12s;
+  }
+  .tile:hover{border-color:var(--violet);transform:translateY(-2px)}
+  .tile .emoji{font-size:30px;display:block;margin-bottom:10px}
+  .tile .name{font-size:16px;font-weight:800;margin-bottom:3px;display:block}
+  .tile .blurb{font-size:12px;color:var(--muted);line-height:1.3;display:block}
+  .tile[aria-pressed=true]{
+    border-color:var(--acid);background:var(--surface2);
+    box-shadow:0 0 0 4px rgba(255,230,0,.12);transform:rotate(-1deg) translateY(-2px);
+  }
+  .label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:22px 0 12px}
+  .toggle{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:14px;user-select:none;cursor:pointer}
+  .toggle input{width:18px;height:18px;accent-color:var(--violet)}
+  .go{
+    width:100%;margin-top:22px;border-radius:16px;
+    font-size:22px;padding:20px;text-transform:uppercase;
+  }
+  .console{
+    margin-top:24px;background:#08080b;border:1px solid var(--line);border-radius:14px;
+    padding:16px 18px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:13px;color:#b9f5c9;min-height:54px;white-space:pre-wrap;display:none;
+  }
+  .console .step{opacity:.55}
+  .console .step.last{opacity:1;color:var(--acid)}
+  .console .err{color:var(--err)}
+  .console .trace{color:var(--err);opacity:.6;font-size:11px}
+  .result{display:none;margin-top:24px;background:var(--surface);border:1px solid var(--line);
+    border-radius:16px;padding:18px;gap:18px}
+  .result.show{display:flex;flex-wrap:wrap}
+  .result video{width:230px;max-width:100%;border-radius:12px;background:#000}
+  .meta{flex:1;min-width:220px}
+  .meta h3{margin:0 0 8px;font-size:18px}
+  .meta p{color:var(--muted);font-size:14px;margin:0 0 12px;line-height:1.4}
+  .tagchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+  .chip{background:var(--surface2);color:var(--violet-bright);font-size:12px;padding:4px 9px;border-radius:20px}
+  .actions a{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;
+    padding:11px 16px;border-radius:10px;margin-right:8px}
+  .dl{background:var(--acid);color:#111}
+  .yt{background:#ff0033;color:#fff}
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid var(--muted);
+    border-top-color:var(--acid);border-radius:50%;animation:spin .8s linear infinite;vertical-align:-2px;margin-right:8px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.spinner{animation:none}}
+  .hint{color:var(--muted);font-size:12px;margin-top:8px}
+  .inline-select{width:auto;min-width:220px}
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Quick Generate</h1>
+<p class="muted" style="margin:-8px 0 6px">
+  Typ wählen, los. Script &rarr; Stimmen &rarr; Captions &rarr; Video, alles lokal.
+  LLM backend: <code>{{ backend }}</code> · Upload-Privacy: <code>{{ privacy }}</code>
+</p>
+
+<div class="label" id="lbl-type">1 · Video-Typ wählen</div>
+<div class="tiles" id="tiles" role="group" aria-labelledby="lbl-type">
+  {% for t in types %}
+  <button class="tile" type="button" data-id="{{ t.id }}" aria-pressed="false">
+    <span class="emoji" aria-hidden="true">{{ t.emoji }}</span>
+    <span class="name">{{ t.name }}</span>
+    <span class="blurb">{{ t.blurb }}</span>
+  </button>
+  {% endfor %}
+</div>
+
+<div class="label"><label for="topic">2 · Thema (optional — leer lassen und die KI wählt)</label></div>
+<div class="row">
+  <input id="topic" type="text" placeholder="z.B. cats vs dogs, haunted gas station, space facts…">
+</div>
+
+<div class="label">3 · Kanal &amp; Style (optional)</div>
+<div class="row">
+  <select id="channel" class="inline-select" aria-label="Kanal">
+    <option value="">Kein Kanal — nur lokale Datei</option>
+    {% for c in channels %}<option value="{{ c.id }}">{{ c.name }}</option>{% endfor %}
+  </select>
+  <select id="style" class="inline-select" aria-label="Style">
+    <option value="">Style: Standard</option>
+    <option value="kids">Kids (bunt, Animations-BG)</option>
+    <option value="brainrot">Brainrot (Gameplay-BG)</option>
+    <option value="clean">Clean (Stock-BG)</option>
+  </select>
+  <label class="toggle"><input id="upload" type="checkbox"> Nach Fertigstellung automatisch freigeben &amp; hochladen</label>
+</div>
+
+<button class="go display" id="go" disabled>Erst einen Typ wählen</button>
+<div class="hint">Der erste Lauf lädt einmalig das Whisper-Modell. Ein Short rendert in ~1–3 min auf der GPU.</div>
+
+<div class="console" id="console" role="status" aria-live="polite"></div>
+
+<div class="result" id="result">
+  <video id="player" controls></video>
+  <div class="meta">
+    <h3 id="r-title"></h3>
+    <p id="r-desc"></p>
+    <div class="tagchips" id="r-tags"></div>
+    <div class="actions">
+      <a class="dl" id="r-dl" href="#" download>⬇ Download</a>
+      <a class="yt" id="r-yt" href="#" target="_blank" rel="noopener" style="display:none">▶ Auf YouTube ansehen</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let selected = null;
+const tiles = document.querySelectorAll('.tile');
+const go = document.getElementById('go');
+const consoleEl = document.getElementById('console');
+const resultEl = document.getElementById('result');
+
+// Everything below renders strings that came from an LLM, a user-typed topic or
+// a Python traceback straight into the page. They used to go in via innerHTML,
+// so a '<' anywhere in a progress line or a generated tag silently ate the rest
+// of the console — and a crafted one could inject markup.
+function esc(s){
+  return String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[ch]));
+}
+
+tiles.forEach(t => t.addEventListener('click', () => {
+  tiles.forEach(x => x.setAttribute('aria-pressed', 'false'));
+  t.setAttribute('aria-pressed', 'true');
+  selected = t.dataset.id;
+  go.disabled = false;
+  go.textContent = t.querySelector('.name').textContent + ' generieren';
+}));
+
+go.addEventListener('click', async () => {
+  if (!selected) return;
+  go.disabled = true;
+  resultEl.classList.remove('show');
+  consoleEl.style.display = 'block';
+  consoleEl.innerHTML = '<span class="spinner"></span>Startet…';
+
+  const channelVal = document.getElementById('channel').value;
+  const body = {
+    video_type: selected,
+    topic: document.getElementById('topic').value,
+    channel_id: channelVal ? parseInt(channelVal) : null,
+    style: document.getElementById('style').value || null,
+    upload: document.getElementById('upload').checked,
+  };
+  let payload;
+  try {
+    const res = await fetch('/generate', {
+      method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)
+    });
+    payload = await res.json();
+  } catch (e) {
+    // A dead server used to leave the button disabled forever with "Startet…"
+    // on screen and no way back except a page reload.
+    consoleEl.innerHTML = '<span class="err">Server nicht erreichbar: ' + esc(e.message) + '</span>';
+    resetGo(); return;
+  }
+  if (payload.error) {
+    consoleEl.innerHTML = '<span class="err">' + esc(payload.error) + '</span>';
+    resetGo(); return;
+  }
+  poll(payload.job_id);
+});
+
+async function poll(jobId){
+  let job;
+  try {
+    const res = await fetch('/status/' + jobId);
+    job = await res.json();
+  } catch (e) {
+    consoleEl.innerHTML += '<div class="err">Verbindung verloren — erneut versuchen…</div>';
+    setTimeout(()=>poll(jobId), 3000); return;
+  }
+
+  const steps = (job.progress || []);
+  consoleEl.innerHTML = steps.map((s,i)=>
+    `<div class="step ${i===steps.length-1?'last':''}">${
+      i===steps.length-1 && job.status==='running' ? '<span class="spinner"></span>' : '✓ '
+    }${esc(s)}</div>`
+  ).join('') || '<span class="spinner"></span>Arbeitet…';
+
+  if (job.status === 'done'){ showResult(job.result); resetGo(); return; }
+  if (job.status === 'error'){
+    consoleEl.innerHTML += '<div class="err">✗ ' + esc(job.error) + '</div>';
+    if (job.trace) consoleEl.innerHTML += '<div class="trace">' + esc(job.trace) + '</div>';
+    resetGo(); return;
+  }
+  setTimeout(()=>poll(jobId), 1200);
+}
+
+function showResult(r){
+  if (!r){ consoleEl.innerHTML += '<div class="err">Fertig, aber keine Videodatei gefunden.</div>'; return; }
+  const src = '/video/' + encodeURIComponent(r.filename);
+  document.getElementById('player').src = src;
+  document.getElementById('r-title').textContent = r.title || '';
+  document.getElementById('r-desc').textContent = r.description || '';
+  document.getElementById('r-dl').href = src;
+  document.getElementById('r-tags').innerHTML =
+    (r.tags||[]).map(t=>`<span class="chip">#${esc(t)}</span>`).join('');
+  const yt = document.getElementById('r-yt');
+  if (r.youtube){ yt.style.display='inline-block'; yt.href = r.youtube.url; }
+  else { yt.style.display='none'; }
+  resultEl.classList.add('show');
+}
+
+function resetGo(){
+  go.disabled = !selected;
+  if (selected){
+    const tile = [...tiles].find(t => t.dataset.id === selected);
+    go.textContent = tile ? tile.querySelector('.name').textContent + ' generieren' : 'Generieren';
+  }
+}
+</script>
+{% endblock %}

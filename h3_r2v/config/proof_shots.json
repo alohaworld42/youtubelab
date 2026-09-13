@@ -1,0 +1,37 @@
+{
+  "shots": [
+    {
+      "id": "proof_01",
+      "cast": ["zuri"],
+      "action": "Zuri stands in a sunny garden, waves happily at the camera and giggles. Static camera, medium shot.",
+      "seed": 20260101,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "proof_02",
+      "cast": ["zuri", "kofi"],
+      "action": "Zuri and Kofi dance side by side in the same sunny garden, bouncing to the beat and smiling at each other. Static camera, medium shot.",
+      "seed": 20260102,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "proof_03",
+      "cast": ["kofi"],
+      "action": "Kofi kicks a colorful ball over the garden lawn and laughs. Static camera, medium shot.",
+      "seed": 20260103,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    }
+  ]
+}

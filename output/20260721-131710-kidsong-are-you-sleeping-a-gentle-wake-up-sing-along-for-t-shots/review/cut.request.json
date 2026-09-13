@@ -1,0 +1,117 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-131710-kidsong-are-you-sleeping-a-gentle-wake-up-sing-along-for-t.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 4.272,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 4.272,
+      "end": 8.475,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 8.475,
+      "end": 12.678,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 12.678,
+      "end": 16.277,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 16.277,
+      "end": 19.83,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 19.83,
+      "end": 23.475,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 23.475,
+      "end": 27.074,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 27.074,
+      "end": 30.674,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 30.674,
+      "end": 32.485,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 32.485,
+      "end": 35.48,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 35.48,
+      "end": 38.475,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 38.475,
+      "end": 42.051,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 42.051,
+      "end": 45.093,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 45.093,
+      "end": 48.089,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 48.089,
+      "end": 51.084,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 51.084,
+      "end": 54.683,
+      "src": "s15"
+    },
+    {
+      "shot_id": "s16",
+      "start": 54.683,
+      "end": 58.05,
+      "src": "s08"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-131710-kidsong-are-you-sleeping-a-gentle-wake-up-sing-along-for-t-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

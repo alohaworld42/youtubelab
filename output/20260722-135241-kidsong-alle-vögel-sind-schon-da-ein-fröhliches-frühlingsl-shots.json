@@ -1,0 +1,380 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 4.5,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "the kids play in a grassy field",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": "a bright little cartoon bird",
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 4.5,
+      "end": 9.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi crouches down to get a better look at a bright little cartoon bird",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": "a bright little cartoon bird",
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "down at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 9.0,
+      "end": 12.585,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri picks up a favorite toy and tries it out",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": "a bright little cartoon bird",
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "down at a favorite toy",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 12.585,
+      "end": 16.56,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi tips a favorite toy carefully, watching what happens",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": "a bright little cartoon bird",
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "on a favorite toy",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 16.56,
+      "end": 20.387,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "a bright little cartoon bird changes a little more, growing steadily",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "on a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 20.387,
+      "end": 24.567,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps once, delighted at the change",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "on a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 24.567,
+      "end": 28.6,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The kids lean in together to see how far it has come",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 28.6,
+      "end": 33.076,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The kids join hands and circle a bright little cartoon bird, cheering happily",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 33.076,
+      "end": 37.552,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi hops in place, beaming with pride",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 37.552,
+      "end": 42.027,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The kids wave to a bright little cartoon bird one last time as the song ends",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s09_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s10",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 42.027,
+      "end": 46.503,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "a bright little cartoon bird seems to sway along happily in the celebration",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "on a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 46.503,
+      "end": 50.979,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The kids join hands and circle a bright little cartoon bird, cheering happily",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 50.979,
+      "end": 55.455,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala hops in place, beaming with pride",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 55.455,
+      "end": 59.93,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The kids wave to a bright little cartoon bird one last time as the song ends",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "action_source": "storyboard",
+      "gaze": "at a bright little cartoon bird",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260722-135241-kidsong-alle-vögel-sind-schon-da-ein-fröhliches-frühlingsl-shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    }
+  ]
+}

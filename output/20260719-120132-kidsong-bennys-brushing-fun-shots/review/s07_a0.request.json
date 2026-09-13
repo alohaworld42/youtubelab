@@ -1,0 +1,36 @@
+{
+  "shot_id": "s07",
+  "take": "s07_a0",
+  "shot": {
+    "id": "s07",
+    "verse": 1,
+    "lyric_span": [
+      2,
+      2
+    ],
+    "start": 26.192,
+    "end": 30.0,
+    "shot_type": "wide",
+    "characters": [
+      "Amira"
+    ],
+    "action": "The kids sing along with happy faces, moving to the beat",
+    "camera": "gentle pan right",
+    "setting": "Zuri is applying toothpaste to her toothbrush while Amira and Kofi watch.",
+    "reuse_of": null,
+    "seed": 20341338,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\s07_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\review\\s07_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

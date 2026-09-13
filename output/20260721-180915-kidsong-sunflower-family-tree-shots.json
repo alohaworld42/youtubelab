@@ -1,0 +1,407 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 4.063,
+      "shot_type": "wide",
+      "characters": [
+        "Kofi",
+        "Nala",
+        "Zuri"
+      ],
+      "action": "Watering can in a sunny garden with Zuri, Kofi, and Nala tending to sunflowers together.",
+      "camera": "static",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 4.063,
+      "end": 7.593,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi",
+        "Zuri"
+      ],
+      "action": "Watering can in hand, Kofi waters a sunflower, while Zuri watches with interest.",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263758,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 7.593,
+      "end": 11.587,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala smiles as she plants a sunflower seed in the soil with her hands.",
+      "camera": "gentle pan right",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 11.587,
+      "end": 15.46,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, looking straight at the camera",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 15.46,
+      "end": 19.574,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 19.574,
+      "end": 23.081,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, bouncing gently on the spot, looking straight at the camera",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 23.081,
+      "end": 27.098,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala claps their hands to the beat",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 27.098,
+      "end": 30.98,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat, swaying from side to side, bouncing gently on the spot",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rejected",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s07_a0.mp4",
+      "verdict": "rejected",
+      "score": 0.75,
+      "attempts": 3
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 30.98,
+      "end": 34.575,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 34.575,
+      "end": 38.081,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, tilting their head with a giggle, swaying from side to side",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s09_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.75,
+      "attempts": 2
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 38.081,
+      "end": 41.564,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, leaning in a little closer, tilting their head with a giggle",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 41.564,
+      "end": 45.558,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, clapping once on the beat, leaning in a little closer",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 45.558,
+      "end": 49.064,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 49.064,
+      "end": 52.57,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala claps their hands to the beat, looking straight at the camera, clapping once on the beat",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s14",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 52.57,
+      "end": 56.076,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat, bouncing gently on the spot, looking straight at the camera",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s14_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s15",
+      "verse": 2,
+      "lyric_span": [
+        3,
+        3
+      ],
+      "start": 56.076,
+      "end": 59.861,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat, swaying from side to side, bouncing gently on the spot",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-180915-kidsong-sunflower-family-tree-shots\\s15_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    }
+  ]
+}

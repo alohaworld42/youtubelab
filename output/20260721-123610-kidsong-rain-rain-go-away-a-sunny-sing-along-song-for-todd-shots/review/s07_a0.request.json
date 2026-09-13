@@ -1,0 +1,40 @@
+{
+  "shot_id": "s07",
+  "take": "s07_a0",
+  "shot": {
+    "id": "s07",
+    "verse": 1,
+    "lyric_span": [
+      2,
+      2
+    ],
+    "start": 20.759,
+    "end": 23.76,
+    "shot_type": "closeup",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "Zuri goes along too, smiling, swaying from side to side, bouncing gently on the spot",
+    "camera": "slow push-in",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20261731,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s07_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\review\\s07_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

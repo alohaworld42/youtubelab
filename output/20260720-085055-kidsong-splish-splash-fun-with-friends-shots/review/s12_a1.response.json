@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "score": 0.1,
+  "reasons": [
+    "Dimension 3 (head-count, hard reject): expected_children=1 (Zuri only) but frames 1 and 2 show 4 children on screen (orange-shirt child far left, teal-shirt child, yellow/X-shirt child, plus foreground girl), frame 3 still shows a second child partially visible behind her, and frame 4 shows a sliver of a second child's face at frame-right — every frame except frame 5 exceeds the expected count.",
+    "Dimension 4 (wardrobe, hard reject — garment/silhouette mismatch, applies at any shot_type): foreground girl (presumably Zuri) wears a yellow sleeveless tank top over a yellow floral skirt; cast_text specifies a 'sunny yellow t-shirt, denim dungaree shorts and white sneakers' — wrong garment type/silhouette (skirt vs. dungaree shorts), not a colour-only nitpick.",
+    "Dimension 3 (field-by-field identity mismatch): hair puffs are tied with pink/red ribbons in all frames; cast_text specifies 'soft yellow fabric scrunchies'.",
+    "Dimension 9 (staging, soft observation): in frames 1-2 the background children are lined up at even spacing walking toward camera together, bordering on the lockstep/row pattern the rubric calls out — secondary to the head-count reject above."
+  ],
+  "retry_hints": {
+    "seed_bump": true,
+    "simplify_action": false,
+    "force_i2v": false
+  }
+}

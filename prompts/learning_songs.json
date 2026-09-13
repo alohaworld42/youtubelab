@@ -1,0 +1,137 @@
+{
+  "note": [
+    "Learning-song library for pipeline.kidsong.lyrics (config kidsong.content_mode = 'learning').",
+    "A learning video is a SUNG educational song where each verse teaches exactly ONE item — a",
+    "letter, a number, or a shape. That taught item is carried on the verse itself as `story_subject`",
+    "(the exact renderable noun phrase, e.g. 'a big colorful letter A') and `learning_item` (a short",
+    "label, e.g. 'A'), which pipeline.kidsong.director honors as that verse's subject and — when",
+    "content_mode=learning — biases into an insert shot (the item shown large and clear, no people)",
+    "followed by a reaction shot (a child smiling and pointing at it). See director._fallback_planner.",
+    "",
+    "As with prompts/pd_songs.json, every entry here is either a traceable public-domain text or",
+    "wholly ORIGINAL to this channel — never a riff on an existing show, brand, or recording. ACE-Step",
+    "generates a brand-new melody per episode regardless, so no existing tune/arrangement/recording is",
+    "ever reused, sampled or imitated.",
+    "",
+    "Every song passes the SAME lyric-craft gate as prompts/pd_songs.json (pipeline.kidsong.script_qc):",
+    "3-5 verses of 2-4 short lines (<= 9 words each), a steady meter, at least one rhyming pair per",
+    "verse, a repeated 3+-word hook line spanning two or more verses, and no line-internal clumsy",
+    "repetition. See tests/test_kidsong_learning_lyrics.py."
+  ],
+  "songs": [
+    {
+      "id": "learning_abc_time",
+      "title": "ABC Time - A Letters Learning Sing-Along for Toddlers",
+      "description": "Zuri, Kofi and Nala point and clap as they learn their letters! Sing along and point at each big bright letter with us. #kidssong #learnthealphabet #abcsong #toddlersongs #singalong #preschool",
+      "tags": ["kids song", "learning song", "abc song", "alphabet song", "toddler song", "sing along", "preschool", "letters for toddlers", "educational song", "kids music"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm",
+      "topics": ["letters", "the alphabet", "abc", "learning letters", "spelling", "the abc song"],
+      "source": {
+        "text": "Original composition for Brainrot Studio's learning-song series",
+        "author": "Brainrot Studio",
+        "public_domain": "Not applicable — these are original lyrics written for this channel, not derived from or imitating any existing song, show or recording.",
+        "adaptation": "The one-letter-per-verse teaching structure follows the long-standing public-domain convention of the traditional 'A-B-C' song (itself conventionally sung to the 1761 melody 'Ah! vous dirai-je, maman', the same tune underlying 'Twinkle, Twinkle, Little Star' and 'Baa, Baa, Black Sheep'); ACE-Step generates an entirely new melody for this channel regardless, and no existing lyric text is reused anywhere in this file."
+      },
+      "verses": [
+        {
+          "lines": ["A is for apple, red and sweet", "Point at the letter A, so neat", "Clap your hands and learn with me"],
+          "scene_hint": "A giant bright letter A stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter A",
+          "learning_item": "A"
+        },
+        {
+          "lines": ["B is for ball, round and bright", "Point at the letter B, so light", "Clap your hands and learn with me"],
+          "scene_hint": "A giant bright letter B stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter B",
+          "learning_item": "B"
+        },
+        {
+          "lines": ["C is for cat, soft and small", "Point at the letter C, so tall", "Clap your hands and learn with me"],
+          "scene_hint": "A giant bright letter C stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter C",
+          "learning_item": "C"
+        },
+        {
+          "lines": ["D is for dog, wagging free", "Point at the letter D, with glee", "Clap your hands and learn with me"],
+          "scene_hint": "A giant bright letter D stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter D",
+          "learning_item": "D"
+        }
+      ]
+    },
+    {
+      "id": "learning_counting_time",
+      "title": "Counting Time - A Numbers Learning Sing-Along for Toddlers",
+      "description": "One little, two little, three little numbers! Zuri, Kofi and Nala count along with us. #kidssong #countingsong #numbersfortoddlers #toddlersongs #singalong #preschool",
+      "tags": ["kids song", "learning song", "counting song", "numbers song", "toddler song", "sing along", "preschool", "numbers for toddlers", "educational song", "kids music"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm",
+      "topics": ["counting", "numbers", "learning to count", "one two three", "math for toddlers", "how many"],
+      "source": {
+        "text": "Original composition for Brainrot Studio's learning-song series",
+        "author": "Brainrot Studio",
+        "public_domain": "Not applicable — these are original lyrics written for this channel, not derived from or imitating any existing song, show or recording.",
+        "adaptation": "The one-number-per-verse teaching structure follows the long-standing public-domain convention of counting rhymes built on the 'One little, two little, three little...' pattern; ACE-Step generates an entirely new melody for this channel regardless, and no existing lyric text is reused anywhere in this file."
+      },
+      "verses": [
+        {
+          "lines": ["One little star up in the sky", "Count to one and wave up high", "Count along and clap with me"],
+          "scene_hint": "A single giant glowing number 1 floats in a sunny playroom as the toddlers count along.",
+          "story_subject": "the number 1",
+          "learning_item": "1"
+        },
+        {
+          "lines": ["Two little birds upon a tree", "Count to two, come sing with me", "Count along and clap with me"],
+          "scene_hint": "A giant number 2 stands in a sunny playroom as the toddlers count along.",
+          "story_subject": "the number 2",
+          "learning_item": "2"
+        },
+        {
+          "lines": ["Three little frogs beside the sea", "Count to three, so full of glee", "Count along and clap with me"],
+          "scene_hint": "A giant number 3 stands in a sunny playroom as the toddlers count along.",
+          "story_subject": "the number 3",
+          "learning_item": "3"
+        },
+        {
+          "lines": ["Four little pups begin to play", "Count to four and shout hooray", "Count along and clap with me"],
+          "scene_hint": "A giant number 4 stands in a sunny playroom as the toddlers count along.",
+          "story_subject": "the number 4",
+          "learning_item": "4"
+        }
+      ]
+    },
+    {
+      "id": "learning_shapes_time",
+      "title": "Shapes All Around - A Shapes Learning Sing-Along for Toddlers",
+      "description": "Circles, squares and triangles too! Zuri, Kofi and Nala point at every shape with us. #kidssong #shapesong #shapesfortoddlers #toddlersongs #singalong #preschool",
+      "tags": ["kids song", "learning song", "shapes song", "toddler song", "sing along", "preschool", "shapes for toddlers", "educational song", "kids music", "circle square triangle"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm",
+      "topics": ["shapes", "learning shapes", "circle square triangle", "colors and shapes", "recognizing shapes"],
+      "source": {
+        "text": "Original composition for Brainrot Studio's learning-song series",
+        "author": "Brainrot Studio",
+        "public_domain": "Not applicable — these are original lyrics written for this channel, not derived from or imitating any existing song, show or recording.",
+        "adaptation": "Wholly original; no existing lyric text, tune or arrangement is reused anywhere in this file."
+      },
+      "verses": [
+        {
+          "lines": ["A circle is round with no end", "Point at the circle, my friend", "Point and clap along with me"],
+          "scene_hint": "A big red circle rolls into a bright cheerful playroom as the toddlers point and grin.",
+          "story_subject": "a big red circle",
+          "learning_item": "circle"
+        },
+        {
+          "lines": ["Four straight sides, a square so neat", "Point at the square, tap your feet", "Point and clap along with me"],
+          "scene_hint": "A big blue square sits in a bright cheerful playroom as the toddlers point and tap their feet.",
+          "story_subject": "a big blue square",
+          "learning_item": "square"
+        },
+        {
+          "lines": ["Three sharp points, a triangle true", "Point at the triangle, yellow hue", "Point and clap along with me"],
+          "scene_hint": "A big yellow triangle sits in a bright cheerful playroom as the toddlers point and cheer.",
+          "story_subject": "a big yellow triangle",
+          "learning_item": "triangle"
+        }
+      ]
+    }
+  ]
+}

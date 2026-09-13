@@ -1,0 +1,80 @@
+{
+  "version": "1.2.1",
+  "channel": "ZubiBop",
+  "ensemble_label": "Three adorable Black toddlers",
+  "_aliases_note": "Names the script LLM keeps inventing for the third child, mapped to the cast member that shot actually meant. Observed in 20260719-bennys-brushing (Amira alongside Kofi+Zuri -> Nala) and 20260719-rainbow-friends (Luna alongside Kofi+Nala -> Zuri). Aliases are used ONLY when a name fails to resolve; they never shadow a real cast name.",
+  "_build_note": "Each character's `build` is spliced into the prompt by cast._describe_dict as \"<Name>, a <age> with <build>, <skin>, <hair>\", so it MUST be a NOUN phrase (\"a tall, sturdy build ...\"), never an adjective phrase. An adjective phrase produces ungrammatical prompt text (\"a girl with petite and delicate, deep brown skin\") in the one sentence the cast-integrity gates depend on. Enforced by tests/test_kidsong_cast.py::test_every_bible_build_is_a_noun_phrase.",
+  "aliases": {
+    "amira": "nala",
+    "maya": "nala",
+    "luna": "zuri",
+    "lily": "zuri",
+    "kwame": "kofi",
+    "malik": "kofi"
+  },
+  "characters": [
+    {
+      "id": "zuri",
+      "name": "Zuri",
+      "age": "3-year-old girl",
+      "skin": "deep warm brown skin",
+      "hair": "round afro puffs tied with soft yellow fabric scrunchies",
+      "top": "a sunny yellow t-shirt",
+      "bottom": "denim dungaree shorts",
+      "shoes": "white sneakers",
+      "prop": "a small red toy star she often carries",
+      "seed_offset": 1013,
+      "must_not": [
+        "pale skin",
+        "straight hair",
+        "blonde hair",
+        "red hair",
+        "blue shirt",
+        "pink dress"
+      ],
+      "build": "an average toddler height and a soft, rounded little build"
+    },
+    {
+      "id": "kofi",
+      "name": "Kofi",
+      "age": "4-year-old boy",
+      "skin": "medium-deep brown skin",
+      "hair": "short dark natural curly hair",
+      "top": "a blue t-shirt",
+      "bottom": "grey jogger shorts",
+      "shoes": "red sneakers",
+      "prop": "a small blue toy drum he often carries",
+      "seed_offset": 2027,
+      "must_not": [
+        "yellow shirt",
+        "pale skin",
+        "light hair",
+        "ginger hair",
+        "blonde hair",
+        "straight hair"
+      ],
+      "build": "a tall, sturdy build for a preschooler and slightly broader shoulders"
+    },
+    {
+      "id": "nala",
+      "name": "Nala",
+      "age": "3-year-old girl",
+      "skin": "deep brown skin",
+      "hair": "neat cornrow braids",
+      "top": "a yellow pinafore dress over a white t-shirt",
+      "bottom": "white tights",
+      "shoes": "pink sneakers",
+      "prop": "a small yellow toy duck she often carries",
+      "seed_offset": 3041,
+      "must_not": [
+        "purple dress",
+        "pale skin",
+        "loose straight hair",
+        "straight hair",
+        "blonde hair",
+        "blue shirt"
+      ],
+      "build": "a petite, delicate build, a little shorter and slighter"
+    }
+  ]
+}

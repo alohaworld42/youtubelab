@@ -1,0 +1,467 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 2.972,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers hold hands and walk in a wide circle around a big round leafy bush in a sunny garden.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 2.972,
+      "end": 5.991,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The toddlers walk closer to the bush.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 5.991,
+      "end": 9.02,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri takes a step closer to the bush.",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 9.02,
+      "end": 11.981,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The toddlers stand at a low bathroom sink.",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 11.981,
+      "end": 14.373,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi rubs soapy bubbles between his hands.",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 14.373,
+      "end": 17.369,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The toddlers continue to wash their hands.",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 17.369,
+      "end": 19.76,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, leaning in a little closer",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 19.76,
+      "end": 22.779,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, clapping once on the beat, looking straight at the camera",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 22.779,
+      "end": 25.194,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, looking straight at the camera, bouncing gently on the spot",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 25.194,
+      "end": 28.16,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, bouncing gently on the spot, swaying from side to side",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s09_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 28.16,
+      "end": 31.184,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 31.184,
+      "end": 34.783,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 34.783,
+      "end": 37.9,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, swaying from side to side, tilting their head with a giggle",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 37.9,
+      "end": 41.378,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 41.378,
+      "end": 44.373,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, tilting their head with a giggle, leaning in a little closer",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s14_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 44.373,
+      "end": 47.56,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, leaning in a little closer, clapping once on the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s15_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 47.56,
+      "end": 50.968,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s10",
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 50.968,
+      "end": 53.986,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s11",
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s18",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 53.986,
+      "end": 56.889,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s12",
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    }
+  ]
+}

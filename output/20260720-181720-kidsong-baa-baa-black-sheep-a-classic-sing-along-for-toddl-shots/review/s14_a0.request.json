@@ -1,0 +1,39 @@
+{
+  "shot_id": "s14",
+  "take": "s14_a0",
+  "shot": {
+    "id": "s14",
+    "verse": 3,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 44.06,
+    "end": 47.717,
+    "shot_type": "medium",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "Zuri sings along with a happy face, moving to the beat",
+    "camera": "slow push-in",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20261730,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-181720-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s14_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-181720-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\review\\s14_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

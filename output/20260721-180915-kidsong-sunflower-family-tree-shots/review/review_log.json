@@ -1,0 +1,444 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20263758,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s04",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s05",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s06",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s07",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": false,
+      "score": 0.75,
+      "reasons": [
+        "duplicate characters"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": true
+      }
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s07",
+    "attempt": 1,
+    "seed": 20262707,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s07",
+    "attempt": 2,
+    "seed": 20263684,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s08",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s09",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": false,
+      "score": 0.75,
+      "reasons": [
+        "duplicate characters"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": true
+      }
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s09",
+    "attempt": 1,
+    "seed": 20263721,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s10",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s11",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s12",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s13",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s14",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "shot": "s15",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": false
+  },
+  {
+    "stage": "script",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "no repetition: no 2+ word phrase repeats across verses",
+        "no hook: no line of 3+ words repeats in two different verses \u2014 add a repeated chorus/hook line so the song is singable",
+        "external review timed out"
+      ],
+      "retry_hints": {
+        "regenerate": true
+      }
+    }
+  },
+  {
+    "stage": "script",
+    "attempt": 1,
+    "verdict": {
+      "accept": false,
+      "score": 0.85,
+      "reasons": [
+        "meter inconsistent: verse 0 lines run [11, 6, 7] syllables (spread 5, max 2) \u2014 rewrite them to a steady beat of about 11 syllables each",
+        "meter inconsistent: verse 1 lines run [10, 11, 7] syllables (spread 4, max 2) \u2014 rewrite them to a steady beat of about 10 syllables each",
+        "external review timed out"
+      ],
+      "retry_hints": {
+        "regenerate": true
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.25,
+      "reasons": [
+        "action missing/not verb-ish: shot s00 action='The sunflower family tree garden in full bloom.'",
+        "indoor/outdoor contradiction: shot s00 has an outdoor action in an indoor setting \u2014 action='The sunflower family tree garden in full bloom.', setting='a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves'. The renderer satisfies both halves literally and produces an impossible space (a room with a grass floor). Move the action indoors or the setting outdoors so they agree.",
+        "verse mixes activities: verse 0 does not read as one continuous moment (4 activities: bloom, hold, pour, water). One shot shows ONE activity; a verse's shots may progress through a temporal arc (setup, event, reaction) but must share one location, and must not show different children doing different things at the same time.",
+        "verse mixes activities: verse 2 does not read as one continuous moment (2 activities: clap, close). One shot shows ONE activity; a verse's shots may progress through a temporal arc (setup, event, reaction) but must share one location, and must not show different children doing different things at the same time.",
+        "unattended mode: external review skipped \u2014 programmatic verdict used"
+      ],
+      "retry_hints": {
+        "replan": true
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 1,
+    "verdict": {
+      "accept": false,
+      "score": 0.4,
+      "reasons": [
+        "indoor/outdoor contradiction: shot s00 has an outdoor action in an indoor setting \u2014 action='Watering can in a sunny garden with Zuri, Kofi, and Nala tending to sunflowers together.', setting='a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves'. The renderer satisfies both halves literally and produces an impossible space (a room with a grass floor). Move the action indoors or the setting outdoors so they agree.",
+        "verse mixes activities: verse 2 does not read as one continuous moment (2 activities: clap, close). One shot shows ONE activity; a verse's shots may progress through a temporal arc (setup, event, reaction) but must share one location, and must not show different children doing different things at the same time.",
+        "unattended mode: external review skipped \u2014 programmatic verdict used"
+      ],
+      "retry_hints": {
+        "replan": true
+      }
+    }
+  },
+  {
+    "stage": "cut",
+    "attempt": 0,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 programmatic verdict used"
+      ],
+      "retry_hints": {
+        "recut": false,
+        "reshoot": []
+      }
+    }
+  }
+]

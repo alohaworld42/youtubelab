@@ -1,0 +1,390 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 3.762,
+      "shot_type": "wide",
+      "characters": [
+        "Kofi",
+        "Maya",
+        "Zuri"
+      ],
+      "action": "Zuri, Maya, and Kofi stand together outside on a sunny day",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20281867,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 3.762,
+      "end": 7.941,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "holding a colorful umbrella",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20357391,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 7.941,
+      "end": 12.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "seeing red in the rainbow",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 12.0,
+      "end": 15.766,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s03_a1.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 2
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 15.766,
+      "end": 19.969,
+      "shot_type": "closeup",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids stomp their feet happily",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s04_a2.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 3
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 19.969,
+      "end": 24.0,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids stomp their feet happily",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20304981,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 24.0,
+      "end": 27.748,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s06_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s07",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 27.748,
+      "end": 31.951,
+      "shot_type": "closeup",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids wave with both hands",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 31.951,
+      "end": 36.0,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids wave with both hands",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20304981,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 36.0,
+      "end": 39.753,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s09_a2.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 3
+    },
+    {
+      "id": "s10",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 39.753,
+      "end": 43.955,
+      "shot_type": "closeup",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids jump up and down with joy",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 43.955,
+      "end": 48.0,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids jump up and down with joy",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20304981,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 48.0,
+      "end": 51.154,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 51.154,
+      "end": 54.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Maya"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20351690,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s14",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 54.0,
+      "end": 57.0,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20304981,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s14_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s15",
+      "verse": 4,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 57.0,
+      "end": 60.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\s15_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    }
+  ]
+}

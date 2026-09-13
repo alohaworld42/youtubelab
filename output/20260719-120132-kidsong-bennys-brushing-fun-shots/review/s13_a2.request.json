@@ -1,0 +1,36 @@
+{
+  "shot_id": "s13",
+  "take": "s13_a2",
+  "shot": {
+    "id": "s13",
+    "verse": 3,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 48.855,
+    "end": 52.5,
+    "shot_type": "medium",
+    "characters": [
+      "Kofi"
+    ],
+    "action": "The kids sing along with happy faces, moving to the beat",
+    "camera": "static",
+    "setting": "Amira, Kofi, and Zuri are rinsing their mouths with water and shaking off excess water from their toothbrushes.",
+    "reuse_of": null,
+    "seed": 20304981,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\s13_a2.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\review\\s13_a2.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

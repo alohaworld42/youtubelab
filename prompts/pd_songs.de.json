@@ -1,0 +1,298 @@
+{
+  "note": [
+    "GERMAN public-domain nursery-rhyme lyrics for pipeline.kidsong.lyrics (config kidsong.language='de' + lyrics_source='public_domain').",
+    "German counterpart of prompts/pd_songs.json. LANGUAGE SPLIT (do not violate): the SUNG/metadata fields (title, description, tags, verses[].lines) are GERMAN; the VISUAL field verses[].scene_hint stays ENGLISH because it feeds the English-trained image/video model — a German scene string would leak into the render prompt. song_style (ACE-Step audio caption) describes the SOUND and stays an English style caption with 'sung in German' appended to bias the vocal language.",
+    "ONLY THE WORDS come from the public domain; ACE-Step generates a fresh melody per episode from song_style, so no existing tune/arrangement/recording is reused. Every text here is a traditional/anonymous German folk children's song or by an author who died well over 70 years ago (Hoffmann von Fallersleben d.1874, Wilhelm Hey d.1854), i.e. worldwide public domain. Content-filtered for toddlers: songs involving hunters/guns/scares (e.g. 'Fuchs, du hast die Gans gestohlen') are deliberately excluded.",
+    "adaptation notes per entry: traditional verses are trimmed to the channel format (2-4 short lines per verse) and a simple repeated German refrain line is NEWLY WRITTEN for this channel as the singable hook, exactly as prompts/pd_songs.json does for its English songs. scene_hint is cast-neutral ('the three toddlers') so it works whatever cast the channel finally uses."
+  ],
+  "songs": [
+    {
+      "id": "alle_meine_entchen",
+      "title": "Alle meine Entchen - Ein fröhliches Mitmachlied für Kleinkinder",
+      "description": "Die kleinen Entchen schwimmen auf dem See! Sing und klatsch mit uns mit. #kinderlied #kinderlieder #mitmachlied #kleinkindlieder #kindergarten",
+      "tags": ["kinderlied", "kinderlieder", "mitmachlied", "kleinkinder lied", "alle meine entchen", "enten", "tiere", "kindergarten", "kindermusik", "krippe"],
+      "song_style": "children's nursery rhyme, cheerful gentle kids song, cute female child voice, simple very repetitive catchy melody, soft bouncy tempo, warm and bright, sung in German",
+      "topics": ["enten", "entchen", "schwimmen", "tiere am see", "wasser", "ducks", "swimming"],
+      "subject_description": "a small fluffy yellow duckling, no bigger than a child's hand, paddling on the water",
+      "canonical_setting": "a sunny grassy pond with a nearby cottage rooftop and garden close by",
+      "source": {
+        "text": "Alle meine Entchen",
+        "author": "traditional (anonymous German folk song)",
+        "year": 1850,
+        "publication": "Traditional German children's song, in print by the mid-19th century.",
+        "public_domain": "Traditional/anonymous folk text, long past life+70 and pre-1929. Public domain worldwide.",
+        "adaptation": "Traditional first verse verbatim; the refrain line 'Sing und klatsch mit mir mit' is newly written for this channel as the repeated hook. Only the words are used; ACE-Step generates a new melody."
+      },
+      "verses": [
+        {
+          "lines": ["Alle meine Entchen", "schwimmen auf dem See", "Köpfchen in das Wasser", "Schwänzchen in die Höh"],
+          "scene_hint": "The three toddlers kneel on a grassy pond bank watching little cartoon ducklings paddle across the water, pointing and smiling."
+        },
+        {
+          "lines": ["Sing und klatsch mit mir mit", "die Entchen sind so froh"],
+          "scene_hint": "The toddlers clap their hands together by the pond as the ducklings bob happily, grinning at the camera."
+        },
+        {
+          "lines": ["Alle meine Täubchen", "gurren auf dem Dach", "fliegen in die Lüfte", "und kommen wieder nach"],
+          "scene_hint": "Soft round cartoon doves coo on a sunny rooftop while the three toddlers wave up at them from the garden below."
+        },
+        {
+          "lines": ["Sing und klatsch mit mir mit", "die Entchen sind so froh"],
+          "scene_hint": "The toddlers clap their hands together by the pond as the ducklings bob happily, grinning at the camera."
+        }
+      ]
+    },
+    {
+      "id": "haenschen_klein",
+      "title": "Hänschen klein - Ein Mitmach-Kinderlied zum Klatschen",
+      "description": "Der kleine Hans geht auf die Reise und kommt fröhlich wieder heim. Sing mit uns! #kinderlied #kinderlieder #mitmachlied #kleinkindlieder #krippe",
+      "tags": ["kinderlied", "kinderlieder", "mitmachlied", "haenschen klein", "hänschen klein", "kleinkinder lied", "kindergarten", "kindermusik", "krippe", "klatschlied"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful and warm, sung in German",
+      "topics": ["hänschen klein", "haenschen", "reise", "wandern", "nach hause", "spazieren", "walking"],
+      "subject_description": null,
+      "canonical_setting": "a sunny green meadow path leading to a cozy cottage with a bright doorway",
+      "source": {
+        "text": "Hänschen klein",
+        "author": "Franz Wiedemann (text), traditional",
+        "year": 1860,
+        "publication": "19th-century German children's song.",
+        "public_domain": "Text long past life+70 and pre-1929; public domain. Only the words are used.",
+        "adaptation": "Traditional opening verses trimmed to short lines; the refrain 'Klatsch und sing mit mir mit' is newly written as the repeated hook. Melody generated fresh by ACE-Step."
+      },
+      "verses": [
+        {
+          "lines": ["Hänschen klein", "ging allein", "in die weite Welt hinein"],
+          "scene_hint": "A cheerful cartoon sun rises over a green meadow path as the three toddlers set off along it with little backpacks, waving."
+        },
+        {
+          "lines": ["Klatsch und sing mit mir mit", "Hänschen läuft so froh"],
+          "scene_hint": "The three toddlers clap their hands together on the sunny path, grinning at the camera."
+        },
+        {
+          "lines": ["Aber Mama weinet sehr", "Hänschen kehret froh zurück"],
+          "scene_hint": "The toddlers run happily up to a cozy cottage doorway where a warm light glows, arms open for a hug."
+        },
+        {
+          "lines": ["Klatsch und sing mit mir mit", "Hänschen läuft so froh"],
+          "scene_hint": "The three toddlers clap their hands together on the sunny path, grinning at the camera."
+        }
+      ]
+    },
+    {
+      "id": "backe_backe_kuchen",
+      "title": "Backe, backe Kuchen - Ein Mitmachlied zum Klatschen für Kleinkinder",
+      "description": "Der Bäcker hat gerufen — wir backen einen Kuchen! Klatsch mit uns mit. #kinderlied #kinderlieder #mitmachlied #klatschlied #kleinkindlieder",
+      "tags": ["kinderlied", "kinderlieder", "mitmachlied", "klatschlied", "backe backe kuchen", "backen", "kuchen", "kindergarten", "kindermusik", "krippe"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm, sung in German",
+      "topics": ["backen", "kuchen", "bäcker", "backe backe kuchen", "kochen", "baking", "cake"],
+      "subject_description": null,
+      "canonical_setting": "a warm sunny kitchen with a low table, a mixing bowl and a cheerful oven",
+      "source": {
+        "text": "Backe, backe Kuchen",
+        "author": "traditional (anonymous German folk song)",
+        "year": 1840,
+        "publication": "Traditional German children's clapping song, printed by the 19th century.",
+        "public_domain": "Traditional/anonymous folk text, pre-1929 and long past life+70. Public domain worldwide.",
+        "adaptation": "Traditional verse trimmed to the channel format; ingredient lines kept; the repeated 'Backe, backe Kuchen' functions as the hook. Fresh melody by ACE-Step."
+      },
+      "verses": [
+        {
+          "lines": ["Backe, backe Kuchen", "der Bäcker hat gerufen"],
+          "scene_hint": "A warm cartoon kitchen with a sunny window; the three toddlers stand at a low table wearing little aprons, clapping flour off their hands."
+        },
+        {
+          "lines": ["Eier und Schmalz", "Butter und Salz", "Milch und Mehl", "und Zucker macht den Kuchen gel"],
+          "scene_hint": "Big friendly cartoon ingredients — an egg, a pat of butter, a jug of milk, a bowl of flour — line up on the table as the toddlers point at each one."
+        },
+        {
+          "lines": ["Backe, backe Kuchen", "wir klatschen alle mit"],
+          "scene_hint": "The three toddlers clap their hands together in the cozy kitchen, grinning at the camera as a round golden cake sits on the table."
+        },
+        {
+          "lines": ["Schieb, schieb in den Ofen", "der Kuchen ist bald fein"],
+          "scene_hint": "A cheerful round cartoon oven with a soft glow; the toddlers gently mime sliding a tray in and wait with happy faces."
+        }
+      ]
+    },
+    {
+      "id": "alle_voegel_sind_schon_da",
+      "title": "Alle Vögel sind schon da - Ein fröhliches Frühlingslied für Kleinkinder",
+      "description": "Der Frühling ist da und alle Vögel singen! Sing und klatsch mit uns. #kinderlied #kinderlieder #frühlingslied #mitmachlied #kleinkindlieder",
+      "tags": ["kinderlied", "kinderlieder", "frühlingslied", "mitmachlied", "alle vögel sind schon da", "vögel", "frühling", "tiere", "kindergarten", "kindermusik"],
+      "song_style": "children's nursery rhyme, bright cheerful springtime kids song, cute female child voice, simple very repetitive catchy melody, light bouncy tempo, warm and sunny, sung in German",
+      "topics": ["vögel", "frühling", "singen", "alle vögel sind schon da", "tiere", "birds", "spring"],
+      "subject_description": "a small round songbird, no bigger than a child's hand, with bright cheerful feathers",
+      "canonical_setting": "a blossoming spring garden with flowering branches and a green meadow",
+      "source": {
+        "text": "Alle Vögel sind schon da",
+        "author": "August Heinrich Hoffmann von Fallersleben",
+        "year": 1835,
+        "publication": "Text by Hoffmann von Fallersleben (published 1835).",
+        "public_domain": "Author died 1874 — life+70 expired 1944; pre-1929. Public domain worldwide.",
+        "adaptation": "First verse verbatim; a newly-written refrain 'Sing und klatsch mit mir mit' is the repeated hook. Only the words are used; ACE-Step makes a new melody."
+      },
+      "verses": [
+        {
+          "lines": ["Alle Vögel sind schon da", "alle Vögel, alle"],
+          "scene_hint": "A bright spring morning in a blossoming garden; small round cartoon birds hop along a branch as the three toddlers point up in delight."
+        },
+        {
+          "lines": ["Welch ein Singen, Musizieren", "Pfeifen, Zwitschern, Tirilieren"],
+          "scene_hint": "The cartoon birds open their beaks to sing; little musical notes float in the sunny air while the toddlers cup their ears and smile."
+        },
+        {
+          "lines": ["Sing und klatsch mit mir mit", "die Vögel sind so froh"],
+          "scene_hint": "The three toddlers clap their hands together in the blooming garden, grinning at the camera."
+        },
+        {
+          "lines": ["Frühling will nun einmarschieren", "kommt mit Sang und Schalle"],
+          "scene_hint": "Cartoon flowers open across a green meadow as the toddlers spin with arms wide under falling blossom petals."
+        }
+      ]
+    },
+    {
+      "id": "ein_maennlein_steht_im_walde",
+      "title": "Ein Männlein steht im Walde - Ein Rätsel-Kinderlied für Kleinkinder",
+      "description": "Ein Männlein steht im Walde — wer mag das wohl sein? Rate und sing mit uns! #kinderlied #kinderlieder #mitmachlied #kleinkindlieder #kindergarten",
+      "tags": ["kinderlied", "kinderlieder", "mitmachlied", "ein männlein steht im walde", "wald", "hagebutte", "rätsel", "kindergarten", "kindermusik", "krippe"],
+      "song_style": "children's nursery rhyme, gentle playful kids song, cute female child voice, simple very repetitive catchy melody, soft bouncy tempo, warm and curious, sung in German",
+      "topics": ["wald", "männlein", "hagebutte", "rätsel", "natur", "ein männlein steht im walde", "forest"],
+      "subject_description": "a small round red rosehip berry with a tiny green cap, sitting on a mossy log",
+      "canonical_setting": "a soft sunlit forest clearing with mossy logs and dappled morning light",
+      "source": {
+        "text": "Ein Männlein steht im Walde",
+        "author": "August Heinrich Hoffmann von Fallersleben",
+        "year": 1843,
+        "publication": "Text by Hoffmann von Fallersleben (published 1843).",
+        "public_domain": "Author died 1874 — worldwide public domain (life+70, pre-1929).",
+        "adaptation": "Opening verse trimmed to short lines; refrain 'Sing und klatsch mit mir mit' newly written as the hook. Fresh melody by ACE-Step."
+      },
+      "verses": [
+        {
+          "lines": ["Ein Männlein steht im Walde", "ganz still und stumm"],
+          "scene_hint": "A soft sunlit cartoon forest clearing; a small round rosehip berry with a tiny cap sits on a mossy log while the three toddlers peer at it curiously."
+        },
+        {
+          "lines": ["Es hat von lauter Purpur", "ein Mäntlein um"],
+          "scene_hint": "Close on the plump red rosehip in the toddlers' cupped hands, glowing warm in a sunbeam as they smile."
+        },
+        {
+          "lines": ["Sing und klatsch mit mir mit", "wer mag das Männlein sein"],
+          "scene_hint": "The three toddlers clap their hands together in the forest clearing, grinning at the camera."
+        },
+        {
+          "lines": ["Das Männlein dort auf einem Bein", "mit seinem roten Mäntelein"],
+          "scene_hint": "The little red rosehip stands on its stem like a tiny figure; the toddlers hop on one foot beside it, giggling."
+        }
+      ]
+    },
+    {
+      "id": "summ_summ_summ",
+      "title": "Summ, summ, summ - Ein Bienchen-Mitmachlied für Kleinkinder",
+      "description": "Summ, summ, summ — das kleine Bienchen summt umher! Sing und summ mit uns. #kinderlied #kinderlieder #mitmachlied #kleinkindlieder #tierlied",
+      "tags": ["kinderlied", "kinderlieder", "mitmachlied", "summ summ summ", "biene", "bienchen", "tiere", "kindergarten", "kindermusik", "tierlied"],
+      "song_style": "children's nursery rhyme, cheerful gentle kids song, cute female child voice, simple very repetitive catchy melody, soft bouncy tempo, warm and sunny, sung in German",
+      "topics": ["biene", "bienchen", "summen", "summ summ summ", "tiere", "blumen", "bee", "insects"],
+      "subject_description": "a small round fuzzy bumblebee, no bigger than a child's hand, with soft yellow and black stripes",
+      "canonical_setting": "a sunny flower meadow with big colorful blossoms and a small cottage nearby",
+      "source": {
+        "text": "Summ, summ, summ",
+        "author": "August Heinrich Hoffmann von Fallersleben",
+        "year": 1843,
+        "publication": "Text by Hoffmann von Fallersleben (published 1843).",
+        "public_domain": "Author died 1874 — public domain worldwide (life+70, pre-1929).",
+        "adaptation": "Opening verse verbatim; 'Summ, summ, summ, Bienchen summ herum' is the traditional repeated hook. Fresh melody by ACE-Step."
+      },
+      "verses": [
+        {
+          "lines": ["Summ, summ, summ", "Bienchen summ herum"],
+          "scene_hint": "A sunny cartoon flower meadow; one plump friendly cartoon bee loops gently over the blossoms as the three toddlers follow it with their eyes, smiling."
+        },
+        {
+          "lines": ["Such in Blüten, such in Blümchen", "dir ein Tröpfchen, dir ein Krümchen"],
+          "scene_hint": "The little bee dips into big colorful cartoon flowers one by one while the toddlers crouch close and point softly."
+        },
+        {
+          "lines": ["Summ, summ, summ", "Bienchen summ herum"],
+          "scene_hint": "The three toddlers clap and gently buzz along in the flower meadow, grinning at the camera."
+        },
+        {
+          "lines": ["Kehre heim in unser Haus", "ruhe dich vom Fliegen aus"],
+          "scene_hint": "The friendly bee floats toward a small cozy cartoon hive as the toddlers wave it a gentle goodbye at sunset."
+        }
+      ]
+    },
+    {
+      "id": "haeschen_in_der_grube",
+      "title": "Häschen in der Grube - Ein Mitmach-Bewegungslied für Kleinkinder",
+      "description": "Das Häschen schläft — hüpf, kleines Häschen, hüpf! Sing und hüpf mit uns. #kinderlied #kinderlieder #mitmachlied #bewegungslied #kleinkindlieder",
+      "tags": ["kinderlied", "kinderlieder", "mitmachlied", "bewegungslied", "häschen in der grube", "hase", "häschen", "hüpfen", "kindergarten", "kindermusik"],
+      "song_style": "children's nursery rhyme, cheerful playful kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, warm and lively, sung in German",
+      "topics": ["hase", "häschen", "hüpfen", "häschen in der grube", "tiere", "bewegung", "bunny", "hopping"],
+      "subject_description": "a small round grey bunny, knee-high to the children, with soft floppy ears",
+      "canonical_setting": "a soft grassy meadow hollow with warm morning sunlight",
+      "source": {
+        "text": "Häschen in der Grube",
+        "author": "Friedrich Fröbel / traditional",
+        "year": 1840,
+        "publication": "19th-century German movement song for young children.",
+        "public_domain": "Traditional text, pre-1929 and long past life+70. Public domain.",
+        "adaptation": "Traditional verse trimmed; 'Häschen, hüpf!' kept as the movement hook. Fresh melody by ACE-Step."
+      },
+      "verses": [
+        {
+          "lines": ["Häschen in der Grube", "saß und schlief"],
+          "scene_hint": "A soft grassy cartoon hollow in warm morning light; a small round cartoon bunny naps curled up while the three toddlers tiptoe near, fingers to lips."
+        },
+        {
+          "lines": ["Armes Häschen, bist du krank", "dass du nicht mehr hüpfen kannst"],
+          "scene_hint": "The toddlers crouch gently around the sleepy bunny with kind, concerned little faces."
+        },
+        {
+          "lines": ["Häschen, hüpf!", "Häschen, hüpf!"],
+          "scene_hint": "The bunny springs up happily; the three toddlers hop up and down with it, clapping and laughing at the camera."
+        },
+        {
+          "lines": ["Häschen hüpft davon", "sing und hüpf mit mir"],
+          "scene_hint": "The bunny bounds across the sunny meadow and the toddlers hop after it in a cheerful line."
+        }
+      ]
+    },
+    {
+      "id": "weisst_du_wieviel_sternlein_stehen",
+      "title": "Weißt du, wieviel Sternlein stehen - Ein sanftes Gutenachtlied für Kleinkinder",
+      "description": "Ein ruhiges Sternenlied für den Abend. Schau mit uns in den Himmel. #kinderlied #kinderlieder #gutenachtlied #einschlaflied #kleinkindlieder",
+      "tags": ["kinderlied", "kinderlieder", "gutenachtlied", "einschlaflied", "weißt du wieviel sternlein stehen", "sterne", "abend", "schlaflied", "kindergarten", "kindermusik"],
+      "song_style": "children's nursery rhyme, gentle calm lullaby, cute female child voice, soft simple melody, twinkly bells, slow bouncy tempo, warm and cozy, sung in German",
+      "topics": ["sterne", "sternlein", "abend", "gute nacht", "himmel", "einschlafen", "stars", "bedtime"],
+      "subject_description": "a small glowing golden five-pointed star with a gentle smiling face",
+      "canonical_setting": "a cozy dusk garden with a soft blanket on the grass under a starry sky",
+      "source": {
+        "text": "Weißt du, wieviel Sternlein stehen",
+        "author": "Wilhelm Hey",
+        "year": 1837,
+        "publication": "Text by Wilhelm Hey (published 1837).",
+        "public_domain": "Author died 1854 — worldwide public domain (life+70, pre-1929).",
+        "adaptation": "Opening verse trimmed to short lines; a gentle refrain 'Schlaf und träum so schön' is newly written as the calm hook. Fresh melody by ACE-Step."
+      },
+      "verses": [
+        {
+          "lines": ["Weißt du, wieviel Sternlein stehen", "an dem blauen Himmelszelt"],
+          "scene_hint": "The three toddlers lie on a soft blanket in a dusk garden, gazing up at a sky full of big gentle cartoon stars."
+        },
+        {
+          "lines": ["Weißt du, wieviel Wolken gehen", "weithin über alle Welt"],
+          "scene_hint": "Soft rounded cartoon clouds drift slowly across a deep blue evening sky while the toddlers point up quietly."
+        },
+        {
+          "lines": ["Schlaf und träum so schön", "die Sterne wachen sacht"],
+          "scene_hint": "The toddlers snuggle under the blanket, eyes growing sleepy, as one big warm star glows softly above them."
+        },
+        {
+          "lines": ["Gott der Herr hat sie gezählet", "dass ihm auch nicht eines fehlet"],
+          "scene_hint": "A calm starry sky reflects in a still pond beside the resting toddlers; everything is peaceful and warm."
+        }
+      ]
+    }
+  ]
+}

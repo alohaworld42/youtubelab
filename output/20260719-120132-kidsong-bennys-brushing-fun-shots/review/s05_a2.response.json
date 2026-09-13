@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "score": 0.4,
+  "reasons": [
+    "cast bleed: teal-shirt and striped-tank boys are not cast members, membership morphs across the shot",
+    "no bathroom set again — bare room",
+    "note: this shot's generic action text ('The kids brush their teeth') carries no setting anchor; the verse-1 slots keep losing the sink"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "score": 0.0,
+  "reasons": [
+    "Dimension 3 (head-count, hard reject): expected_children=1 (Zuri only) but all 5 frames show 3 children — two flanking kids remain in every frame including the closer-in frames 3-5, far exceeding the expected count.",
+    "Dimension 3/4 (identity + wardrobe, hard reject): the foreground girl in frames 2-5 wears a yellow tank top and a yellow skirt/dress with a necklace, not the sunny yellow t-shirt + denim dungaree shorts + white sneakers specified in cast_text for Zuri — this is a garment/silhouette mismatch (dress vs. dungaree shorts), which is a hard reject at any shot_type, not just a colour issue.",
+    "Dimension 3 (identity, hard reject): none of the three children show the specified 'afro puffs tied with soft yellow fabric scrunchies' — hair is rendered as loose, unstyled curls with no scrunchies visible on any child.",
+    "Dimension 4: no footwear/sneakers visible on the foreground girl in frames 2-5, inconsistent with the white sneakers specified."
+  ],
+  "retry_hints": {
+    "seed_bump": true,
+    "simplify_action": false,
+    "force_i2v": false
+  }
+}

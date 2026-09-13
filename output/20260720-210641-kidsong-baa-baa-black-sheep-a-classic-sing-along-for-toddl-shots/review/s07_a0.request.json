@@ -1,0 +1,40 @@
+{
+  "shot_id": "s07",
+  "take": "s07_a0",
+  "shot": {
+    "id": "s07",
+    "verse": 1,
+    "lyric_span": [
+      1,
+      1
+    ],
+    "start": 20.317,
+    "end": 23.081,
+    "shot_type": "medium",
+    "characters": [
+      "Kofi",
+      "Zuri"
+    ],
+    "action": "Two toddlers count together.",
+    "camera": "gentle pan left",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20263757,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s07_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\review\\s07_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 2,
+  "cast_text": "Two adorable Black toddlers: Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

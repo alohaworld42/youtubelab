@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "score": 0.35,
+  "reasons": [
+    "wrong setting: kids brush teeth seated at a dining table with plates (should be bathroom/sink)",
+    "characters match no cast member (teal outfit girl, unknown yellow-shirt kid)",
+    "identity morph mid-shot: right-hand child's shirt and hair change between beats"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

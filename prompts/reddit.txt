@@ -1,0 +1,25 @@
+Write a short, addictive single-narrator "Reddit story" style brainrot script.
+
+Topic / subreddit vibe: {{TOPIC}}
+
+Rules:
+- First-person dramatic story (AITA / confession / revenge / "you won't believe" energy).
+- Hook HARD in the first sentence so nobody scrolls.
+- 110-150 words total. Conversational, fast, a little chaotic.
+- All lines use speaker "narrator".
+- Break the text into many SHORT lines (3-9 words each) so the voice has natural beats.
+- No slurs, no real names, keep it PG-13.
+- The "title" must be a clickbait YouTube Short title (with 1 emoji).
+- "description" = 1-2 sentences + 3-5 hashtags.
+- "tags" = 8-12 relevant lowercase tags.
+
+Reply with ONLY this JSON:
+{
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."],
+  "lines": [
+    {"speaker": "narrator", "text": "..."},
+    {"speaker": "narrator", "text": "..."}
+  ]
+}

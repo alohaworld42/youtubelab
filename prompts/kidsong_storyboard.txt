@@ -1,0 +1,74 @@
+You are the storyboard artist for a professional preschool kids' TV song video. Turn the song
+below into a sequence of concrete, visible ACTION BEATS for every verse — what the characters and
+the story subject actually DO, moment by moment — so the episode tells a real, simple story
+instead of a generic sing-and-clap loop.
+
+SONG (JSON):
+{{SONG_JSON}}
+
+STORY SUBJECT (the song's non-child hero, if any — a mouse, a lamb, a sunflower, a boat...; may
+say none was detected, in which case build the arc around the song's own topic and props instead):
+{{STORY_SUBJECT}}
+
+ARC MANDATE — read this first: lay a simple, obvious arc across the verses, tied to the song's own
+topic. Do not write a static loop of interchangeable "kids have fun" beats.
+  1. DISCOVER (first verse) — the kids notice the subject/topic for the first time.
+  2. TRY (a middle verse) — the kids attempt something hands-on related to it, using a fitting prop.
+  3. GROW / SUCCEED (another middle verse) — something changes for the better; progress is visible.
+  4. CELEBRATE (last verse) — the kids celebrate together with the subject/topic.
+A 3-verse song compresses to DISCOVER -> TRY -> CELEBRATE. A 5-verse song repeats TRY/GROW once in
+the middle. Every verse's beats must build toward this arc.
+
+Rules to follow:
+- Return ONE entry per verse of the song above, in the SAME ORDER, each with a "beat_goal" (one
+  sentence describing what this verse's beats accomplish in the arc) and 4 to 6 "beats".
+- Every beat's "action" is ONE concrete, VISIBLE thing happening — something a toddler watching
+  along can actually picture and understand. Never a mood, never a summary, never vague filler.
+- ALWAYS use the literal placeholder "{name}" for the acting child in a beat — never write a real
+  cast name, even if the song's own lyrics name a child. The pipeline substitutes its own rotation
+  of the channel's cast onto "{name}" afterwards; hardcoding a name here defeats that rotation.
+- "performer" is one of:
+    "child" — one unnamed child acts alone; "action" MUST contain the literal text "{name}".
+    "all" — the whole group acts together; phrase it as "The kids ..." — never use "{name}" here.
+    "story_subject" — the non-child story subject itself acts or is shown; "action" describes ONLY
+      the subject and must not mention "{name}" or any child at all. Only use this when a real
+      story subject was given above — never invent one.
+- Every beat has a "gaze": a short phrase for where attention/focus is, and it must follow the
+  action's own object — a child patting soil looks "down at the seedling", not off at nothing. Do
+  NOT write "at the camera" or "into the lens" unless that EXACT beat's "camera_address" is true —
+  and "camera_address" may be true on AT MOST ONE beat in the entire storyboard (usually zero).
+  Overusing direct camera address is exactly the generic "smiles at the camera" filler this
+  storyboard replaces.
+- "prop" is optional: name a concrete held/visible object when the beat's action centers on one (a
+  watering can, a toy boat, a small shovel). Omit the key entirely when there is none.
+- NEVER write "sings along", "moves to the beat", "smiles at the camera", or any other generic
+  filler beat — every beat must be a specific, concrete action tied to THIS song's own topic, never
+  a placeholder phrase that could paste unchanged into any other song.
+- Nothing frightening, nothing martial: no monsters, no danger, no chasing, no marching, no rows,
+  no formations, no lockstep unison — preschool staging is loose, playful, gentle and calm. Every
+  beat is a calm, happy moment.
+
+Reply with ONLY this JSON, nothing else:
+{
+  "verses": [
+    {
+      "verse": 0,
+      "beat_goal": "...",
+      "beats": [
+        {
+          "action": "{name} kneels at the flower bed and pats soil around the seedling",
+          "gaze": "down at the seedling",
+          "prop": "a small green watering can",
+          "performer": "child",
+          "camera_address": false
+        }
+      ]
+    }
+  ]
+}
+
+"performer" must be one of: "child", "all", "story_subject".
+"camera_address" is a boolean; true on at most one beat in the whole reply, false everywhere else.
+"prop" is optional — omit the key entirely when the beat has no held/visible object.
+Every verse needs 4 to 6 beats, and there must be exactly as many verse entries as the song has
+verses, in the same order.

@@ -1,0 +1,197 @@
+{
+  "note": [
+    "GERMAN learning-song library for pipeline.kidsong.lyrics (config kidsong.language='de' + content_mode='learning').",
+    "German counterpart of prompts/learning_songs.json. LANGUAGE SPLIT (do not violate): the SUNG/metadata fields (title, description, tags, verses[].lines) are GERMAN; the VISUAL fields verses[].scene_hint, verses[].story_subject and verses[].learning_item stay ENGLISH because they drive the English-trained image/video model and the learning-mode insert shot (director._fallback_planner shows story_subject large and clear, no people). So the child HEARS the item in German and SEES it rendered from the English visual noun. song_style is an English ACE-Step audio caption with 'sung in German' appended.",
+    "All lyrics here are ORIGINAL to this channel — not derived from or imitating any existing show, brand or recording. ACE-Step generates a new melody per episode. Each song teaches one item per verse (a letter / number / color / shape / body part), has 2-4 short lines per verse and a repeated German hook line."
+  ],
+  "songs": [
+    {
+      "id": "learning_abc_de",
+      "title": "Das ABC-Lied - Buchstaben lernen für Kleinkinder",
+      "description": "Lerne die Buchstaben A, B, C mit uns! Zeig auf jeden großen Buchstaben und sing mit. #kinderlied #abclied #buchstabenlernen #lernlied #kleinkindlieder #kindergarten",
+      "tags": ["kinderlied", "lernlied", "abc lied", "buchstaben lernen", "alphabet", "kleinkinder lied", "kindergarten", "buchstaben für kinder", "lernvideo", "kindermusik"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm, sung in German",
+      "topics": ["buchstaben", "das abc", "alphabet", "buchstaben lernen", "abc lied", "letters", "alphabet"],
+      "source": {
+        "text": "Original composition for this channel's learning-song series",
+        "author": "KinderKrippenLernLieder",
+        "public_domain": "Not applicable — original German lyrics written for this channel, not derived from or imitating any existing song, show or recording.",
+        "adaptation": "One-letter-per-verse teaching structure follows the long-standing public-domain convention of alphabet songs; ACE-Step generates a new melody and no existing lyric text is reused."
+      },
+      "verses": [
+        {
+          "lines": ["A wie Affe, schau mal her", "Zeig auf das A, das ist nicht schwer", "Zeig und lern mit mir mit"],
+          "scene_hint": "A giant bright letter A stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter A",
+          "learning_item": "letter A"
+        },
+        {
+          "lines": ["B wie Ball, so rund und bunt", "Zeig auf das B, mach mit im Bund", "Zeig und lern mit mir mit"],
+          "scene_hint": "A giant bright letter B stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter B",
+          "learning_item": "letter B"
+        },
+        {
+          "lines": ["C wie Clown, er lacht so gern", "Zeig auf das C, wir lernen gern", "Zeig und lern mit mir mit"],
+          "scene_hint": "A giant bright letter C stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter C",
+          "learning_item": "letter C"
+        },
+        {
+          "lines": ["D wie Dach, so hoch und breit", "Zeig auf das D, wir sind bereit", "Zeig und lern mit mir mit"],
+          "scene_hint": "A giant bright letter D stands in a colorful preschool classroom as the toddlers point at it and cheer.",
+          "story_subject": "a big colorful letter D",
+          "learning_item": "letter D"
+        }
+      ]
+    },
+    {
+      "id": "learning_zahlen_de",
+      "title": "Zahlen lernen - Eins, zwei, drei für Kleinkinder",
+      "description": "Zähle mit uns von eins bis vier! Zeig auf jede große Zahl und sing mit. #kinderlied #zahlenlernen #zählenlernen #lernlied #kleinkindlieder #kindergarten",
+      "tags": ["kinderlied", "lernlied", "zahlen lernen", "zählen lernen", "zahlenlied", "kleinkinder lied", "kindergarten", "zahlen für kinder", "lernvideo", "kindermusik"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm, sung in German",
+      "topics": ["zahlen", "zählen", "eins zwei drei", "zahlen lernen", "zählen lernen", "numbers", "counting"],
+      "source": {
+        "text": "Original composition for this channel's learning-song series",
+        "author": "KinderKrippenLernLieder",
+        "public_domain": "Not applicable — original German lyrics written for this channel.",
+        "adaptation": "One-number-per-verse counting structure; ACE-Step generates a new melody and no existing lyric text is reused."
+      },
+      "verses": [
+        {
+          "lines": ["Die Eins steht ganz allein", "Zeig auf die Eins, so fein", "Zähl und lern mit mir mit"],
+          "scene_hint": "A giant bright numeral 1 stands in a colorful preschool classroom as the toddlers hold up one finger and cheer.",
+          "story_subject": "a big colorful number 1",
+          "learning_item": "number 1"
+        },
+        {
+          "lines": ["Die Zwei, das sind schon mehr", "Zeig auf die Zwei, komm her", "Zähl und lern mit mir mit"],
+          "scene_hint": "A giant bright numeral 2 stands in a colorful preschool classroom as the toddlers hold up two fingers and cheer.",
+          "story_subject": "a big colorful number 2",
+          "learning_item": "number 2"
+        },
+        {
+          "lines": ["Die Drei ist wie ein Reim", "Zeig auf die Drei, komm heim", "Zähl und lern mit mir mit"],
+          "scene_hint": "A giant bright numeral 3 stands in a colorful preschool classroom as the toddlers hold up three fingers and cheer.",
+          "story_subject": "a big colorful number 3",
+          "learning_item": "number 3"
+        },
+        {
+          "lines": ["Die Vier, jetzt sind wir schlau", "Zeig auf die Vier, genau", "Zähl und lern mit mir mit"],
+          "scene_hint": "A giant bright numeral 4 stands in a colorful preschool classroom as the toddlers hold up four fingers and cheer.",
+          "story_subject": "a big colorful number 4",
+          "learning_item": "number 4"
+        }
+      ]
+    },
+    {
+      "id": "learning_farben_de",
+      "title": "Farben lernen - Rot, Blau und Gelb für Kleinkinder",
+      "description": "Lerne die Farben rot, blau, gelb und grün mit uns! Zeig auf jede Farbe und sing mit. #kinderlied #farbenlernen #farbenlied #lernlied #kleinkindlieder #kindergarten",
+      "tags": ["kinderlied", "lernlied", "farben lernen", "farbenlied", "farben für kinder", "kleinkinder lied", "kindergarten", "lernvideo", "kindermusik", "rot blau gelb grün"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm, sung in German",
+      "topics": ["farben", "farben lernen", "rot blau gelb", "bunte farben", "colors", "farbenlied"],
+      "source": {
+        "text": "Original composition for this channel's learning-song series",
+        "author": "KinderKrippenLernLieder",
+        "public_domain": "Not applicable — original German lyrics written for this channel.",
+        "adaptation": "One-color-per-verse teaching structure; ACE-Step generates a new melody and no existing lyric text is reused."
+      },
+      "verses": [
+        {
+          "lines": ["Die Farbe Rot wie eine Erdbeer", "Zeig auf das Rot, ich bitt dich sehr", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big glossy red circle of color fills a bright cheerful playroom as the toddlers point at it and grin.",
+          "story_subject": "a big bright red color swatch",
+          "learning_item": "red"
+        },
+        {
+          "lines": ["Die Farbe Blau wie Himmelszelt", "Zeig auf das Blau, die schönste Welt", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big glossy blue circle of color fills a bright cheerful playroom as the toddlers point at it and grin.",
+          "story_subject": "a big bright blue color swatch",
+          "learning_item": "blue"
+        },
+        {
+          "lines": ["Die Farbe Gelb wie Sonnenschein", "Zeig auf das Gelb, so hell und fein", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big glossy yellow circle of color fills a bright cheerful playroom as the toddlers point at it and grin.",
+          "story_subject": "a big bright yellow color swatch",
+          "learning_item": "yellow"
+        },
+        {
+          "lines": ["Die Farbe Grün wie Gras und Blatt", "Zeig auf das Grün, die ganze Stadt", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big glossy green circle of color fills a bright cheerful playroom as the toddlers point at it and grin.",
+          "story_subject": "a big bright green color swatch",
+          "learning_item": "green"
+        }
+      ]
+    },
+    {
+      "id": "learning_formen_de",
+      "title": "Formen lernen - Kreis, Quadrat und Dreieck für Kleinkinder",
+      "description": "Lerne die Formen Kreis, Quadrat und Dreieck mit uns! Zeig auf jede Form und sing mit. #kinderlied #formenlernen #formenlied #lernlied #kleinkindlieder #kindergarten",
+      "tags": ["kinderlied", "lernlied", "formen lernen", "formenlied", "formen für kinder", "kleinkinder lied", "kindergarten", "lernvideo", "kindermusik", "kreis quadrat dreieck"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm, sung in German",
+      "topics": ["formen", "formen lernen", "kreis quadrat dreieck", "formenlied", "shapes", "formen für kinder"],
+      "source": {
+        "text": "Original composition for this channel's learning-song series",
+        "author": "KinderKrippenLernLieder",
+        "public_domain": "Not applicable — original German lyrics written for this channel.",
+        "adaptation": "One-shape-per-verse teaching structure; ACE-Step generates a new melody and no existing lyric text is reused."
+      },
+      "verses": [
+        {
+          "lines": ["Ein Kreis ist rund, ganz ohne Eck", "Zeig auf den Kreis, mein kleiner Schreck", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big red circle rolls into a bright cheerful playroom as the toddlers point and grin.",
+          "story_subject": "a big red circle",
+          "learning_item": "circle"
+        },
+        {
+          "lines": ["Vier gerade Seiten, ein Quadrat", "Zeig aufs Quadrat, das ist parat", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big blue square sits in a bright cheerful playroom as the toddlers point and tap their feet.",
+          "story_subject": "a big blue square",
+          "learning_item": "square"
+        },
+        {
+          "lines": ["Drei spitze Ecken, ein Dreieck", "Zeig aufs Dreieck, gelb und keck", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big yellow triangle sits in a bright cheerful playroom as the toddlers point and cheer.",
+          "story_subject": "a big yellow triangle",
+          "learning_item": "triangle"
+        }
+      ]
+    },
+    {
+      "id": "learning_koerperteile_de",
+      "title": "Körperteile lernen - Kopf, Hand und Fuß für Kleinkinder",
+      "description": "Lerne Kopf, Hand und Fuß mit uns! Zeig auf jeden Körperteil und mach mit. #kinderlied #körperteile #lernlied #mitmachlied #kleinkindlieder #kindergarten",
+      "tags": ["kinderlied", "lernlied", "körperteile lernen", "mitmachlied", "kopf hand fuß", "kleinkinder lied", "kindergarten", "lernvideo", "kindermusik", "körper"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm, sung in German",
+      "topics": ["körperteile", "kopf hand fuß", "körper lernen", "körperteile lernen", "body parts", "mitmachlied"],
+      "source": {
+        "text": "Original composition for this channel's learning-song series",
+        "author": "KinderKrippenLernLieder",
+        "public_domain": "Not applicable — original German lyrics written for this channel.",
+        "adaptation": "One-body-part-per-verse teaching structure; ACE-Step generates a new melody and no existing lyric text is reused."
+      },
+      "verses": [
+        {
+          "lines": ["Das ist mein Kopf, so rund und schlau", "Zeig auf den Kopf, ganz genau", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big friendly cartoon illustration of a head fills a bright cheerful playroom as the toddlers point at their own heads and cheer.",
+          "story_subject": "a big friendly cartoon head icon",
+          "learning_item": "head"
+        },
+        {
+          "lines": ["Das ist die Hand, sie winkt dir zu", "Zeig auf die Hand, so wie du", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big friendly cartoon illustration of an open hand waving fills a bright cheerful playroom as the toddlers wave their own hands.",
+          "story_subject": "a big friendly cartoon waving hand icon",
+          "learning_item": "hand"
+        },
+        {
+          "lines": ["Das ist der Fuß, er tappt im Takt", "Zeig auf den Fuß, ganz exakt", "Zeig und lern mit mir mit"],
+          "scene_hint": "A big friendly cartoon illustration of a foot fills a bright cheerful playroom as the toddlers tap their own feet and giggle.",
+          "story_subject": "a big friendly cartoon foot icon",
+          "learning_item": "foot"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "accept": true,
+  "score": 0.7,
+  "reasons": [
+    "cast-integrity negatives took effect: hero closeup is Amira, no non-cast child featured; residual wart: middle boy lighter than established Kofi (secondary in frame) — logged for the cast-LoRA milestone"
+  ],
+  "retry_hints": {}
+}

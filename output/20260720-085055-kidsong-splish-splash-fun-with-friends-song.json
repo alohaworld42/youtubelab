@@ -1,0 +1,43 @@
+{
+  "title": "Splish Splash Fun with Friends",
+  "description": "Join Zuri (warm brown skin, afro puffs, yellow sundress), Kofi (light brown skin, natural curls, blue shirt) and Nala (medium brown skin, braided hair, pink dress) as they have fun at bath time!",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler",
+    "sing along",
+    "bath time",
+    "friends play"
+  ],
+  "characters": "Zuri has warm brown skin, afro puffs and wears a yellow sundress. Kofi has light brown skin, natural curls and wears a blue shirt. Nala has medium brown skin, braided hair and wears a pink dress.",
+  "verses": [
+    {
+      "lines": [
+        "We're washing our hands with soap so bright",
+        "Rub-a-dub-dub, get them clean tonight"
+      ],
+      "scene": "The three friends stand at the kitchen sink, holding rubber ducks and soap"
+    },
+    {
+      "lines": [
+        "Now we rinse off, what fun to play",
+        "With soap bubbles everywhere today"
+      ],
+      "scene": "Zuri blows a big bubble, Kofi pops it with his finger, Nala giggles"
+    },
+    {
+      "lines": [
+        "We're splashing in the water's edge",
+        "Rubber ducks float, let's join the pledge"
+      ],
+      "scene": "The three friends stand at the tub's edge, playing with rubber ducks and splashing their hands"
+    },
+    {
+      "lines": [
+        "Clean and sparkly, we feel so free",
+        "Yes yes, bath time fun for you and me!"
+      ],
+      "scene": "Zuri, Kofi and Nala high-five each other, smiling at the camera"
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 3.228,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The kids clap their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 3.228,
+      "end": 6.339,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat, looking straight at the camera",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 6.339,
+      "end": 9.451,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala claps their hands to the beat, bouncing gently on the spot",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        3,
+        4
+      ],
+      "start": 9.451,
+      "end": 12.636,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 12.816,
+      "end": 16.138,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri stomps their feet happily",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 16.138,
+      "end": 19.412,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi stomps their feet happily, swaying from side to side",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 19.412,
+      "end": 22.361,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala stomps their feet happily, tilting their head with a giggle",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        3,
+        4
+      ],
+      "start": 22.361,
+      "end": 25.571,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 25.751,
+      "end": 28.584,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri waves with both hands",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": "the air toward colorful cartoon birds",
+      "status": "planned"
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 28.584,
+      "end": 32.02,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi waves with both hands, leaning in a little closer",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": "the air toward colorful cartoon birds",
+      "status": "planned"
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 32.02,
+      "end": 34.575,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala waves with both hands, clapping once on the beat",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": "the air toward colorful cartoon birds",
+      "status": "planned"
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        3,
+        4
+      ],
+      "start": 34.575,
+      "end": 37.811,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": "the air toward colorful cartoon birds",
+      "status": "planned"
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 37.99,
+      "end": 41.215,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri hugs their favorite toy happily",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 41.215,
+      "end": 44.071,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi hugs their favorite toy happily, looking straight at the camera",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 44.071,
+      "end": 47.09,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala hugs their favorite toy happily, bouncing gently on the spot",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        3,
+        4
+      ],
+      "start": 47.09,
+      "end": 49.87,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  {# Inline, so no request is made: every page load logged a /favicon.ico 404. #}
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f0f14'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%23d7ff3e'%3EB%3C/text%3E%3C/svg%3E">
+<title>{% block title %}Brainrot Studio{% endblock %}</title>
+<style>
+  :root{
+    --bg:#0d0d11; --surface:#16161d; --surface2:#1d1d27;
+    --line:#2a2a36; --text:#f5f5f7; --muted:#8b8b97;
+    --violet:#7c3aed; --violet-bright:#9d5cff; --acid:#ffe600;
+    --ok:#4ade80; --err:#ff7a7a; --warn:#fbbf24;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  .display{font-family:"Arial Black","Archivo Black",Impact,system-ui,sans-serif;letter-spacing:-.02em}
+  a{color:var(--violet-bright)}
+  .wrap{max-width:1000px;margin:0 auto;padding:24px 20px 80px}
+  nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-bottom:28px}
+  nav .logo{font-size:22px;text-transform:uppercase;margin-right:18px;text-decoration:none;color:var(--text)}
+  nav .logo b{color:var(--acid)}
+  nav a.tab{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;
+    padding:8px 13px;border-radius:10px}
+  nav a.tab:hover{background:var(--surface2);color:var(--text)}
+  nav a.tab.active{background:var(--surface2);color:var(--acid)}
+
+  /* On a phone the wrapping nav grew to four rows — ~165px, a fifth of the
+     screen — on every page, including the take queue, whose entire reason to
+     exist is reviewing on a phone. One scrolling row instead: same links, same
+     order, nothing hidden, and it costs 44px. `scrollbar-width:none` because a
+     touch device has no visible scrollbar anyway and one would just eat the
+     row's height back. */
+  @media (max-width:720px){
+    nav{flex-wrap:nowrap;overflow-x:auto;gap:2px;margin-bottom:18px;
+      scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    nav::-webkit-scrollbar{display:none}
+    nav>*{flex:0 0 auto}
+    nav .logo{font-size:17px;margin-right:10px}
+    nav a.tab{font-size:13px;padding:8px 10px}
+    .wrap{padding:16px 14px 60px}
+    h1{font-size:21px;margin:0 0 12px}
+  }
+  /* Instructions that name keyboard keys are noise on a touch device — it has
+     no j/k. Hidden by pointer type, not by width, so a small laptop window
+     keeps them. */
+  @media (pointer:coarse){.kbd-hint{display:none}}
+  h1{font-size:24px;margin:0 0 18px}
+  h2{font-size:17px;margin:26px 0 12px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+  .muted{color:var(--muted);font-size:13px}
+  .badge{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;
+    background:var(--surface2);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .badge.ok{color:var(--ok)} .badge.err{color:var(--err)} .badge.warn{color:var(--warn)}
+  .badge.acid{color:var(--acid)}
+  button,.btn{border:none;border-radius:10px;cursor:pointer;font-weight:700;font-size:14px;
+    padding:10px 15px;background:var(--violet);color:#fff;text-decoration:none;display:inline-block}
+  button:hover,.btn:hover{background:var(--violet-bright)}
+  button.ghost,.btn.ghost{background:var(--surface2);color:var(--muted)}
+  button.ghost:hover{color:var(--text)}
+  button.danger{background:#7f1d1d}
+  button.approve{background:#166534} button.approve:hover{background:#15803d}
+  button:disabled{background:var(--surface2);color:var(--muted);cursor:not-allowed}
+  input[type=text],input[type=number],textarea,select{
+    width:100%;background:var(--surface2);border:2px solid var(--line);color:var(--text);
+    border-radius:10px;padding:10px 12px;font-size:14px;font-family:inherit}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--violet)}
+  label.field{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--muted);margin:14px 0 6px}
+  /* A table is the one element that cannot be made narrower than its content:
+     `width:100%` is a request, and a long topic or an error message overrides
+     it. When that happens the WHOLE PAGE scrolls sideways — measured on a
+     390px phone, the dashboard's job table was 400px wide and dragged the body
+     with it. Each table is therefore wrapped in `.table-wrap`, which scrolls on
+     its own so the page body never does. `tests/test_ui_no_horizontal_scroll.py`
+     measures this in a real browser, because no amount of reading the template
+     can tell you how wide a rendered cell turns out to be. */
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th{color:var(--muted);text-align:left;font-size:12px;text-transform:uppercase;
+    letter-spacing:.08em;padding:8px 10px;border-bottom:1px solid var(--line)}
+  td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:20px}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+  .stat .num{font-size:26px;font-weight:800}
+  .stat .lbl{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+  .toast{position:fixed;bottom:20px;right:20px;background:var(--surface2);border:1px solid var(--line);
+    border-radius:12px;padding:12px 16px;font-size:14px;display:none;z-index:50}
+  nav .navcount{display:inline-block;background:var(--err);color:#3a0808;font-weight:800;
+    font-size:11px;border-radius:20px;padding:1px 7px;margin-left:6px;vertical-align:1px}
+  .notice{border-radius:12px;padding:10px 14px;font-size:14px;margin-bottom:14px;
+    border:1px solid var(--line);background:var(--surface2)}
+  .notice.ok{border-color:#166534;color:var(--ok)}
+  .notice.warn{border-color:#78350f;color:var(--warn)}
+  /* Visible keyboard focus everywhere — the review queue is worked with the
+     keyboard and the default outline:none on inputs left no focus signal. */
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,
+  textarea:focus-visible{outline:2px solid var(--acid);outline-offset:2px}
+</style>
+{% block head %}{% endblock %}
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="logo display" href="/">BRAIN<b>ROT</b> STUDIO</a>
+    <a class="tab {% if active=='dashboard' %}active{% endif %}" href="/">Dashboard</a>
+    <a class="tab {% if active=='production' %}active{% endif %}" href="/dashboard">Produktion</a>
+    <a class="tab {% if active=='takes' %}active{% endif %}" href="/kidsong-review">Take-Review<span
+       id="takes-count" class="navcount" style="display:none"></span></a>
+    <a class="tab {% if active=='channels' %}active{% endif %}" href="/channels/">Kanäle</a>
+    <a class="tab {% if active=='ideas' %}active{% endif %}" href="/ideas">Ideen</a>
+    <a class="tab {% if active=='review' %}active{% endif %}" href="/review">Review</a>
+    <a class="tab {% if active=='history' %}active{% endif %}" href="/history">Verlauf</a>
+    <a class="tab {% if active=='quick' %}active{% endif %}" href="/quick">Quick Generate</a>
+    <a class="tab {% if active=='setup' %}active{% endif %}" href="/setup">Setup<span id="setup-dot" style="display:none;color:var(--err)"> ●</span></a>
+  </nav>
+  {% block content %}{% endblock %}
+</div>
+<div class="toast" id="toast"></div>
+<script>
+function toast(msg){
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.style.display = 'block';
+  clearTimeout(el._t); el._t = setTimeout(()=>el.style.display='none', 4000);
+}
+async function post(url, body){
+  let res;
+  try{
+    res = await fetch(url, {method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(body||{})});
+  }catch(e){
+    // A stopped/restarting server used to surface as a bare "Failed to fetch",
+    // usually after the caller had already disabled its button.
+    throw new Error('Server nicht erreichbar (läuft die App noch?)');
+  }
+  const data = await res.json().catch(()=>({}));
+  if (!res.ok) throw new Error(data.error || res.statusText);
+  return data;
+}
+
+// Run an async action with `btn` disabled for its duration, and ALWAYS put the
+// button back. Every hand-rolled version of this in the templates got one of
+// the two halves wrong: some never disabled (so a double click fired the
+// request twice and the second one came back 409 "not in review status" right
+// after the first had succeeded), and some disabled without a finally (so any
+// thrown error left the button dead until a page reload).
+async function withButton(btn, busyLabel, fn){
+  if (!btn) return fn();
+  if (btn.disabled) return;            // already in flight
+  const label = btn.textContent;
+  btn.disabled = true;
+  if (busyLabel) btn.textContent = busyLabel;
+  try{
+    return await fn();
+  }catch(e){
+    toast('Fehler: ' + e.message);
+  }finally{
+    btn.disabled = false;
+    btn.textContent = label;
+  }
+}
+
+// Poll `url` until `handle(payload)` returns false. A transient fetch failure
+// retries instead of ending the poll: every poller here used to be an
+// unguarded `await fetch(...)`, so one blip killed the loop and left its
+// button disabled with a stale "läuft…" message and no way forward.
+function pollJson(url, handle, intervalMs, onGiveUp){
+  let failures = 0;
+  (async function tick(){
+    try{
+      const res = await fetch(url);
+      const payload = await res.json();
+      failures = 0;
+      if (handle(payload) === false) return;
+    }catch(e){
+      if (++failures >= 5){
+        if (onGiveUp) onGiveUp(e);
+        return;
+      }
+    }
+    setTimeout(tick, intervalMs || 1500);
+  })();
+}
+fetch('/api/setup/status').then(r=>r.json()).then(s=>{
+  if (!s.complete) document.getElementById('setup-dot').style.display = 'inline';
+}).catch(()=>{});
+
+// Pending-take counter in the nav. The gate only works if somebody knows it is
+// waiting — before this the queue was reachable only from body text on two
+// pages, so a blocked render looked like a hung render.
+function refreshTakeCount(){
+  fetch('/api/kidsong-review/count').then(r=>r.json()).then(s=>{
+    const el = document.getElementById('takes-count');
+    if (!el) return;
+    if (s.pending > 0){ el.textContent = s.pending; el.style.display = 'inline-block'; }
+    else { el.style.display = 'none'; }
+  }).catch(()=>{});
+}
+refreshTakeCount();
+setInterval(refreshTakeCount, 15000);
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

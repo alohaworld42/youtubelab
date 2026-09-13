@@ -1,0 +1,129 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-181720-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.413,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.413,
+      "end": 7.105,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 7.105,
+      "end": 10.797,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 10.797,
+      "end": 14.489,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 14.489,
+      "end": 17.276,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 17.276,
+      "end": 20.48,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 20.48,
+      "end": 23.266,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 23.266,
+      "end": 26.494,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 26.494,
+      "end": 29.211,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 29.211,
+      "end": 32.485,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 32.485,
+      "end": 35.225,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 35.225,
+      "end": 38.034,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 38.034,
+      "end": 41.262,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 41.262,
+      "end": 44.025,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 44.025,
+      "end": 47.717,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 47.717,
+      "end": 51.386,
+      "src": "s15"
+    },
+    {
+      "shot_id": "s16",
+      "start": 51.386,
+      "end": 53.708,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s17",
+      "start": 53.708,
+      "end": 56.424,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s18",
+      "start": 56.424,
+      "end": 58.584,
+      "src": "s11"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-181720-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

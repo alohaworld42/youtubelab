@@ -1,0 +1,64 @@
+{
+  "title": "Pat-a-Cake - A Baking Sing-Along Song for Toddlers",
+  "description": "Pat it and roll it and pop it in! Clap along while we bake a little cake. #kidssong #nurseryrhyme #toddlersongs #singalong #bakingsong",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler song",
+    "sing along",
+    "pat a cake",
+    "baking song",
+    "clapping song",
+    "preschool",
+    "kids music",
+    "children song"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "verses": [
+    {
+      "lines": [
+        "Pat-a-cake, pat-a-cake, baker's man",
+        "Bake me a cake as fast as you can"
+      ],
+      "scene": "Two toddlers pat their floury hands together over a low kitchen table dusted with flour and set with a mixing bowl."
+    },
+    {
+      "lines": [
+        "Roll it and pat it and pop it in",
+        "Now the yummy cake can begin"
+      ],
+      "scene": "Small hands roll a ball of soft dough and lower a round cake tin toward a warm, friendly cartoon oven."
+    },
+    {
+      "lines": [
+        "Pat and clap along with me",
+        "Pat-a-cake, one, two, three"
+      ],
+      "scene": "The three toddlers clap their hands together in the sunny kitchen, counting on their fingers."
+    },
+    {
+      "lines": [
+        "Clap for the cake, so soft and sweet",
+        "Clap for the cake we love to eat"
+      ],
+      "scene": "A little round cake sits on a plate on the table, and the toddlers clap and cheer around it."
+    },
+    {
+      "lines": [
+        "Pat and clap along with me",
+        "Pat-a-cake, one, two, three"
+      ],
+      "scene": "The three toddlers clap their hands together in the sunny kitchen, counting on their fingers."
+    }
+  ],
+  "pd_song_id": "pat_a_cake",
+  "pd_source": {
+    "text": "Pat-a-Cake, Pat-a-Cake, Baker's Man",
+    "author": "Traditional (English)",
+    "year": 1698,
+    "publication": "First recorded in Thomas D'Urfey's play The Campaigners (1698); printed as a nursery rhyme in Tommy Thumb's Pretty Song Book (c. 1744).",
+    "public_domain": "Anonymous traditional text recorded from 1698; long out of copyright everywhere.",
+    "adaptation": "Verse 1 is the traditional couplet verbatim. Verse 2 replaces the traditional 'mark it with B, and put it in the oven for baby and me' — which runs past the 9-word line limit and hangs its rhyme on a single letter — with 'Roll it and pat it and pop it in / Now the yummy cake can begin'. Verse 3 and the hook are NEWLY WRITTEN."
+  },
+  "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, hand-clapping rhythm, playful, bright, warm"
+}

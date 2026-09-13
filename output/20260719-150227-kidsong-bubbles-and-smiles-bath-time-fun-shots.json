@@ -1,0 +1,328 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 3.808,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Kids in bath time setting",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white sink and a big mirror",
+      "reuse_of": null,
+      "seed": 20357390,
+      "status": "planned"
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 3.808,
+      "end": 7.43,
+      "shot_type": "medium",
+      "characters": [
+        "Kiara",
+        "Jaxson"
+      ],
+      "action": "Washing hands with soap and water",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white sink and a big mirror",
+      "reuse_of": null,
+      "seed": 20284996,
+      "status": "planned"
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 7.43,
+      "end": 11.401,
+      "shot_type": "closeup",
+      "characters": [
+        "Jaxson"
+      ],
+      "action": "Smiling at Jaxson while washing hands",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white sink and a big mirror",
+      "reuse_of": null,
+      "seed": 20288414,
+      "status": "planned"
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 11.401,
+      "end": 15.0,
+      "shot_type": "medium",
+      "characters": [
+        "Kiara"
+      ],
+      "action": "Smiling at Kiara while washing hands",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white sink and a big mirror",
+      "reuse_of": null,
+      "seed": 20349695,
+      "status": "planned"
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 15.0,
+      "end": 19.017,
+      "shot_type": "medium",
+      "characters": [
+        "Nia"
+      ],
+      "action": "Sitting at the tub's edge with rubber ducks",
+      "camera": "static",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20339027,
+      "status": "planned"
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 19.017,
+      "end": 22.547,
+      "shot_type": "closeup",
+      "characters": [
+        "Nia"
+      ],
+      "action": "Holding rubber ducks in her hands",
+      "camera": "gentle pan right",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20339027,
+      "status": "planned"
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 22.547,
+      "end": 25.983,
+      "shot_type": "medium",
+      "characters": [
+        "Kiara",
+        "Jaxson"
+      ],
+      "action": "Blowing bubbles in a bucket of water",
+      "camera": "gentle pan right",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20284996,
+      "status": "planned"
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 25.983,
+      "end": 30.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Kiara"
+      ],
+      "action": "Blowing bubbles with a big smile",
+      "camera": "slow push-in",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20349695,
+      "status": "planned"
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 30.0,
+      "end": 33.576,
+      "shot_type": "medium",
+      "characters": [
+        "Kiara",
+        "Jaxson",
+        "Nia"
+      ],
+      "action": "Laughing together while washing hands",
+      "camera": "static",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20316190,
+      "status": "planned"
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 33.576,
+      "end": 37.663,
+      "shot_type": "closeup",
+      "characters": [
+        "Nia"
+      ],
+      "action": "Smiling at siblings while washing hands",
+      "camera": "gentle pan left",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20339027,
+      "status": "planned"
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.663,
+      "end": 41.006,
+      "shot_type": "medium",
+      "characters": [
+        "Nia"
+      ],
+      "action": "The kids wash up with soapy bubbles",
+      "camera": "slow pull-back",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20339027,
+      "status": "planned"
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 41.006,
+      "end": 45.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Kiara"
+      ],
+      "action": "The kids wash up with soapy bubbles",
+      "camera": "slow push-in",
+      "setting": "a bright bathroom with a bubbly tub",
+      "reuse_of": null,
+      "seed": 20349695,
+      "status": "planned"
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 45.0,
+      "end": 48.623,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Kids sitting on towels drying off with big smiles",
+      "camera": "static",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357390,
+      "status": "planned"
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 48.623,
+      "end": 52.64,
+      "shot_type": "medium",
+      "characters": [
+        "Kiara"
+      ],
+      "action": "Drying her arms with a towel while smiling at camera",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20349695,
+      "status": "planned"
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 52.64,
+      "end": 56.216,
+      "shot_type": "closeup",
+      "characters": [
+        "Kiara"
+      ],
+      "action": "Smiling at Kiara while drying off with a towel",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20349695,
+      "status": "planned"
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 56.216,
+      "end": 60.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Kiara"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20349695,
+      "status": "planned"
+    }
+  ]
+}

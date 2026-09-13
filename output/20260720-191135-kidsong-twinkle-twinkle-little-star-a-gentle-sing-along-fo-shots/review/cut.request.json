@@ -1,0 +1,135 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 2.763,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 2.763,
+      "end": 5.526,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 5.526,
+      "end": 8.29,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 8.29,
+      "end": 11.053,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 11.053,
+      "end": 13.375,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 13.375,
+      "end": 16.138,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 16.138,
+      "end": 18.901,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 18.901,
+      "end": 21.687,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 21.687,
+      "end": 24.451,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 24.451,
+      "end": 27.191,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 27.191,
+      "end": 29.977,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 29.977,
+      "end": 32.763,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 32.763,
+      "end": 35.527,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 35.527,
+      "end": 37.849,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 37.849,
+      "end": 40.612,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 40.612,
+      "end": 43.375,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s16",
+      "start": 43.375,
+      "end": 46.161,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s17",
+      "start": 46.161,
+      "end": 49.342,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s18",
+      "start": 49.342,
+      "end": 52.152,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s19",
+      "start": 52.152,
+      "end": 55.054,
+      "src": "s11"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% set active = 'dashboard' %}
+
+{% block head %}
+<style>
+  /* Only what the shared system in base.html does not already give: the
+     channel row's fact strip, and tap targets. Everything else here is .card,
+     .badge, .notice, .row, .muted from base.html. */
+  .chan-head{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;justify-content:space-between}
+  .chan-name{font-size:16px;font-weight:800;text-decoration:none;color:var(--text)}
+  .chan-name:hover{color:var(--acid)}
+  .chan-facts{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;
+    color:var(--muted);font-size:12px}
+  .chan-facts b{color:var(--text);font-size:14px;font-weight:800}
+  .chan-facts .hot b{color:var(--acid)}
+  /* Same reason as the decision row in review_queue.html: this is worked from
+     a phone, and 44px is the minimum comfortable touch target. The shared .btn
+     is ~37px, which is fine under a mouse and misses under a thumb. */
+  .chan-action{min-height:44px;padding:11px 18px;display:inline-flex;align-items:center;
+    margin-top:12px}
+  .chan-empty{color:var(--muted);font-size:14px;padding:6px 0 10px}
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Dashboard</h1>
+
+<div class="card" style="border-color:var(--violet)">
+  <div class="row" style="justify-content:space-between">
+    <div style="flex:1;min-width:240px">
+      <strong style="font-size:16px">Kaskade</strong>
+      <p class="muted" style="margin:6px 0 0">
+        Ein Klick: Ideen erzeugen &rarr; Kinderlied-Jobs in die Warteschlange.
+        Gerendert wird eins nach dem anderen. Nichts wird automatisch hochgeladen —
+        jedes Video muss im <a href="/review">Review</a> freigegeben werden.
+      </p>
+    </div>
+    <div class="row" style="flex:0 0 auto">
+      <input id="c-count" type="number" min="1" max="10" value="3"
+             style="width:78px" title="Anzahl Videos (1–10)">
+      <button id="c-btn" onclick="startCascade(this)">🎬 Kaskade starten</button>
+    </div>
+  </div>
+  <p class="muted" id="c-result" style="margin:12px 0 0;display:none"></p>
+</div>
+
+<div class="statgrid">
+  <div class="stat"><div class="num" id="s-queued">{{ counts.queued }}</div><div class="lbl">In Warteschlange</div></div>
+  <div class="stat"><div class="num" id="s-ready">{{ counts.ready }}</div><div class="lbl">Wartet auf Review</div></div>
+  <div class="stat" title="Freigegeben, aber noch nicht hochgeladen — z.B. weil der Kanal neu verbunden werden muss oder das Tageslimit erreicht ist.">
+    <div class="num" id="s-waiting">{{ counts.waiting_upload }}</div><div class="lbl">Wartet auf Upload</div></div>
+  <div class="stat"><div class="num" id="s-failed">{{ counts.failed }}</div><div class="lbl">Fehlgeschlagen</div></div>
+  <div class="stat"><div class="num" id="s-uploads">{{ counts.uploads_today }}</div><div class="lbl">Uploads heute</div></div>
+</div>
+
+{# ------------------------------------------------------------------ Kanäle --
+   One card per channel, split by what it asks of the reader. This used to be a
+   four-column table below the job list in which a channel with a video waiting
+   for approval, a channel mid-render and a channel that had produced nothing
+   for a week were three identical grey rows — the same defect that was found
+   and fixed on the production page. The order of the three sections IS the
+   answer to "where do I have to approve something, and does the rest run?" #}
+{% macro channel_card(c) %}
+<div class="card" data-channel="{{ c.id }}">
+  <div class="chan-head">
+    <div>
+      <a class="chan-name" href="/channels/{{ c.id }}">{{ c.name }}</a>
+      {% if c.made_for_kids %}<span class="badge acid" style="margin-left:6px">kids</span>{% endif %}
+    </div>
+    <div class="row" style="gap:6px">
+      <span class="badge" title="Sprache dieses Kanals">{{ c.language|upper }}</span>
+      <span class="badge" title="Content-Profil — was dieser Kanal produziert">{{ c.profile }}</span>
+      {% if c.status == 'active' %}<span class="badge ok">aktiv</span>
+      {% elif c.status == 'needs_reauth' %}<span class="badge err">Re-Auth nötig</span>
+      {% else %}<span class="badge">pausiert</span>{% endif %}
+    </div>
+  </div>
+  <div class="chan-facts">
+    <span{% if c.waiting_review %} class="hot"{% endif %}><b>{{ c.waiting_review }}</b> warten auf Freigabe</span>
+    <span><b>{{ c.running }}</b> laufen</span>
+    <span><b>{{ c.queued }}</b> in Warteschlange</span>
+    {% if c.waiting_upload %}<span><b>{{ c.waiting_upload }}</b> warten auf Upload</span>{% endif %}
+    <span><b>{{ pending_ideas.get(c.id, 0) }}</b> offene Ideen</span>
+    <span title="{{ c.last_upload_at or 'noch kein Upload von diesem Kanal' }}">Letzter Upload:
+      {% if c.last_upload_age is not none %}vor {{ c.last_upload_age|duration }}{% else %}noch keiner{% endif %}</span>
+  </div>
+  {% if c.waiting_review %}
+  <a class="btn chan-action" href="/review">{{ c.waiting_review }}&nbsp;Video{{ '' if c.waiting_review == 1 else 's' }} freigeben &rarr;</a>
+  {% endif %}
+  {% if c.silent %}
+  {# The most common silent failure in this studio: the channel is `active`, so
+     every badge calls it healthy, but `schedule_json` is empty — and
+     scheduler._enqueue_due_slots only ever creates jobs for the slots in that
+     list. Nothing breaks, nothing is logged, the channel just stops existing. #}
+  <div class="notice warn" style="margin:12px 0 0">
+    Produziert nichts: kein Zeitplan hinterlegt und
+    {% if c.last_job_age is not none %}seit {{ c.last_job_age|duration }} kein Job{% else %}noch nie ein Job{% endif %}.
+    <a href="/channels/{{ c.id }}">Zeitplan eintragen</a>
+  </div>
+  {% endif %}
+  {% if c.status == 'needs_reauth' %}
+  <div class="notice warn" style="margin:12px 0 0">
+    Uploads sind gestoppt, bis der Kanal neu verbunden ist.
+    <a href="/channels/">Jetzt neu verbinden</a>
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+<h2>Kanäle</h2>
+{% if channel_rows %}
+{% set waiting = channel_rows|selectattr('waiting_review')|list %}
+{% set rest = channel_rows|rejectattr('waiting_review')|list %}
+{% set busy = rest|selectattr('busy')|list %}
+{% set idle = rest|rejectattr('busy')|list %}
+
+<section id="ch-waiting">
+  <h3 style="margin:14px 0 8px">Wartet auf dich ({{ waiting|length }})</h3>
+  {% for c in waiting %}{{ channel_card(c) }}{% else %}
+  <div class="chan-empty">Keine offene Freigabe — nichts hängt gerade an dir.</div>
+  {% endfor %}
+</section>
+
+<section id="ch-busy">
+  <h3 style="margin:14px 0 8px">Läuft ({{ busy|length }})</h3>
+  {% for c in busy %}{{ channel_card(c) }}{% else %}
+  <div class="chan-empty">Kein Kanal hat gerade einen Job in Arbeit.</div>
+  {% endfor %}
+</section>
+
+<section id="ch-idle">
+  <h3 style="margin:14px 0 8px">Ohne offene Arbeit ({{ idle|length }})</h3>
+  {% for c in idle %}{{ channel_card(c) }}{% else %}
+  <div class="chan-empty">Jeder Kanal hat etwas zu tun.</div>
+  {% endfor %}
+</section>
+{% else %}
+<div class="card"><p class="muted" style="margin:0">
+  Noch kein Kanal angelegt — deshalb produziert das Studio nichts. Oben die Kaskade
+  starten (legt beim ersten Klick den Kidsong-Kanal an) oder unter
+  <a href="/channels/">Kanäle</a> einen YouTube-Kanal verbinden.
+</p></div>
+{% endif %}
+
+<h2>Aktueller Job</h2>
+<div class="card" id="current-card">
+  <div id="current-line" class="muted">Lade…</div>
+  <div id="current-msg" class="muted" style="margin-top:6px;font-family:ui-monospace,Menlo,monospace;font-size:12px"></div>
+  <p class="muted" style="margin:12px 0 0">
+    Render-Details (Takes, Contact Sheets, GPU) im
+    <a href="/dashboard">Produktions-Dashboard</a> &middot;
+    Take-Freigabe im <a href="/kidsong-review">Kidsong-Review</a>.
+  </p>
+</div>
+
+{# The four-column Kanäle table that used to stand here (name / type / status /
+   open ideas) is now the card list above the current job: every column it had
+   is on the cards, plus the three facts it was missing — language, what is
+   waiting on a human, and when the channel last uploaded. #}
+
+<h2>Letzte Jobs</h2>
+<div class="card">
+  <div class="table-wrap">
+  <table>
+    <tr><th style="width:50px">#</th><th>Thema</th><th style="width:110px">Typ</th><th style="width:120px">Status</th><th>Fehler</th></tr>
+    {% for j in recent_jobs %}
+    <tr>
+      <td class="muted">{{ j.id }}</td>
+      <td>{{ j.topic or '—' }}</td>
+      <td class="muted">{{ j.video_type or '—' }}</td>
+      <td><span class="badge
+        {%- if j.status in ('ready','approved','uploaded') %} ok
+        {%- elif j.status in ('failed','rejected') %} err
+        {%- elif j.status == 'queued' %} warn
+        {%- else %} acid{% endif %}">{{ j.status }}</span></td>
+      <td class="muted">{{ j.error or '' }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5" class="muted">Noch keine Jobs. Oben die Kaskade starten.</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function startCascade(btn){
+  const input = document.getElementById('c-count');
+  // cascade.clamp_count already bounds this to 1..10 server-side, so a typed
+  // 500 was never dangerous — it was just silent: the field kept saying 500
+  // while 10 jobs got queued. Clamp the field too, so what you see is what
+  // was sent.
+  let count = parseInt(input.value);
+  if (!Number.isFinite(count)) count = 3;
+  count = Math.max(1, Math.min(10, count));
+  input.value = count;
+  const label = btn.textContent;
+  btn.disabled = true; input.disabled = true; btn.textContent = '… Ideen werden erzeugt';
+  try{
+    const r = await post('/api/cascade', {count: count});
+    let msg = r.jobs_created + ' Job(s) in der Warteschlange';
+    if (r.ideas_generated) msg += ', ' + r.ideas_generated + ' neue Idee(n)';
+    if (r.fallback_used) msg += ' (LLM nicht erreichbar — Standard-Themen genutzt)';
+    if (r.skipped_reason) msg += ' — ' + r.skipped_reason;
+    // A queue on a channel that cannot upload is the failure that silently
+    // wasted a full render once; it has to be impossible to miss.
+    if (r.channel_warning) msg += ' ⚠️ ' + r.channel_warning;
+    toast(msg);
+    const out = document.getElementById('c-result');
+    out.textContent = msg; out.style.display = 'block';
+    if (r.channel_warning) out.style.color = '#ff7a7a';
+    setTimeout(()=>location.reload(), 1200);
+  }catch(e){
+    toast('Fehler: ' + e.message);
+    btn.disabled = false; input.disabled = false; btn.textContent = label;
+  }
+}
+
+async function refreshStatus(){
+  try{
+    const s = await (await fetch('/api/status')).json();
+    document.getElementById('s-queued').textContent = s.counts.queued;
+    document.getElementById('s-ready').textContent = s.counts.ready;
+    document.getElementById('s-waiting').textContent = s.counts.waiting_upload;
+    document.getElementById('s-failed').textContent = s.counts.failed;
+    document.getElementById('s-uploads').textContent = s.counts.uploads_today;
+
+    const line = document.getElementById('current-line');
+    const msg = document.getElementById('current-msg');
+    if (s.current_job){
+      const j = s.current_job;
+      line.innerHTML = '<span class="badge acid">' + j.status + '</span> ' +
+        '<strong>#' + j.id + '</strong> ' + (j.topic || '—') +
+        (j.channel ? ' <span class="muted">· ' + j.channel + '</span>' : '');
+      msg.textContent = j.last_message || '';
+    } else {
+      line.innerHTML = '<span class="badge">idle</span> Kein Job läuft gerade.';
+      msg.textContent = '';
+    }
+  }catch(e){ /* keep last known state */ }
+}
+refreshStatus();
+setInterval(refreshStatus, 4000);
+</script>
+{% endblock %}

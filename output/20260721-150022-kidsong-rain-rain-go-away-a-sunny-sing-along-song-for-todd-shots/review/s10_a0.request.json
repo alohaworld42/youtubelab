@@ -1,0 +1,42 @@
+{
+  "shot_id": "s10",
+  "take": "s10_a0",
+  "shot": {
+    "id": "s10",
+    "verse": 2,
+    "lyric_span": [
+      1,
+      1
+    ],
+    "start": 29.118,
+    "end": 31.835,
+    "shot_type": "medium",
+    "characters": [
+      "Kofi"
+    ],
+    "action": "Kofi sings along with a happy face, moving to the beat, tilting their head with a giggle",
+    "camera": "gentle pan left",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20262744,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-150022-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s10_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-150022-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\review\\s10_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers",
+  "cast_version": "1.1.0"
+}

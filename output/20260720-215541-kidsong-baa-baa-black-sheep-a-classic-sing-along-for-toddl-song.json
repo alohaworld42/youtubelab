@@ -1,0 +1,64 @@
+{
+  "title": "Baa, Baa, Black Sheep - A Classic Sing-Along for Toddlers",
+  "description": "Three bags full! Sing and clap along with this gentle farmyard favourite. #kidssong #nurseryrhyme #toddlersongs #singalong #farmsong",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler song",
+    "sing along",
+    "baa baa black sheep",
+    "farm animals",
+    "preschool",
+    "kids music",
+    "children song",
+    "counting song"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "verses": [
+    {
+      "lines": [
+        "Baa, baa, black sheep, have you any wool?",
+        "Yes, sir, yes, sir, three bags full"
+      ],
+      "scene": "A round woolly black sheep stands in a sunny green meadow beside a low stone wall, with two toddlers looking on."
+    },
+    {
+      "lines": [
+        "One for the master, one for the dame",
+        "One for the boy who knows my name"
+      ],
+      "scene": "Three fat sacks of soft wool sit on the grass; Kofi lifts one and grins as Nala counts them on her fingers."
+    },
+    {
+      "lines": [
+        "Clap your hands and sing with me",
+        "Baa, baa, black sheep, one, two, three"
+      ],
+      "scene": "The three toddlers clap their hands together in the meadow, counting to three with big smiles."
+    },
+    {
+      "lines": [
+        "Baa, baa, black sheep, soft and warm",
+        "Skipping round the little farm"
+      ],
+      "scene": "The sheep skips in a happy circle around a small red barn while the toddlers cheer it on."
+    },
+    {
+      "lines": [
+        "Clap your hands and sing with me",
+        "Baa, baa, black sheep, one, two, three"
+      ],
+      "scene": "The three toddlers clap their hands together in the meadow, counting to three with big smiles."
+    }
+  ],
+  "pd_song_id": "baa_baa_black_sheep",
+  "pd_source": {
+    "text": "Baa, Baa, Black Sheep",
+    "author": "Traditional (English)",
+    "year": 1744,
+    "publication": "Tommy Thumb's Pretty Song Book, vol. II (London, c. 1744) — the earliest surviving printing.",
+    "public_domain": "Anonymous traditional text first printed c. 1744; nearly three centuries old and long out of copyright everywhere.",
+    "adaptation": "Verse 1 is the traditional text verbatim. In verse 2 the closing line 'One for the little boy who lives down the lane' is shortened and re-rhymed to 'One for the boy who knows my name' to fit the 9-word line limit and to give the verse a clean rhyme. Verse 3 and the hook are NEWLY WRITTEN in the same meter."
+  },
+  "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm"
+}

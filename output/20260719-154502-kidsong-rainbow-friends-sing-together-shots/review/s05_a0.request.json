@@ -1,0 +1,38 @@
+{
+  "shot_id": "s05",
+  "take": "s05_a0",
+  "shot": {
+    "id": "s05",
+    "verse": 1,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 18.947,
+    "end": 22.454,
+    "shot_type": "closeup",
+    "characters": [
+      "Kofi"
+    ],
+    "action": "The kids sing along with happy faces, moving to the beat",
+    "camera": "gentle pan left",
+    "setting": "a bright cheerful playroom with colorful toys",
+    "reuse_of": null,
+    "seed": 20304980,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-154502-kidsong-rainbow-friends-sing-together-shots\\s05_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-154502-kidsong-rainbow-friends-sing-together-shots\\review\\s05_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

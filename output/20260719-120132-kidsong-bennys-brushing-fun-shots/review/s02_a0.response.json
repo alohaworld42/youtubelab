@@ -1,0 +1,8 @@
+{
+  "accept": true,
+  "score": 0.8,
+  "reasons": [
+    "correct subject (Zuri with paste on brush), clean hands, crisp render; mild costume drift vs s00/s01 (Kofi sleeve color, Zuri top graphic) — inherent to prompt-only identity, flagged for the cast-LoRA milestone"
+  ],
+  "retry_hints": {}
+}

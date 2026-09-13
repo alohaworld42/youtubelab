@@ -1,0 +1,39 @@
+{
+  "shot_id": "s14",
+  "take": "s14_a0",
+  "shot": {
+    "id": "s14",
+    "verse": 2,
+    "lyric_span": [
+      2,
+      2
+    ],
+    "start": 42.934,
+    "end": 45.604,
+    "shot_type": "medium",
+    "characters": [
+      "Kofi"
+    ],
+    "action": "The kids sing along with happy faces, moving to the beat",
+    "camera": "gentle pan left",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20262744,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s14_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\review\\s14_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers",
+  "cast_version": "1.0.0"
+}

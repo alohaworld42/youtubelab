@@ -1,0 +1,111 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.274,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.274,
+      "end": 6.362,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 6.362,
+      "end": 9.52,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 9.52,
+      "end": 12.655,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 12.655,
+      "end": 15.79,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 15.79,
+      "end": 18.901,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 18.901,
+      "end": 22.013,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 22.013,
+      "end": 25.565,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 25.565,
+      "end": 28.677,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 28.677,
+      "end": 31.811,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 31.811,
+      "end": 34.482,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 34.482,
+      "end": 37.152,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 37.152,
+      "end": 40.263,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 40.263,
+      "end": 42.934,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 42.934,
+      "end": 45.604,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 45.604,
+      "end": 48.39,
+      "src": "s15"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

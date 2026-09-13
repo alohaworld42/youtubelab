@@ -1,0 +1,39 @@
+{
+  "shot_id": "s01",
+  "take": "s01_a0",
+  "shot": {
+    "id": "s01",
+    "verse": 0,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 2.786,
+    "end": 5.503,
+    "shot_type": "medium",
+    "characters": [
+      "all"
+    ],
+    "action": "The toddlers look at the black sheep with curiosity.",
+    "camera": "slow push-in",
+    "setting": "a sunny little farmyard with a red barn, a wooden gate, round hay bales and a green pasture",
+    "reuse_of": null,
+    "seed": 20266799,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-215541-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s01_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-215541-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\review\\s01_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 3,
+  "cast_text": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

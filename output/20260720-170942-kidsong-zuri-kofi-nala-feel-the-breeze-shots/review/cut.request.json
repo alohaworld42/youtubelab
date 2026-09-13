@@ -1,0 +1,117 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.088,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.088,
+      "end": 6.084,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 6.084,
+      "end": 9.102,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 9.102,
+      "end": 13.305,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 13.305,
+      "end": 15.697,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s04",
+      "start": 15.697,
+      "end": 18.088,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 18.088,
+      "end": 21.711,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 21.711,
+      "end": 25.31,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 25.31,
+      "end": 29.513,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 29.513,
+      "end": 33.112,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 33.112,
+      "end": 37.175,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 37.175,
+      "end": 40.89,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 40.89,
+      "end": 44.513,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 44.513,
+      "end": 48.089,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 48.089,
+      "end": 52.315,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 52.315,
+      "end": 55.89,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 55.89,
+      "end": 59.837,
+      "src": "s15"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

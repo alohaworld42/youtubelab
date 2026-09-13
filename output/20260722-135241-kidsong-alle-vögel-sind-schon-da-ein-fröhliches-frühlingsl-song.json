@@ -1,0 +1,184 @@
+{
+  "title": "Alle Vögel sind schon da - Ein fröhliches Frühlingslied für Kleinkinder",
+  "description": "Der Frühling ist da und alle Vögel singen! Sing und klatsch mit uns. #kinderlied #kinderlieder #frühlingslied #mitmachlied #kleinkindlieder",
+  "tags": [
+    "kinderlied",
+    "kinderlieder",
+    "frühlingslied",
+    "mitmachlied",
+    "alle vögel sind schon da",
+    "vögel",
+    "frühling",
+    "tiere",
+    "kindergarten",
+    "kindermusik"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "verses": [
+    {
+      "lines": [
+        "Alle Vögel sind schon da",
+        "alle Vögel, alle"
+      ],
+      "scene": "A bright spring morning in a blossoming garden; small round cartoon birds hop along a branch as the three toddlers point up in delight."
+    },
+    {
+      "lines": [
+        "Welch ein Singen, Musizieren",
+        "Pfeifen, Zwitschern, Tirilieren"
+      ],
+      "scene": "The cartoon birds open their beaks to sing; little musical notes float in the sunny air while the toddlers cup their ears and smile."
+    },
+    {
+      "lines": [
+        "Sing und klatsch mit mir mit",
+        "die Vögel sind so froh"
+      ],
+      "scene": "The three toddlers clap their hands together in the blooming garden, grinning at the camera."
+    },
+    {
+      "lines": [
+        "Frühling will nun einmarschieren",
+        "kommt mit Sang und Schalle"
+      ],
+      "scene": "Cartoon flowers open across a green meadow as the toddlers spin with arms wide under falling blossom petals."
+    }
+  ],
+  "pd_song_id": "alle_voegel_sind_schon_da",
+  "pd_source": {
+    "text": "Alle Vögel sind schon da",
+    "author": "August Heinrich Hoffmann von Fallersleben",
+    "year": 1835,
+    "publication": "Text by Hoffmann von Fallersleben (published 1835).",
+    "public_domain": "Author died 1874 — life+70 expired 1944; pre-1929. Public domain worldwide.",
+    "adaptation": "First verse verbatim; a newly-written refrain 'Sing und klatsch mit mir mit' is the repeated hook. Only the words are used; ACE-Step makes a new melody."
+  },
+  "song_style": "children's nursery rhyme, bright cheerful springtime kids song, cute female child voice, simple very repetitive catchy melody, light bouncy tempo, warm and sunny, sung in German",
+  "storyboard": {
+    "verses": [
+      {
+        "verse": 0,
+        "beat_goal": "The kids notice a bright little cartoon bird for the first time and get curious.",
+        "beats": [
+          {
+            "action": "{name} spots a bright little cartoon bird and points, eyes wide",
+            "gaze": "wide-eyed at a bright little cartoon bird",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "{name} crouches down to get a better look at a bright little cartoon bird",
+            "gaze": "down at a bright little cartoon bird",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "The kids gather around a bright little cartoon bird, leaning in together",
+            "gaze": "at a bright little cartoon bird",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "a bright little cartoon bird rests quietly nearby, waiting to be found",
+            "gaze": "on a bright little cartoon bird itself",
+            "performer": "story_subject",
+            "camera_address": false
+          }
+        ]
+      },
+      {
+        "verse": 1,
+        "beat_goal": "The kids try a hands-on way to explore a bright little cartoon bird.",
+        "beats": [
+          {
+            "action": "{name} picks up a favorite toy and tries it out",
+            "gaze": "down at a favorite toy",
+            "prop": "a favorite toy",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "{name} tips a favorite toy carefully, watching what happens",
+            "gaze": "on a favorite toy",
+            "prop": "a favorite toy",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "The kids take turns with a favorite toy together",
+            "gaze": "on a favorite toy",
+            "prop": "a favorite toy",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "a bright little cartoon bird leans a little nearer, as if curious",
+            "gaze": "on a bright little cartoon bird",
+            "performer": "story_subject",
+            "camera_address": false
+          }
+        ]
+      },
+      {
+        "verse": 2,
+        "beat_goal": "The kids see a bright little cartoon bird change for the better, step by step.",
+        "beats": [
+          {
+            "action": "a bright little cartoon bird changes a little more, growing steadily",
+            "gaze": "on a bright little cartoon bird",
+            "performer": "story_subject",
+            "camera_address": false
+          },
+          {
+            "action": "{name} claps once, delighted at the change",
+            "gaze": "on a bright little cartoon bird",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "The kids lean in together to see how far it has come",
+            "gaze": "at a bright little cartoon bird",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "{name} pats the air gently, cheering on a bright little cartoon bird",
+            "gaze": "on a bright little cartoon bird",
+            "performer": "child",
+            "camera_address": false
+          }
+        ]
+      },
+      {
+        "verse": 3,
+        "beat_goal": "The kids celebrate together with a bright little cartoon bird.",
+        "beats": [
+          {
+            "action": "The kids join hands and circle a bright little cartoon bird, cheering happily",
+            "gaze": "at a bright little cartoon bird",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "{name} hops in place, beaming with pride",
+            "gaze": "at a bright little cartoon bird",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "The kids wave to a bright little cartoon bird one last time as the song ends",
+            "gaze": "at a bright little cartoon bird",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "a bright little cartoon bird seems to sway along happily in the celebration",
+            "gaze": "on a bright little cartoon bird",
+            "performer": "story_subject",
+            "camera_address": false
+          }
+        ]
+      }
+    ]
+  }
+}

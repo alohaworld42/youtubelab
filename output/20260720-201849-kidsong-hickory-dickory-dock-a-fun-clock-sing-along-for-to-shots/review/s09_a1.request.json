@@ -1,0 +1,39 @@
+{
+  "shot_id": "s09",
+  "take": "s09_a1",
+  "shot": {
+    "id": "s09",
+    "verse": 2,
+    "lyric_span": [
+      0,
+      0
+    ],
+    "start": 28.72,
+    "end": 31.835,
+    "shot_type": "medium",
+    "characters": [
+      "all"
+    ],
+    "action": "the toddlers stand in front of the clock and clap their hands as it strikes one again",
+    "camera": "gentle pan right",
+    "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+    "reuse_of": null,
+    "seed": 20266799,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s09_a1.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\review\\s09_a1.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 3,
+  "cast_text": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

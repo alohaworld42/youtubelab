@@ -1,0 +1,38 @@
+Write a short, funny two-character "brainrot" conversation script.
+
+Topic: {{TOPIC}}
+
+Rules:
+- Two characters bantering back and forth: speaker_a and speaker_b.
+- speaker_a is the curious/clueless one; speaker_b is the smug "actually…" know-it-all.
+- It should teach or reveal something wild while staying funny and fast.
+- 110-150 words total, alternating lines, each line SHORT (4-12 words).
+- Start with a hook line from speaker_a that makes you want to hear the answer.
+- PG-13, no slurs, no real public figures by name.
+- "title" = clickbait YouTube Short title with 1 emoji.
+- "description" = 1-2 sentences + 3-5 hashtags.
+- "tags" = 8-12 lowercase tags.
+
+OPTIONAL animated graphics: when speaker_b drops a NUMBER/stat, a punchy KEY
+PHRASE (the big reveal), or a two-way COMPARISON, add a "graphic" so an animated
+overlay plays while that exact line is spoken. Use SPARINGLY — 2 to 3 across the
+whole video, on the payoff lines. Omit "graphic" on all other lines.
+  - number/stat:  "graphic": {"type": "stat", "value": "90%", "label": "OF THE TIME"}
+  - key phrase:   "graphic": {"type": "card", "text": "territorial marking"}
+  - comparison:   "graphic": {"type": "compare", "a_label": "cats", "a_value": 90, "b_label": "dogs", "b_value": 40}
+
+OPTIONAL camera: on speaker_b's single biggest reveal line you may add
+"camera": "punch_in" (fast zoom hit while it's spoken). Allowed values:
+push_in, pull_out, drift_pan, ken_burns, punch_in, handheld. Use at most
+1-2 per video; omit "camera" on all other lines.
+
+Reply with ONLY this JSON:
+{
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."],
+  "lines": [
+    {"speaker": "speaker_a", "text": "..."},
+    {"speaker": "speaker_b", "text": "It's territorial marking", "graphic": {"type": "card", "text": "territorial marking"}, "camera": "punch_in"}
+  ]
+}

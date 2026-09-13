@@ -1,0 +1,126 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-190129-kidsong-skip-to-my-lou-a-skipping-and-clapping-sing-along-.staging-v2.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.367,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.367,
+      "end": 6.711,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 6.711,
+      "end": 10.054,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 10.054,
+      "end": 13.02,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 13.02,
+      "end": 15.999,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 15.999,
+      "end": 18.042,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 18.042,
+      "end": 20.712,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 20.712,
+      "end": 23.72,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 23.72,
+      "end": 26.703,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 26.703,
+      "end": 30.047,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 30.047,
+      "end": 33.39,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 33.39,
+      "end": 36.711,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 36.711,
+      "end": 39.74,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 39.74,
+      "end": 43.375,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 43.375,
+      "end": 46.695,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 46.695,
+      "end": 50.32,
+      "src": "s15"
+    },
+    {
+      "shot_id": "s16",
+      "start": 50.32,
+      "end": 52.954,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s17",
+      "start": 52.954,
+      "end": 55.588,
+      "src": "s09"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-190129-kidsong-skip-to-my-lou-a-skipping-and-clapping-sing-along--shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": false,
+    "score": 0.85,
+    "reasons": [
+      "cut boundary off-beat: shots s15/s16 boundary 50.32s is 0.98s from nearest beat",
+      "cut boundary off-beat: shots s16/s17 boundary 52.95s is 3.61s from nearest beat"
+    ],
+    "retry_hints": {
+      "recut": true,
+      "reshoot": []
+    }
+  }
+}

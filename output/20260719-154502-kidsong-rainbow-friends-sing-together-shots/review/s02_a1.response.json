@@ -1,0 +1,11 @@
+{
+  "accept": false,
+  "score": 0.6,
+  "reasons": [
+    "improvement over a0: Luna's smiling closeup beat lands in the first half; but the camera again drifts off-subject and the final frames feature secondary kids in off-model wardrobe (yellow-shirt boy where Kofi is blue-shirted, purple-dress girl where Nala wears yellow) — the shot's tail undermines the beat",
+    "lighting/set-dressing quality itself is strong (visible key/rim light, sunlit wall)"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

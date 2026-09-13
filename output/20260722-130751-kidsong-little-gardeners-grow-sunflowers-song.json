@@ -1,0 +1,136 @@
+{
+  "title": "Little Gardeners Grow Sunflowers",
+  "description": "Zuri, Kofi and Nala tend to their garden, watching their sunflowers grow high. Join the fun as they learn about growth and nature!",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "garden",
+    "sunflowers",
+    "toddler friendly"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "verses": [
+    {
+      "lines": [
+        "We're watering flowers every day",
+        "Making them grow in a happy way",
+        "Clap and sing along with me!"
+      ],
+      "scene": "Zuri, Kofi and Nala are standing around a small garden bed, watering flowers with tiny cups."
+    },
+    {
+      "lines": [
+        "Sunflowers high up in the air",
+        "Following the sun with their tall flair",
+        "Clap and sing along with me!"
+      ],
+      "scene": "The three toddlers are now holding the tall stems of sunflower plants, admiring them together."
+    },
+    {
+      "lines": [
+        "We're giving seeds a special place",
+        "Where they can grow with sunshine and space",
+        "Clap and sing along with me!"
+      ],
+      "scene": "Kofi is carefully placing a small packet of seeds into the garden bed while Zuri and Nala watch."
+    }
+  ],
+  "storyboard": {
+    "verses": [
+      {
+        "verse": 0,
+        "beat_goal": "The kids notice the gardeners grow sunflowers for the first time and get curious.",
+        "beats": [
+          {
+            "action": "{name} spots the gardeners grow sunflowers and points, eyes wide",
+            "gaze": "wide-eyed at the gardeners grow sunflowers",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "{name} crouches down to get a better look at the gardeners grow sunflowers",
+            "gaze": "down at the gardeners grow sunflowers",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "The kids gather around the gardeners grow sunflowers, leaning in together",
+            "gaze": "at the gardeners grow sunflowers",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "{name} waves the others over to come see the gardeners grow sunflowers",
+            "gaze": "toward the other kids",
+            "performer": "child",
+            "camera_address": false
+          }
+        ]
+      },
+      {
+        "verse": 1,
+        "beat_goal": "The kids try a hands-on way to explore the gardeners grow sunflowers.",
+        "beats": [
+          {
+            "action": "{name} picks up a small green watering can and tries it out",
+            "gaze": "down at a small green watering can",
+            "prop": "a small green watering can",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "{name} tips a small green watering can carefully, watching what happens",
+            "gaze": "on a small green watering can",
+            "prop": "a small green watering can",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "The kids take turns with a small green watering can together",
+            "gaze": "on a small green watering can",
+            "prop": "a small green watering can",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "{name} hands a small green watering can to a friend for a turn",
+            "gaze": "toward the friend",
+            "prop": "a small green watering can",
+            "performer": "child",
+            "camera_address": false
+          }
+        ]
+      },
+      {
+        "verse": 2,
+        "beat_goal": "The kids celebrate together with the gardeners grow sunflowers.",
+        "beats": [
+          {
+            "action": "The kids join hands and circle the gardeners grow sunflowers, cheering happily",
+            "gaze": "at the gardeners grow sunflowers",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "{name} hops in place, beaming with pride",
+            "gaze": "at the gardeners grow sunflowers",
+            "performer": "child",
+            "camera_address": false
+          },
+          {
+            "action": "The kids wave to the gardeners grow sunflowers one last time as the song ends",
+            "gaze": "at the gardeners grow sunflowers",
+            "performer": "all",
+            "camera_address": false
+          },
+          {
+            "action": "{name} takes a bow with a big cheerful grin",
+            "gaze": "toward the other kids",
+            "performer": "child",
+            "camera_address": false
+          }
+        ]
+      }
+    ]
+  }
+}

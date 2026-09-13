@@ -1,0 +1,76 @@
+{# One in-progress episode. Shared by the "Wartet auf dich" and "In Arbeit"
+   lists on production.html so the two can never drift apart. Expects `v`. #}
+<div class="card">
+  {% if v.awaiting_review %}
+  {# The stage machine only knows "has a shot list, no final cut" and calls that
+     "rendering". An episode sitting on an unanswered gate is not rendering — it
+     is waiting for a person, and saying so is the whole point of this card. #}
+  <span class="stage blocked">wartet auf Review</span>
+  <a class="gate-link" href="/kidsong-review">{{ v.awaiting_review }} offene{{ 's' if v.awaiting_review != 1 else '' }} Gate{{ 's' if v.awaiting_review != 1 else '' }} beantworten &rarr;</a>
+  {% else %}
+  <span class="stage {{ v.stage }}">{{ v.stage }}</span>
+  {% endif %}
+  {% if v.idle_seconds %}<span class="idle" title="Seit dieser Zeit hat sich keine Datei dieser Episode geändert">zuletzt aktiv vor {{ v.idle_seconds|duration }}</span>{% endif %}
+  <h3>{{ v.base }}</h3>
+  <div class="meta-line">{{ v.label }}</div>
+  {% if v.staging_video %}
+  <video controls preload="none" src="/artifact/{{ v.staging_video }}"></video>
+  {% endif %}
+  {% if v.audio %}
+  <div class="meta-line">Sung track{% if v.bpm %} &middot; {{ '%.0f'|format(v.bpm) }} BPM{% endif %}</div>
+  <audio controls preload="none" src="/artifact/{{ v.audio }}"></audio>
+  {% endif %}
+
+  {% if v.shots %}
+  {# Collapsed by default. Every episode used to render its full shot table
+     expanded, always: 32 episodes turned this page into 39,828px — 44 screens
+     of scrolling, 5,353 DOM nodes — to answer "what is running right now".
+     The summary line carries the counts you actually scan for; the table is one
+     click away. Only the most recently touched episode opens itself — keying it
+     on stage=="rendering" was useless, because "rendering" means "has a shot
+     list and no final cut", which was true of all 32. #}
+  <details class="shot-detail"{% if open_shots %} open{% endif %}>
+    <summary>{{ v.shots|length }} Shots<span class="sum-counts">{{ v.shots|selectattr('take_count')|list|length }} mit Take{% if v.shots|rejectattr('take_count')|list|length %} · {{ v.shots|rejectattr('take_count')|list|length }} offen{% endif %}</span></summary>
+  <div class="table-scroll">
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Shot</th><th>Thumb</th><th>Type</th><th>Action</th><th>Takes</th><th>Verdict</th></tr>
+    </thead>
+    <tbody>
+      {% for s in v.shots %}
+      <tr>
+        <td>{{ s.id }}{% if s.reuse_of %}<div class="reasons">reuse of {{ s.reuse_of }}</div>{% endif %}</td>
+        <td>{% if s.thumbnail %}<img class="thumb" loading="lazy" src="/artifact/{{ s.thumbnail }}"
+                                     alt="Vorschau Shot {{ s.id }}">{% endif %}</td>
+        <td>{{ s.shot_type or '' }}</td>
+        <td>{{ s.action or '' }}</td>
+        <td>{{ s.take_count }}</td>
+        <td>
+          {% if s.verdict and s.verdict.orphaned %}
+            {# The take this verdict judged is gone; the review log outlived it.
+               Showing it as a green accept told the reader every shot passed
+               when the shots dir was empty. #}
+            <span class="badge stale" title="Verdict aus review_log.json, aber kein Take mehr auf der Platte">kein Take</span>
+          {% elif s.verdict %}
+            {% if s.verdict.accept %}
+              <span class="badge accept">accept</span>
+            {% else %}
+              <span class="badge reject">reject</span>
+            {% endif %}
+            {% if s.verdict.reasons %}<div class="reasons">{{ s.verdict.reasons|join(', ') }}</div>{% endif %}
+          {% elif s.reuse_of %}
+            &mdash;
+          {% else %}
+            <span class="badge pending">pending</span>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  </div>
+  </details>
+  {% endif %}
+</div>

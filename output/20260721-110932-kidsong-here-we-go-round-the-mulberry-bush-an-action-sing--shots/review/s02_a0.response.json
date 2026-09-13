@@ -1,0 +1,14 @@
+{
+  "accept": true,
+  "score": 0.7,
+  "reasons": [
+    "blurry",
+    "auto-accepted (backlog drain: heuristic clear, no surfaced concerns)"
+  ],
+  "retry_hints": {
+    "seed_bump": false,
+    "simplify_action": false,
+    "force_i2v": false
+  },
+  "auto_accepted": true
+}

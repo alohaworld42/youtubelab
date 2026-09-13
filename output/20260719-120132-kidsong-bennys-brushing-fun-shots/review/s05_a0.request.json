@@ -1,0 +1,36 @@
+{
+  "shot_id": "s05",
+  "take": "s05_a0",
+  "shot": {
+    "id": "s05",
+    "verse": 1,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 18.715,
+    "end": 22.686,
+    "shot_type": "medium",
+    "characters": [
+      "Kofi"
+    ],
+    "action": "The kids brush their teeth with big smiles",
+    "camera": "static",
+    "setting": "Zuri is applying toothpaste to her toothbrush while Amira and Kofi watch.",
+    "reuse_of": null,
+    "seed": 20304981,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\s05_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\review\\s05_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

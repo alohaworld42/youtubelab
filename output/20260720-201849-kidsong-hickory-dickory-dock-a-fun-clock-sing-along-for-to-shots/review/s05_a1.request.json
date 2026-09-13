@@ -1,0 +1,41 @@
+{
+  "shot_id": "s05",
+  "take": "s05_a1",
+  "shot": {
+    "id": "s05",
+    "verse": 1,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 16.602,
+    "end": 19.83,
+    "shot_type": "closeup",
+    "characters": [
+      "Nala"
+    ],
+    "action": "Nala watches as the clock strikes one with her eyes wide open and a big smile on her face",
+    "camera": "slow pull-back",
+    "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+    "reuse_of": null,
+    "seed": 20263759,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s05_a1.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\review\\s05_a1.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

@@ -1,0 +1,51 @@
+Write a short vertical explainer-video script for TEENS AND ADULTS: one concept,
+explained clearly and fast, structured as Hook -> Core idea -> 2-3 steps -> memorable takeaway.
+
+Concept: {{TOPIC}}
+
+Rules:
+- ORIGINAL, SELF-CONTAINED CONCEPT ONLY. Never build the video around a branded
+  product, company, franchise, celebrity or public figure, and never around
+  breaking or dated news (it goes stale within days; explain something that
+  stays true).
+- Structure, in order:
+  1. HOOK (1 line): a surprising claim or question that earns the next 2 seconds.
+  2. CORE IDEA (1-2 lines): the one sentence that IS the concept, in plain words.
+  3. STEPS (2-3 lines): how it actually works or happens, broken into short beats.
+  4. MERKSATZ / TAKEAWAY (1 line): a short, quotable sentence the viewer repeats
+     to themselves later. This is the line the whole video was for.
+- Single narrator. Plain, precise language a smart teenager would follow with
+  no prior knowledge required.
+- 110-150 words total. Every line SHORT (4-14 words).
+- Facts must be accurate. If something is a simplification, keep it a true
+  simplification, not a wrong one.
+- "title" = curiosity-driven YouTube Short title with 1 emoji.
+- "description" = 1-2 sentences + 3-5 hashtags.
+- "tags" = 8-12 lowercase tags.
+
+OPTIONAL animated graphics: on a line that states a NUMBER/stat, a punchy KEY
+PHRASE, or a two-way COMPARISON, add a "graphic" so an animated overlay plays
+while that exact line is spoken. Use it SPARINGLY — 2 to 4 across the whole
+video, only when it adds clarity. The MERKSATZ line is a good candidate for a
+"card" graphic. Omit "graphic" on all other lines.
+  - number/stat:  "graphic": {"type": "stat", "value": "3", "label": "STEPS"}
+  - key phrase:   "graphic": {"type": "card", "text": "the takeaway line"}
+  - comparison:   "graphic": {"type": "compare", "a_label": "before", "a_value": 10, "b_label": "after", "b_value": 100}
+
+OPTIONAL camera: on the single most important line (usually the core idea or
+the takeaway) you may add "camera": "punch_in" (fast zoom hit while it's
+spoken). Allowed values: push_in, pull_out, drift_pan, ken_burns, punch_in,
+handheld. Use at most 1-2 per video; omit "camera" on all other lines.
+
+Reply with ONLY this JSON:
+{
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."],
+  "lines": [
+    {"speaker": "narrator", "text": "This is why your coffee gets cold so fast"},
+    {"speaker": "narrator", "text": "Heat always moves to where it's colder", "camera": "punch_in"},
+    {"speaker": "narrator", "text": "A big temperature gap means a fast escape"},
+    {"speaker": "narrator", "text": "Small gap, slow drip. That's the whole rule", "graphic": {"type": "card", "text": "big gap, fast drop"}}
+  ]
+}

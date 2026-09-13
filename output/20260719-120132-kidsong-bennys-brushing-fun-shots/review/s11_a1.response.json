@@ -1,0 +1,11 @@
+{
+  "accept": false,
+  "score": 0.55,
+  "reasons": [
+    "middle boy is noticeably lighter-skinned with lighter hair than the Kofi established in s00-s03 — cross-shot identity inconsistency",
+    "final beat ends on the back of a head filling the frame"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

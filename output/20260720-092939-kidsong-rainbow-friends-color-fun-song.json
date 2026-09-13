@@ -1,0 +1,50 @@
+{
+  "title": "Rainbow Friends Color Fun",
+  "description": "Join Zuri, Maya, and Kofi as they explore the colors of the rainbow! Sing along with this fun and easy nursery rhyme.",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler",
+    "sing along",
+    "colors",
+    "rainbow"
+  ],
+  "characters": "Zuri has warm brown skin, afro puffs, and a yellow sundress. Maya has caramel skin, natural curls, and a red t-shirt. Kofi has dark brown skin, straight hair, and blue overalls.",
+  "verses": [
+    {
+      "lines": [
+        "Red is a happy color",
+        "See it in the rainbow"
+      ],
+      "scene": "The friends stand together outside on a sunny day, holding a colorful umbrella."
+    },
+    {
+      "lines": [
+        "Orange is next to red",
+        "Let's stomp our feet and yell!"
+      ],
+      "scene": "The friends stomp their feet on the grass while laughing."
+    },
+    {
+      "lines": [
+        "Yellow shines like sunshine",
+        "Wave your hands high in the air!"
+      ],
+      "scene": "Zuri waves her arms up in the air while Maya and Kofi clap."
+    },
+    {
+      "lines": [
+        "Green is for trees so tall",
+        "Let's jump up high one and all!"
+      ],
+      "scene": "The friends run around in a circle, jumping and laughing."
+    },
+    {
+      "lines": [
+        "Blue is the sky above",
+        "Look up, up high, it's lovely!"
+      ],
+      "scene": "Kofi points up at the sky while Zuri and Maya spin around him."
+    }
+  ]
+}

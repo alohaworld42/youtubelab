@@ -1,0 +1,44 @@
+{
+  "shot_id": "s00",
+  "take": "s00_a0",
+  "shot": {
+    "id": "s00",
+    "verse": 0,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 0.0,
+    "end": 4.272,
+    "shot_type": "wide",
+    "characters": [
+      "Kofi",
+      "Nala",
+      "Zuri"
+    ],
+    "action": "Cozy bedroom with Zuri, Kofi, and Nala sleeping",
+    "camera": "static",
+    "setting": "a cozy bedroom with a star-patterned blanket, a shelf of plush toys, a small night lamp and a crescent-moon wall decal",
+    "reuse_of": null,
+    "seed": 20266799,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-131710-kidsong-are-you-sleeping-a-gentle-wake-up-sing-along-for-t-shots\\s00_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-131710-kidsong-are-you-sleeping-a-gentle-wake-up-sing-along-for-t-shots\\review\\s00_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 3,
+  "cast_text": "Three adorable Black toddlers: Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers; and Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

@@ -1,0 +1,381 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s04",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s05",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s05",
+    "attempt": 1,
+    "seed": 20264735,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s06",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s07",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s08",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 1,
+    "seed": 20267775,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s10",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s11",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s12",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s13",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s14",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s15",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry",
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "stage": "script",
+    "attempt": 0,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "external review timed out"
+      ],
+      "retry_hints": {
+        "regenerate": false
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.85,
+      "reasons": [
+        "cluttered frame: only 42% of shots have <= 2 characters (need >= 60%)",
+        "external review timed out"
+      ],
+      "retry_hints": {
+        "replan": true
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 1,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 programmatic verdict used"
+      ],
+      "retry_hints": {
+        "replan": false
+      }
+    }
+  },
+  {
+    "stage": "cut",
+    "attempt": 0,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 programmatic verdict used"
+      ],
+      "retry_hints": {
+        "recut": false,
+        "reshoot": []
+      }
+    }
+  }
+]

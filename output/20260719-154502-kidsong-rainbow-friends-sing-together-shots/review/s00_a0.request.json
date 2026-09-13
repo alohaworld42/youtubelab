@@ -1,0 +1,36 @@
+{
+  "shot_id": "s00",
+  "take": "s00_a0",
+  "shot": {
+    "id": "s00",
+    "verse": 0,
+    "lyric_span": [
+      0,
+      0
+    ],
+    "start": 0.0,
+    "end": 3.831,
+    "shot_type": "wide",
+    "characters": [
+      "all"
+    ],
+    "action": "Rainbow Friends standing in a colorful meadow",
+    "camera": "static",
+    "setting": "a bright cheerful playroom with colorful toys",
+    "reuse_of": null,
+    "seed": 20357390,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-154502-kidsong-rainbow-friends-sing-together-shots\\s00_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-154502-kidsong-rainbow-friends-sing-together-shots\\review\\s00_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

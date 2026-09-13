@@ -1,0 +1,451 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 2.786,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Three adorable Black toddlers stand in a sunny green meadow.",
+      "camera": "static",
+      "setting": "a sunny little farmyard with a red barn, a wooden gate, round hay bales and a green pasture",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 2.786,
+      "end": 5.526,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi",
+        "Nala"
+      ],
+      "action": "Two toddlers stand beside the sacks, looking at them.",
+      "camera": "slow push-in",
+      "setting": "a sunny little farmyard with a red barn, a wooden gate, round hay bales and a green pasture",
+      "reuse_of": null,
+      "seed": 20265785,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 5.526,
+      "end": 8.777,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "A toddler lifts one of the sacks.",
+      "camera": "gentle pan right",
+      "setting": "a sunny little farmyard with a red barn, a wooden gate, round hay bales and a green pasture",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 8.777,
+      "end": 11.54,
+      "shot_type": "medium",
+      "characters": [
+        "Nala",
+        "Zuri"
+      ],
+      "action": "Two toddlers count the sacks on their fingers.",
+      "camera": "gentle pan right",
+      "setting": "a sunny little farmyard with a red barn, a wooden gate, round hay bales and a green pasture",
+      "reuse_of": null,
+      "seed": 20264771,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 11.54,
+      "end": 14.4,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "A toddler smiles at the camera.",
+      "camera": "gentle pan right",
+      "setting": "a sunny little farmyard with a red barn, a wooden gate, round hay bales and a green pasture",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 14.4,
+      "end": 17.554,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers stand in the meadow with their arms raised.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 17.554,
+      "end": 20.317,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "A toddler claps her hands.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 20.317,
+      "end": 23.081,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi",
+        "Zuri"
+      ],
+      "action": "Two toddlers count together.",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263757,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 23.081,
+      "end": 26.308,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, looking straight at the camera",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 26.308,
+      "end": 29.14,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, bouncing gently on the spot, looking straight at the camera",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s09_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 29.14,
+      "end": 32.787,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "A toddler brushes her teeth with a toothbrush.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 32.787,
+      "end": 36.84,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "A toddler rinses her mouth with water.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 36.84,
+      "end": 40.612,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers stand in a small red barn.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 40.612,
+      "end": 43.862,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, swaying from side to side",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 43.862,
+      "end": 47.554,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, tilting their head with a giggle, bouncing gently on the spot",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s14_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 47.554,
+      "end": 51.22,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, leaning in a little closer, swaying from side to side",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s15_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 51.22,
+      "end": 53.545,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": "s10",
+      "seed": 20261730,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 53.545,
+      "end": 55.844,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": "s11",
+      "seed": 20262744,
+      "status": "planned"
+    },
+    {
+      "id": "s18",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 55.844,
+      "end": 58.375,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": "s10",
+      "seed": 20261730,
+      "status": "planned"
+    }
+  ]
+}

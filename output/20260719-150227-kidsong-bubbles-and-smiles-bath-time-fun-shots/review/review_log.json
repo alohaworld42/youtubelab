@@ -1,0 +1,171 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20357390,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s00",
+    "attempt": 1,
+    "seed": 20358367,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s00",
+    "attempt": 2,
+    "seed": 20359344,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20284996,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s01",
+    "attempt": 1,
+    "seed": 20285973,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s01",
+    "attempt": 2,
+    "seed": 20286950,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20288414,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 1,
+    "seed": 20289391,
+    "verdict": {
+      "accept": false,
+      "score": 0.3500000000000001,
+      "reasons": [
+        "blurry",
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 2,
+    "seed": 20290368,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20349695,
+    "verdict": {
+      "accept": true,
+      "score": 0.85,
+      "reasons": [
+        "strong wide-format take: three-kid cast matches wardrobe specs, hands correctly toned (checked closely per the new rubric point, no gray/desaturated skin), dressed sink-washing action, richer set-dressing (mirrors, wall sconces) than earlier portrait renders; minor: Jaxson's hair renders as short curls, not the specified messy dreadlocks"
+      ],
+      "retry_hints": {}
+    }
+  }
+]

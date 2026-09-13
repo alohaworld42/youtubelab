@@ -1,0 +1,114 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20357390,
+    "verdict": {
+      "accept": true,
+      "score": 0.88,
+      "reasons": [
+        "clean wide establishing shot: three kids match cast specs (Luna pink/puffs, Kofi blue shirt, Nala yellow/orange), hands correctly toned vs faces, richer playroom set-dressing (toy blocks, framed pictures, stone stepping blocks, little critter toys appearing) than earlier portrait renders \u2014 reference-analysis set-dressing changes visibly working"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20340777,
+    "verdict": {
+      "accept": true,
+      "score": 0.9,
+      "reasons": [
+        "action matches spec exactly (Luna holds up the red ball), clean push-in camera move as planned, hand correctly toned holding the object with no duplication/merging, cast/wardrobe consistent with s00, playroom set-dressing carries through"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20340777,
+    "verdict": {
+      "accept": false,
+      "score": 0.5,
+      "reasons": [
+        "action fidelity: shot spec is a closeup on Luna smiling at camera, but the camera's push-in payoff lands on one of the boys instead \u2014 Luna is only glimpsed in the background of the final two frames, so the specified subject never delivers the planned beat"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 1,
+    "seed": 20341754,
+    "verdict": {
+      "accept": false,
+      "score": 0.6,
+      "reasons": [
+        "improvement over a0: Luna's smiling closeup beat lands in the first half; but the camera again drifts off-subject and the final frames feature secondary kids in off-model wardrobe (yellow-shirt boy where Kofi is blue-shirted, purple-dress girl where Nala wears yellow) \u2014 the shot's tail undermines the beat",
+        "lighting/set-dressing quality itself is strong (visible key/rim light, sunlit wall)"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 2,
+    "seed": 20342731,
+    "verdict": {
+      "accept": true,
+      "score": 0.72,
+      "reasons": [
+        "best of three takes: frame 1 delivers exactly the specified beat (Luna closeup smiling into camera, on-model); later frames drift to secondary kids again incl. an off-cast girl at the frame edge \u2014 but the editor subclips from t=0, so the strong opening beat is what lands in the cut",
+        "systematic pattern noted for the plausibility rubric: 'closeup + smiles at camera' prompts with push-in consistently drift off-subject in the back half"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20357390,
+    "verdict": {
+      "accept": true,
+      "score": 0.85,
+      "reasons": [
+        "spec is medium/all 'sing together': all three cast kids on-model (Luna pink, Kofi blue, Nala yellow), singing mouths open by the final beats, hands/limbs clean and correctly toned, warm directional lighting with visible key/shadow, push-in ends on Kofi mid-song \u2014 a natural musical beat; minor: Nala partially crops out in the final frame"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s04",
+    "attempt": 0,
+    "seed": 20340777,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s05",
+    "attempt": 0,
+    "seed": 20304980,
+    "verdict": {
+      "accept": true,
+      "score": 0.75,
+      "reasons": [
+        "spec closeup [Kofi] singing: on-model Black boys singing with warm lighting and dressed playroom set; clean hands/faces; wart: two similar-looking boys instead of solo Kofi and neither wears his blue shirt (green/blue tees) \u2014 mid-video beat, usable"
+      ],
+      "retry_hints": {}
+    }
+  }
+]

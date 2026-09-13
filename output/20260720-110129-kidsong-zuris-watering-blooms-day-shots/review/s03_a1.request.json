@@ -1,0 +1,40 @@
+{
+  "shot_id": "s03",
+  "take": "s03_a1",
+  "shot": {
+    "id": "s03",
+    "verse": 0,
+    "lyric_span": [
+      2,
+      2
+    ],
+    "start": 9.52,
+    "end": 12.655,
+    "shot_type": "medium",
+    "characters": [
+      "Kofi",
+      "Zuri"
+    ],
+    "action": "Kofi watches Zuri as she waters the flowers with a watering can",
+    "camera": "gentle pan left",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20263757,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s03_a1.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\review\\s03_a1.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 2,
+  "cast_text": "Two adorable Black toddlers: Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.0.0"
+}

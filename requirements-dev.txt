@@ -1,0 +1,12 @@
+# Dev / test dependencies.
+#   pip install -r requirements-dev.txt
+#   python -m pytest
+#
+# The runtime deps are included on purpose: the suite exercises the real
+# modules (director, cut_qc, audio_clean, review, the Flask app), so
+# numpy/cv2/librosa/moviepy/edge-tts/flask are all imported at COLLECTION
+# time. Installing pytest alone gets you 23 collection errors before a single
+# test runs, which is how this file used to read.
+-r requirements.txt
+
+pytest>=8.0

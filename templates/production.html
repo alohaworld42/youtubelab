@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% set active = 'production' %}
+{% block title %}Produktion — Brainrot Studio{% endblock %}
+
+{% block head %}
+<style>
+  .card h3{margin:0 0 4px;font-size:16px}
+  .card .stage{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;
+    padding:3px 9px;border-radius:20px;background:var(--surface2);color:var(--violet-bright);margin-bottom:10px}
+  .card .stage.done{background:rgba(74,222,128,.15);color:var(--ok)}
+  .card .meta-line{color:var(--muted);font-size:12px;margin:2px 0}
+  .card .idle{color:var(--muted);font-size:11px;margin-left:8px}
+  .card .stage.blocked{background:rgba(250,204,21,.15);color:var(--warn)}
+  .card .gate-link{font-size:12px;margin-left:8px;color:var(--acid);text-decoration:none;font-weight:700}
+  .card .gate-link:hover{text-decoration:underline}
+
+  .done-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+  .done-card video{width:100%;border-radius:10px;background:#000;display:block;margin-bottom:8px}
+  .done-card .actions a{display:inline-block;text-decoration:none;font-weight:700;font-size:12px;
+    padding:7px 12px;border-radius:8px;margin-right:6px;background:var(--acid);color:#111}
+
+  audio{width:100%;margin-top:8px}
+
+  .thumb{width:64px;border-radius:6px;display:block;background:#000}
+  .badge.accept{background:rgba(74,222,128,.15);color:var(--ok)}
+  .badge.reject{background:rgba(255,122,122,.15);color:var(--err)}
+  .badge.pending{background:var(--surface2);color:var(--muted)}
+  .badge.stale{background:rgba(250,204,21,.13);color:var(--warn);white-space:nowrap}
+  details.shot-detail{margin-top:10px}
+  details.shot-detail>summary{cursor:pointer;color:var(--muted);font-size:12px;padding:7px 10px;
+    border:1px solid var(--line);border-radius:8px;background:var(--surface2);list-style:none;
+    display:flex;gap:10px;align-items:center;user-select:none}
+  details.shot-detail>summary::-webkit-details-marker{display:none}
+  details.shot-detail>summary::before{content:"\25b8"}
+  details[open].shot-detail>summary::before{content:"\25be"}
+  details.shot-detail>summary:hover{color:var(--text);border-color:var(--muted)}
+  details.shot-detail .sum-counts{margin-left:auto}
+  .reasons{color:var(--muted);font-size:11px}
+
+  .panels{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.panels{grid-template-columns:1fr}}
+  .gpu-row{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:8px}
+  .gpu-stat{font-size:13px}
+  .gpu-stat b{display:block;font-size:20px;color:var(--acid)}
+  .log{background:#08080b;border:1px solid var(--line);border-radius:10px;padding:12px 14px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#b9f5c9;
+    white-space:pre-wrap;max-height:220px;overflow:auto}
+  .log .empty{color:var(--muted);font-style:italic}
+  .comfy-link{color:var(--violet-bright);font-size:13px;text-decoration:none}
+  .empty-state{color:var(--muted);font-size:14px;padding:20px 0}
+  .stamp{color:var(--muted);font-size:11px;text-align:right;margin-top:24px}
+  .head-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  .refresh-state{color:var(--muted);font-size:12px;margin-left:auto}
+  .refresh-state.paused{color:var(--warn)}
+  .table-scroll{overflow-x:auto}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="head-row">
+  <h1 style="margin:0">Produktion</h1>
+  {% if pending_count %}
+  <a class="btn ghost" href="/kidsong-review">⚖️ Take-Review <span class="badge err">{{ pending_count }}</span></a>
+  {% endif %}
+  <span class="refresh-state" id="refresh-state">Auto-Refresh aktiv</span>
+</div>
+<p class="muted" style="margin:0 0 22px">
+  Liest direkt den <code>output/</code>-Stand — Renders laufen als eigenständige Prozesse.
+  Aktualisiert sich alle 10s, pausiert solange ein Video läuft.
+</p>
+
+<h2>Fertig ({{ data.done|length }})</h2>
+{% if data.done %}
+<div class="done-grid">
+  {% for v in data.done %}
+  <div class="card done-card">
+    <video controls preload="none" src="/artifact/{{ v.final_video }}"></video>
+    <h3>{{ v.base }}</h3>
+    <div class="meta-line">{{ v.final_size }} &middot; {{ v.final_mtime_str }}{% if v.bpm %} &middot; {{ '%.0f'|format(v.bpm) }} BPM{% endif %}</div>
+    <div class="actions">
+      <a href="/artifact/{{ v.final_video }}" download>&#11015; Download</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="empty-state">Noch nichts fertig.</div>
+{% endif %}
+
+{% set blocked = data.in_progress|selectattr('awaiting_review')|list %}
+{% set running = data.in_progress|rejectattr('awaiting_review')|list %}
+
+{# The episodes that are stuck ON THE OPERATOR, first and named as such. They
+   used to sit mixed into "In Arbeit" wearing the same RENDERING badge as the
+   ones with nothing to do, so the only work on the page that a human could
+   actually clear was the one thing the page did not point at. #}
+{% if blocked %}
+<h2>Wartet auf dich ({{ blocked|length }})</h2>
+<p class="muted" style="margin:-6px 0 12px">
+  Diese Episoden hängen an einem offenen Review-Gate — ein Klick pro Take, dann läuft es weiter.
+  <a class="btn ghost" style="margin-left:8px" href="/kidsong-review">⚖️ Zur Take-Review</a>
+</p>
+{% for v in blocked %}
+{# A blocked episode's next step is the gate link, not its shot table, so none
+   of these auto-expand. `loop` is not exported into an include — pass it. #}
+{% set open_shots = False %}
+{% include "_production_card.html" %}
+{% endfor %}
+{% endif %}
+
+<h2>In Arbeit ({{ running|length }})</h2>
+{% if running %}
+{% for v in running %}
+{% set open_shots = loop.first %}
+{% include "_production_card.html" %}
+{% endfor %}
+{% else %}
+<div class="empty-state">Nichts in Arbeit.</div>
+{% endif %}
+
+<h2>System</h2>
+<div class="panels">
+  <div class="card">
+    <h3>GPU</h3>
+    {% if data.gpu %}
+    <div class="gpu-row">
+      <div class="gpu-stat"><b>{{ data.gpu.memory_used }}</b>/ {{ data.gpu.memory_total }}</div>
+      <div class="gpu-stat"><b>{{ data.gpu.utilization }}</b>utilization</div>
+    </div>
+    {% else %}
+    <p class="meta-line">nvidia-smi nicht verfügbar.</p>
+    {% endif %}
+    <a class="comfy-link" href="http://127.0.0.1:8188" target="_blank" rel="noopener">ComfyUI queue &rarr; http://127.0.0.1:8188</a>
+    {% if data.batch_status %}<div class="meta-line" style="margin-top:10px">Batch: {{ data.batch_status }}</div>{% endif %}
+  </div>
+  <div class="card">
+    <h3>director_run.log</h3>
+    <div class="log">{% if data.director_log %}{% for line in data.director_log %}{{ line }}
+{% endfor %}{% else %}<span class="empty">noch kein Log</span>{% endif %}</div>
+  </div>
+</div>
+<div class="panels">
+  <div class="card">
+    <h3>batch_run.log</h3>
+    <div class="log">{% if data.batch_log %}{% for line in data.batch_log %}{{ line }}
+{% endfor %}{% else %}<span class="empty">noch kein Log</span>{% endif %}</div>
+  </div>
+</div>
+
+<div class="stamp">generiert {{ data.generated_at }}</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Same reason as the review queue: a hard <meta refresh> every 10s stopped any
+// take the operator was watching and threw away their scroll position. Hold the
+// reload while a video/audio is playing or the tab is in the background.
+const REFRESH_MS = 10000;
+const stateEl = document.getElementById('refresh-state');
+setInterval(() => {
+  const playing = [...document.querySelectorAll('video, audio')].some(m => !m.paused && !m.ended);
+  if (playing || document.hidden){
+    stateEl.textContent = playing ? 'Auto-Refresh pausiert (Wiedergabe läuft)' : 'Auto-Refresh pausiert (Tab inaktiv)';
+    stateEl.classList.add('paused');
+    return;
+  }
+  stateEl.textContent = 'Auto-Refresh aktiv';
+  stateEl.classList.remove('paused');
+  sessionStorage.setItem('prodScroll', String(window.scrollY));
+  location.reload();
+}, REFRESH_MS);
+
+// Restored twice — see the note in review_queue.html: the lazy thumbnails carry
+// no intrinsic size, so at script time the document is still too short for the
+// saved offset to exist and the scroll silently clamps to the bottom.
+const savedScroll = sessionStorage.getItem('prodScroll');
+if (savedScroll){
+  const y = parseInt(savedScroll, 10) || 0;
+  sessionStorage.removeItem('prodScroll');
+  window.scrollTo(0, y);
+  window.addEventListener('load', () => window.scrollTo(0, y), {once: true});
+}
+</script>
+{% endblock %}

@@ -1,0 +1,38 @@
+{
+  "title": "Sunflower Family Tree",
+  "description": "Join Zuri, Kofi, and Nala as they learn about sunflowers! Sing along with this fun nursery rhyme!",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "sunflowers",
+    "toddler friendly",
+    "sing along"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "verses": [
+    {
+      "lines": [
+        "Watering the sunflowers every day",
+        "Helps them grow strong and sway",
+        "We plant seeds with love and care"
+      ],
+      "scene": "The kids are watering flowers together at a table."
+    },
+    {
+      "lines": [
+        "Our sunflower family tree grows high",
+        "Everyone helps to water it by and by",
+        "Clap, clap, clap your hands so free"
+      ],
+      "scene": "The kids stomp their feet on a grassy lawn, kicking up little leaves as they giggle."
+    },
+    {
+      "lines": [
+        "We watch the sunflowers tall and bright",
+        "They follow the sunshine with delight",
+        "Clap, clap, clap your hands so free"
+      ],
+      "scene": "The kids are standing around a sunflower plant."
+    }
+  ]
+}

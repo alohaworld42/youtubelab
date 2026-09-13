@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% set active = 'review' %}
+{% block content %}
+<h1 id="review-heading">Review — {{ videos|length }} Video{{ 's' if videos|length != 1 }} warten</h1>
+
+{% for v in videos %}
+<div class="card" id="video-{{ v.id }}">
+  <div class="row" style="align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <video src="/video/{{ v.filename }}" controls preload="metadata"
+             style="width:220px;max-width:100%;border-radius:12px;background:#000"></video>
+      {% if v.thumb_filename %}
+      <div>
+        <div class="muted" style="font-size:11px;margin-bottom:4px">Thumbnail (geht mit hoch):</div>
+        <img src="/video/{{ v.thumb_filename }}" alt="Thumbnail"
+             style="width:220px;border-radius:10px;border:1px solid var(--line)">
+      </div>
+      {% endif %}
+    </div>
+    <div style="flex:1;min-width:260px">
+      <p class="muted" style="margin:0 0 10px">
+        {{ v.channel_name or 'Kein Kanal (nur lokal)' }} · {{ '%.0f'|format(v.duration or 0) }}s · Job #{{ v.job_id }}
+      </p>
+      <label class="field" style="margin-top:0">Titel</label>
+      <input type="text" id="title-{{ v.id }}" value="{{ v.title }}">
+      <label class="field">Beschreibung</label>
+      <textarea id="desc-{{ v.id }}" rows="3">{{ v.description }}</textarea>
+      <label class="field">Tags (kommagetrennt)</label>
+      <input type="text" id="tags-{{ v.id }}" value="{{ v.tags|join(', ') }}">
+      <div class="row" style="margin-top:16px">
+        {% if v.channel_name %}
+        <button class="approve" onclick="approve({{ v.id }}, this)">✓ Freigeben &amp; hochladen</button>
+        {% else %}
+        <span class="muted">Kein Kanal zugeordnet — kein Upload möglich.</span>
+        {% endif %}
+        <button class="ghost" onclick="reject({{ v.id }}, true, this)">↻ Verwerfen &amp; neu generieren</button>
+        <button class="danger" onclick="reject({{ v.id }}, false, this)">✕ Verwerfen</button>
+        <a class="btn ghost" href="/video/{{ v.filename }}" download>⬇ Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<div class="card" id="review-empty" {% if videos %}style="display:none"{% endif %}>
+  <p class="muted" style="margin:0">Nichts zu reviewen. Fertige Videos tauchen hier auf, bevor irgendwas hochgeladen wird.</p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// An upload is irreversible and a regenerate costs minutes of GPU, so both are
+// one-shot: withButton() blocks the second click that used to fire a duplicate
+// request and come back 409 right after the first one had succeeded.
+async function approve(id, btn){
+  await withButton(btn, '… lädt hoch', async () => {
+    await post(`/api/videos/${id}/approve`, {
+      title: document.getElementById('title-'+id).value,
+      description: document.getElementById('desc-'+id).value,
+      tags: document.getElementById('tags-'+id).value.split(',').map(t=>t.trim()).filter(Boolean),
+    });
+    toast('Freigegeben — Upload startet im Hintergrund.');
+    removeCard(id);
+  });
+}
+
+async function reject(id, regenerate, btn){
+  // "Verwerfen & neu generieren" used to be the ONE button here with no
+  // confirmation — the cheap discard asked, the expensive full re-render did
+  // not. Both ask now, and the costly one says what it costs.
+  const question = regenerate
+    ? 'Video verwerfen und komplett neu rendern? Das belegt die GPU für mehrere Minuten.'
+    : 'Video wirklich verwerfen?';
+  if (!confirm(question)) return;
+  await withButton(btn, '…', async () => {
+    await post(`/api/videos/${id}/reject`, {regenerate});
+    toast(regenerate ? 'Verworfen — neuer Job eingereiht.' : 'Verworfen.');
+    removeCard(id);
+  });
+}
+
+function removeCard(id){
+  const card = document.getElementById('video-'+id);
+  if (card) card.remove();
+  // The heading counts what is on the page; leaving it stale made a cleared
+  // queue still claim "3 Videos warten".
+  const left = document.querySelectorAll('.card[id^=video-]').length;
+  const h = document.getElementById('review-heading');
+  if (h) h.textContent = left
+    ? `Review — ${left} Video${left === 1 ? '' : 's'} warten`
+    : 'Review — nichts offen';
+  if (!left){
+    const empty = document.getElementById('review-empty');
+    if (empty) empty.style.display = 'block';
+  }
+}
+</script>
+{% endblock %}

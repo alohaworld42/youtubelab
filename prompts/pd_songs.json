@@ -1,0 +1,429 @@
+{
+  "note": [
+    "Curated PUBLIC-DOMAIN nursery-rhyme lyrics for pipeline.kidsong.lyrics (config kidsong.lyrics_source = 'public_domain').",
+    "ONLY THE WORDS come from the public domain. The MELODY is generated fresh by ACE-Step for every episode from the",
+    "'song_style' caption below — no existing recording, arrangement or tune is used, sampled or imitated. That is what",
+    "keeps these episodes clear of both copyright and YouTube Content ID: a public-domain text set to a newly generated",
+    "melody contains no protected element at all. Note that many familiar TUNES are also public domain but their modern",
+    "RECORDINGS and ARRANGEMENTS are not, which is exactly why we never reuse a tune.",
+    "",
+    "Inclusion rule: every entry must be traceable to a specific pre-1929 publication (public domain in the US as an",
+    "expired term, and long past life+70 for the named authors). Anything that could not be dated confidently was left",
+    "out on purpose — see 'excluded' below.",
+    "",
+    "'adaptation' on each entry records exactly where the text deviates from its source. Deviations are kept minimal and",
+    "exist only to fit the channel format (3-5 verses of 2-4 short lines, a repeated hook, <= 9 words per line) and the",
+    "content rules (toddler-safe, the channel's own fixed cast)."
+  ],
+  "excluded": {
+    "The Wheels on the Bus": "Verna Hills, 1939 — too recent, still in copyright in the US.",
+    "If You're Happy and You Know It": "20th-century origin, disputed and undatable. Cannot be shown to be public domain.",
+    "Head, Shoulders, Knees and Toes": "The lyric is 20th-century and undated (the tune is older). Excluded.",
+    "The Itsy Bitsy Spider": "The standard children's text cannot be sourced to a pre-1929 printing; the 1910 'Spider Song' printing has different, unusable words.",
+    "A-Tisket, A-Tasket": "The traditional text is old, but the familiar version is Ella Fitzgerald's 1938 copyrighted adaptation — too easy to drift into.",
+    "Old MacDonald Had a Farm": "The 1917 'Tommy's Tunes' (F. T. Nettleingham) text IS public domain and would have been legal to use. Excluded on QUALITY grounds instead: its 'Ee-i-ee-i-oh' vocable refrain has no rhyme scheme and no stable syllable count, so it cannot pass the meter/rhyme gate in script_qc without weakening that gate for every other song.",
+    "Humpty Dumpty / Jack and Jill / Little Miss Muffet / Rock-a-bye Baby": "Public domain, but excluded on content: a fall, a head injury, a frightening spider, and a falling cradle are not toddler-safe for this channel."
+  },
+  "songs": [
+    {
+      "id": "twinkle_twinkle_little_star",
+      "title": "Twinkle, Twinkle, Little Star - A Gentle Sing-Along for Toddlers",
+      "description": "A calm, cozy sing-along about the stars in the night sky. Clap and count along with us! #kidssong #nurseryrhyme #toddlersongs #singalong #bedtimesong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "twinkle twinkle", "stars", "bedtime song", "preschool", "kids music", "lullaby"],
+      "song_style": "children's nursery rhyme, gentle calm lullaby, cute female child voice, soft simple melody, twinkly bells, slow bouncy tempo, warm and cozy",
+      "topics": ["stars", "night sky", "bedtime", "looking at the stars", "goodnight", "the moon and stars", "counting stars"],
+      "subject_description": "a small glowing golden five-pointed star with a gentle smiling face",
+      "canonical_setting": "a cozy backyard at night with a deep blue starry sky and a soft picnic blanket on the grass",
+      "source": {
+        "text": "The Star",
+        "author": "Jane Taylor",
+        "year": 1806,
+        "publication": "Rhymes for the Nursery, by Ann and Jane Taylor (London, 1806)",
+        "public_domain": "Published 1806; Jane Taylor died 1824. Expired copyright in the US (pre-1929) and worldwide (life+70 ended 1894).",
+        "adaptation": "Verses 1, 2 and 4 of Taylor's poem, verbatim. Taylor's verse 3 ('When the blazing sun is gone...') is dropped for length. The two-line hook ('Clap and sing along with me / Twinkle, twinkle, one, two, three') is NEWLY WRITTEN for this channel, not Taylor's."
+      },
+      "verses": [
+        {
+          "lines": ["Twinkle, twinkle, little star", "How I wonder what you are"],
+          "scene_hint": "The three toddlers sit on a soft blanket in a garden at dusk, looking up at a sky full of big friendly cartoon stars."
+        },
+        {
+          "lines": ["Up above the world so high", "Like a diamond in the sky"],
+          "scene_hint": "The toddlers point up at one enormous glowing star, their faces lit warm by its light."
+        },
+        {
+          "lines": ["Clap and sing along with me", "Twinkle, twinkle, one, two, three"],
+          "scene_hint": "The toddlers clap their hands together and count on their fingers under the starry sky, grinning at the camera."
+        },
+        {
+          "lines": ["Then the traveller in the dark", "Thanks you for your tiny spark"],
+          "scene_hint": "A tiny star-shaped lantern glows on the grass beside the toddlers as they cup their hands around its light."
+        },
+        {
+          "lines": ["Clap and sing along with me", "Twinkle, twinkle, one, two, three"],
+          "scene_hint": "The toddlers clap their hands together and count on their fingers under the starry sky, grinning at the camera."
+        }
+      ]
+    },
+    {
+      "id": "mary_had_a_little_lamb",
+      "title": "Zuri Had a Little Lamb - A Happy Sing-Along Song for Toddlers",
+      "description": "The little lamb follows along everywhere! Clap your hands and sing this classic with us. #kidssong #nurseryrhyme #toddlersongs #singalong #animalsong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "little lamb", "farm animals", "preschool", "kids music", "children song", "animal song"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm",
+      "topics": ["lambs", "farm animals", "pets", "going to school", "a little lamb", "animals that follow you", "kindness to animals"],
+      "subject_description": "a small fluffy white lamb, knee-high to the children, with a soft white fleece and gentle dark eyes",
+      "canonical_setting": "a sunny country lane beside a small schoolhouse, with green fields and a soft dirt path",
+      "source": {
+        "text": "Mary's Lamb",
+        "author": "Sarah Josepha Hale",
+        "year": 1830,
+        "publication": "Poems for Our Children (Boston: Marsh, Capen & Lyon, 1830)",
+        "public_domain": "Published 1830; Hale died 1879. Expired copyright in the US (pre-1929) and worldwide (life+70 ended 1949).",
+        "adaptation": "Hale's stanzas 1-3, with two changes: the name 'Mary' is replaced with 'Zuri' throughout so the song stars this channel's fixed cast rather than introducing an outside character, and stanza 1's 'And everywhere that Mary went' keeps Hale's wording with only that substitution. The two-line hook is NEWLY WRITTEN. Hale's stanzas 4-6 (the teacher's moral) are dropped for length."
+      },
+      "verses": [
+        {
+          "lines": ["Zuri had a little lamb", "Its fleece was white as snow", "Everywhere that Zuri went", "The lamb was sure to go"],
+          "scene_hint": "Zuri walks along a sunny country path with a fluffy white cartoon lamb trotting close behind her."
+        },
+        {
+          "lines": ["He followed her to school one day", "Which was against the rule", "It made the children laugh and play", "To see a lamb at school"],
+          "scene_hint": "The lamb peeks around the doorway of a bright little schoolroom while Kofi and Nala laugh and point."
+        },
+        {
+          "lines": ["Little lamb, come sing with me", "Clap your hands and count to three"],
+          "scene_hint": "The three toddlers kneel in the grass around the lamb, clapping their hands and counting on their fingers."
+        },
+        {
+          "lines": ["And so the teacher turned him out", "But still he lingered near", "He waited on the step outside", "Till Zuri did appear"],
+          "scene_hint": "The lamb waits patiently on the grass outside a low window, tail wagging, while sunshine falls across the yard."
+        },
+        {
+          "lines": ["Little lamb, come sing with me", "Clap your hands and count to three"],
+          "scene_hint": "The three toddlers kneel in the grass around the lamb, clapping their hands and counting on their fingers."
+        }
+      ]
+    },
+    {
+      "id": "baa_baa_black_sheep",
+      "title": "Baa, Baa, Black Sheep - A Classic Sing-Along for Toddlers",
+      "description": "Three bags full! Sing and clap along with this gentle farmyard favourite. #kidssong #nurseryrhyme #toddlersongs #singalong #farmsong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "baa baa black sheep", "farm animals", "preschool", "kids music", "children song", "counting song"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm",
+      "topics": ["sheep", "wool", "farm animals", "counting", "sharing", "the farm", "woolly jumpers"],
+      "subject_description": "a small round sheep covered head to tail in fluffy jet-black wool, knee-high to the children, its whole fleece deep black, with a soft black face and stubby black legs",
+      "canonical_setting": "a small sunny farmyard with a red barn, hay bales and a low wooden fence",
+      "source": {
+        "text": "Baa, Baa, Black Sheep",
+        "author": "Traditional (English)",
+        "year": 1744,
+        "publication": "Tommy Thumb's Pretty Song Book, vol. II (London, c. 1744) — the earliest surviving printing.",
+        "public_domain": "Anonymous traditional text first printed c. 1744; nearly three centuries old and long out of copyright everywhere.",
+        "adaptation": "Verse 1 is the traditional text verbatim. In verse 2 the closing line 'One for the little boy who lives down the lane' is shortened and re-rhymed to 'One for the boy who knows my name' to fit the 9-word line limit and to give the verse a clean rhyme. Verse 3 and the hook are NEWLY WRITTEN in the same meter."
+      },
+      "verses": [
+        {
+          "lines": ["Baa, baa, black sheep, have you any wool?", "Yes, sir, yes, sir, three bags full"],
+          "scene_hint": "A round woolly black sheep stands in a sunny green meadow beside a low stone wall, with two toddlers looking on."
+        },
+        {
+          "lines": ["One for the master, one for the dame", "One for the boy who knows my name"],
+          "scene_hint": "Three fat sacks of soft wool sit on the grass; Kofi lifts one and grins as Nala counts them on her fingers."
+        },
+        {
+          "lines": ["Clap your hands and sing with me", "Baa, baa, black sheep, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together in the meadow, counting to three with big smiles."
+        },
+        {
+          "lines": ["Baa, baa, black sheep, soft and warm", "Skipping round the little farm"],
+          "scene_hint": "The sheep skips in a happy circle around a small red barn while the toddlers cheer it on."
+        },
+        {
+          "lines": ["Clap your hands and sing with me", "Baa, baa, black sheep, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together in the meadow, counting to three with big smiles."
+        }
+      ]
+    },
+    {
+      "id": "row_row_row_your_boat",
+      "title": "Row, Row, Row Your Boat - A Sing-Along Song for Toddlers",
+      "description": "Row down the gentle stream and wave to the ducks! Sing along with us. #kidssong #nurseryrhyme #toddlersongs #singalong #boatsong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "row your boat", "water song", "preschool", "kids music", "children song", "action song"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle rocking tempo, playful, bright, warm",
+      "topics": ["boats", "rowing", "the river", "water", "streams", "taking turns", "a gentle boat ride"],
+      "subject_description": "a small red-and-white wooden rowboat, big enough for the three children to ride in together",
+      "canonical_setting": "a sunny grassy riverbank with a calm shallow stream, green reeds and lily pads",
+      "source": {
+        "text": "Row, Row, Row Your Boat",
+        "author": "Traditional (American)",
+        "year": 1852,
+        "publication": "The Franklin Square Song Collection and earlier American songsters; the words appear in print from 1852, the familiar round from 1881.",
+        "public_domain": "Anonymous traditional text printed from 1852 onward — expired copyright in the US (pre-1929) and worldwide.",
+        "adaptation": "Verse 1 is the traditional single stanza verbatim. The song only ever had one stanza, so verses 2 and 3 and the hook are NEWLY WRITTEN in exactly the same meter and rhyme scheme, keeping the 'Merrily, merrily' refrain line from the source."
+      },
+      "verses": [
+        {
+          "lines": ["Row, row, row your boat", "Gently down the stream", "Merrily, merrily, merrily, merrily", "Life is but a dream"],
+          "scene_hint": "The three toddlers sit in a little wooden rowboat on a calm sunny stream lined with tall green reeds."
+        },
+        {
+          "lines": ["Row and clap along with me", "Row your boat, one, two, three"],
+          "scene_hint": "The toddlers pull their oars together in time, clapping once between strokes, laughing on the bright water."
+        },
+        {
+          "lines": ["Row, row, row your boat", "Gently to the shore", "Merrily, merrily, merrily, merrily", "Wave and clap some more"],
+          "scene_hint": "The rowboat drifts up to a pebbly little shore where cartoon ducks paddle alongside, and the toddlers wave."
+        },
+        {
+          "lines": ["Row and clap along with me", "Row your boat, one, two, three"],
+          "scene_hint": "The toddlers pull their oars together in time, clapping once between strokes, laughing on the bright water."
+        },
+        {
+          "lines": ["Row, row, row your boat", "Sailing in the sun", "Merrily, merrily, merrily, merrily", "Rowing is such fun"],
+          "scene_hint": "Warm golden sunshine sparkles on the stream as the little boat glides along under a big blue sky."
+        }
+      ]
+    },
+    {
+      "id": "hickory_dickory_dock",
+      "title": "Hickory Dickory Dock - A Fun Clock Sing-Along for Toddlers",
+      "description": "The little mouse runs up the clock! Tiptoe and clap along with us. #kidssong #nurseryrhyme #toddlersongs #singalong #countingsong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "hickory dickory dock", "clocks", "counting song", "preschool", "kids music", "children song"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, ticking clock rhythm, playful, bright, warm",
+      "topics": ["clocks", "telling the time", "a little mouse", "counting to one", "tick tock", "morning routine"],
+      "subject_description": "a tiny round grey mouse, no bigger than a child's hand, with a long thin tail",
+      "canonical_setting": "a sunny playroom with a tall wooden grandfather clock standing in the corner",
+      "source": {
+        "text": "Hickory Dickory Dock (as 'Hickere, Dickere Dock')",
+        "author": "Traditional (English)",
+        "year": 1744,
+        "publication": "Tommy Thumb's Pretty Song Book, vol. II (London, c. 1744).",
+        "public_domain": "Anonymous traditional text first printed c. 1744; long out of copyright everywhere.",
+        "adaptation": "Verses 1 and 2 keep the traditional wording, re-lined into two-line verses; verse 2's closing 'Hickory, dickory, dock' is replaced with 'And ran right through the town' so the verse rhymes on its own. Verse 3 and the hook are NEWLY WRITTEN."
+      },
+      "verses": [
+        {
+          "lines": ["Hickory, dickory, dock", "The mouse ran up the clock"],
+          "scene_hint": "A tall friendly grandfather clock stands in a sunny playroom with a tiny round cartoon mouse at its base."
+        },
+        {
+          "lines": ["The clock struck one, the mouse ran down", "And ran right through the town"],
+          "scene_hint": "The little mouse scampers down the clock case and off across a bright wooden floor scattered with toys."
+        },
+        {
+          "lines": ["Tick tock, clap along with me", "Hickory, dickory, three"],
+          "scene_hint": "The three toddlers clap their hands in time with the swinging pendulum, counting on their fingers."
+        },
+        {
+          "lines": ["Hickory, dickory, dock", "We tiptoe round the clock"],
+          "scene_hint": "The toddlers tiptoe in a careful circle around the big clock, fingers to their lips, giggling."
+        },
+        {
+          "lines": ["Tick tock, clap along with me", "Hickory, dickory, three"],
+          "scene_hint": "The three toddlers clap their hands in time with the swinging pendulum, counting on their fingers."
+        }
+      ]
+    },
+    {
+      "id": "rain_rain_go_away",
+      "title": "Rain, Rain, Go Away - A Sunny Sing-Along Song for Toddlers",
+      "description": "Wave the rain goodbye and jump out into the sunshine! Sing along with us. #kidssong #nurseryrhyme #toddlersongs #singalong #weathersong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "rain rain go away", "weather song", "rainy day", "preschool", "kids music", "children song"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, gentle bouncy tempo, playful, bright, warm",
+      "topics": ["rain", "rainy day", "weather", "the sun", "puddles", "waiting to go outside", "sunshine"],
+      "subject_description": null,
+      "canonical_setting": "a cozy front porch and doorway looking out over a rainy garden that turns sunny",
+      "source": {
+        "text": "Rain, Rain, Go Away",
+        "author": "Traditional (English)",
+        "year": 1687,
+        "publication": "Recorded by James Howell in Paroimiographia / Proverbs (London, 1659-1687) as 'Raine raine goe away, come againe a Saterday'; the modern wording is standard in 19th-century nursery collections.",
+        "public_domain": "Anonymous traditional text recorded in the 17th century; long out of copyright everywhere.",
+        "adaptation": "Verses 1 and 2 are the standard traditional couplets verbatim. Verse 3 and the hook are NEWLY WRITTEN in the same meter."
+      },
+      "verses": [
+        {
+          "lines": ["Rain, rain, go away", "Come again another day"],
+          "scene_hint": "The three toddlers press their noses to a big window, watching fat cartoon raindrops run down the glass."
+        },
+        {
+          "lines": ["Little children want to play", "Rain, rain, go away"],
+          "scene_hint": "The toddlers wave up at a small grey cloud from a doorway, boots on, ready to go outside."
+        },
+        {
+          "lines": ["Clap your hands and sing with me", "Rain, rain, go, one, two, three"],
+          "scene_hint": "The toddlers clap their hands together on a covered porch, counting on their fingers as the rain eases."
+        },
+        {
+          "lines": ["Sun, sun, come and stay", "We will jump and dance today"],
+          "scene_hint": "Bright sunshine breaks through as the toddlers jump and dance in the wet grass under a big rainbow."
+        },
+        {
+          "lines": ["Clap your hands and sing with me", "Rain, rain, go, one, two, three"],
+          "scene_hint": "The toddlers clap their hands together on a covered porch, counting on their fingers as the rain eases."
+        }
+      ]
+    },
+    {
+      "id": "are_you_sleeping",
+      "title": "Are You Sleeping - A Gentle Wake-Up Sing-Along for Toddlers",
+      "description": "Morning bells are ringing! Stretch, clap and wake up with us. #kidssong #nurseryrhyme #toddlersongs #singalong #morningsong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "are you sleeping", "morning song", "wake up song", "preschool", "kids music", "children song"],
+      "song_style": "children's nursery rhyme, gentle cheerful kids song, cute female child voice, simple very repetitive catchy melody, soft morning bells, slow bouncy tempo, warm",
+      "topics": ["waking up", "morning", "getting up", "bells", "good morning", "morning routine", "sleepy time"],
+      "subject_description": null,
+      "canonical_setting": "a cozy sunlit bedroom with a soft yellow blanket and a bright morning window",
+      "source": {
+        "text": "Are You Sleeping (English text of 'Frere Jacques')",
+        "author": "Traditional (French, anonymous)",
+        "year": 1780,
+        "publication": "The French round is documented from the 18th century (manuscript c. 1780, printed in Paris collections from 1811); the standard English text is a 19th-century traditional translation.",
+        "public_domain": "Anonymous traditional text well over two centuries old; the English words are traditional and appear in 19th-century nursery collections. Long out of copyright everywhere.",
+        "adaptation": "Verse 1 is the traditional English text verbatim, re-lined into four lines with 'Morning bells are ringing' repeated as the source round does. 'Ding dang dong' is kept from the source. Verse 2 and the hook are NEWLY WRITTEN. The name 'Brother John' is kept — it is part of the public-domain text and is never depicted on screen."
+      },
+      "verses": [
+        {
+          "lines": ["Are you sleeping, are you sleeping", "Brother John, Brother John", "Morning bells are ringing", "Morning bells are ringing"],
+          "scene_hint": "Warm morning light falls across a cozy bedroom where a toddler is just stirring under a soft yellow blanket."
+        },
+        {
+          "lines": ["Are you waking, are you waking", "Little friends, little friends", "Clap your hands and stretch now", "Clap your hands and stretch now"],
+          "scene_hint": "The toddlers sit up and stretch their arms wide above their heads, yawning and smiling in the sunny room."
+        },
+        {
+          "lines": ["Clap and sing along with me", "Ding dang dong, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together beside a little brass bell, counting on their fingers."
+        },
+        {
+          "lines": ["Ding dang dong, ding dang dong", "Morning bells are ringing", "Clap your hands and sing along", "Clap your hands and sing along"],
+          "scene_hint": "A small bright bell swings in a sunlit window while the toddlers sing along with their arms swinging."
+        },
+        {
+          "lines": ["Clap and sing along with me", "Ding dang dong, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together beside a little brass bell, counting on their fingers."
+        }
+      ]
+    },
+    {
+      "id": "pat_a_cake",
+      "title": "Pat-a-Cake - A Baking Sing-Along Song for Toddlers",
+      "description": "Pat it and roll it and pop it in! Clap along while we bake a little cake. #kidssong #nurseryrhyme #toddlersongs #singalong #bakingsong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "pat a cake", "baking song", "clapping song", "preschool", "kids music", "children song"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, hand-clapping rhythm, playful, bright, warm",
+      "topics": ["baking", "making a cake", "clapping games", "helping in the kitchen", "cakes", "cooking together"],
+      "subject_description": null,
+      "canonical_setting": "a sunny cheerful kitchen with a low table dusted with flour and a warm oven",
+      "source": {
+        "text": "Pat-a-Cake, Pat-a-Cake, Baker's Man",
+        "author": "Traditional (English)",
+        "year": 1698,
+        "publication": "First recorded in Thomas D'Urfey's play The Campaigners (1698); printed as a nursery rhyme in Tommy Thumb's Pretty Song Book (c. 1744).",
+        "public_domain": "Anonymous traditional text recorded from 1698; long out of copyright everywhere.",
+        "adaptation": "Verse 1 is the traditional couplet verbatim. Verse 2 replaces the traditional 'mark it with B, and put it in the oven for baby and me' — which runs past the 9-word line limit and hangs its rhyme on a single letter — with 'Roll it and pat it and pop it in / Now the yummy cake can begin'. Verse 3 and the hook are NEWLY WRITTEN."
+      },
+      "verses": [
+        {
+          "lines": ["Pat-a-cake, pat-a-cake, baker's man", "Bake me a cake as fast as you can"],
+          "scene_hint": "Two toddlers pat their floury hands together over a low kitchen table dusted with flour and set with a mixing bowl."
+        },
+        {
+          "lines": ["Roll it and pat it and pop it in", "Now the yummy cake can begin"],
+          "scene_hint": "Small hands roll a ball of soft dough and lower a round cake tin toward a warm, friendly cartoon oven."
+        },
+        {
+          "lines": ["Pat and clap along with me", "Pat-a-cake, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together in the sunny kitchen, counting on their fingers."
+        },
+        {
+          "lines": ["Clap for the cake, so soft and sweet", "Clap for the cake we love to eat"],
+          "scene_hint": "A little round cake sits on a plate on the table, and the toddlers clap and cheer around it."
+        },
+        {
+          "lines": ["Pat and clap along with me", "Pat-a-cake, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together in the sunny kitchen, counting on their fingers."
+        }
+      ]
+    },
+    {
+      "id": "here_we_go_round_the_mulberry_bush",
+      "title": "Here We Go Round the Mulberry Bush - An Action Sing-Along for Toddlers",
+      "description": "This is the way we wash our hands, clap our hands and brush our teeth! Sing and copy along. #kidssong #nurseryrhyme #toddlersongs #singalong #actionsong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "mulberry bush", "action song", "washing hands", "brushing teeth", "preschool", "kids music"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, marching bouncy tempo, playful, bright, warm",
+      "topics": ["washing hands", "brushing teeth", "daily routine", "healthy habits", "getting ready", "action songs", "good habits", "morning routine"],
+      "subject_description": null,
+      "canonical_setting": "a sunny garden with a big round leafy mulberry bush and a low wooden fence",
+      "source": {
+        "text": "Here We Go Round the Mulberry Bush",
+        "author": "Traditional (English)",
+        "year": 1849,
+        "publication": "James Orchard Halliwell, Popular Rhymes and Nursery Tales (London, 1849), where it is recorded as a children's ring game.",
+        "public_domain": "Anonymous traditional text collected and printed in 1849; expired copyright in the US (pre-1929) and worldwide.",
+        "adaptation": "Verse 1 and the 'This is the way we...' verse pattern are the traditional text verbatim. The chosen actions (wash our hands, brush our teeth) are drawn from the traditional list, which has always been an open-ended set of everyday actions. The hook is NEWLY WRITTEN."
+      },
+      "verses": [
+        {
+          "lines": ["Here we go round the mulberry bush", "The mulberry bush, the mulberry bush"],
+          "scene_hint": "The three toddlers hold hands and walk in a wide circle around a big round leafy bush in a sunny garden."
+        },
+        {
+          "lines": ["This is the way we wash our hands", "Wash our hands, wash our hands"],
+          "scene_hint": "Two toddlers rub soapy bubbles between their hands at a low bathroom sink, sleeves pushed up."
+        },
+        {
+          "lines": ["Round and round and clap with me", "Round the mulberry bush, one, two, three"],
+          "scene_hint": "The toddlers skip in a circle around the bush, clapping their hands and counting on their fingers."
+        },
+        {
+          "lines": ["This is the way we brush our teeth", "Brush our teeth, brush our teeth"],
+          "scene_hint": "The toddlers stand at the sink with colourful toothbrushes, brushing in big cheerful circles."
+        },
+        {
+          "lines": ["Round and round and clap with me", "Round the mulberry bush, one, two, three"],
+          "scene_hint": "The toddlers skip in a circle around the bush, clapping their hands and counting on their fingers."
+        }
+      ]
+    },
+    {
+      "id": "skip_to_my_lou",
+      "title": "Skip to My Lou - A Skipping and Clapping Sing-Along for Toddlers",
+      "description": "Skip, clap and stomp along with us to this happy old play-party song! #kidssong #nurseryrhyme #toddlersongs #singalong #dancesong",
+      "tags": ["kids song", "nursery rhyme", "toddler song", "sing along", "skip to my lou", "dance song", "action song", "preschool", "kids music", "children song"],
+      "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, lively skipping tempo, playful, bright, warm",
+      "topics": ["skipping", "dancing", "moving our bodies", "playing together", "party games", "clapping and stomping", "exercise"],
+      "subject_description": null,
+      "canonical_setting": "a bright green lawn strung with colourful bunting under a big blue sky",
+      "source": {
+        "text": "Skip to My Lou",
+        "author": "Traditional (American play-party song)",
+        "year": 1844,
+        "publication": "An American play-party song documented from the 1840s and printed repeatedly in 19th-century American song collections.",
+        "public_domain": "Anonymous traditional text from the mid-19th century; expired copyright in the US (pre-1929) and worldwide.",
+        "adaptation": "The 'Skip, skip, skip to my Lou / Skip to my Lou, my darling' chorus is the traditional text verbatim. The traditional verses are an open-ended improvised set ('lost my partner, what'll I do'); verses 2 and 3 substitute toddler-friendly actions in exactly that tradition, and the hook is NEWLY WRITTEN."
+      },
+      "verses": [
+        {
+          "lines": ["Skip, skip, skip to my Lou", "Skip, skip, skip to my Lou", "Skip, skip, skip to my Lou", "Skip to my Lou, my darling"],
+          "scene_hint": "The three toddlers skip in a happy line across a bright green lawn strung with colourful bunting."
+        },
+        {
+          "lines": ["Clap your hands and skip to my Lou", "Clap your hands and skip to my Lou", "Stomp your feet and skip to my Lou", "Skip to my Lou, my darling"],
+          "scene_hint": "The toddlers clap their hands high and stomp their feet in the grass, kicking up little leaves."
+        },
+        {
+          "lines": ["Skip and clap along with me", "Skip to my Lou, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together on the lawn, counting to three on their fingers."
+        },
+        {
+          "lines": ["Round and round and skip to my Lou", "Round and round and skip to my Lou", "Wave hello and skip to my Lou", "Skip to my Lou, my darling"],
+          "scene_hint": "The toddlers spin in a wide circle and wave both arms above their heads under a big blue sky."
+        },
+        {
+          "lines": ["Skip and clap along with me", "Skip to my Lou, one, two, three"],
+          "scene_hint": "The three toddlers clap their hands together on the lawn, counting to three on their fingers."
+        }
+      ]
+    }
+  ]
+}

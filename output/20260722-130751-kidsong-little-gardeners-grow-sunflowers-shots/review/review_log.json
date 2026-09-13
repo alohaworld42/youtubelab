@@ -1,0 +1,375 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s04",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s05",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s05",
+    "attempt": 1,
+    "seed": 20264735,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s06",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s07",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s08",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s09",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s10",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s11",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s12",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s13",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s14",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s14",
+    "attempt": 1,
+    "seed": 20263721,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s14",
+    "attempt": 2,
+    "seed": 20264698,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s15",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "auto-accepted at shot level (heuristic clear, no surfaced concerns) \u2014 reviewed at the cut gate"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      },
+      "auto_accepted": true
+    },
+    "i2v_anchored": true
+  },
+  {
+    "stage": "cut",
+    "attempt": 0,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 programmatic verdict used"
+      ],
+      "retry_hints": {
+        "recut": false,
+        "reshoot": []
+      }
+    }
+  }
+]

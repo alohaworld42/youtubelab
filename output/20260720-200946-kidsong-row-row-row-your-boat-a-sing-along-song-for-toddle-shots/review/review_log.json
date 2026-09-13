@@ -1,0 +1,19 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20266798,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "unattended mode: external review skipped \u2014 heuristic verdict used"
+      ],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  }
+]

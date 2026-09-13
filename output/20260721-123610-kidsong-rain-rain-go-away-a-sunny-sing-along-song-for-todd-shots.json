@@ -1,0 +1,490 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 3.019,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers press their noses to a big window.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 3.019,
+      "end": 5.921,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "The toddlers watch fat cartoon raindrops running down the glass.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 5.921,
+      "end": 9.102,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "The toddlers show disappointment at the rain.",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 9.102,
+      "end": 12.14,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 12.14,
+      "end": 14.907,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri plays happily nearby",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 14.907,
+      "end": 17.74,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi plays happily nearby, bouncing gently on the spot, looking straight at the camera",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 17.74,
+      "end": 20.759,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala goes along too, smiling",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 20.759,
+      "end": 23.76,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri goes along too, smiling, swaying from side to side, bouncing gently on the spot",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 23.76,
+      "end": 26.703,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 26.703,
+      "end": 29.42,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat, tilting their head with a giggle, swaying from side to side",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s09_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 29.42,
+      "end": 32.16,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 32.16,
+      "end": 35.08,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, leaning in a little closer, tilting their head with a giggle",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 35.08,
+      "end": 37.616,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 37.616,
+      "end": 40.333,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, clapping once on the beat, leaning in a little closer",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 40.333,
+      "end": 43.445,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala jumps up and down with joy",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s14_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 43.445,
+      "end": 45.94,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri jumps up and down with joy, looking straight at the camera, clapping once on the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s15_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 45.94,
+      "end": 48.739,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": "s08",
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 48.739,
+      "end": 51.386,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": "s09",
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s18",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 51.386,
+      "end": 54.056,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": "s10",
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s19",
+      "verse": 4,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 54.056,
+      "end": 56.726,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": "s11",
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    }
+  ]
+}

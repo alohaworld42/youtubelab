@@ -1,0 +1,10 @@
+{
+  "accept": false,
+  "score": 0.5,
+  "reasons": [
+    "action fidelity: shot spec is a closeup on Luna smiling at camera, but the camera's push-in payoff lands on one of the boys instead — Luna is only glimpsed in the background of the final two frames, so the specified subject never delivers the planned beat"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

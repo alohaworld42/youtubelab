@@ -1,0 +1,15 @@
+{
+  "accept": false,
+  "score": 0.15,
+  "reasons": [
+    "Dimension 3 (head-count, hard reject): expected_children=1 (Nala only) but every frame shows multiple children — frame 1 has 2 children (girl + boy partially visible behind tub), frames 3-5 clearly show 3 children (boy in green shirt, girl in pink dress, and a third child in pink at frame edge).",
+    "Dimension 4 (wardrobe, hard reject at medium shot_type): the foreground girl presumed to be Nala wears a plain pink short-sleeve dress with white trim, not the yellow pinafore over a white t-shirt specified in cast_text — this is a garment/silhouette mismatch (wrong garment type, not just color), which is a hard reject regardless of shot_type.",
+    "Dimension 3 (identity match): the foreground girl's hair is loose/curly, not the neat cornrow braids specified in cast_text for Nala — does not match the cast_text entry field-by-field.",
+    "Shot spec inconsistency noted: action text says 'The kids sing along' (plural) while characters=[Nala] and expected_children=1 — likely the prompt-driven cause of the extra children rendered in every frame."
+  ],
+  "retry_hints": {
+    "seed_bump": true,
+    "simplify_action": true,
+    "force_i2v": false
+  }
+}

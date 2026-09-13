@@ -1,0 +1,83 @@
+Write an ORIGINAL preschool nursery-rhyme-style kids' song for a YouTube Shorts video.
+
+Topic: {{TOPIC}}
+
+This channel has a FIXED recurring cast — the same three toddlers star in every episode, never
+new or substitute children. Use ONLY these three, by these names and looks:
+
+- Zuri — a 3-year-old girl, deep warm brown skin, round afro puffs tied with soft yellow fabric
+  scrunchies, wearing a sunny yellow t-shirt.
+- Kofi — a 4-year-old boy, medium-deep brown skin, short dark natural curly hair, wearing a blue
+  t-shirt (his signature color — never yellow, never any other color).
+- Nala — a 3-year-old girl, deep brown skin, neat cornrow braids, wearing a yellow pinafore dress
+  over a white t-shirt (her signature look — never purple, and never confused with Zuri's plain
+  yellow t-shirt).
+
+Rules:
+- The song must be 100% ORIGINAL. Do NOT copy, reference, or imitate any existing show, brand,
+  channel, melody, or copyrighted lyrics (no "Cocomelon", no other kids' brands, no borrowed tunes).
+- Pick a wholesome, simple topic if none is given: colors, counting, bath time, sharing, animals,
+  bedtime, brushing teeth, saying please/thank you, etc.
+- The song stars Zuri, Kofi and Nala — the channel's fixed cast described above — as the heroes.
+  Do NOT invent any new named children and do NOT change their established looks (skin, hair, or
+  signature outfit color). You may write lyrics that mention one, two, or all three of them by
+  name; positive, joyful, loving representation — no stereotypes, just happy kids having fun.
+- The kids are TODDLERS (age 2-4): no jewelry, piercings, makeup, or grown-up styling of any
+  kind. No potty/bathroom humor and no toilet scenes — keep every scene sweet and clean.
+- The kids are ALWAYS FULLY DRESSED in normal clothes. Even for bath/water topics: NEVER put
+  kids in a bathtub, pool, or swimwear. Stage water fun dressed and dry-safe instead: washing
+  hands at the sink, blowing soap bubbles, playing with rubber ducks at the tub's edge,
+  splashing hands in a little basin.
+- Simple, repetitive rhymes a 3-year-old can sing along to. Short lines, easy words, lots of
+  repetition (like real nursery rhymes: "clap clap clap", "row row row your boat" energy).
+
+CRAFT RULES — these are hard requirements, not style advice. A song that breaks any of them is
+rejected automatically and thrown away. Count on your fingers before you answer.
+
+- METER: every line inside a verse must have ROUGHLY THE SAME NUMBER OF SYLLABLES — within 2 of
+  each other. Pick a beat (6, 7 or 8 syllables) and hold it for the whole verse.
+    GOOD: "Twinkle, twinkle, little star" (7) / "How I wonder what you are" (7)
+    BAD:  "We'll use our cups to pour with fun" (8) / "Every flower will get some water soon" (11)
+- RHYME: in every verse, at least one PAIR of lines must genuinely rhyme at the line end. Say the
+  two words out loud. "fun" and "soon" and "everyone" do not rhyme. "breeze" and "high" do not
+  rhyme. "star"/"are", "stream"/"dream", "day"/"play" do.
+- HOOK: the song must have ONE hook line of at least three words that appears WORD-FOR-WORD in at
+  least two different verses — for example "Clap and sing along with me". The easiest way is to
+  end every verse with the same hook line, or to repeat one whole verse as a chorus. A song with
+  no repeated hook is not singable and will be rejected.
+- NAMES: do NOT name Zuri, Kofi or Nala in more than a third of the lines, and never write a line
+  that just lists who is present. The pictures already show who is on screen.
+    BAD: "Zuri's helping Kofi and Nala!" — that is narration, not a nursery rhyme.
+- PLAIN ENGLISH: every line must be a phrase a real person would say. Never pad a line to fill the
+  beat.  BAD: "Blow bubbles high up high" ("high ... high" is broken English). Repeating a word
+  side by side is fine ("clap, clap, clap your hands"); repeating it with one word wedged in the
+  middle is not.
+- Use complete simple sentences more than fragments, and repeat whole phrases across lines and
+  verses — repetition is how toddlers learn.
+- The song depicts a cozy everyday toddler moment (no conflict, no villains, nothing scary —
+  gentle fun only). Actions in the lyrics should be things a toddler can copy while watching
+  (clap, stomp, wave, jump, wash, brush).
+- 3-5 verses. Each verse has 2-4 short sing-along lines. Repeating one verse as a chorus is
+  encouraged (repeated verses reuse their pictures, like real kids' shows).
+- "characters" = leave this EXACTLY as the sentence "Three adorable Black toddlers: Zuri, Kofi
+  and Nala, in their established looks." Do NOT invent or alter any wardrobe/appearance detail
+  here — the pipeline overwrites this field with the canonical cast description automatically, so
+  whatever you write in it is discarded. Never describe a different outfit, hairstyle, or skin
+  tone for Zuri, Kofi, or Nala anywhere in your reply.
+- For each verse, "scene" = a concrete visual description of the setting and action happening in
+  that verse (where the kids are, what they're doing — referring to Zuri/Kofi/Nala by name as
+  needed). Do NOT repeat the characters' appearance in "scene" — that gets added automatically.
+- "title" = catchy YouTube title for a kids' song video, no clickbait, wholesome tone.
+- "description" = 1-2 friendly sentences + 3-5 hashtags.
+- "tags" = 8-12 lowercase tags (e.g. kids song, nursery rhyme, toddler, sing along).
+
+Reply with ONLY this JSON, nothing else:
+{
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."],
+  "characters": "...",
+  "verses": [
+    {"lines": ["...", "..."], "scene": "..."}
+  ]
+}

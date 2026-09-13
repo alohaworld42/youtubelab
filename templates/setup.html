@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% set active = 'setup' %}
+{% block title %}Setup — Brainrot Studio{% endblock %}
+{% block content %}
+<h1>Setup</h1>
+<p class="muted" style="margin:-8px 0 20px">Einmal durchklicken, dann läuft alles.
+Pflicht: Schritt 1 + 2. Schritt 3 nur für Uploads, Schritt 4 optional.</p>
+
+<!-- 1 · System -->
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <strong>1 · System (FFmpeg)</strong>
+    <span class="badge" id="b-ffmpeg">prüfe…</span>
+  </div>
+  <div id="ffmpeg-fix" style="display:none">
+    <p class="muted">FFmpeg fehlt. In PowerShell ausführen, dann Terminal neu öffnen und App neu starten:</p>
+    <pre style="background:var(--surface2);padding:10px 14px;border-radius:10px;font-size:13px">winget install Gyan.FFmpeg</pre>
+    <button class="ghost" onclick="refresh()">Neu prüfen</button>
+  </div>
+</div>
+
+<!-- 2 · LLM -->
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <strong>2 · KI-Backend (schreibt die Scripts)</strong>
+    <span class="badge" id="b-llm">prüfe…</span>
+  </div>
+  <p class="muted" id="llm-detail" style="margin:8px 0"></p>
+  <div class="row" style="margin:10px 0">
+    <label class="row" style="gap:6px"><input type="radio" name="backend" value="groq" checked> Groq (gratis Key, schnell)</label>
+    <label class="row" style="gap:6px"><input type="radio" name="backend" value="ollama"> Ollama (100% lokal)</label>
+    <label class="row" style="gap:6px"><input type="radio" name="backend" value="gemini"> Gemini (gratis Key)</label>
+  </div>
+  <div id="key-row" class="row">
+    <!-- type=password: this is a live secret, and the studio binds to
+         0.0.0.0 by default (phone/tablet on the WLAN, screen shares, a
+         tunnel). It has no business being legible on screen. -->
+    <input type="password" id="llm-key" autocomplete="off" spellcheck="false"
+           style="flex:1;min-width:260px" placeholder="API-Key hier einfügen">
+    <button class="ghost" type="button" onclick="toggleSecret('llm-key', this)"
+            aria-label="Key anzeigen">👁</button>
+    <a class="btn ghost" id="key-link" href="https://console.groq.com" target="_blank" rel="noopener">Key holen →</a>
+  </div>
+  <p class="muted" id="ollama-hint" style="display:none">Kein Key nötig. Ollama muss laufen
+    (<code>ollama serve</code>) und ein Modell gezogen sein (<code>ollama pull llama3.1</code>).</p>
+  <div class="row" style="margin-top:12px">
+    <button onclick="saveLlm(this)">Speichern</button>
+    <button class="ghost" onclick="testLlm(this)">Verbindung testen</button>
+    <span class="muted" id="llm-test-result"></span>
+  </div>
+</div>
+
+<!-- 3 · YouTube -->
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <strong>3 · YouTube-Upload freischalten</strong>
+    <span class="badge" id="b-yt">prüfe…</span>
+  </div>
+  <p class="muted" style="margin:8px 0">Google erzwingt hier 5 Minuten Console-Arbeit (einmalig, für alle Kanäle zusammen):</p>
+  <ol class="muted" style="line-height:1.9;margin:0 0 12px;padding-left:20px">
+    <li><a href="https://console.cloud.google.com/projectcreate" target="_blank" rel="noopener">console.cloud.google.com</a> → Projekt anlegen</li>
+    <li><a href="https://console.cloud.google.com/apis/library/youtube.googleapis.com" target="_blank" rel="noopener">YouTube Data API v3</a> → „Aktivieren“</li>
+    <li><a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener">Anmeldedaten</a> → „OAuth-Client-ID erstellen“ → Typ <b>Desktop-App</b> → JSON herunterladen</li>
+    <li><a href="https://console.cloud.google.com/apis/credentials/consent" target="_blank" rel="noopener">OAuth-Zustimmung</a> → unter „Testnutzer“ <b>jedes Google-Konto</b> eintragen, dessen Kanal du verbinden willst</li>
+  </ol>
+  <div class="row">
+    <input type="file" id="secret-file" accept=".json" style="flex:1;min-width:240px;background:var(--surface2);border:2px dashed var(--line);border-radius:10px;padding:10px 12px;color:var(--muted)">
+    <button onclick="uploadSecret(this)">JSON hochladen</button>
+  </div>
+  <div class="row" style="margin-top:12px" id="connect-row" hidden>
+    <a class="btn" href="/channels/">Weiter: Kanal verbinden →</a>
+    <span class="muted" id="channels-count"></span>
+  </div>
+</div>
+
+<!-- 4 · Assets -->
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <strong>4 · Hintergrund-Material (optional)</strong>
+    <span class="badge" id="b-assets">prüfe…</span>
+  </div>
+
+  <p class="muted" style="margin:10px 0 6px"><b>Stock-Videos</b> — themenpassende Hintergründe, gratis Keys:</p>
+  <div class="row">
+    <input type="password" id="k-pexels" autocomplete="off" spellcheck="false"
+           style="flex:1;min-width:200px" placeholder="PEXELS_API_KEY (pexels.com/api)">
+    <input type="password" id="k-pixabay" autocomplete="off" spellcheck="false"
+           style="flex:1;min-width:200px" placeholder="PIXABAY_API_KEY (pixabay.com/api/docs)">
+    <button onclick="saveKeys(this)">Speichern</button>
+  </div>
+
+  <p class="muted" style="margin:16px 0 6px"><b>Gameplay-Clips</b> — Ein-Klick-Starterpack (No-Copyright, via yt-dlp) oder eigene URL:</p>
+  <div class="row">
+    <input type="text" id="gp-url" style="flex:1;min-width:240px" placeholder="leer = Starterpack (Subway Surfers + Minecraft Parkour)">
+    <button id="gp-btn" onclick="downloadGameplay()">Herunterladen</button>
+  </div>
+  <p class="muted" id="gp-status" style="margin:8px 0 0"></p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const KEY_LINKS = {groq: 'https://console.groq.com', gemini: 'https://aistudio.google.com'};
+
+document.querySelectorAll('input[name=backend]').forEach(r => r.addEventListener('change', () => {
+  const b = backend();
+  document.getElementById('key-row').style.display = b === 'ollama' ? 'none' : 'flex';
+  document.getElementById('ollama-hint').style.display = b === 'ollama' ? 'block' : 'none';
+  if (KEY_LINKS[b]) document.getElementById('key-link').href = KEY_LINKS[b];
+}));
+function backend(){ return document.querySelector('input[name=backend]:checked').value; }
+
+function badge(id, ok, textOk, textBad, optional){
+  const el = document.getElementById(id);
+  el.textContent = ok ? (textOk || 'OK') : (textBad || (optional ? 'optional' : 'fehlt'));
+  el.className = 'badge ' + (ok ? 'ok' : (optional ? '' : 'err'));
+}
+
+function toggleSecret(id, btn){
+  const el = document.getElementById(id);
+  const shown = el.type === 'text';
+  el.type = shown ? 'password' : 'text';
+  btn.setAttribute('aria-label', shown ? 'Key anzeigen' : 'Key verbergen');
+  btn.textContent = shown ? '👁' : '🙈';
+}
+
+async function refresh(){
+  // Unguarded, this left every badge stuck on "prüfe…" forever whenever the
+  // status call hiccuped — the setup page's whole job is telling you what is
+  // and is not configured, so it has to say when it cannot tell.
+  let s;
+  try{
+    const res = await fetch('/api/setup/status');
+    s = await res.json();
+  }catch(e){
+    for (const id of ['b-ffmpeg', 'b-llm', 'b-yt', 'b-assets']){
+      const el = document.getElementById(id);
+      el.textContent = 'unbekannt'; el.className = 'badge warn';
+    }
+    toast('Status nicht abrufbar — läuft die App noch?');
+    return;
+  }
+  badge('b-ffmpeg', s.ffmpeg.ok, 'installiert', 'fehlt');
+  document.getElementById('ffmpeg-fix').style.display = s.ffmpeg.ok ? 'none' : 'block';
+
+  badge('b-llm', s.llm.ok, s.llm.backend + ' bereit', s.llm.backend + ': nicht bereit');
+  document.getElementById('llm-detail').textContent = s.llm.detail || '';
+  // An unexpected backend string would make an unquoted attribute selector
+  // throw and take the rest of refresh() (YouTube + assets badges) with it.
+  const radio = [...document.querySelectorAll('input[name=backend]')]
+    .find(r => r.value === s.llm.backend);
+  if (radio && !radio.checked){ radio.checked = true; radio.dispatchEvent(new Event('change')); }
+
+  const ytOk = s.client_secret.ok;
+  badge('b-yt', ytOk, s.channels.ok ? s.channels.count + ' Kanal/Kanäle verbunden' : 'JSON da — Kanal verbinden', 'client_secret fehlt');
+  document.getElementById('connect-row').hidden = !ytOk;
+  document.getElementById('channels-count').textContent =
+    s.channels.ok ? s.channels.count + ' verbunden' : 'noch keiner verbunden';
+
+  const assetsOk = s.gameplay.ok || s.stock_keys.pexels || s.stock_keys.pixabay;
+  badge('b-assets', assetsOk,
+    (s.gameplay.ok ? s.gameplay.count + ' Clips' : '') +
+    (s.stock_keys.pexels ? ' · Pexels' : '') + (s.stock_keys.pixabay ? ' · Pixabay' : ''),
+    'optional', true);
+}
+
+async function saveLlm(btn){
+  const key = document.getElementById('llm-key');
+  await withButton(btn, 'speichert…', async () => {
+    await post('/api/setup/llm', {backend: backend(), api_key: key.value});
+    toast('Gespeichert.');
+    key.value = '';
+    await refresh();
+  });
+}
+
+async function testLlm(btn){
+  const out = document.getElementById('llm-test-result');
+  await withButton(btn, 'teste…', async () => {
+    out.textContent = 'teste…';
+    const r = await post('/api/setup/test-llm', {});
+    out.textContent = r.ok ? '✓ Antwort erhalten' : '✗ ' + r.detail;
+  });
+}
+
+async function uploadSecret(btn){
+  const f = document.getElementById('secret-file').files[0];
+  if (!f){ toast('Erst Datei wählen'); return; }
+  await withButton(btn, 'lädt hoch…', async () => {
+    const fd = new FormData(); fd.append('file', f);
+    let res, data;
+    try{
+      res = await fetch('/api/setup/client-secret', {method:'POST', body: fd});
+      data = await res.json().catch(() => ({}));
+    }catch(e){
+      throw new Error('Server nicht erreichbar (läuft die App noch?)');
+    }
+    if (!res.ok) throw new Error(data.error || res.statusText);
+    toast('Gespeichert — jetzt Kanal verbinden.');
+    await refresh();
+  });
+}
+
+async function saveKeys(btn){
+  const pexels = document.getElementById('k-pexels');
+  const pixabay = document.getElementById('k-pixabay');
+  if (!pexels.value.trim() && !pixabay.value.trim()){
+    toast('Kein Key eingegeben'); return;
+  }
+  await withButton(btn, 'speichert…', async () => {
+    await post('/api/setup/keys', {pexels: pexels.value, pixabay: pixabay.value});
+    toast('Keys gespeichert.');
+    pexels.value = ''; pixabay.value = '';
+    await refresh();
+  });
+}
+
+async function downloadGameplay(){
+  const btn = document.getElementById('gp-btn');
+  const el = document.getElementById('gp-status');
+  btn.disabled = true;
+  try{
+    await post('/api/setup/gameplay', {url: document.getElementById('gp-url').value});
+  }catch(e){
+    toast('Fehler: ' + e.message); btn.disabled = false; return;
+  }
+  // A yt-dlp pull runs for minutes. The old poller was a bare `await fetch`,
+  // so a single blip ended it: the button stayed disabled and the status line
+  // stayed frozen on the last count, with the download still running.
+  pollJson('/api/setup/gameplay/status', s => {
+    if (s.status === 'running'){ el.textContent = `Lädt… ${s.done}/${s.total}`; return true; }
+    btn.disabled = false;
+    if (s.status === 'done'){
+      el.textContent = '✓ Fertig' + (s.error ? ' (teilweise: ' + s.error + ')' : '');
+      refresh();
+    } else if (s.status === 'error'){
+      el.textContent = '✗ ' + (s.error || 'Download fehlgeschlagen');
+    }
+    return false;
+  }, 2000, () => {
+    btn.disabled = false;
+    el.textContent = '✗ Statusabfrage abgebrochen — der Download läuft evtl. weiter. Seite neu laden.';
+  });
+}
+
+refresh();
+</script>
+{% endblock %}

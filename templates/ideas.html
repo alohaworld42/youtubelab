@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% set active = 'ideas' %}
+{% block content %}
+<h1>Ideen</h1>
+
+{% if not channels %}
+<div class="card"><p class="muted" style="margin:0">Erst einen <a href="/channels/">Kanal verbinden</a>, dann Ideen füttern.</p></div>
+{% else %}
+<div class="card">
+  <strong>Neue Idee</strong>
+  <div class="row" style="margin-top:12px">
+    <select id="i-channel" style="flex:0 0 200px">
+      {% for c in channels %}<option value="{{ c.id }}">{{ c.name }}</option>{% endfor %}
+    </select>
+    <input id="i-topic" type="text" style="flex:1;min-width:240px" maxlength="200"
+           placeholder="z.B. Der gruseligste Leuchtturm Deutschlands">
+    <select id="i-type" style="flex:0 0 180px">
+      <option value="">Typ: Kanal-Standard</option>
+      {% for t in types %}<option value="{{ t.id }}">{{ t.name }}</option>{% endfor %}
+    </select>
+    <button id="i-add" onclick="addIdea(this)">Hinzufügen</button>
+  </div>
+  <p class="muted" style="margin:10px 0 0">Deine Ideen werden immer vor Auto-Ideen produziert.</p>
+</div>
+
+{% for c in channels %}
+<h2>{{ c.name }}
+  <button class="ghost" style="margin-left:10px;font-size:12px" onclick="genIdeas({{ c.id }}, this)">
+    ✨ Auto-Ideen generieren</button>
+</h2>
+<div class="card">
+  <div class="table-wrap">
+  <table>
+    <tr><th>Thema</th><th>Typ</th><th>Quelle</th><th>Status</th><th></th></tr>
+    {% for i in per_channel.get(c.id, []) %}
+    <tr>
+      <td>{{ i.topic }}</td>
+      <td>{{ i.video_type or '—' }}</td>
+      <td><span class="badge {% if i.source=='user' %}acid{% endif %}">{{ 'du' if i.source=='user' else 'auto' }}</span></td>
+      <td><span class="badge {% if i.status=='used' %}ok{% elif i.status=='pending' %}warn{% endif %}">{{ i.status }}</span></td>
+      <td>{% if i.status == 'pending' %}
+        <button class="ghost" style="font-size:12px;padding:5px 10px"
+                title="Idee löschen" onclick="delIdea({{ i.id }}, this)">✕</button>
+      {% endif %}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5" class="muted">Keine Ideen. Oben füttern oder Auto-Ideen generieren.</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+const topicInput = document.getElementById('i-topic');
+// Typing a topic and pressing Enter did nothing at all — there is no <form>
+// here, so the keystroke fell on the floor and the idea looked like it had
+// been added when it had not.
+if (topicInput) topicInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter'){ e.preventDefault(); addIdea(document.getElementById('i-add')); }
+});
+
+async function addIdea(btn){
+  const topic = topicInput.value.trim();
+  if (!topic){ toast('Thema fehlt'); topicInput.focus(); return; }
+  await withButton(btn, '…', async () => {
+    await post('/api/ideas', {
+      channel_id: parseInt(document.getElementById('i-channel').value),
+      topic: topic,
+      video_type: document.getElementById('i-type').value || null,
+    });
+    location.reload();
+  });
+}
+
+async function delIdea(id, btn){
+  await withButton(btn, '…', async () => {
+    await post(`/api/ideas/${id}/delete`, {});
+    location.reload();
+  });
+}
+
+async function genIdeas(channelId, btn){
+  await withButton(btn, '… LLM denkt', async () => {
+    const r = await post('/api/ideas/generate', {channel_id: channelId});
+    toast(r.inserted + ' neue Ideen');
+    location.reload();
+  });
+}
+</script>
+{% endblock %}

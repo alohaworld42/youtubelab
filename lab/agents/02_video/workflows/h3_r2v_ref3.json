@@ -1,0 +1,344 @@
+{
+  "1": {
+    "class_type": "UnetLoaderGGUF",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned-Q4_K.gguf"
+    },
+    "_meta": {
+      "title": "DIFFUSION_MODEL"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoaderGGUF",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3-Q2_K_M.gguf",
+      "type": "minimax"
+    },
+    "_meta": {
+      "title": "TEXT_ENCODER"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "_meta": {
+      "title": "VIDEO_VAE"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "_meta": {
+      "title": "AUDIO_VAE"
+    }
+  },
+  "5": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    },
+    "_meta": {
+      "title": "LORA_TURBO"
+    }
+  },
+  "7": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "PROMPT PLACEHOLDER"
+    },
+    "_meta": {
+      "title": "PROMPT"
+    }
+  },
+  "8": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "text, watermark, extra children, adults, crowd, scary faces, dark lighting"
+    },
+    "_meta": {
+      "title": "NEGATIVE"
+    }
+  },
+  "9": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "7",
+        0
+      ],
+      "string_b": [
+        "8",
+        0
+      ],
+      "delimiter": "\n\nDo not show: "
+    },
+    "_meta": {
+      "title": "PROMPT_FULL"
+    }
+  },
+  "10": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 1344
+    },
+    "_meta": {
+      "title": "WIDTH"
+    }
+  },
+  "11": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 768
+    },
+    "_meta": {
+      "title": "HEIGHT"
+    }
+  },
+  "12": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 90
+    },
+    "_meta": {
+      "title": "FRAMES"
+    }
+  },
+  "14": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 12345
+    },
+    "_meta": {
+      "title": "SEED"
+    }
+  },
+  "15": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "_meta": {
+      "title": "SAMPLER_SELECT"
+    }
+  },
+  "16": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 8
+    },
+    "_meta": {
+      "title": "STEPS"
+    }
+  },
+  "17": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "scheduler": "beta",
+      "steps": [
+        "16",
+        0
+      ],
+      "denoise": 1.0
+    },
+    "_meta": {
+      "title": "SCHEDULER"
+    }
+  },
+  "20": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "19",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "DECODE"
+    }
+  },
+  "21": {
+    "class_type": "VAEDecodeAudio",
+    "inputs": {
+      "samples": [
+        "19",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "DECODE_AUDIO"
+    }
+  },
+  "22": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "20",
+        0
+      ],
+      "fps": 24,
+      "audio": [
+        "21",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CREATE_VIDEO"
+    }
+  },
+  "23": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "22",
+        0
+      ],
+      "filename_prefix": "kidsong/h3_r2v",
+      "format": "auto",
+      "codec": "auto"
+    },
+    "_meta": {
+      "title": "FILENAME_PREFIX"
+    }
+  },
+  "24": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ref1.png"
+    },
+    "_meta": {
+      "title": "REF1"
+    }
+  },
+  "25": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ref2.png"
+    },
+    "_meta": {
+      "title": "REF2"
+    }
+  },
+  "26": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "ref3.png"
+    },
+    "_meta": {
+      "title": "REF3"
+    }
+  },
+  "13": {
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ],
+      "prompt": [
+        "9",
+        0
+      ],
+      "width": [
+        "10",
+        0
+      ],
+      "height": [
+        "11",
+        0
+      ],
+      "length": [
+        "12",
+        0
+      ],
+      "ref_image_size": "match",
+      "ref_images.ref_image_0": [
+        "24",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "25",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "26",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "H3_CONDITION"
+    }
+  },
+  "18": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "conditioning": [
+        "13",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "GUIDER"
+    }
+  },
+  "19": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "14",
+        0
+      ],
+      "guider": [
+        "18",
+        0
+      ],
+      "sampler": [
+        "15",
+        0
+      ],
+      "sigmas": [
+        "17",
+        0
+      ],
+      "latent_image": [
+        "13",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "SAMPLER"
+    }
+  }
+}

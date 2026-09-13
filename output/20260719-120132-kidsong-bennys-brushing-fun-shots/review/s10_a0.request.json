@@ -1,0 +1,36 @@
+{
+  "shot_id": "s10",
+  "take": "s10_a0",
+  "shot": {
+    "id": "s10",
+    "verse": 2,
+    "lyric_span": [
+      1,
+      2
+    ],
+    "start": 37.338,
+    "end": 41.332,
+    "shot_type": "closeup",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "The kids sing along with happy faces, moving to the beat",
+    "camera": "static",
+    "setting": "The three friends are brushing their teeth together, smiling at each other in the mirror.",
+    "reuse_of": null,
+    "seed": 20357984,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\s10_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\review\\s10_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

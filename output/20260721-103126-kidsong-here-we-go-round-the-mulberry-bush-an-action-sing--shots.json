@@ -1,0 +1,451 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 3.042,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers hold hands and walk in a sunny garden.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "story_subject": null,
+      "status": "planned",
+      "attempts": 1,
+      "failure_reason": "TimeoutError: ComfyUI render exceeded 1800s for prompt d8322385-ef7f-4ff7-bd34-bfbc5e3618a9."
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 3.042,
+      "end": 6.037,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "They walk around the mulberry bush.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263757,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 6.037,
+      "end": 9.033,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri looks at the bush with a curious expression.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 9.033,
+      "end": 11.88,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers continue walking around the mulberry bush.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 11.88,
+      "end": 14.443,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers stand in a bright cheerful bathroom with a white pedestal sink and colorful toiletry bottles.",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20266798,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 14.443,
+      "end": 16.858,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "Two toddlers rub soapy bubbles between their hands at the sink.",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263757,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 16.858,
+      "end": 19.249,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri holds up her hands to show the bubbles.",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 19.249,
+      "end": 21.8,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, tilting their head with a giggle",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 21.8,
+      "end": 24.451,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers stand in a bright cheerful playroom with colorful toys and books.",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20266798,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 24.451,
+      "end": 27.539,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "Two toddlers skip in a circle around the mulberry bush.",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263757,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 27.539,
+      "end": 29.977,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps her hands and counts on her fingers.",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 29.977,
+      "end": 32.8,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, clapping once on the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 32.8,
+      "end": 35.434,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three toddlers stand in a bright cheerful bathroom with a white pedestal sink and colorful toiletry bottles.",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20266798,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 35.434,
+      "end": 37.825,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "Two toddlers stand at the sink with colorful toothbrushes.",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263757,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.825,
+      "end": 40.844,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri brushes her teeth in big cheerful circles.",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 40.844,
+      "end": 43.44,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, swaying from side to side",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 43.44,
+      "end": 46.231,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s08",
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 46.231,
+      "end": 48.53,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s09",
+      "seed": 20262744,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s18",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 48.53,
+      "end": 50.945,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s10",
+      "seed": 20263758,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s19",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 50.945,
+      "end": 53.429,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s11",
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s20",
+      "verse": 4,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 53.429,
+      "end": 56.262,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s08",
+      "seed": 20261730,
+      "story_subject": null,
+      "status": "planned"
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20281867,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20357391,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s03",
+    "attempt": 1,
+    "seed": 20358961,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s04",
+    "attempt": 0,
+    "seed": 20351690,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s04",
+    "attempt": 1,
+    "seed": 20352667,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s04",
+    "attempt": 2,
+    "seed": 20353644,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s05",
+    "attempt": 0,
+    "seed": 20304981,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s06",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s06",
+    "attempt": 1,
+    "seed": 20358961,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s07",
+    "attempt": 0,
+    "seed": 20351690,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s08",
+    "attempt": 0,
+    "seed": 20304981,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 1,
+    "seed": 20358961,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 2,
+    "seed": 20359938,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s10",
+    "attempt": 0,
+    "seed": 20351690,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s11",
+    "attempt": 0,
+    "seed": 20304981,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s12",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s13",
+    "attempt": 0,
+    "seed": 20351690,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s14",
+    "attempt": 0,
+    "seed": 20304981,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s14",
+    "attempt": 1,
+    "seed": 20305958,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s15",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "stage": "cut",
+    "attempt": 0,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [
+        "external review timed out"
+      ],
+      "retry_hints": {
+        "recut": false,
+        "reshoot": []
+      }
+    }
+  },
+  {
+    "gate": "vision_coverage",
+    "coverage": 0.0,
+    "threshold": 0.8,
+    "uncovered": [
+      "s00_a0",
+      "s01_a0",
+      "s02_a0",
+      "s03_a1",
+      "s04_a2",
+      "s05_a0",
+      "s06_a1",
+      "s07_a0",
+      "s08_a0",
+      "s09_a2",
+      "s10_a0",
+      "s11_a0",
+      "s12_a0",
+      "s13_a0",
+      "s14_a1",
+      "s15_a0"
+    ],
+    "promoted": false
+  }
+]

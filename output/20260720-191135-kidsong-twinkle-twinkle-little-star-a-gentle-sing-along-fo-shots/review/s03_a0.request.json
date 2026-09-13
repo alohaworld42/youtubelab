@@ -1,0 +1,39 @@
+{
+  "shot_id": "s03",
+  "take": "s03_a0",
+  "shot": {
+    "id": "s03",
+    "verse": 0,
+    "lyric_span": [
+      2,
+      2
+    ],
+    "start": 8.29,
+    "end": 10.94,
+    "shot_type": "closeup",
+    "characters": [
+      "Nala"
+    ],
+    "action": "Nala counts on her fingers.",
+    "camera": "slow pull-back",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20263759,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s03_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\review\\s03_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

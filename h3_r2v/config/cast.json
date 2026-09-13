@@ -1,0 +1,24 @@
+{
+  "style": "Bright cheerful 3D toddler-cartoon style like Cocomelon: soft rounded shapes, big friendly eyes, smooth pastel colors, sunny warm lighting, clean simple background.",
+  "no_extra": "No other children, no adults, no extra characters, no duplicates or clones. The children look exactly like in the reference images: same face, same skin tone, same hairstyle, same clothes.",
+  "cast": [
+    {
+      "id": "zuri",
+      "name": "Zuri",
+      "role": "girl",
+      "ref": "C:\\Users\\admin\\Desktop\\Projects\\ref_video_test_wan\\cast_refs\\zuri\\canonical.png"
+    },
+    {
+      "id": "kofi",
+      "name": "Kofi",
+      "role": "boy",
+      "ref": "C:\\Users\\admin\\Desktop\\Projects\\ref_video_test_wan\\cast_refs\\kofi\\canonical.png"
+    },
+    {
+      "id": "nala",
+      "name": "Nala",
+      "role": "girl",
+      "ref": "C:\\Users\\admin\\Desktop\\Projects\\ref_video_test_wan\\cast_refs\\nala\\canonical.png"
+    }
+  ]
+}

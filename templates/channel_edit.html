@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% set active = 'channels' %}
+{% block title %}{{ channel.name }} — Brainrot Studio{% endblock %}
+{% block content %}
+<h1>{{ channel.name }} bearbeiten</h1>
+
+<form method="post" class="card">
+  <label class="field">Anzeigename</label>
+  <input type="text" name="name" value="{{ channel.name }}">
+
+  <label class="field">Nische (steuert Auto-Ideen &amp; Script-Kontext)</label>
+  <input type="text" name="niche" value="{{ channel.niche }}"
+         placeholder="z.B. Gruselgeschichten für 16-25-Jährige, deutsch">
+
+  <label class="field">Beschreibung / Zielgruppe</label>
+  <textarea name="description" rows="3"
+    placeholder="Worum geht der Kanal, welcher Ton, welche Zielgruppe?">{{ channel.description }}</textarea>
+
+  <label class="field">Standard-Videotyp</label>
+  <select name="default_video_type">
+    {% for t in types %}
+    <option value="{{ t.id }}" {% if channel.default_video_type == t.id %}selected{% endif %}>{{ t.name }}</option>
+    {% endfor %}
+  </select>
+
+  <label class="field">Sprache</label>
+  <select name="language">
+    {% for code, label in languages %}
+    <option value="{{ code }}" {% if channel.language == code %}selected{% endif %}>{{ label }}</option>
+    {% endfor %}
+  </select>
+  <p class="muted">Steuert Text, Stimme und den KI-Hinweis unter jedem Video. Kein Freitext — ein Tippfehler hier würde still den falschsprachigen Hinweis hochladen.</p>
+
+  <label class="field">Content-Profil</label>
+  <select name="content_profile">
+    <option value="" {% if not channel.content_profile %}selected{% endif %}>— aus Video-Typ ableiten —</option>
+    {# Ein Profil, das die Config nicht mehr kennt, steht trotzdem hier drin
+       (`known` = false): würde es fehlen, hätte allein das Öffnen und
+       Speichern dieser Seite den Kanal stillschweigend umgestellt. #}
+    {% for p in profile_options %}
+    <option value="{{ p.name }}" {% if channel.content_profile == p.name %}selected{% endif %}>
+      {{ p.name }}{% if not p.known %} — nicht mehr in der Config{% endif %}</option>
+    {% endfor %}
+  </select>
+  {% if profile_error %}<p class="notice warn" style="margin:8px 0 0">{{ profile_error }}</p>{% endif %}
+  <p class="muted">Bestimmt Generator, Sprache und Look (config.json → content_profiles). Ohne Profil gilt der Standard-Videotyp oben.</p>
+
+  <label class="field">Look &amp; Feel (Style-Preset)</label>
+  <select name="style">
+    <option value="" {% if not channel.style %}selected{% endif %}>Standard (Brainrot-Look, Gameplay-BG)</option>
+    {# .get(s, s) on purpose: a style added to studio.views.STYLES (or, later,
+       read from config.json → styles) that has no label here must show its own
+       name, not 500 the whole page on a KeyError. #}
+    {% for s in styles %}
+    <option value="{{ s }}" {% if channel.style == s %}selected{% endif %}>
+      {{ {'kids': 'Kids — bunt, freundliche Captions, Animations-BG',
+          'brainrot': 'Brainrot — Gameplay-BG, aggressive Captions',
+          'clean': 'Clean — Stock-BG, dezente Captions'}.get(s, s) }}</option>
+    {% endfor %}
+  </select>
+
+  <label class="field" style="display:flex;align-items:center;gap:10px;text-transform:none;letter-spacing:0">
+    <input type="checkbox" name="made_for_kids" value="1" style="width:18px;height:18px"
+           {% if channel.made_for_kids %}checked{% endif %}>
+    Für Kinder gemacht (YouTube „Made for Kids“ / COPPA — Pflicht bei Kids-Content!)
+  </label>
+
+  <label class="field">Zeitplan — Uhrzeiten kommagetrennt (leer = keine Automatik)</label>
+  {# `schedule_raw` steht bei JEDEM abgelehnten Speichern zur Verfügung, nicht
+     nur bei einem Zeitplan-Fehler: sonst würde ein Fehler weiter unten im
+     Formular die gerade getippten (gültigen) Uhrzeiten auf den gespeicherten
+     Stand zurücksetzen — genau das stille Verwerfen, das hier nie passieren
+     darf. #}
+  <input type="text" name="schedule" placeholder="09:00, 18:00"
+         value="{{ schedule_raw if schedule_raw is defined else channel.schedule|join(', ') }}">
+  {% if schedule_error %}<p class="notice warn" style="margin:8px 0 0">{{ schedule_error }}</p>{% endif %}
+  <p class="muted">Format HH:MM (24 Stunden). Pro Slot wird 1 Video produziert: erst deine Ideen, sonst Auto-Ideen. Slots ≥15 Min. auseinander (CPU-Rendering dauert).</p>
+
+  <label class="field">Sichtbarkeit nach Upload</label>
+  <select name="privacy">
+    {% for p in ['private', 'unlisted', 'public'] %}
+    <option value="{{ p }}" {% if channel.privacy == p %}selected{% endif %}>{{ p }}</option>
+    {% endfor %}
+  </select>
+
+  <label class="field">Stimmen (edge-tts, leer = global aus config.json)</label>
+  <div class="row">
+    <input type="text" name="voice_narrator" style="flex:1;min-width:200px"
+           value="{{ channel.voices.get('narrator','') }}" placeholder="narrator z.B. de-DE-ConradNeural">
+    <input type="text" name="voice_speaker_a" style="flex:1;min-width:200px"
+           value="{{ channel.voices.get('speaker_a','') }}" placeholder="speaker_a">
+    <input type="text" name="voice_speaker_b" style="flex:1;min-width:200px"
+           value="{{ channel.voices.get('speaker_b','') }}" placeholder="speaker_b">
+  </div>
+
+  <label class="field">Gameplay-Quellen (yt-dlp URLs, eine pro Zeile)</label>
+  <textarea name="gameplay_urls" rows="3"
+    placeholder="https://www.youtube.com/watch?v=…">{{ channel.asset_prefs.get('gameplay_urls', [])|join('\n') }}</textarea>
+
+  <label class="field">Hintergrund-Priorität</label>
+  <select name="source_order">
+    <option value="gameplay" {% if channel.asset_prefs.get('source_order', ['gameplay'])[0] == 'gameplay' %}selected{% endif %}>
+      Gameplay zuerst, dann Stock (Pexels/Pixabay)</option>
+    <option value="stock" {% if channel.asset_prefs.get('source_order', ['gameplay'])[0] == 'stock' %}selected{% endif %}>
+      Stock zuerst (themenpassend), dann Gameplay</option>
+  </select>
+
+  <h2>Branding &amp; Metadaten</h2>
+  <p class="muted">Titel, Beschreibung und Tags entstehen aus diesen Vorlagen — pro Video wird nichts mehr getippt.</p>
+  {% if branding_error %}<p class="notice warn" style="margin:10px 0 0">{{ branding_error }}</p>{% endif %}
+
+  {% set gloss = {'topic': 'Thema des Videos', 'channel': 'Kanalname', 'language': 'Sprache'} %}
+  {# Die Hilfe kommt aus derselben Liste, gegen die die Route prüft
+     (`channels.TEMPLATE_PLACEHOLDERS`), damit sie nicht auseinanderlaufen
+     kann. `.get(p, p)` wie beim Style-Picker: ein neuer Platzhalter ohne
+     deutsche Erklärung zeigt seinen eigenen Namen statt zu verschwinden. #}
+  <p class="muted" style="margin-top:10px">Erlaubte Platzhalter:
+    {% for p in placeholders %}<code>{{ "{" ~ p ~ "}" }}</code> = {{ gloss.get(p, p) }}{% if not loop.last %} · {% endif %}{% endfor %}.
+    Andere Platzhalter (z.B. <code>{thema}</code>) werden nicht gefüllt, sondern ersatzlos gestrichen — das Speichern lehnt sie deshalb ab.</p>
+
+  <label class="field">Titel-Vorlage (leer = Titel aus der Pipeline)</label>
+  <input type="text" name="branding_title_template" placeholder="{topic} | {channel}"
+         value="{{ channel.branding.title_template }}">
+
+  <label class="field">Beschreibungs-Vorlage (leer = Beschreibung aus der Pipeline)</label>
+  <textarea name="branding_description_template" rows="3"
+    placeholder="Heute geht es um {topic}. Mehr davon auf {channel}.">{{ channel.branding.description_template }}</textarea>
+
+  <label class="field">Kanal-Tags — kommagetrennt</label>
+  <input type="text" name="branding_tags" placeholder="kinderlieder, lernen, deutsch"
+         value="{{ channel.branding.tags|join(', ') }}">
+  <p class="muted">Stehen vor den Tags des einzelnen Videos. YouTube nimmt insgesamt 15.</p>
+
+  <label class="field">Kanalfarben</label>
+  {# `type=color` kennt keinen Leerzustand — ein Picker, den niemand angefasst
+     hat, schickt #000000 mit. Ohne diesen Haken bekäme jeder gespeicherte
+     Kanal still eine schwarze Markenfarbe, die er nie gewählt hat. #}
+  <label class="field" style="display:flex;align-items:center;gap:10px;min-height:44px;text-transform:none;letter-spacing:0">
+    <input type="checkbox" name="branding_use_colors" value="1" style="width:18px;height:18px"
+           {% if channel.branding.primary_color or channel.branding.secondary_color %}checked{% endif %}>
+    Eigene Kanalfarben verwenden (ohne Haken: Standard-Look)
+  </label>
+  <div class="row">
+    <label class="field" style="margin:0">Primär</label>
+    <input type="color" name="branding_primary_color"
+           style="width:88px;height:44px;padding:4px;background:var(--surface2);border:2px solid var(--line);border-radius:10px"
+           value="{{ channel.branding.primary_color or '#7c3aed' }}">
+    <label class="field" style="margin:0 0 0 8px">Sekundär</label>
+    <input type="color" name="branding_secondary_color"
+           style="width:88px;height:44px;padding:4px;background:var(--surface2);border:2px solid var(--line);border-radius:10px"
+           value="{{ channel.branding.secondary_color or '#ffe600' }}">
+  </div>
+
+  <label class="field">Schrift (Datei oder Familie, leer = Standard)</label>
+  <input type="text" name="branding_font" placeholder="assets/fonts/Baloo2-Bold.ttf"
+         value="{{ channel.branding.font }}">
+
+  <label class="field">Intro-Clip (Pfad, relativ zum Projektordner)</label>
+  <input type="text" name="branding_intro_path" placeholder="assets/branding/intro.mp4"
+         value="{{ channel.branding.intro_path }}">
+
+  <label class="field">Outro-Clip (Pfad)</label>
+  <input type="text" name="branding_outro_path" placeholder="assets/branding/outro.mp4"
+         value="{{ channel.branding.outro_path }}">
+
+  <label class="field">Logo (Pfad)</label>
+  <input type="text" name="branding_logo_path" placeholder="assets/branding/logo.png"
+         value="{{ channel.branding.logo_path }}">
+  <p class="muted">Fehlt eine dieser Dateien beim Rendern, wird sie übersprungen statt das Video abzubrechen.</p>
+
+  <div class="row" style="margin-top:20px">
+    <button type="submit">Speichern</button>
+    <a class="btn ghost" href="/channels/">Abbrechen</a>
+  </div>
+</form>
+{% endblock %}

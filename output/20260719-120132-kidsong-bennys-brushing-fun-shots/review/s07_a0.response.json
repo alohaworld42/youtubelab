@@ -1,0 +1,11 @@
+{
+  "accept": false,
+  "score": 0.45,
+  "reasons": [
+    "crowd shot: five-plus children, none matching the three-kid cast specs",
+    "final beat prominently features a child who is not in the cast — the cast is three Black children and every featured kid must be one of them"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

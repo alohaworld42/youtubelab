@@ -1,0 +1,36 @@
+{
+  "shot_id": "s00",
+  "take": "s00_a0",
+  "shot": {
+    "id": "s00",
+    "verse": 0,
+    "lyric_span": [
+      0,
+      0
+    ],
+    "start": 0.0,
+    "end": 3.646,
+    "shot_type": "wide",
+    "characters": [
+      "all"
+    ],
+    "action": "Amira and Kofi standing in front of bathroom sink with Zuri washing her face behind them.",
+    "camera": "static",
+    "setting": "Amira and Kofi are standing in front of a bathroom sink, holding toothbrushes and smiling at Zuri who's washing her face.",
+    "reuse_of": null,
+    "seed": 20357391,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\s00_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\review\\s00_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

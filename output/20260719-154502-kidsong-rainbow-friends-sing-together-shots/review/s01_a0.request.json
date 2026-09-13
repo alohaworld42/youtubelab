@@ -1,0 +1,36 @@
+{
+  "shot_id": "s01",
+  "take": "s01_a0",
+  "shot": {
+    "id": "s01",
+    "verse": 0,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 3.831,
+    "end": 7.338,
+    "shot_type": "medium",
+    "characters": [
+      "Luna"
+    ],
+    "action": "holds up a red ball",
+    "camera": "slow push-in",
+    "setting": "a bright cheerful playroom with colorful toys",
+    "reuse_of": null,
+    "seed": 20340777,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-154502-kidsong-rainbow-friends-sing-together-shots\\s01_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-154502-kidsong-rainbow-friends-sing-together-shots\\review\\s01_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

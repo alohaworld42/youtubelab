@@ -1,0 +1,42 @@
+{
+  "shot_id": "s02",
+  "take": "s02_a0",
+  "shot": {
+    "id": "s02",
+    "verse": 0,
+    "lyric_span": [
+      3,
+      4
+    ],
+    "start": 8.475,
+    "end": 12.58,
+    "shot_type": "closeup",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "Zuri yawns and smiles at the camera",
+    "camera": "gentle pan right",
+    "setting": "a cozy bedroom with a star-patterned blanket, a shelf of plush toys, a small night lamp and a crescent-moon wall decal",
+    "reuse_of": null,
+    "seed": 20261731,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-131710-kidsong-are-you-sleeping-a-gentle-wake-up-sing-along-for-t-shots\\s02_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-131710-kidsong-are-you-sleeping-a-gentle-wake-up-sing-along-for-t-shots\\review\\s02_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

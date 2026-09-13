@@ -1,0 +1,47 @@
+{
+  "_comment": "Konsistenz-Lab. Alle Pfade absolut. Python = ComfyUI .venv (torch cu126, PIL, requests, transformers).",
+  "lab_dir": "C:/Users/Aloha/Desktop/Projects/Youtube",
+  "python": "C:/Users/Aloha/Desktop/Projects/youtubegenerator/comfyui/models/ComfyUI (1)/ComfyUI/.venv/Scripts/python.exe",
+  "comfy_dir": "C:/Users/Aloha/Desktop/Projects/youtubegenerator/comfyui/models/ComfyUI (1)/ComfyUI",
+  "comfy_url": "http://127.0.0.1:8188",
+  "comfy_args": ["main.py", "--listen", "127.0.0.1", "--port", "8188", "--disable-auto-launch", "--cache-none", "--disable-pinned-memory", "--reserve-vram", "0.8", "--extra-model-paths-config", "h3_model_paths.yaml"],
+  "models_dir": "C:/Users/Aloha/Desktop/Projects/youtubegenerator/comfyui/models",
+  "orca_root": "C:/Users/Aloha/orca/workspaces/youtubegenerator/Youtubegenerator",
+  "ffmpeg": "C:/Users/Aloha/Desktop/Projects/youtubegenerator/comfyui/venv/Lib/site-packages/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe",
+  "lock_file": "C:/Users/Aloha/Desktop/Projects/youtubegenerator/output/gpu_render.lock",
+  "hf_home": "C:/Users/Aloha/Desktop/Projects/Youtube/.hf_cache",
+  "temp_dir": "C:/Users/Aloha/Desktop/Projects/Youtube/Claudetempfiles",
+
+  "keyframe": {
+    "width": 1344, "height": 768,
+    "ref_w": 576, "ref_h": 768,
+    "klein": {"unet": "flux-2-klein-4b.safetensors", "weight_dtype": "fp8_e4m3fn", "clip": "qwen_3_4b.safetensors", "vae": "flux2-vae.safetensors", "steps": 4},
+    "qwen": {"unet_gguf": "Qwen-Image-Edit-2511-Q3_K_S.gguf", "clip": "qwen_2.5_vl_7b_fp8_scaled.safetensors", "vae": "qwen_image_vae.safetensors", "lora": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors", "steps": 4, "cfg": 1.0, "shift": 3.1},
+    "render_timeout": 900
+  },
+  "h3": {
+    "unet_gguf": "minimax_h3_fl2va_pruned-Q4_K.gguf",
+    "clip_gguf": "qwen3vl_32b_minimax_h3-Q2_K_M.gguf",
+    "video_vae": "minimax_h3_video_vae_fp16.safetensors",
+    "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+    "lora": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+    "width": 1344, "height": 768, "frames": 73,
+    "steps": 8, "sampler": "res_multistep", "scheduler": "beta",
+    "ref_image_size": "match",
+    "probe": {"width": 864, "height": 480, "frames": 39},
+    "render_timeout": 4800
+  },
+  "final": {"width": 1280, "height": 720, "fps": 24, "crf": 18, "phone_crf": 28, "phone_max_mb": 30},
+  "downloads": [
+    {"repo": "vantagewithai/Qwen-Image-Edit-2511-GGUF", "file": "Qwen-Image-Edit-2511-Q3_K_S.gguf", "dest": "unet", "gb": 8.95},
+    {"repo": "Comfy-Org/Qwen-Image_ComfyUI", "file": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors", "dest": "text_encoders", "gb": 9.38},
+    {"repo": "Comfy-Org/Qwen-Image_ComfyUI", "file": "split_files/vae/qwen_image_vae.safetensors", "dest": "vae", "gb": 0.25},
+    {"repo": "lightx2v/Qwen-Image-Edit-2511-Lightning", "file": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors", "dest": "loras", "gb": 0.85}
+  ],
+  "downloads_optional": [
+    {"repo": "Comfy-Org/flux2-klein", "file": "split_files/text_encoders/qwen_3_4b_fp4_flux2.safetensors", "dest": "text_encoders", "gb": 3.85, "when": "Klein RAM-Thrash"},
+    {"repo": "vantagewithai/Qwen-Image-Edit-2511-GGUF", "file": "Qwen-Image-Edit-2511-Q2_K.gguf", "dest": "unet", "gb": 7.07, "when": "Qwen RAM-Thrash"},
+    {"repo": "Abiray/MiniMax-H3-Pruned-GGUF", "file": "MiniMax-H3-Ref2VA-Pruned-Q4_K_S.gguf", "dest": "unet", "gb": 11.56, "when": "H3-Probe zeigt keine Ref-Wirkung"},
+    {"repo": "lightx2v/Minimax-h3-Turbo", "file": "minimax_h3_ref2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors", "dest": "loras", "gb": 1.96, "when": "zusammen mit Ref2VA"}
+  ]
+}

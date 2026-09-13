@@ -1,0 +1,36 @@
+{
+  "shot_id": "s03",
+  "take": "s03_a0",
+  "shot": {
+    "id": "s03",
+    "verse": 0,
+    "lyric_span": [
+      2,
+      2
+    ],
+    "start": 11.401,
+    "end": 15.0,
+    "shot_type": "medium",
+    "characters": [
+      "Kiara"
+    ],
+    "action": "Smiling at Kiara while washing hands",
+    "camera": "slow pull-back",
+    "setting": "a bright cheerful bathroom with a white sink and a big mirror",
+    "reuse_of": null,
+    "seed": 20349695,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-150227-kidsong-bubbles-and-smiles-bath-time-fun-shots\\s03_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-150227-kidsong-bubbles-and-smiles-bath-time-fun-shots\\review\\s03_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "shots": [
+    {
+      "id": "shot_01",
+      "cast": ["zuri"],
+      "action": "Zuri stands in a sunny garden, waves happily at the camera and giggles. Static camera, medium shot.",
+      "seed": 20260101,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "shot_02",
+      "cast": ["kofi"],
+      "action": "Kofi runs through a sunny garden, jumps excitedly and laughs loudly. Static camera, medium shot.",
+      "seed": 20260102,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "shot_03",
+      "cast": ["nala"],
+      "action": "Nala skips across the garden path, spins around happily and giggles. Static camera, medium shot.",
+      "seed": 20260103,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "shot_04",
+      "cast": ["zuri", "kofi"],
+      "action": "Zuri and Kofi dance side by side in the same sunny garden, bouncing to the beat and smiling at each other. Static camera, medium shot.",
+      "seed": 20260104,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "shot_05",
+      "cast": ["kofi", "nala"],
+      "action": "Kofi and Nala play together in the garden, chasing each other and laughing. Static camera, medium shot.",
+      "seed": 20260105,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "shot_06",
+      "cast": ["zuri", "nala"],
+      "action": "Zuri and Nala hold hands and spin in a circle together in the sunny garden, both smiling. Static camera, medium shot.",
+      "seed": 20260106,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "shot_07",
+      "cast": ["zuri", "kofi", "nala"],
+      "action": "All three children dance together in a circle in the sunny garden, jumping and laughing. Static camera, medium shot.",
+      "seed": 20260107,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    },
+    {
+      "id": "shot_08",
+      "cast": ["zuri", "kofi", "nala"],
+      "action": "All three children wave goodbye to the camera, smiling and laughing together in the sunny garden. Static camera, medium shot.",
+      "seed": 20260108,
+      "frames": null,
+      "fps": null,
+      "width": null,
+      "height": null,
+      "node_overrides": { "ref_image_size": "max" }
+    }
+  ]
+}

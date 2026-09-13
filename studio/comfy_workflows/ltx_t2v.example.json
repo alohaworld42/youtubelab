@@ -1,0 +1,8 @@
+{
+  "_note": "PLACEHOLDER shape only — not runnable. Export a real API-format workflow from your ComfyUI (Save (API Format)) and save it as ltx_t2v.json in this folder. The app finds the node titled 'positive' and overwrites its inputs.text.",
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "positive" },
+    "inputs": { "text": "placeholder prompt, replaced at runtime", "clip": ["4", 1] }
+  }
+}

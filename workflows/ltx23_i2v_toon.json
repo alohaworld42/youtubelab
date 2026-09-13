@@ -1,0 +1,364 @@
+{
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "ltx-2.3-22b-dev-fp8.safetensors"
+    },
+    "_meta": {
+      "title": "CHECKPOINT"
+    }
+  },
+  "2": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "ltx_2.3_22b_distilled_1.1_lora_dynamic_fro09_avg_rank_111_bf16.safetensors",
+      "strength_model": 0.5
+    },
+    "_meta": {
+      "title": "LORA_DISTILLED"
+    }
+  },
+  "3": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "lora_name": "ltx23_pixar_toon.safetensors",
+      "strength_model": 1.0
+    },
+    "_meta": {
+      "title": "LORA_STYLE"
+    }
+  },
+  "4": {
+    "class_type": "LTXAVTextEncoderLoader",
+    "inputs": {
+      "text_encoder": "gemma_3_12B_it_fp4_mixed.safetensors",
+      "ckpt_name": "ltx-2.3-22b-dev-fp8.safetensors",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "TEXT_ENCODER"
+    }
+  },
+  "5": {
+    "class_type": "LTXVAudioVAELoader",
+    "inputs": {
+      "ckpt_name": "ltx-2.3-22b-dev-fp8.safetensors"
+    },
+    "_meta": {
+      "title": "AUDIO_VAE"
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "P1x4r, 3D CGI toon style, placeholder",
+      "clip": [
+        "4",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "PROMPT"
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "photorealistic, live action, photo, text, watermark, logo, deformed, extra limbs, floating hands, disembodied hands, detached limbs, extra hands, severed body parts, hands without arms, deformed hands, fused fingers, scary, dark, glitch, morphing, static, corner watermark, channel logo, subtitles, onscreen text, pale-skinned child, red-haired child, blond child, shirtless child, bare chest, undressed, underwear, jewellery, earrings, necklace, piercing, crowd, many children, extra child, background children, unnamed child, additional kids, group of strangers, duplicate characters, cloned face, twins, inconsistent character design, off-model character, changing hairstyle, changing outfit, different child each frame, mismatched outfit, wrong shirt color, swapped clothing, child holding duplicate props, duplicate objects in one hand, marching, marching children, children in a row, row of children, straight line of children, formation, military formation, parade, lockstep, moving in unison, synchronized poses, single file, saluting, uniforms, ranks, soldiers, army, crowd of children, uncanny face, dead eyes, vacant stare, glassy eyes, unblinking stare, distorted smile, creepy smile, frightened expression, crying child, angry face, monster, ghost, gloomy lighting, harsh shadows on face, walking toward the camera, approaching the camera, looming toward the lens, staring into the lens",
+      "clip": [
+        "4",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "NEGATIVE"
+    }
+  },
+  "8": {
+    "class_type": "LTXVConditioning",
+    "inputs": {
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "frame_rate": 24
+    },
+    "_meta": {
+      "title": "CONDITIONING"
+    }
+  },
+  "9": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 896
+    },
+    "_meta": {
+      "title": "WIDTH"
+    }
+  },
+  "10": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 512
+    },
+    "_meta": {
+      "title": "HEIGHT"
+    }
+  },
+  "11": {
+    "class_type": "PrimitiveInt",
+    "inputs": {
+      "value": 97
+    },
+    "_meta": {
+      "title": "FRAMES"
+    }
+  },
+  "12": {
+    "class_type": "EmptyLTXVLatentVideo",
+    "inputs": {
+      "width": [
+        "9",
+        0
+      ],
+      "height": [
+        "10",
+        0
+      ],
+      "length": [
+        "11",
+        0
+      ],
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "LATENT_VIDEO"
+    }
+  },
+  "13": {
+    "class_type": "LTXVEmptyLatentAudio",
+    "inputs": {
+      "frames_number": [
+        "11",
+        0
+      ],
+      "frame_rate": 24,
+      "batch_size": 1,
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "LATENT_AUDIO"
+    }
+  },
+  "14": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 42
+    },
+    "_meta": {
+      "title": "SEED"
+    }
+  },
+  "15": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "_meta": {
+      "title": "SAMPLER_SELECT"
+    }
+  },
+  "16": {
+    "class_type": "ManualSigmas",
+    "inputs": {
+      "sigmas": "0.85, 0.7250, 0.4219, 0.0"
+    },
+    "_meta": {
+      "title": "SIGMAS"
+    }
+  },
+  "17": {
+    "class_type": "CFGGuider",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "positive": [
+        "8",
+        0
+      ],
+      "negative": [
+        "8",
+        1
+      ],
+      "cfg": 1.0
+    },
+    "_meta": {
+      "title": "GUIDER"
+    }
+  },
+  "24": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "example.png"
+    },
+    "_meta": {
+      "title": "INPUT_IMAGE"
+    }
+  },
+  "25": {
+    "class_type": "LTXVPreprocess",
+    "inputs": {
+      "image": [
+        "24",
+        0
+      ],
+      "img_compression": 18
+    },
+    "_meta": {
+      "title": "PREPROCESS"
+    }
+  },
+  "26": {
+    "class_type": "LTXVImgToVideoInplace",
+    "inputs": {
+      "vae": [
+        "1",
+        2
+      ],
+      "image": [
+        "25",
+        0
+      ],
+      "latent": [
+        "12",
+        0
+      ],
+      "strength": 1.0,
+      "bypass": false
+    },
+    "_meta": {
+      "title": "IMG_TO_VIDEO"
+    }
+  },
+  "18": {
+    "class_type": "LTXVConcatAVLatent",
+    "inputs": {
+      "video_latent": [
+        "26",
+        0
+      ],
+      "audio_latent": [
+        "13",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CONCAT_AV"
+    }
+  },
+  "19": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "14",
+        0
+      ],
+      "guider": [
+        "17",
+        0
+      ],
+      "sampler": [
+        "15",
+        0
+      ],
+      "sigmas": [
+        "16",
+        0
+      ],
+      "latent_image": [
+        "18",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SAMPLER"
+    }
+  },
+  "20": {
+    "class_type": "LTXVSeparateAVLatent",
+    "inputs": {
+      "av_latent": [
+        "19",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SEPARATE_AV"
+    }
+  },
+  "21": {
+    "class_type": "VAEDecodeTiled",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "1",
+        2
+      ],
+      "tile_size": 768,
+      "overlap": 64,
+      "temporal_size": 4096,
+      "temporal_overlap": 4
+    },
+    "_meta": {
+      "title": "DECODE"
+    }
+  },
+  "22": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "fps": 24
+    },
+    "_meta": {
+      "title": "CREATE_VIDEO"
+    }
+  },
+  "23": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "22",
+        0
+      ],
+      "filename_prefix": "kidsong/ltx_i2v",
+      "format": "auto",
+      "codec": "auto"
+    },
+    "_meta": {
+      "title": "FILENAME_PREFIX"
+    }
+  }
+}

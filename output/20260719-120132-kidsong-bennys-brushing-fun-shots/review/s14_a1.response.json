@@ -1,0 +1,12 @@
+{
+  "accept": false,
+  "score": 0.3,
+  "reasons": [
+    "left toddler is shirtless — published kids' content must show every child fully dressed in their specified outfit, no exceptions",
+    "visible watermark ghost top-left in all frames",
+    "neither child matches cast outfit specs"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

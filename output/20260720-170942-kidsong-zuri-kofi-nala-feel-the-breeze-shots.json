@@ -1,0 +1,390 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 3.088,
+      "shot_type": "wide",
+      "characters": [
+        "Kofi",
+        "Nala",
+        "Zuri"
+      ],
+      "action": "Zuri, Kofi and Nala play in a bright green grassy field with colorful flowers",
+      "camera": "static",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 3.088,
+      "end": 6.084,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri blows bubbles high up in the air",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s01_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 6.084,
+      "end": 9.22,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri's face lights up as she watches the bubbles float away",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 9.22,
+      "end": 13.52,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "The three friends dance and play together on the grassy field",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 13.52,
+      "end": 17.82,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala twirls around with her arms outstretched and a big smile on her face",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 17.82,
+      "end": 21.711,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s05_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 21.711,
+      "end": 25.31,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 25.31,
+      "end": 29.513,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala claps their hands to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 29.513,
+      "end": 33.112,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 33.112,
+      "end": 37.175,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s09_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 37.175,
+      "end": 40.89,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 40.89,
+      "end": 44.513,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 44.513,
+      "end": 48.089,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 48.089,
+      "end": 52.315,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s13_a2.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 3
+    },
+    {
+      "id": "s14",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 52.315,
+      "end": 55.89,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s14_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s15",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 55.89,
+      "end": 59.837,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s15_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    }
+  ]
+}

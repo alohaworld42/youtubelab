@@ -1,0 +1,41 @@
+{
+  "shot_id": "s10",
+  "take": "s10_a0",
+  "shot": {
+    "id": "s10",
+    "verse": 2,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 29.14,
+    "end": 32.787,
+    "shot_type": "closeup",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "A toddler brushes her teeth with a toothbrush.",
+    "camera": "static",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20261730,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s10_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-210641-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\review\\s10_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

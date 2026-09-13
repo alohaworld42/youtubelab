@@ -1,0 +1,41 @@
+{
+  "title": "Zuri's Watering Blooms Day",
+  "description": "Join Zuri, Kofi, and Nala as they care for their beautiful flowers! They'll water them every day to make them strong and happy.",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler",
+    "sing along",
+    "watering blooms",
+    "flowers",
+    "gardening",
+    "everyday moments"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, Kofi and Nala, in their established looks.",
+  "verses": [
+    {
+      "lines": [
+        "Water, water, everywhere!",
+        "Zuri's flowers need it to grow with care.",
+        "Kofi and Nala too can help us share!"
+      ],
+      "scene": "Zuri stands by the garden tub, pouring water on the flowers while Kofi and Nala watch."
+    },
+    {
+      "lines": [
+        "We'll use our cups to pour with fun!",
+        "Every flower will get some water soon.",
+        "Nala's helping now, everyone!"
+      ],
+      "scene": "Kofi and Zuri hand each other small watering cans, taking turns pouring water on the flowers while Nala supervises."
+    },
+    {
+      "lines": [
+        "We'll make our flowers happy too!",
+        "Watering them is fun to do.",
+        "Zuri's helping Kofi and Nala!"
+      ],
+      "scene": "All three toddlers are gathered around the garden, clapping and cheering each other on as they finish watering their plants."
+    }
+  ]
+}

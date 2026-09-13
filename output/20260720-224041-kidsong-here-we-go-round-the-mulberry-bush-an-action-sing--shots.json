@@ -1,0 +1,430 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 2.345,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Walking towards the mulberry bush in a sunny garden.",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "planned",
+      "attempts": 1,
+      "failure_reason": "TimeoutError: ComfyUI render exceeded 1800s for prompt 7d52b4de-ef21-4b19-a3f3-d4d5ee7060af."
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 2.345,
+      "end": 4.76,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi",
+        "Nala"
+      ],
+      "action": "Walking around the mulberry bush.",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "planned"
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 4.76,
+      "end": 7.755,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Holding hands with friends.",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "planned"
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 7.755,
+      "end": 10.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, swaying from side to side",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "planned"
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 10.0,
+      "end": 13.166,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Standing at a low bathroom sink.",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "planned"
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 13.166,
+      "end": 16.161,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "Rubbing soapy bubbles between hands.",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263757,
+      "status": "planned"
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 16.161,
+      "end": 18.92,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala washes up with soapy bubbles, leaning in a little closer",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "planned"
+    },
+    {
+      "id": "s07",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 18.92,
+      "end": 21.502,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Counting on fingers.",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "planned"
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 21.502,
+      "end": 23.963,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "Skipping around the mulberry bush.",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263757,
+      "status": "planned"
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 23.963,
+      "end": 26.935,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "planned"
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 26.935,
+      "end": 29.35,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, looking straight at the camera, looking straight at the camera",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "planned"
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 29.35,
+      "end": 31.742,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, bouncing gently on the spot, bouncing gently on the spot",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "planned"
+    },
+    {
+      "id": "s12",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 31.742,
+      "end": 34.48,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, swaying from side to side, swaying from side to side",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "planned"
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 34.48,
+      "end": 37.152,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Standing at a sink with colorful toothbrushes.",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "planned"
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 37.152,
+      "end": 40.171,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Brushing teeth with a colorful toothbrush.",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "planned"
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 40.171,
+      "end": 42.88,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala brushes their teeth with a big smile, leaning in a little closer",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "planned"
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 42.88,
+      "end": 45.488,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s07",
+      "seed": 20261730,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 45.488,
+      "end": 48.553,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s08",
+      "seed": 20262744,
+      "status": "planned"
+    },
+    {
+      "id": "s18",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 48.553,
+      "end": 50.945,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s09",
+      "seed": 20263758,
+      "status": "planned"
+    },
+    {
+      "id": "s19",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 50.945,
+      "end": 53.963,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s10",
+      "seed": 20261730,
+      "status": "planned"
+    },
+    {
+      "id": "s20",
+      "verse": 4,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 53.963,
+      "end": 56.61,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": "s11",
+      "seed": 20262744,
+      "status": "planned"
+    }
+  ]
+}

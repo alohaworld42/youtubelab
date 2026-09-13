@@ -1,0 +1,39 @@
+{
+  "shot_id": "s01",
+  "take": "s01_a2",
+  "shot": {
+    "id": "s01",
+    "verse": 0,
+    "lyric_span": [
+      1,
+      1
+    ],
+    "start": 3.274,
+    "end": 6.362,
+    "shot_type": "medium",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "Zuri pours water from the tub into a watering can",
+    "camera": "slow push-in",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20261730,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s01_a2.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\review\\s01_a2.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.0.0"
+}

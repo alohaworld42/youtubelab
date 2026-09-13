@@ -1,0 +1,448 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 3.228,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "the three toddlers stand in front of the clock, looking up at it with big smiles",
+      "camera": "static",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s00_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 3.228,
+      "end": 6.92,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "the toddlers put their hands up to the clock's face and pretend to listen for it to strike one",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s01_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 6.92,
+      "end": 10.147,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri looks up at the clock's face with a big smile and raises an eyebrow as if hearing it strike one",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20261731,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s02_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 10.147,
+      "end": 13.72,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "the toddlers clap their hands in time with the clock's ticking and look at each other happily",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s03_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 13.72,
+      "end": 16.602,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "the toddlers stand in front of the clock and watch as it strikes one",
+      "camera": "static",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s04_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 16.602,
+      "end": 19.83,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala watches as the clock strikes one with her eyes wide open and a big smile on her face",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20263759,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s05_a1.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 19.83,
+      "end": 22.616,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "the toddlers watch as the clock's hands move around and strike one with a big 'Oh!' of excitement",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s06_a0.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 22.616,
+      "end": 25.844,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi looks at the clock with a big smile and raises his hands up to show he heard it strike one",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s07_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 25.844,
+      "end": 28.72,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, looking straight at the camera",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s08_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 28.72,
+      "end": 31.835,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "the toddlers stand in front of the clock and clap their hands as it strikes one again",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s09_a1.mp4",
+      "verdict": "accepted",
+      "score": 1.0,
+      "attempts": 2
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 31.835,
+      "end": 34.575,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps her hands happily as the clock strikes one with a big smile on her face",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20261731,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s10_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 34.575,
+      "end": 37.825,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20263759,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s11_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.825,
+      "end": 41.053,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, swaying from side to side, looking straight at the camera",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20261731,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s12_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 41.053,
+      "end": 43.9,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, tilting their head with a giggle, bouncing gently on the spot",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20262745,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s13_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 43.9,
+      "end": 47.02,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "the toddlers stand in front of the clock and count together as it strikes one",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20266799,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s14_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 47.02,
+      "end": 50.5,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala counts along on their fingers",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": null,
+      "seed": 20263759,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-201849-kidsong-hickory-dickory-dock-a-fun-clock-sing-along-for-to-shots\\s15_a0.mp4",
+      "verdict": "accepted",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 50.5,
+      "end": 53.034,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": "s09",
+      "seed": 20261731,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 53.034,
+      "end": 55.333,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": "s10",
+      "seed": 20262745,
+      "status": "planned"
+    },
+    {
+      "id": "s18",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 55.333,
+      "end": 57.608,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright cheerful playroom with colorful toys and a soft round rug",
+      "reuse_of": "s11",
+      "seed": 20263759,
+      "status": "planned"
+    }
+  ]
+}

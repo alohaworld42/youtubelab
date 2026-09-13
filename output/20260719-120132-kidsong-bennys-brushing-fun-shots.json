@@ -1,0 +1,324 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 3.646,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Amira and Kofi standing in front of bathroom sink with Zuri washing her face behind them.",
+      "camera": "static",
+      "setting": "Amira and Kofi are standing in front of a bathroom sink, holding toothbrushes and smiling at Zuri who's washing her face.",
+      "reuse_of": null,
+      "seed": 20357391,
+      "status": "planned"
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 3.646,
+      "end": 7.663,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "Zuri applying toothpaste to her toothbrush.",
+      "camera": "static",
+      "setting": "Amira and Kofi are standing in front of a bathroom sink, holding toothbrushes and smiling at Zuri who's washing her face.",
+      "reuse_of": null,
+      "seed": 20357391,
+      "status": "planned"
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 7.663,
+      "end": 11.169,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri smiling at Amira and Kofi with toothpaste on her brush.",
+      "camera": "static",
+      "setting": "Amira and Kofi are standing in front of a bathroom sink, holding toothbrushes and smiling at Zuri who's washing her face.",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "planned"
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 11.169,
+      "end": 15.0,
+      "shot_type": "medium",
+      "characters": [
+        "all"
+      ],
+      "action": "Amira and Kofi holding up their toothbrushes with Zuri brushing her teeth.",
+      "camera": "static",
+      "setting": "Amira and Kofi are standing in front of a bathroom sink, holding toothbrushes and smiling at Zuri who's washing her face.",
+      "reuse_of": null,
+      "seed": 20357391,
+      "status": "planned"
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 15.0,
+      "end": 18.715,
+      "shot_type": "wide",
+      "characters": [
+        "Amira"
+      ],
+      "action": "The kids brush their teeth with big smiles",
+      "camera": "slow push-in",
+      "setting": "Zuri is applying toothpaste to her toothbrush while Amira and Kofi watch.",
+      "reuse_of": null,
+      "seed": 20341338,
+      "status": "planned"
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 18.715,
+      "end": 22.686,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids brush their teeth with big smiles",
+      "camera": "static",
+      "setting": "Zuri is applying toothpaste to her toothbrush while Amira and Kofi watch.",
+      "reuse_of": null,
+      "seed": 20304981,
+      "status": "planned"
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 22.686,
+      "end": 26.192,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "static",
+      "setting": "Zuri is applying toothpaste to her toothbrush while Amira and Kofi watch.",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "planned"
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 26.192,
+      "end": 30.0,
+      "shot_type": "wide",
+      "characters": [
+        "Amira"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "Zuri is applying toothpaste to her toothbrush while Amira and Kofi watch.",
+      "reuse_of": null,
+      "seed": 20341338,
+      "status": "planned"
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 30.0,
+      "end": 33.808,
+      "shot_type": "wide",
+      "characters": [
+        "Amira"
+      ],
+      "action": "The kids brush their teeth with big smiles",
+      "camera": "slow push-in",
+      "setting": "The three friends are brushing their teeth together, smiling at each other in the mirror.",
+      "reuse_of": null,
+      "seed": 20341338,
+      "status": "planned"
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 33.808,
+      "end": 37.338,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids brush their teeth with big smiles",
+      "camera": "static",
+      "setting": "The three friends are brushing their teeth together, smiling at each other in the mirror.",
+      "reuse_of": null,
+      "seed": 20304981,
+      "status": "planned"
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.338,
+      "end": 41.332,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "static",
+      "setting": "The three friends are brushing their teeth together, smiling at each other in the mirror.",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "planned"
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 41.332,
+      "end": 45.0,
+      "shot_type": "wide",
+      "characters": [
+        "Amira"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan left",
+      "setting": "The three friends are brushing their teeth together, smiling at each other in the mirror.",
+      "reuse_of": null,
+      "seed": 20341338,
+      "status": "planned"
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 45.0,
+      "end": 48.855,
+      "shot_type": "wide",
+      "characters": [
+        "Amira"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "Amira, Kofi, and Zuri are rinsing their mouths with water and shaking off excess water from their toothbrushes.",
+      "reuse_of": null,
+      "seed": 20341338,
+      "status": "planned"
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 48.855,
+      "end": 52.5,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "static",
+      "setting": "Amira, Kofi, and Zuri are rinsing their mouths with water and shaking off excess water from their toothbrushes.",
+      "reuse_of": null,
+      "seed": 20304981,
+      "status": "planned"
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 52.5,
+      "end": 56.25,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids smile brightly at each other",
+      "camera": "static",
+      "setting": "Amira, Kofi, and Zuri are rinsing their mouths with water and shaking off excess water from their toothbrushes.",
+      "reuse_of": null,
+      "seed": 20357984,
+      "status": "planned"
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 56.25,
+      "end": 60.0,
+      "shot_type": "wide",
+      "characters": [
+        "Amira"
+      ],
+      "action": "The kids smile brightly at each other",
+      "camera": "gentle pan right",
+      "setting": "Amira, Kofi, and Zuri are rinsing their mouths with water and shaking off excess water from their toothbrushes.",
+      "reuse_of": null,
+      "seed": 20341338,
+      "status": "planned"
+    }
+  ]
+}

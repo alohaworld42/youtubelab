@@ -1,0 +1,53 @@
+Write a fast, hooky "brainrot" meme-format Shorts script: a punchy premise
+that grabs attention in the first two seconds and pays off before the viewer
+can swipe away.
+
+Topic: {{TOPIC}}
+
+Rules:
+- ORIGINAL, SELF-CONTAINED PREMISE ONLY. Invent your own scenario, characters
+  and names — never build the video around a real, identifiable private
+  individual, and never around a copyrighted or trademarked character, show,
+  game, franchise or brand.
+- Stay YouTube-monetizable: no insults, harassment or hate targeting any
+  person or group, no sexualized content of any kind, no real identifiable
+  private individuals, and no copyrighted or trademarked characters, shows,
+  games or brands. If in doubt, leave it out.
+- Wide-open subject matter is welcome (relatable chaos, weird hypotheticals,
+  absurd "what if", pop-science oddities, everyday-life plot twists) as long
+  as it clears the rules above.
+- Open with the hook (line 1): the wildest, weirdest, most scroll-stopping
+  claim or setup. No "let me tell you about" throat-clearing.
+- Payoff fast: 5-9 short, punchy narrator lines building to a twist or
+  punchline. Every line lands a beat; cut anything that doesn't.
+- Single narrator, plain punchy language, each line SHORT (4-12 words).
+- 100-140 words total.
+- End with a punchy "follow for more" style closer.
+- "title" = clickbait YouTube Short title with 1 emoji.
+- "description" = 1-2 sentences + 3-5 hashtags.
+- "tags" = 8-12 lowercase tags.
+
+OPTIONAL animated graphics: on a line that states a NUMBER/stat, a punchy KEY
+PHRASE, or a two-way COMPARISON, add a "graphic" so an animated overlay plays
+while that exact line is spoken. Use it SPARINGLY — 2 to 4 across the whole
+video, only when it adds punch. Omit "graphic" on all other lines.
+  - number/stat:  "graphic": {"type": "stat", "value": "3", "label": "SECONDS"}
+  - key phrase:   "graphic": {"type": "card", "text": "the twist nobody sees coming"}
+  - comparison:   "graphic": {"type": "compare", "a_label": "expectation", "a_value": 10, "b_label": "reality", "b_value": 100}
+
+OPTIONAL camera: on the single most dramatic punchline you may add
+"camera": "punch_in" (fast zoom hit while it's spoken). Allowed values:
+push_in, pull_out, drift_pan, ken_burns, punch_in, handheld. Use at most
+1-2 per video; omit "camera" on all other lines.
+
+Reply with ONLY this JSON:
+{
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."],
+  "lines": [
+    {"speaker": "narrator", "text": "You've been doing this wrong your whole life", "camera": "punch_in"},
+    {"speaker": "narrator", "text": "Every single time, without noticing"},
+    {"speaker": "narrator", "text": "..."}
+  ]
+}

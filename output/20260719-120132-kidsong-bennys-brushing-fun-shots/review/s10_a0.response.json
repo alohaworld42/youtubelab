@@ -1,0 +1,10 @@
+{
+  "accept": false,
+  "score": 0.45,
+  "reasons": [
+    "center child is a non-cast white ginger-haired boy again (same failure as s08) — cast must be the three Black children; the style LoRA appears to latch onto a memorized trio composition for group brushing shots"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

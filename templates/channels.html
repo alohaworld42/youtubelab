@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% set active = 'channels' %}
+{% block content %}
+<h1>Kanäle</h1>
+
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <div>
+      <strong>YouTube-Kanal verbinden</strong>
+      <p class="muted" style="margin:6px 0 0">Öffnet den Google-Consent im Browser.
+      Dort den richtigen Kanal / Brand-Account auswählen. Benötigt <code>client_secret.json</code> im Projektordner.</p>
+    </div>
+    <button id="connect-btn" onclick="connectChannel()">+ Kanal verbinden</button>
+  </div>
+  <p class="muted" id="connect-status" style="margin:10px 0 0;display:none"></p>
+</div>
+
+{% for c in channels %}
+<div class="card">
+  <div class="row" style="justify-content:space-between">
+    <div>
+      <strong>{{ c.name }}</strong>
+      <span class="muted">{{ c.yt_channel_title or '' }}{% if c.yt_channel_id %} · {{ c.yt_channel_id }}{% endif %}</span>
+    </div>
+    <div>
+      {% if c.status == 'active' %}<span class="badge ok">aktiv</span>
+      {% elif c.status == 'needs_reauth' %}<span class="badge err">Re-Auth nötig</span>
+      {% else %}<span class="badge">pausiert</span>{% endif %}
+    </div>
+  </div>
+  <p class="muted" style="margin:8px 0">
+    Nische: {{ c.niche or '—' }} · Typ: {{ c.default_video_type }} ·
+    Zeitplan: {{ c.schedule|join(', ') if c.schedule else 'kein' }} ·
+    Sichtbarkeit: {{ c.privacy }}
+  </p>
+  <div class="row">
+    <a class="btn ghost" href="/channels/{{ c.id }}">Bearbeiten</a>
+    {% if c.status == 'needs_reauth' %}
+      <button onclick="connectChannel()">Neu verbinden</button>
+    {% endif %}
+    {% if c.status == 'paused' %}
+      <form method="post" action="/channels/{{ c.id }}/resume"><button>Aktivieren</button></form>
+    {% else %}
+      <form method="post" action="/channels/{{ c.id }}/pause"><button class="ghost">Pausieren</button></form>
+    {% endif %}
+    <form method="post" action="/channels/{{ c.id }}/delete"
+          onsubmit="return confirm('Kanal {{ c.name }} wirklich entfernen? (Videos/Uploads bleiben in der Historie)')">
+      <button class="danger">Entfernen</button>
+    </form>
+  </div>
+</div>
+{% else %}
+<p class="muted">Noch keine Kanäle. Oben verbinden.</p>
+{% endfor %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function connectChannel(){
+  const btn = document.getElementById('connect-btn');
+  const status = document.getElementById('connect-status');
+  btn.disabled = true; status.style.display = 'block';
+  status.textContent = 'Browser-Fenster geöffnet — dort Konto wählen und bestätigen…';
+  try{ await post('/channels/connect', {}); }
+  catch(e){ status.textContent = 'Fehler: ' + e.message; btn.disabled = false; return; }
+
+  // The OAuth consent round trip takes as long as the user takes. The old
+  // poller was a bare `await fetch`, so one failed request ended it silently:
+  // the button stayed disabled and the page kept claiming the browser window
+  // was still open, even after the consent had gone through.
+  pollJson('/channels/connect/status', s => {
+    if (s.status === 'running') return true;
+    if (s.status === 'done'){
+      status.textContent = 'Verbunden! Lade neu…';
+      location.href = '/channels/' + s.channel_id;
+      return false;
+    }
+    if (s.status === 'error') status.textContent = 'Fehler: ' + s.error;
+    btn.disabled = false;
+    return false;
+  }, 1500, () => {
+    status.textContent = 'Status nicht abrufbar — Seite neu laden, um zu sehen ob der Kanal verbunden wurde.';
+    btn.disabled = false;
+  });
+}
+</script>
+{% endblock %}

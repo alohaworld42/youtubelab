@@ -1,0 +1,10 @@
+{
+  "accept": false,
+  "score": 0.45,
+  "reasons": [
+    "the middle child is a white ginger-haired boy — Kofi (light brown skin, natural curly hair, blue shirt) is replaced by a non-cast child in center frame; the cast is three Black children and every kid on screen must match"
+  ],
+  "retry_hints": {
+    "seed_bump": true
+  }
+}

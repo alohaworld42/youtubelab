@@ -1,0 +1,39 @@
+{
+  "shot_id": "s00",
+  "take": "s00_a0",
+  "shot": {
+    "id": "s00",
+    "verse": 0,
+    "lyric_span": [
+      0,
+      0
+    ],
+    "start": 0.0,
+    "end": 2.763,
+    "shot_type": "wide",
+    "characters": [
+      "all"
+    ],
+    "action": "The three toddlers sit on a soft blanket in a garden at dusk, looking up at the sky.",
+    "camera": "static",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20266799,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\s00_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-191135-kidsong-twinkle-twinkle-little-star-a-gentle-sing-along-fo-shots\\review\\s00_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 3,
+  "cast_text": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

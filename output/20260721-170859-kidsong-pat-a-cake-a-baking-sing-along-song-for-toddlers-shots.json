@@ -1,0 +1,385 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 2.902,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Three toddlers stand in a bright cheerful kitchen with yellow walls, white cabinets and red flooring.",
+      "camera": "static",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 2.902,
+      "end": 5.248,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi",
+        "Zuri"
+      ],
+      "action": "Zuri and Kofi pat their floury hands together over a low kitchen table dusted with flour.",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263758,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 5.248,
+      "end": 8.22,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri rolls a ball of soft dough and lowers a round cake tin toward a warm, friendly cartoon oven.",
+      "camera": "gentle pan right",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 8.22,
+      "end": 11.146,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri sings along with a happy face, moving to the beat, swaying from side to side",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s04",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 11.146,
+      "end": 13.66,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, tilting their head with a giggle, looking straight at the camera",
+      "camera": "gentle pan left",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 13.66,
+      "end": 17.624,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala claps her hands in a bright cheerful kitchen with yellow walls, white cabinets and red flooring.",
+      "camera": "static",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": "a ball",
+      "status": "planned"
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 17.624,
+      "end": 21.12,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala smiles brightly at the camera in a bright cheerful kitchen with yellow walls, white cabinets and red flooring.",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": "a ball",
+      "status": "planned"
+    },
+    {
+      "id": "s07",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 21.12,
+      "end": 24.102,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Three toddlers stand in a backyard with green grass and colorful flowers.",
+      "camera": "static",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 24.102,
+      "end": 27.028,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi",
+        "Zuri"
+      ],
+      "action": "Zuri and Kofi play together in a backyard with green grass and colorful flowers.",
+      "camera": "gentle pan left",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263758,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 27.028,
+      "end": 29.977,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala smiles brightly at the camera in a backyard with green grass and colorful flowers.",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 29.977,
+      "end": 32.322,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri points at the camera in a backyard with green grass and colorful flowers.",
+      "camera": "gentle pan right",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 32.322,
+      "end": 35.271,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi sings along with a happy face, moving to the beat, looking straight at the camera",
+      "camera": "gentle pan left",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s12",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 35.271,
+      "end": 38.32,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala sings along with a happy face, moving to the beat, bouncing gently on the spot, bouncing gently on the spot",
+      "camera": "slow pull-back",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 38.32,
+      "end": 41.749,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "Three toddlers stand in a playroom with colorful toys and furniture.",
+      "camera": "static",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20266799,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 41.749,
+      "end": 45.279,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi",
+        "Zuri"
+      ],
+      "action": "Zuri and Kofi play together in a playroom with colorful toys and furniture.",
+      "camera": "gentle pan left",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263758,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 45.279,
+      "end": 49.04,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "Nala smiles brightly at the camera in a playroom with colorful toys and furniture.",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": null,
+      "seed": 20263759,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s16",
+      "verse": 4,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 49.04,
+      "end": 52.338,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri claps their hands to the beat",
+      "camera": "static",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": "s07",
+      "seed": 20261731,
+      "story_subject": null,
+      "status": "planned"
+    },
+    {
+      "id": "s17",
+      "verse": 4,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 52.338,
+      "end": 55.89,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "Kofi claps their hands to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny cheerful kitchen with a fruit bowl, checkered curtains, a small table with stools and colorful cups on open shelves",
+      "reuse_of": "s08",
+      "seed": 20262745,
+      "story_subject": null,
+      "status": "planned"
+    }
+  ]
+}

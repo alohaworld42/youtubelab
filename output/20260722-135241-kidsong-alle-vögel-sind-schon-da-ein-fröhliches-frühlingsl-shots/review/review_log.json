@@ -1,0 +1,295 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s04",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s05",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s06",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s07",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s08",
+    "attempt": 0,
+    "seed": 20262745,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s09",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s10",
+    "attempt": 0,
+    "seed": 20261731,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s11",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s12",
+    "attempt": 0,
+    "seed": 20263759,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "shot": "s13",
+    "attempt": 0,
+    "seed": 20266799,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "seed_bump": false,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    },
+    "i2v_anchored": true
+  },
+  {
+    "stage": "script",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.8,
+      "reasons": [
+        "no hook: no line of 3+ words repeats in two different verses \u2014 add a repeated chorus/hook line so the song is singable"
+      ],
+      "retry_hints": {
+        "regenerate": true
+      }
+    }
+  },
+  {
+    "stage": "script",
+    "attempt": 1,
+    "verdict": {
+      "accept": false,
+      "score": 0.8,
+      "reasons": [
+        "no hook: no line of 3+ words repeats in two different verses \u2014 add a repeated chorus/hook line so the song is singable"
+      ],
+      "retry_hints": {
+        "regenerate": true
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.85,
+      "reasons": [
+        "cluttered frame: only 57% of shots have <= 2 characters (need >= 60%)"
+      ],
+      "retry_hints": {
+        "replan": true
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 1,
+    "verdict": {
+      "accept": false,
+      "score": 0.85,
+      "reasons": [
+        "cluttered frame: only 57% of shots have <= 2 characters (need >= 60%)"
+      ],
+      "retry_hints": {
+        "replan": true
+      }
+    }
+  },
+  {
+    "stage": "cut",
+    "attempt": 0,
+    "verdict": {
+      "accept": true,
+      "score": 1.0,
+      "reasons": [],
+      "retry_hints": {
+        "recut": false,
+        "reshoot": []
+      }
+    }
+  }
+]

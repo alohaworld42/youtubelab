@@ -1,0 +1,111 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.971,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.971,
+      "end": 7.57,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 7.57,
+      "end": 11.238,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 11.238,
+      "end": 14.814,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 14.814,
+      "end": 19.04,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 19.04,
+      "end": 22.639,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 22.639,
+      "end": 26.239,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 26.239,
+      "end": 29.838,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 29.838,
+      "end": 34.04,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 34.04,
+      "end": 37.523,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 37.523,
+      "end": 41.239,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 41.239,
+      "end": 44.791,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 44.791,
+      "end": 49.041,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 49.041,
+      "end": 52.64,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 52.64,
+      "end": 56.239,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 56.239,
+      "end": 60.0,
+      "src": "s15"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

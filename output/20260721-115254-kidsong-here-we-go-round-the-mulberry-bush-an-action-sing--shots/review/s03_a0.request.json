@@ -1,0 +1,42 @@
+{
+  "shot_id": "s03",
+  "take": "s03_a0",
+  "shot": {
+    "id": "s03",
+    "verse": 1,
+    "lyric_span": [
+      0,
+      0
+    ],
+    "start": 9.02,
+    "end": 11.981,
+    "shot_type": "medium",
+    "characters": [
+      "all"
+    ],
+    "action": "The toddlers stand at a low bathroom sink.",
+    "camera": "static",
+    "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+    "reuse_of": null,
+    "seed": 20266799,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s03_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\review\\s03_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 3,
+  "cast_text": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

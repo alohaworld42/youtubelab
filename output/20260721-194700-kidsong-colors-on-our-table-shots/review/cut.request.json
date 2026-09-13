@@ -1,0 +1,129 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-194700-kidsong-colors-on-our-table.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 2.972,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 2.972,
+      "end": 5.41,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 5.41,
+      "end": 8.406,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 8.406,
+      "end": 10.797,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 10.797,
+      "end": 13.793,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 13.793,
+      "end": 16.811,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 16.811,
+      "end": 20.364,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 20.364,
+      "end": 24.009,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 24.009,
+      "end": 27.609,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 27.609,
+      "end": 30.557,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 30.557,
+      "end": 34.157,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 34.157,
+      "end": 37.802,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 37.802,
+      "end": 40.797,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 40.797,
+      "end": 43.816,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 43.816,
+      "end": 46.788,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 46.788,
+      "end": 49.807,
+      "src": "s15"
+    },
+    {
+      "shot_id": "s16",
+      "start": 49.807,
+      "end": 52.802,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s17",
+      "start": 52.802,
+      "end": 55.751,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s18",
+      "start": 55.751,
+      "end": 58.584,
+      "src": "s10"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-194700-kidsong-colors-on-our-table-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

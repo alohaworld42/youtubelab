@@ -1,0 +1,31 @@
+{
+  "_comment": "Alle Modelle, die das Lab braucht. bootstrap.py laedt sie nach <models_dir>/<dest>/<save_as|basename>. Groessen ca. GB. Gesamt ~85 GB.",
+  "models": [
+    {"repo": "Comfy-Org/MiniMax-H3", "file": "vae/minimax_h3_video_vae_fp16.safetensors", "dest": "vae", "gb": 5.2, "role": "H3 Video-VAE"},
+    {"repo": "Comfy-Org/MiniMax-H3", "file": "vae/minimax_h3_audio_vae_fp32.safetensors", "dest": "vae", "gb": 0.6, "role": "H3 Audio-VAE"},
+    {"repo": "unsloth/MiniMax-H3-GGUF", "file": "qwen3vl_32b_minimax_h3-Q2_K_M.gguf", "dest": "text_encoders", "gb": 13.1, "role": "H3 Text-Encoder (exakt)"},
+    {"repo": "Abiray/MiniMax-H3-Pruned-GGUF", "file": "MiniMax-H3-FL2VA-Pruned-Q4_K_S.gguf", "save_as": "minimax_h3_fl2va_pruned-Q4_K.gguf", "dest": "unet", "gb": 11.6, "role": "H3 DiT (aequivalente Q4-Quant-Klasse; lokal umbenannt)"},
+    {"repo": "lightx2v/Minimax-h3-Turbo", "file": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors", "dest": "loras", "gb": 2.0, "role": "H3 8-Step-Turbo-LoRA (Standard)"},
+    {"repo": "lightx2v/Minimax-h3-Turbo", "file": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors", "dest": "loras", "gb": 2.0, "role": "H3 4-Step-Turbo (Speed-Test, optional)"},
+
+    {"repo": "Comfy-Org/flux2-klein", "file": "split_files/diffusion_models/flux-2-klein-4b.safetensors", "dest": "diffusion_models", "gb": 7.75, "role": "K1 Klein 4B (Keyframe)"},
+    {"repo": "Comfy-Org/flux2-klein", "file": "split_files/text_encoders/qwen_3_4b.safetensors", "dest": "text_encoders", "gb": 8.04, "role": "K1 Klein Text-Encoder"},
+    {"repo": "Comfy-Org/flux2-klein", "file": "split_files/text_encoders/qwen_3_4b_fp4_flux2.safetensors", "dest": "text_encoders", "gb": 3.85, "role": "K1 Encoder fp4 (RAM-Sparer, optional)"},
+    {"repo": "Comfy-Org/flux2-klein", "file": "split_files/vae/flux2-vae.safetensors", "dest": "vae", "gb": 0.34, "role": "K1 Klein VAE"},
+
+    {"repo": "vantagewithai/Qwen-Image-Edit-2511-GGUF", "file": "Qwen-Image-Edit-2511-Q3_K_S.gguf", "dest": "unet", "gb": 8.95, "role": "K2 Qwen-Image-Edit-2511 (Keyframe)"},
+    {"repo": "Comfy-Org/Qwen-Image_ComfyUI", "file": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors", "dest": "text_encoders", "gb": 9.38, "role": "K2 Qwen2.5-VL Encoder"},
+    {"repo": "Comfy-Org/Qwen-Image_ComfyUI", "file": "split_files/vae/qwen_image_vae.safetensors", "dest": "vae", "gb": 0.25, "role": "K2 Qwen VAE"},
+    {"repo": "lightx2v/Qwen-Image-Edit-2511-Lightning", "file": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors", "dest": "loras", "gb": 0.85, "role": "K2 Lightning 4-Step-LoRA"},
+
+    {"repo": "Kim2091/UltraSharp", "file": "4x-UltraSharp.pth", "dest": "upscale_models", "gb": 0.07, "role": "Upscaler (Toon)"},
+    {"repo": "ai-forever/Real-ESRGAN", "file": "RealESRGAN_x4.pth", "dest": "upscale_models", "gb": 0.07, "role": "Upscaler (alt)"}
+  ],
+  "hf_models_precache": ["facebook/dinov2-small"],
+  "custom_nodes": [
+    {"repo": "https://github.com/city96/ComfyUI-GGUF", "dir": "ComfyUI-GGUF", "note": "GGUF-Loader; danach Patch aus youtubegenerator/tools/patch_comfyui_gguf_h3.py anwenden"},
+    {"repo": "https://github.com/pepikir/minimax-h3-speedup", "dir": "h3_cond_cache", "note": "verlustfreier Conditioning-Cache (H3SaveConditioning etc.)"}
+  ],
+  "pip": ["gguf>=0.13.0", "spandrel", "transformers", "huggingface_hub", "Pillow", "numpy", "requests", "av", "imageio-ffmpeg", "sentencepiece", "protobuf", "triton-windows", "beautifulsoup4", "lxml", "curl_cffi"],
+  "code_repo": {"url": "https://github.com/alohaworld42/youtubegenerator.git", "branch": "claude/vram-budget-diffusion-ft5aoa", "note": "liefert pipeline.kidsong.comfy / pipeline.gpu_lock / pipeline.atomicio + tools/patch_comfyui_gguf_h3.py + tools/setup_h3_comfy.ps1"}
+}

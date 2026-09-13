@@ -1,0 +1,11 @@
+{
+  "accept": false,
+  "score": 0.55,
+  "reasons": [
+    "s14 remains unshippable (shirtless toddlers, no usable take) — video goes to staging; the producer will reshoot s14 under the live dress-code negatives and re-assemble manually"
+  ],
+  "retry_hints": {
+    "recut": false,
+    "reshoot": ["s14"]
+  }
+}

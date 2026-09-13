@@ -1,0 +1,84 @@
+{
+  "44": {
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": { "title": "checkpoint" },
+    "inputs": { "ckpt_name": "ltx-video-2b-v0.9.5.safetensors" }
+  },
+  "38": {
+    "class_type": "CLIPLoader",
+    "_meta": { "title": "clip" },
+    "inputs": { "clip_name": "t5xxl_fp16.safetensors", "type": "ltxv", "device": "default" }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "positive" },
+    "inputs": {
+      "text": "3d cartoon animation, colorful, cute, friendly, soft lighting, for children, high quality, smooth motion",
+      "clip": ["38", 0]
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "negative" },
+    "inputs": {
+      "text": "low quality, worst quality, deformed, distorted, disfigured, motion smear, motion artifacts, fused fingers, bad anatomy, weird hand, ugly, scary, dark, realistic, photo",
+      "clip": ["38", 0]
+    }
+  },
+  "70": {
+    "class_type": "EmptyLTXVLatentVideo",
+    "_meta": { "title": "latent" },
+    "inputs": { "width": 640, "height": 1088, "length": 97, "batch_size": 1 }
+  },
+  "69": {
+    "class_type": "LTXVConditioning",
+    "_meta": { "title": "ltxv_conditioning" },
+    "inputs": { "positive": ["6", 0], "negative": ["7", 0], "frame_rate": 24.0 }
+  },
+  "71": {
+    "class_type": "LTXVScheduler",
+    "_meta": { "title": "scheduler" },
+    "inputs": {
+      "steps": 30, "max_shift": 2.05, "base_shift": 0.95,
+      "stretch": true, "terminal": 0.1, "latent": ["70", 0]
+    }
+  },
+  "73": {
+    "class_type": "KSamplerSelect",
+    "_meta": { "title": "sampler_select" },
+    "inputs": { "sampler_name": "res_multistep" }
+  },
+  "72": {
+    "class_type": "SamplerCustom",
+    "_meta": { "title": "sampler" },
+    "inputs": {
+      "model": ["44", 0],
+      "add_noise": true,
+      "noise_seed": 0,
+      "cfg": 3.0,
+      "positive": ["69", 0],
+      "negative": ["69", 1],
+      "sampler": ["73", 0],
+      "sigmas": ["71", 0],
+      "latent_image": ["70", 0]
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "_meta": { "title": "vae_decode" },
+    "inputs": { "samples": ["72", 0], "vae": ["44", 2] }
+  },
+  "77": {
+    "class_type": "VHS_VideoCombine",
+    "_meta": { "title": "video_combine" },
+    "inputs": {
+      "images": ["8", 0],
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "studio_bg",
+      "format": "video/h264-mp4",
+      "pingpong": false,
+      "save_output": true
+    }
+  }
+}

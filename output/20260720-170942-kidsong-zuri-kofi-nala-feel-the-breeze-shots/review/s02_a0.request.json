@@ -1,0 +1,39 @@
+{
+  "shot_id": "s02",
+  "take": "s02_a0",
+  "shot": {
+    "id": "s02",
+    "verse": 0,
+    "lyric_span": [
+      1,
+      2
+    ],
+    "start": 6.084,
+    "end": 9.22,
+    "shot_type": "closeup",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "Zuri's face lights up as she watches the bubbles float away",
+    "camera": "gentle pan right",
+    "setting": "a bright cheerful playroom with colorful toys",
+    "reuse_of": null,
+    "seed": 20261730,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\s02_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-170942-kidsong-zuri-kofi-nala-feel-the-breeze-shots\\review\\s02_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

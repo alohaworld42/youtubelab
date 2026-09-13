@@ -1,0 +1,714 @@
+[
+  {
+    "shot": "s00",
+    "attempt": 0,
+    "seed": 20357391,
+    "verdict": {
+      "accept": true,
+      "score": 0.9,
+      "reasons": [
+        "three kids matching cast specs, clean hands, crisp hires render, correct bathroom staging, natural brushing motion; minor left-edge crop on Amira in the first beat"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s01",
+    "attempt": 0,
+    "seed": 20357391,
+    "verdict": {
+      "accept": true,
+      "score": 0.85,
+      "reasons": [
+        "clean render, cast outfits consistent with s00, hands correct; Kofi exits frame in later beats (acceptable reframe within the shot)"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s02",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": true,
+      "score": 0.8,
+      "reasons": [
+        "correct subject (Zuri with paste on brush), clean hands, crisp render; mild costume drift vs s00/s01 (Kofi sleeve color, Zuri top graphic) \u2014 inherent to prompt-only identity, flagged for the cast-LoRA milestone"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s03",
+    "attempt": 0,
+    "seed": 20357391,
+    "verdict": {
+      "accept": true,
+      "score": 0.82,
+      "reasons": [
+        "action rendered exactly as planned, cast consistent, clean; minor wart: Kofi holds two toothbrushes"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s04",
+    "attempt": 0,
+    "seed": 20341338,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s04",
+    "attempt": 1,
+    "seed": 20342315,
+    "verdict": {
+      "accept": true,
+      "score": 0.78,
+      "reasons": [
+        "action honored with charming push-in to a direct-to-camera brushing closeup (very on-genre); setting sparser than planned (no sink in frame)"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s05",
+    "attempt": 0,
+    "seed": 20304981,
+    "verdict": {
+      "accept": false,
+      "score": 0.35,
+      "reasons": [
+        "wrong setting: kids brush teeth seated at a dining table with plates (should be bathroom/sink)",
+        "characters match no cast member (teal outfit girl, unknown yellow-shirt kid)",
+        "identity morph mid-shot: right-hand child's shirt and hair change between beats"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s05",
+    "attempt": 1,
+    "seed": 20305958,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s05",
+    "attempt": 2,
+    "seed": 20306935,
+    "verdict": {
+      "accept": false,
+      "score": 0.4,
+      "reasons": [
+        "cast bleed: teal-shirt and striped-tank boys are not cast members, membership morphs across the shot",
+        "no bathroom set again \u2014 bare room",
+        "note: this shot's generic action text ('The kids brush their teeth') carries no setting anchor; the verse-1 slots keep losing the sink"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s06",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s06",
+    "attempt": 1,
+    "seed": 20358961,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s06",
+    "attempt": 2,
+    "seed": 20359938,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s07",
+    "attempt": 0,
+    "seed": 20341338,
+    "verdict": {
+      "accept": false,
+      "score": 0.45,
+      "reasons": [
+        "crowd shot: five-plus children, none matching the three-kid cast specs",
+        "final beat prominently features a child who is not in the cast \u2014 the cast is three Black children and every featured kid must be one of them"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s07",
+    "attempt": 1,
+    "seed": 20342315,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s07",
+    "attempt": 2,
+    "seed": 20343292,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s08",
+    "attempt": 0,
+    "seed": 20341338,
+    "verdict": {
+      "accept": false,
+      "score": 0.45,
+      "reasons": [
+        "the middle child is a white ginger-haired boy \u2014 Kofi (light brown skin, natural curly hair, blue shirt) is replaced by a non-cast child in center frame; the cast is three Black children and every kid on screen must match"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s08",
+    "attempt": 1,
+    "seed": 20342315,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s08",
+    "attempt": 2,
+    "seed": 20343292,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 0,
+    "seed": 20304981,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 1,
+    "seed": 20305958,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s09",
+    "attempt": 2,
+    "seed": 20306935,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s10",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": false,
+      "score": 0.45,
+      "reasons": [
+        "center child is a non-cast white ginger-haired boy again (same failure as s08) \u2014 cast must be the three Black children; the style LoRA appears to latch onto a memorized trio composition for group brushing shots"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s10",
+    "attempt": 1,
+    "seed": 20358961,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s10",
+    "attempt": 2,
+    "seed": 20359938,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s11",
+    "attempt": 0,
+    "seed": 20341338,
+    "verdict": {
+      "accept": false,
+      "score": 0.0,
+      "reasons": [
+        "black/blank",
+        "blurry",
+        "static"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": true,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s11",
+    "attempt": 1,
+    "seed": 20342315,
+    "verdict": {
+      "accept": false,
+      "score": 0.55,
+      "reasons": [
+        "middle boy is noticeably lighter-skinned with lighter hair than the Kofi established in s00-s03 \u2014 cross-shot identity inconsistency",
+        "final beat ends on the back of a head filling the frame"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s11",
+    "attempt": 2,
+    "seed": 20343292,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s12",
+    "attempt": 0,
+    "seed": 20341338,
+    "verdict": {
+      "accept": false,
+      "score": 0.4,
+      "reasons": [
+        "non-cast white ginger-haired boy center frame, becoming the hero closeup in the final beat \u2014 cast substitution again (same memorized-trio failure as s08/s10)"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s12",
+    "attempt": 1,
+    "seed": 20342315,
+    "verdict": {
+      "accept": false,
+      "score": 0.65,
+      "reasons": [
+        "strobe/glitch"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s12",
+    "attempt": 2,
+    "seed": 20343292,
+    "verdict": {
+      "accept": true,
+      "score": 0.7,
+      "reasons": [
+        "cast-integrity negatives took effect: hero closeup is Amira, no non-cast child featured; residual wart: middle boy lighter than established Kofi (secondary in frame) \u2014 logged for the cast-LoRA milestone"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s13",
+    "attempt": 0,
+    "seed": 20304981,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s13",
+    "attempt": 1,
+    "seed": 20305958,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s13",
+    "attempt": 2,
+    "seed": 20306935,
+    "verdict": {
+      "accept": true,
+      "score": 0.65,
+      "reasons": [
+        "cast integrity holds (all Black kids, rinse action, clean render); warts: duplicate similar boy instead of solo Kofi, outfit colors drift (teal/purple vs cast palette) \u2014 usable mid-video beat"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "shot": "s14",
+    "attempt": 0,
+    "seed": 20357984,
+    "verdict": {
+      "accept": false,
+      "score": 0.7,
+      "reasons": [
+        "blurry"
+      ],
+      "retry_hints": {
+        "seed_bump": true,
+        "simplify_action": false,
+        "force_i2v": false
+      }
+    }
+  },
+  {
+    "shot": "s14",
+    "attempt": 1,
+    "seed": 20358961,
+    "verdict": {
+      "accept": false,
+      "score": 0.3,
+      "reasons": [
+        "left toddler is shirtless \u2014 published kids' content must show every child fully dressed in their specified outfit, no exceptions",
+        "visible watermark ghost top-left in all frames",
+        "neither child matches cast outfit specs"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s14",
+    "attempt": 2,
+    "seed": 20359938,
+    "verdict": {
+      "accept": false,
+      "score": 0.2,
+      "reasons": [
+        "both toddlers shirtless (rendered before dress-code negatives took effect) \u2014 unshippable; s14 has no usable take and must be reshot before the cut can be approved"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s15",
+    "attempt": 0,
+    "seed": 20341338,
+    "verdict": {
+      "accept": false,
+      "score": 0.4,
+      "reasons": [
+        "non-cast white ginger-haired boy center frame and hero of the finale closeup (pre-negatives render); flanking girls are correct cast"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s15",
+    "attempt": 1,
+    "seed": 20342315,
+    "verdict": {
+      "accept": false,
+      "score": 0.68,
+      "reasons": [
+        "much improved: Amira heroes the finale, girls on-model; middle boy still pale/light-haired vs the established Kofi \u2014 one retry remains and the finale is the video's last impression, so taking it"
+      ],
+      "retry_hints": {
+        "seed_bump": true
+      }
+    }
+  },
+  {
+    "shot": "s15",
+    "attempt": 2,
+    "seed": 20343292,
+    "verdict": {
+      "accept": true,
+      "score": 0.92,
+      "reasons": [
+        "all three cast members on-model including a correct Kofi, unison brushing, finale hero closeup on Amira \u2014 best group shot of the run; cast-integrity negatives fully effective"
+      ],
+      "retry_hints": {}
+    }
+  },
+  {
+    "stage": "script",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.55,
+      "reasons": [
+        "the title and two lyric lines are about 'Benny' but the cast is Kofi/Aaliyah/Ava \u2014 a phantom fourth character that renders and captions would contradict; every named child in lyrics/title must be one of the described characters",
+        "'Use some toothpaste and a smiling' is not a grammatical line"
+      ],
+      "retry_hints": {
+        "regenerate": true
+      }
+    }
+  },
+  {
+    "stage": "script",
+    "attempt": 1,
+    "verdict": {
+      "accept": true,
+      "score": 0.85,
+      "reasons": [
+        "coherent cast with full appearance specs, imitable actions, phrase repetition present; minor: no exact repeated hook line, 'red white blue toothpaste' slightly random but harmless"
+      ],
+      "retry_hints": {
+        "regenerate": false
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.5,
+      "reasons": [
+        "systematic subject inversion: in s01/s02/s05/s06/s10/s13/s14 the 'characters' list names different kids than the ones performing the 'action' (e.g. closeup of Zuri with action 'Amira and Kofi smiling at Zuri') \u2014 the framed character must be the action's subject",
+        "s07/s11/s15 are wide shots listing a single character but a group action"
+      ],
+      "retry_hints": {
+        "replan": true
+      }
+    }
+  },
+  {
+    "stage": "shotlist",
+    "attempt": 1,
+    "verdict": {
+      "accept": true,
+      "score": 0.62,
+      "reasons": [
+        "verse 0 shots are coherent; verses 1-3 use generic fallback actions (repetitive but safe and on-topic) \u2014 acceptable with wide/medium/closeup rotation providing visual variety; take-level review will enforce render quality"
+      ],
+      "retry_hints": {
+        "replan": false
+      }
+    }
+  },
+  {
+    "stage": "cut",
+    "attempt": 0,
+    "verdict": {
+      "accept": false,
+      "score": 0.5,
+      "reasons": [
+        "shot s14 in the cut is unshippable (shirtless toddlers \u2014 no usable take existed; must be reshot under the now-live dress-code negatives)",
+        "two off-beat cut boundaries in the outro (s13/s14 at 52.5s, s14/s15 at 56.25s) \u2014 beat grid thins in the outro, lyric-timing recut acceptable there"
+      ],
+      "retry_hints": {
+        "recut": true,
+        "reshoot": [
+          "s14"
+        ]
+      }
+    }
+  },
+  {
+    "stage": "cut",
+    "attempt": 1,
+    "verdict": {
+      "accept": false,
+      "score": 0.55,
+      "reasons": [
+        "s14 remains unshippable (shirtless toddlers, no usable take) \u2014 video goes to staging; the producer will reshoot s14 under the live dress-code negatives and re-assemble manually"
+      ],
+      "retry_hints": {
+        "recut": false,
+        "reshoot": [
+          "s14"
+        ]
+      }
+    }
+  }
+]

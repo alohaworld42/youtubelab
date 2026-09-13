@@ -1,0 +1,365 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 0.0,
+      "end": 3.971,
+      "shot_type": "wide",
+      "characters": [
+        "all"
+      ],
+      "action": "The three friends stand at the kitchen sink",
+      "camera": "static",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20357390,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s00_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 3.971,
+      "end": 7.57,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri",
+        "Kofi"
+      ],
+      "action": "holding rubber ducks and soap",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20303620,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s01_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 7.57,
+      "end": 11.238,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "blowing a big bubble",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20281077,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s02_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 11.238,
+      "end": 15.0,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "popping a bubble with his finger",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+      "reuse_of": null,
+      "seed": 20304980,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s03_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s04",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 15.0,
+      "end": 19.04,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids play together with a colorful toy",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357983,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s04_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 19.04,
+      "end": 22.639,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids play together with a colorful toy",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20304980,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s05_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 22.639,
+      "end": 26.239,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20281077,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s06_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 26.239,
+      "end": 30.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357983,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s07_a0.mp4",
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 30.0,
+      "end": 34.04,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids splash and giggle",
+      "camera": "slow push-in",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20357983,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s08_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 34.04,
+      "end": 37.523,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids splash and giggle",
+      "camera": "gentle pan right",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20304980,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s09_a1.mp4",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.523,
+      "end": 41.239,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20281077,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s10_a1.mp4",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 41.239,
+      "end": 45.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20357983,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s11_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 45.0,
+      "end": 49.041,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357983,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s12_a1.mp4",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s13",
+      "verse": 3,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 49.041,
+      "end": 52.64,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan left",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20304980,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s13_a1.mp4",
+      "score": 0.7,
+      "attempts": 2
+    },
+    {
+      "id": "s14",
+      "verse": 3,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 52.64,
+      "end": 56.239,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20281077,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s14_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s15",
+      "verse": 3,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 56.239,
+      "end": 60.0,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright cheerful playroom with colorful toys",
+      "reuse_of": null,
+      "seed": 20357983,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-085055-kidsong-splish-splash-fun-with-friends-shots\\s15_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "shot_id": "s02",
+  "take": "s02_a0",
+  "shot": {
+    "id": "s02",
+    "verse": 0,
+    "lyric_span": [
+      1,
+      2
+    ],
+    "start": 5.921,
+    "end": 9.102,
+    "shot_type": "medium",
+    "characters": [
+      "Zuri",
+      "Kofi"
+    ],
+    "action": "The toddlers show disappointment at the rain.",
+    "camera": "gentle pan right",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20263758,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\s02_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-123610-kidsong-rain-rain-go-away-a-sunny-sing-along-song-for-todd-shots\\review\\s02_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 2,
+  "cast_text": "Two adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; and Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers",
+  "cast_version": "1.1.0"
+}

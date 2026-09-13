@@ -1,0 +1,114 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.646,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.646,
+      "end": 7.663,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 7.663,
+      "end": 11.169,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 11.169,
+      "end": 15.0,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 15.0,
+      "end": 18.715,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 18.715,
+      "end": 22.686,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 22.686,
+      "end": 26.192,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 26.192,
+      "end": 30.0,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 30.0,
+      "end": 33.808,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 33.808,
+      "end": 37.338,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 37.338,
+      "end": 41.332,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 41.332,
+      "end": 45.0,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 45.0,
+      "end": 48.855,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 48.855,
+      "end": 52.5,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 52.5,
+      "end": 56.25,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 56.25,
+      "end": 60.0,
+      "src": "s15"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": false,
+    "score": 0.85,
+    "reasons": [
+      "cut boundary off-beat: shots s13/s14 boundary 52.50s is 3.65s from nearest beat",
+      "cut boundary off-beat: shots s14/s15 boundary 56.25s is 7.40s from nearest beat"
+    ],
+    "retry_hints": {
+      "recut": true,
+      "reshoot": []
+    }
+  }
+}

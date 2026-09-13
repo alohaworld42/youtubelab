@@ -1,0 +1,39 @@
+{
+  "shot_id": "s10",
+  "take": "s10_a0",
+  "shot": {
+    "id": "s10",
+    "verse": 2,
+    "lyric_span": [
+      0,
+      1
+    ],
+    "start": 32.485,
+    "end": 35.225,
+    "shot_type": "closeup",
+    "characters": [
+      "Kofi"
+    ],
+    "action": "Kofi claps their hands to the beat, bouncing gently on the spot, leaning in a little closer",
+    "camera": "gentle pan right",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20262744,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-181720-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s10_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-181720-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\review\\s10_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers",
+  "cast_version": "1.1.0"
+}

@@ -1,0 +1,375 @@
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 0.0,
+      "end": 3.274,
+      "shot_type": "wide",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri stands by the garden tub with flowers and friends around her",
+      "camera": "static",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s00_a0.mp4",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s01",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 3.274,
+      "end": 6.362,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri pours water from the tub into a watering can",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s01_a2.mp4",
+      "score": 1.0,
+      "attempts": 3
+    },
+    {
+      "id": "s02",
+      "verse": 0,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 6.362,
+      "end": 9.52,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "Zuri holds up a watering can and pours water into the flowers",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s02_a0.mp4",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s03",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 9.52,
+      "end": 12.655,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi",
+        "Zuri"
+      ],
+      "action": "Kofi watches Zuri as she waters the flowers with a watering can",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263757,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s03_a1.mp4",
+      "score": 1.0,
+      "attempts": 2
+    },
+    {
+      "id": "s04",
+      "verse": 0,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 12.655,
+      "end": 15.8,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi",
+        "Nala",
+        "Zuri"
+      ],
+      "action": "Nala looks on as Zuri and Kofi water the flowers with watering cans",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20266798,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s04_a0.mp4",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s05",
+      "verse": 1,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 15.8,
+      "end": 18.901,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids pour water from a little cup",
+      "camera": "slow push-in",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s05_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s06",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        1
+      ],
+      "start": 18.901,
+      "end": 22.013,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan left",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s06_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s07",
+      "verse": 1,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 22.013,
+      "end": 25.565,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s07_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s08",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 25.565,
+      "end": 28.677,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s08_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s09",
+      "verse": 1,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 28.677,
+      "end": 31.8,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a bright bathroom with a bubbly tub behind them, a rubber duck on the tub edge, striped towels on a rail and a little step stool",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s09_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s10",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        0
+      ],
+      "start": 31.8,
+      "end": 34.482,
+      "shot_type": "medium",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s10_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s11",
+      "verse": 2,
+      "lyric_span": [
+        0,
+        1
+      ],
+      "start": 34.482,
+      "end": 37.152,
+      "shot_type": "closeup",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan right",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s11_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s12",
+      "verse": 2,
+      "lyric_span": [
+        1,
+        2
+      ],
+      "start": 37.152,
+      "end": 40.263,
+      "shot_type": "medium",
+      "characters": [
+        "Nala"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s12_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    },
+    {
+      "id": "s13",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 40.263,
+      "end": 42.934,
+      "shot_type": "closeup",
+      "characters": [
+        "Zuri"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow push-in",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20261730,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s13_a0.mp4",
+      "score": 0.75,
+      "attempts": 2
+    },
+    {
+      "id": "s14",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        2
+      ],
+      "start": 42.934,
+      "end": 45.604,
+      "shot_type": "medium",
+      "characters": [
+        "Kofi"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "gentle pan left",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20262744,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s14_a0.mp4",
+      "score": 1.0,
+      "attempts": 1
+    },
+    {
+      "id": "s15",
+      "verse": 2,
+      "lyric_span": [
+        2,
+        3
+      ],
+      "start": 45.604,
+      "end": 48.39,
+      "shot_type": "closeup",
+      "characters": [
+        "Nala"
+      ],
+      "action": "The kids sing along with happy faces, moving to the beat",
+      "camera": "slow pull-back",
+      "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+      "reuse_of": null,
+      "seed": 20263758,
+      "status": "rendered",
+      "take": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-110129-kidsong-zuris-watering-blooms-day-shots\\s15_a0.mp4",
+      "score": 0.7,
+      "attempts": 1
+    }
+  ]
+}

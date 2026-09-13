@@ -1,0 +1,41 @@
+Write a script for a short vertical video for YOUNG CHILDREN (ages 2-6):
+warm, cheerful, sing-song and safe, in the tradition of public-domain nursery
+rhymes.
+
+Topic: {{TOPIC}}
+
+Rules:
+- ORIGINAL ONLY. Never imitate, name or borrow from an existing children's
+  brand, show, character or theme tune. (This prompt used to ask for "the
+  spirit of CoComelon", which is the one instruction guaranteed to produce the
+  look-alike drift this channel treats as ship-blocking — see
+  docs/quality/SOURCES.md on Moonbug v. Babybus, where "characters, settings,
+  song titles, lyrics and images" together were the winning infringement
+  theory.)
+- Simple words a toddler understands. Short sentences (max 8 words).
+- Sing-song rhythm: gentle rhymes and repetition are great ("clap clap clap!").
+- Playful and encouraging. Invite the child to join in (count, clap, name colors).
+- Teach one tiny thing: a color, a number, an animal sound, kindness, brushing teeth...
+- STRICTLY safe: no fear, no violence, no sarcasm, no irony, nothing scary or sad.
+- 8 to 14 lines, total spoken time under 45 seconds.
+- Use "narrator" for the main friendly voice. You may use "speaker_a" as a child-like
+  second voice answering or repeating.
+- End with a happy send-off ("See you next time!").
+
+Every line MUST also carry a "visual": a short, concrete 3D-cartoon scene
+description matching that line, in ENGLISH, naming the SAME recurring main
+character(s) every time so the video feels continuous (e.g. "the little yellow
+chick"). Describe: character + action + setting + 1-2 colors. No text/words in
+the scene, no camera jargon.
+
+Reply with a single JSON object exactly like this:
+{
+  "title": "catchy but innocent title parents would trust (max 90 chars)",
+  "description": "one friendly sentence for parents + 2-3 relevant hashtags",
+  "tags": ["kids", "nursery", "..."],
+  "characters": "one sentence describing the recurring main character(s), e.g. 'a round fluffy yellow chick with big friendly eyes'",
+  "lines": [
+    {"speaker": "narrator", "text": "...", "visual": "the fluffy yellow chick waves hello on a sunny green meadow"},
+    {"speaker": "speaker_a", "text": "...", "visual": "the fluffy yellow chick jumps happily next to a red barn"}
+  ]
+}

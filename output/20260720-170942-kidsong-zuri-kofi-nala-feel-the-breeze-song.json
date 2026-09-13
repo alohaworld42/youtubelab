@@ -1,0 +1,37 @@
+{
+  "title": "Zuri, Kofi & Nala Feel the Breeze",
+  "description": "Join Zuri, Kofi and Nala outside on a sunny day as they blow bubbles, stomp in puddles and dance in the breeze!",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler",
+    "sing along",
+    "preschool",
+    "bubble fun",
+    "outdoor play"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, Kofi and Nala, in their established looks.",
+  "verses": [
+    {
+      "lines": [
+        "Let's go outside, feel the breeze",
+        "Blow bubbles high up high"
+      ],
+      "scene": "Zuri holds a bubble wand, Kofi stomps in a puddle, Nala dances with arms outstretched"
+    },
+    {
+      "lines": [
+        "Wave your arms, stomp your feet",
+        "Dance to the wind's sweet beat"
+      ],
+      "scene": "All three children dance and play together on a green grassy field"
+    },
+    {
+      "lines": [
+        "Clap hands high up in the air",
+        "Twirl around without a single care"
+      ],
+      "scene": "Zuri claps, Kofi twirls, Nala laughs as they spin around each other"
+    }
+  ]
+}

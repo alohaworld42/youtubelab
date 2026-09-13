@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% set active = 'history' %}
+{% block content %}
+<h1>Verlauf</h1>
+
+<h2>Uploads</h2>
+<div class="card">
+  <div class="table-wrap">
+  <table>
+    <tr><th>Wann</th><th>Kanal</th><th>Titel</th><th>Sichtbarkeit</th><th>Link</th></tr>
+    {% for u in uploads %}
+    <tr>
+      <td class="muted">{{ u.uploaded_at }}</td>
+      <td>{{ u.channel_name or '—' }}</td>
+      <td>{{ u.title or '—' }}</td>
+      <td><span class="badge">{{ u.privacy }}</span></td>
+      <td>{% if u.url %}<a href="{{ u.url }}" target="_blank" rel="noopener">▶ YouTube</a>{% endif %}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5" class="muted">Noch keine Uploads.</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+</div>
+
+<h2>Fehlgeschlagene Jobs</h2>
+<div class="card">
+  <div class="table-wrap">
+  <table>
+    <tr><th>#</th><th>Typ</th><th>Thema</th><th>Fehler</th><th></th></tr>
+    {% for j in failed %}
+    <tr id="job-{{ j.id }}">
+      <td>{{ j.id }}</td>
+      <td>{{ j.video_type or '—' }}</td>
+      <td>{{ j.topic or '(KI wählt)' }}</td>
+      <td class="muted">
+        {# The error was truncated at 120 chars with no way to reach the rest —
+           on a failed render this column IS the diagnosis, and a stack trace's
+           useful part is usually past 120 characters. #}
+        {% set err = j.error or '' %}
+        {% if err|length > 120 %}
+          <details>
+            <summary style="cursor:pointer">{{ err[:120] }}…</summary>
+            <div style="white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace;
+                        font-size:11px;margin-top:6px;max-height:220px;overflow:auto">{{ err }}</div>
+          </details>
+        {% else %}{{ err }}{% endif %}
+        <div style="font-size:11px;margin-top:4px;opacity:.7">logs/job_{{ j.id }}.log</div>
+      </td>
+      <td><button class="ghost" style="font-size:12px;padding:6px 10px" onclick="retry({{ j.id }}, this)">↻ Retry</button></td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5" class="muted">Keine Fehler. Läuft.</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function retry(id, btn){
+  await withButton(btn, '…', async () => {
+    await post(`/api/jobs/${id}/retry`, {});
+    toast('Job #' + id + ' wieder eingereiht.');
+    const row = document.getElementById('job-'+id);
+    if (row) row.remove();
+  });
+}
+</script>
+{% endblock %}

@@ -1,0 +1,167 @@
+You are the director for a professional preschool kids' TV song video, in bright toy-like 3D
+animation. Turn the song below into a detailed SHOT LIST using modern preschool music-video
+grammar: clear wide establishing shots, warm mediums, playful close-ups, and camera moves
+used sparingly for emphasis.
+
+SONG (JSON):
+{{SONG_JSON}}
+
+VERSE TIMESTAMPS (seconds, one [start, end) pair per verse, same order as "verses" above):
+{{VERSE_TIMES}}
+
+SONG TEMPO: {{BPM}} BPM (cut points should feel musical — align to the beat where natural).
+
+STORY MANDATE — read this first: the shot list must DEPICT WHAT THE SONG SAYS HAPPENS, not a
+generic sing-and-clap loop. If the lyric says the mouse ran up the clock, show a mouse running
+up a clock. Each verse's "scene" field is art direction describing the real event of that verse
+— follow it. Derive every shot's "action" from THAT SHOT's own lyric_span, beat by beat, not
+from a summary of the whole verse. The channel's fixed-cast toddlers may watch, react to, and
+join the event, but the event itself — the mouse, the lamb, the sheep, the boat — must be on
+screen doing what the lyric says it does.
+
+Rules to follow:
+- Cover each verse's [start, end) window with a contiguous sequence of shots — no gaps, no
+  overlaps. Aim for roughly 3 seconds per shot (never shorter than 2.0s, never longer than 4.5s).
+- The very first shot of the whole video (verse 1, first shot) MUST be a wide establishing shot
+  that shows the setting and the full cast.
+- Within a single verse, vary the shot_type — never use the exact same shot_type three times in
+  a row.
+- Use camera moves (a push-in, a pull-back, a gentle pan) sparingly: at most 2 non-static camera
+  moves per verse. Everything else is "static".
+- If a verse's lines are an EXACT repeat of an earlier verse (a chorus / refrain), do not invent
+  new shots for it — reuse the earlier verse's shots by name. Match shots positionally; if the
+  chorus needs more shots than the original verse had, cycle back through the original's shots.
+- Every "action" must describe one concrete, visible thing happening on screen — the story
+  subject's event, a child's action, or both — taken directly from THAT SHOT's own lyric_span,
+  not a vague mood, not a summary of the whole verse.
+- "setting" is a PLACE, never an event. Describe only the location and its props ("a bright
+  cheerful bathroom with a white pedestal sink, a round mirror and colorful toiletry bottles").
+  NEVER put people in "setting": no character names, no "the three friends", no "together", no
+  verbs about what anyone is doing. "Amira, Kofi and Zuri are rinsing their mouths" is WRONG —
+  that belongs in "action", and the setting is just the bathroom. The setting is pasted straight
+  into the render prompt after the head count, so people in it contradict the head count and the
+  renderer draws duplicate children to satisfy both.
+- ONE VERSE, ONE LOCATION. Every shot in a verse must read as the SAME continuous moment: same
+  place, same lighting, filmed from different angles and distances. Within that, the verse's
+  shots should form a small TEMPORAL ARC that follows the lyric — setup, then the event the
+  lyric describes, then a reaction — not a single frozen pose repeated from different cameras.
+  Each INDIVIDUAL shot still shows exactly ONE activity happening at once (see the next rule for
+  what's forbidden); it is the sequence across the verse's shots that is allowed, and expected,
+  to move. Worked example (Hickory Dickory Dock, verse 2, "The clock struck one, the mouse ran
+  down / And ran right through the town"): shot A — the clock face strikes one; shot B — the
+  mouse scampers down the clock case; shot C — Zuri points after it and giggles. Three shots, one
+  activity each, one location, one continuous moment: this is CORRECT.
+- FORBIDDEN: two or more children doing two or more DIFFERENT things AT THE SAME TIME in one
+  shot. One shot = one activity. If the verse's "scene" hands each child a different activity
+  ("Zuri holds a bubble wand, Kofi stomps in a puddle, Nala dances with arms outstretched"), that
+  is three separate beats, not one shot — either split them into consecutive shots in the arc
+  above, or pick the single activity they can all share in that shot ("the kids blow bubbles and
+  watch them float up"). A 2-3 second shot cannot show three unrelated activities at once, so the
+  renderer crowds the frame and the shots stop matching each other.
+- "setting" must be IDENTICAL, word for word, across all shots within the same verse, matching
+  that verse's "scene" description. A location change mid-verse is a continuity error.
+- The "action" and the "setting" must happen in the SAME KIND OF PLACE. Never pair an outdoor
+  action with an indoor setting or vice versa — "the kids play in a grassy field" in "a bright
+  cheerful playroom" is a contradiction, and the renderer satisfies both halves literally,
+  producing an impossible space (an indoor room whose floor is grass).
+- "action" must never imply MORE children than "characters" lists. If "characters" names one
+  child, the action describes only that child, in the singular, and must not say "the kids",
+  "the three friends", "together", "everyone" or "each other" — those put a group on screen and
+  contradict the shot's own head count. Write "Zuri smiles brightly at her little red toy
+  star", never "The kids smile brightly at each other" and never a second child's name, on a
+  one-character shot. This does not restrict the story
+  subject — a mouse, lamb, sheep or boat is not a child and is never counted in the head count.
+- "characters" is a list of names drawn ONLY from the channel's fixed cast — Zuri, Kofi, Nala —
+  or the single value "all" when the whole cast is on screen (e.g. the opening wide shot). Never
+  invent a name that isn't Zuri, Kofi, or Nala. "characters" may be an EMPTY LIST [] on a shot
+  where only the story subject is on screen and no child appears (the mouse alone climbing the
+  clock) — that is correct, not an error.
+- "story_subject" is a short noun phrase for the non-child subject of the song visible in this
+  shot ("a tiny round cartoon mouse", "a fluffy white lamb", "a little wooden rowboat"), or null
+  when no such subject is on screen. Take it from the verse's "scene" hint when one names it. It
+  is never a child and is never counted in the head count.
+- A "closeup" shot MUST list AT MOST ONE character (never "all", never two names) — zero is
+  allowed only when the closeup is on the story_subject alone. Its "action" must describe only
+  that one character or the story_subject — no mention of anyone else. Closeups that name a
+  crowd render a crowd on screen, which breaks the shot; keep closeups single-subject, always.
+- Keep every frame UNCLUTTERED: most shots feature ONE or TWO kids; use "all" sparingly (opening
+  wide, chorus, finale). Toddlers track faces — fewer characters per shot is better.
+- Shot mix like the real shows: mostly MEDIUM and CLOSEUP (roughly half and half), "wide" ONLY
+  for the very first establishing shot and optionally the finale. Props (toothbrush, duck, soap)
+  are always HELD by a kid inside a shot — standalone object cutaways ("insert") are rare, at
+  most one per song on an instrumental moment.
+- Give nearly every shot a GENTLE camera move (slow push-in, gentle pan, slow pull-back) — real
+  preschool shows almost never hold a truly static frame. Vary the direction between shots.
+- Vary the ANGLE of the same location across a verse (front of the sink, seen in the mirror,
+  from the doorway) — same place, different views, like a real show.
+- CHANGE THE LOCATION between verses when the lyrics allow it (bathroom → kitchen → backyard) —
+  real preschool songs move through 3-4 places per song; a whole song in one room feels static.
+  Always move FORWARD: never return to a location the song has already left. Playroom → backyard
+  → playroom reads as a mistake, not as a journey. If the lyrics keep the song in one place, keep
+  EVERY verse there rather than wandering off and back.
+- NEVER set a shot in a bath, bathtub, tub, shower, swimming pool, paddling pool or potty — the
+  channel forbids these outright. Water play is always OUTDOORS: watering cans in a garden, a
+  shallow puddle, a garden hose. A bathroom is allowed ONLY as a sink for tooth-brushing, and
+  even then no tub may appear in the setting.
+- NEVER stage the children martially or in lockstep. No marching, no parading, no rows, lines,
+  formations, ranks or single file; no uniforms, no saluting, no crowds, and no children moving
+  in unison. Preschool staging is LOOSE and playful: two or three kids at DIFFERENT distances
+  from camera, at different angles, doing the shared activity at their own pace — never evenly
+  spaced in a straight line striding at the camera together. That reads as a little army and
+  frightens toddlers.
+- Give the song a HERO PROP OR STORY SUBJECT (the toothbrush, the rubber duck, the mouse, the
+  lamb...) that visibly recurs across many shots as a through-line — kids and camera track it
+  from scene to scene.
+- Never repeat the exact same action phrasing in two consecutive shots; alternate the energy
+  (bounce, sway, point, look at each other, lean in, giggle).
+- On HOOK/REFRAIN verses (the repeated "clap and sing along" lines), keep the action SIMPLE and
+  COPY-ALONG: the kids perform something a toddler can do at home (clap, stomp, wave, count on
+  fingers) while looking at each other, at their own hands, or at the hero prop — never at the
+  lens. Repetitive is correct here, that is what makes a sing-along work. Camera-address is a
+  SPECIAL EVENT, not the default: at most ONE shot in the whole episode may be designated to face
+  the camera, and that shot's action must include a warm, natural smile and natural blinking, so
+  it reads as a genuine greeting, not a stare. Every other hook shot — and every other shot in the
+  song — keeps the gaze off the lens. On NARRATIVE verses, the action vocabulary must fit the
+  song's own story instead of defaulting to clap/sing/smile — rowing, tiptoeing, climbing,
+  following, counting wool sacks, waving to ducks, pointing and giggling at the mouse. Prefer
+  eye-level staging over fancy angles either way.
+- No conflict, no surprises, nothing scary — a cozy, predictable rhythm of happy moments. Never
+  write anything frightening or distressing into an action or setting: no monsters, ghosts,
+  darkness, storms, chasing, crying, shouting, anger or danger. Every face is calm and happy.
+  This applies to story subjects too: they are friendly and toon-like, never a predator or in
+  peril — no wolf, no chasing, no animal lost, cornered or frightened. A mouse is a cheerful
+  character, not vermin; a lamb is never lost or afraid.
+
+Reply with ONLY this JSON, nothing else:
+{
+  "shots": [
+    {
+      "id": "s00",
+      "verse": 0,
+      "lyric_span": [0, 1],
+      "start": 0.0,
+      "end": 3.0,
+      "shot_type": "wide",
+      "characters": ["all"],
+      "story_subject": null,
+      "action": "...",
+      "gaze": "...",
+      "camera": "static",
+      "setting": "...",
+      "reuse_of": null
+    }
+  ]
+}
+
+"shot_type" must be one of: "wide", "medium", "closeup".
+"characters" is a list of names from Zuri, Kofi, Nala (or "all"); it may be [] when only the
+story subject is on screen.
+"story_subject" is a short noun phrase for the song's non-child subject on screen ("a tiny round
+cartoon mouse"), or null when none is present.
+"gaze" is an optional short phrase naming what the child(ren) look at (e.g. "down at the
+seedling", "at each other", "at the watering can"); the eyeline should follow the action's
+object. "at the camera" is reserved for the single designated hook shot in the episode.
+"camera" must be one of: "static", "slow push-in", "slow pull-back", "gentle pan left",
+"gentle pan right".
+"reuse_of" is either null, or the "id" of an earlier shot this one reuses (for chorus verses).
+Do not include "seed" or "status" — those are added afterwards.

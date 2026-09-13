@@ -1,0 +1,129 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing-.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 2.972,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 2.972,
+      "end": 5.991,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 5.991,
+      "end": 8.986,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 8.986,
+      "end": 11.981,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 11.981,
+      "end": 14.373,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 14.373,
+      "end": 17.369,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 17.369,
+      "end": 19.76,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 19.76,
+      "end": 22.779,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 22.779,
+      "end": 25.194,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 25.194,
+      "end": 28.166,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 28.166,
+      "end": 31.184,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 31.184,
+      "end": 34.783,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 34.783,
+      "end": 37.779,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 37.779,
+      "end": 41.378,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 41.378,
+      "end": 44.373,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 44.373,
+      "end": 47.369,
+      "src": "s15"
+    },
+    {
+      "shot_id": "s16",
+      "start": 47.369,
+      "end": 50.968,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s17",
+      "start": 50.968,
+      "end": 53.986,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s18",
+      "start": 53.986,
+      "end": 56.889,
+      "src": "s12"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

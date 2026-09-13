@@ -1,0 +1,42 @@
+{
+  "shot_id": "s06",
+  "take": "s06_a0",
+  "shot": {
+    "id": "s06",
+    "verse": 1,
+    "lyric_span": [
+      1,
+      1
+    ],
+    "start": 17.369,
+    "end": 19.76,
+    "shot_type": "closeup",
+    "characters": [
+      "Zuri"
+    ],
+    "action": "Zuri sings along with a happy face, moving to the beat, leaning in a little closer",
+    "camera": "slow push-in",
+    "setting": "a bright cheerful bathroom with a white pedestal sink, a round mirror with a colorful frame, a hanging pendant light and colorful toiletry bottles",
+    "reuse_of": null,
+    "seed": 20261731,
+    "story_subject": null,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\s06_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260721-115254-kidsong-here-we-go-round-the-mulberry-bush-an-action-sing--shots\\review\\s06_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 0.7,
+    "reasons": [
+      "blurry"
+    ],
+    "retry_hints": {
+      "seed_bump": true,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+  "cast_version": "1.1.0"
+}

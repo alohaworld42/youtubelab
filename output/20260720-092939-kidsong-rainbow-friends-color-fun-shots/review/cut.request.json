@@ -1,0 +1,111 @@
+{
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun.staging.mp4",
+  "cut_list_summary": [
+    {
+      "shot_id": "s00",
+      "start": 0.0,
+      "end": 3.762,
+      "src": "s00"
+    },
+    {
+      "shot_id": "s01",
+      "start": 3.762,
+      "end": 7.941,
+      "src": "s01"
+    },
+    {
+      "shot_id": "s02",
+      "start": 7.941,
+      "end": 12.167,
+      "src": "s02"
+    },
+    {
+      "shot_id": "s03",
+      "start": 12.167,
+      "end": 15.766,
+      "src": "s03"
+    },
+    {
+      "shot_id": "s04",
+      "start": 15.766,
+      "end": 19.969,
+      "src": "s04"
+    },
+    {
+      "shot_id": "s05",
+      "start": 19.969,
+      "end": 24.149,
+      "src": "s05"
+    },
+    {
+      "shot_id": "s06",
+      "start": 24.149,
+      "end": 27.748,
+      "src": "s06"
+    },
+    {
+      "shot_id": "s07",
+      "start": 27.748,
+      "end": 31.951,
+      "src": "s07"
+    },
+    {
+      "shot_id": "s08",
+      "start": 31.951,
+      "end": 36.153,
+      "src": "s08"
+    },
+    {
+      "shot_id": "s09",
+      "start": 36.153,
+      "end": 39.753,
+      "src": "s09"
+    },
+    {
+      "shot_id": "s10",
+      "start": 39.753,
+      "end": 43.955,
+      "src": "s10"
+    },
+    {
+      "shot_id": "s11",
+      "start": 43.955,
+      "end": 48.135,
+      "src": "s11"
+    },
+    {
+      "shot_id": "s12",
+      "start": 48.135,
+      "end": 51.154,
+      "src": "s12"
+    },
+    {
+      "shot_id": "s13",
+      "start": 51.154,
+      "end": 54.318,
+      "src": "s13"
+    },
+    {
+      "shot_id": "s14",
+      "start": 54.318,
+      "end": 56.733,
+      "src": "s14"
+    },
+    {
+      "shot_id": "s15",
+      "start": 56.733,
+      "end": 60.0,
+      "src": "s15"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-092939-kidsong-rainbow-friends-color-fun-shots\\review\\cut_sheet.png",
+  "programmatic_verdict": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "recut": false,
+      "reshoot": []
+    }
+  }
+}

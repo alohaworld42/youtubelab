@@ -1,0 +1,10 @@
+{
+  "accept": true,
+  "score": 1.0,
+  "reasons": [],
+  "retry_hints": {
+    "seed_bump": false,
+    "simplify_action": false,
+    "force_i2v": false
+  }
+}

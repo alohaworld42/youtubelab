@@ -1,0 +1,64 @@
+{
+  "title": "Hickory Dickory Dock - A Fun Clock Sing-Along for Toddlers",
+  "description": "The little mouse runs up the clock! Tiptoe and clap along with us. #kidssong #nurseryrhyme #toddlersongs #singalong #countingsong",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler song",
+    "sing along",
+    "hickory dickory dock",
+    "clocks",
+    "counting song",
+    "preschool",
+    "kids music",
+    "children song"
+  ],
+  "characters": "Three adorable Black toddlers: Zuri, a 3-year-old girl with deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers; Kofi, a 4-year-old boy with medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers; and Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "verses": [
+    {
+      "lines": [
+        "Hickory, dickory, dock",
+        "The mouse ran up the clock"
+      ],
+      "scene": "A tall friendly grandfather clock stands in a sunny playroom with a tiny round cartoon mouse at its base."
+    },
+    {
+      "lines": [
+        "The clock struck one, the mouse ran down",
+        "And ran right through the town"
+      ],
+      "scene": "The little mouse scampers down the clock case and off across a bright wooden floor scattered with toys."
+    },
+    {
+      "lines": [
+        "Tick tock, clap along with me",
+        "Hickory, dickory, three"
+      ],
+      "scene": "The three toddlers clap their hands in time with the swinging pendulum, counting on their fingers."
+    },
+    {
+      "lines": [
+        "Hickory, dickory, dock",
+        "We tiptoe round the clock"
+      ],
+      "scene": "The toddlers tiptoe in a careful circle around the big clock, fingers to their lips, giggling."
+    },
+    {
+      "lines": [
+        "Tick tock, clap along with me",
+        "Hickory, dickory, three"
+      ],
+      "scene": "The three toddlers clap their hands in time with the swinging pendulum, counting on their fingers."
+    }
+  ],
+  "pd_song_id": "hickory_dickory_dock",
+  "pd_source": {
+    "text": "Hickory Dickory Dock (as 'Hickere, Dickere Dock')",
+    "author": "Traditional (English)",
+    "year": 1744,
+    "publication": "Tommy Thumb's Pretty Song Book, vol. II (London, c. 1744).",
+    "public_domain": "Anonymous traditional text first printed c. 1744; long out of copyright everywhere.",
+    "adaptation": "Verses 1 and 2 keep the traditional wording, re-lined into two-line verses; verse 2's closing 'Hickory, dickory, dock' is replaced with 'And ran right through the town' so the verse rhymes on its own. Verse 3 and the hook are NEWLY WRITTEN."
+  },
+  "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, ticking clock rhythm, playful, bright, warm"
+}

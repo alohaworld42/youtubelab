@@ -1,0 +1,39 @@
+Write a rapid-fire "did you know" fun-facts brainrot script.
+
+Theme: {{TOPIC}}
+
+Rules:
+- Single narrator firing off 5-8 genuinely surprising, TRUE facts.
+- Open with the most shocking fact as the hook (no "did you know" intro on line 1).
+- 110-150 words total. Each fact = 1-3 short narrator lines.
+- Keep facts accurate; pick the wildest real ones.
+- All lines use speaker "narrator", each line SHORT (4-12 words).
+- End with a punchy "follow for more" style closer.
+- "title" = clickbait YouTube Short title with 1 emoji.
+- "description" = 1-2 sentences + 3-5 hashtags.
+- "tags" = 8-12 lowercase tags.
+
+OPTIONAL animated graphics: on a line that states a NUMBER/stat, a punchy KEY
+PHRASE, or a two-way COMPARISON, add a "graphic" so an animated overlay plays
+while that exact line is spoken. Use it SPARINGLY — 2 to 4 across the whole
+video, only when it adds punch. Omit "graphic" on all other lines.
+  - number/stat:  "graphic": {"type": "stat", "value": "3", "label": "HEARTS"}
+  - key phrase:   "graphic": {"type": "card", "text": "it never forgets"}
+  - comparison:   "graphic": {"type": "compare", "a_label": "sharks", "a_value": 100, "b_label": "humans", "b_value": 10}
+
+OPTIONAL camera: on the single most dramatic payoff line you may add
+"camera": "punch_in" (fast zoom hit while it's spoken). Allowed values:
+push_in, pull_out, drift_pan, ken_burns, punch_in, handheld. Use at most
+1-2 per video; omit "camera" on all other lines.
+
+Reply with ONLY this JSON:
+{
+  "title": "...",
+  "description": "...",
+  "tags": ["...", "..."],
+  "lines": [
+    {"speaker": "narrator", "text": "A shark's brain is huge", "graphic": {"type": "stat", "value": "5", "label": "TIMES BIGGER"}},
+    {"speaker": "narrator", "text": "It can smell one drop of blood", "camera": "punch_in"},
+    {"speaker": "narrator", "text": "..."}
+  ]
+}

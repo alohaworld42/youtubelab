@@ -1,0 +1,45 @@
+{
+  "title": "Counting Friends Fun Day",
+  "description": "Join our friends Maya, Jaden, and Ava as they count together to five! Sing along with this fun nursery rhyme!",
+  "tags": [
+    "kids song",
+    "nursery rhyme",
+    "toddler",
+    "counting to five",
+    "preschool education",
+    "sing along",
+    "black children",
+    "wholesome kids content"
+  ],
+  "characters": "Maya: warm brown skin, afro puffs, yellow sundress; Jaden: medium brown skin, buzz cut, blue shirt and green pants; Ava: light brown skin, curly ponytail, pink dress",
+  "verses": [
+    {
+      "lines": [
+        "One little friend is laughing free",
+        "Two hands are clapping for me"
+      ],
+      "scene": "Maya sitting on a mat with Jaden standing behind her, both smiling at the camera"
+    },
+    {
+      "lines": [
+        "Three feet are tapping out the beat",
+        "Yes yes, we can count together"
+      ],
+      "scene": "Ava joining in with a tambourine and dancing around Maya and Jaden"
+    },
+    {
+      "lines": [
+        "Four bubbles floating through the air",
+        "We're counting all our friends who care"
+      ],
+      "scene": "Maya blowing soap bubbles while Jaden catches them"
+    },
+    {
+      "lines": [
+        "Five happy faces smiling at you",
+        "Yes yes, we can count together"
+      ],
+      "scene": "All three friends standing together with big smiles and holding hands"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+# Test image for the CPU-only suite.
+#
+# Why this exists (QM-042): the Windows venv is missing pinned deps
+# (cv2, librosa), and `tests/conftest.py` imports `pipeline.kidsong.review`
+# in an autouse fixture, which imports cv2 at module load. So `pytest
+# --collect-only` reports a clean 2036 tests while an actual run errors at
+# fixture setup — local results silently understate the suite. This image
+# pins the real thing so a green run means green.
+#
+# The suite is CPU-only by design: no torch, no CUDA, no GPU. Rendering
+# (LTX/ACE-Step/ComfyUI) is NOT in here and is not supposed to be.
+FROM python:3.11-slim
+
+# ffmpeg: moviepy/pydub/imageio-ffmpeg shell out to it.
+# libgl1 + libglib2.0-0: opencv-python-headless still links them.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ffmpeg libgl1 libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Deps first so the layer caches across source edits.
+COPY requirements.txt requirements-dev.txt ./
+RUN pip install --no-cache-dir -r requirements-dev.txt
+
+COPY . .
+
+# Never inherit the host's studio password or API keys into a test run.
+ENV STUDIO_PASSWORD="" \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+CMD ["python", "-m", "pytest", "-q"]

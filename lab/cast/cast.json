@@ -1,0 +1,63 @@
+{
+  "base_seed": 20260717,
+  "ref_size": [
+    576,
+    768
+  ],
+  "characters": [
+    {
+      "id": "zuri",
+      "name": "Zuri",
+      "seed": 20261730,
+      "seed_offset": 1013,
+      "wardrobe": "3-year-old girl with an average toddler height and a soft, rounded little build, deep warm brown skin, round afro puffs tied with soft yellow fabric scrunchies, wearing a sunny yellow t-shirt, denim dungaree shorts and white sneakers",
+      "must_not": [
+        "pale skin",
+        "straight hair",
+        "blonde hair",
+        "red hair",
+        "blue shirt",
+        "pink dress"
+      ],
+      "canonical": "cast/zuri/canonical.png",
+      "ref": "cast/zuri/ref_576x768.png",
+      "ref_hi": "cast/zuri/ref_768x1024_white.png"
+    },
+    {
+      "id": "kofi",
+      "name": "Kofi",
+      "seed": 20262744,
+      "seed_offset": 2027,
+      "wardrobe": "4-year-old boy with a tall, sturdy build for a preschooler and slightly broader shoulders, medium-deep brown skin, short dark natural curly hair, wearing a blue t-shirt, grey jogger shorts and red sneakers",
+      "must_not": [
+        "yellow shirt",
+        "pale skin",
+        "light hair",
+        "ginger hair",
+        "blonde hair",
+        "straight hair"
+      ],
+      "canonical": "cast/kofi/canonical.png",
+      "ref": "cast/kofi/ref_576x768.png",
+      "ref_hi": "cast/kofi/ref_768x1024_white.png"
+    },
+    {
+      "id": "nala",
+      "name": "Nala",
+      "seed": 20263758,
+      "seed_offset": 3041,
+      "wardrobe": "3-year-old girl with a petite, delicate build, a little shorter and slighter, deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+      "must_not": [
+        "purple dress",
+        "pale skin",
+        "loose straight hair",
+        "straight hair",
+        "blonde hair",
+        "blue shirt"
+      ],
+      "canonical": "cast/nala/canonical.png",
+      "ref": "cast/nala/ref_576x768.png",
+      "ref_hi": "cast/nala/ref_768x1024_white.png"
+    }
+  ]
+}

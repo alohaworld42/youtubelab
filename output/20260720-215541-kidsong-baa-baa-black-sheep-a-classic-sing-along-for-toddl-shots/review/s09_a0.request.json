@@ -1,0 +1,39 @@
+{
+  "shot_id": "s09",
+  "take": "s09_a0",
+  "shot": {
+    "id": "s09",
+    "verse": 2,
+    "lyric_span": [
+      1,
+      1
+    ],
+    "start": 27.841,
+    "end": 31.045,
+    "shot_type": "medium",
+    "characters": [
+      "Nala"
+    ],
+    "action": "Nala sings along with a happy face, moving to the beat",
+    "camera": "slow pull-back",
+    "setting": "a sunny backyard with green grass, a wooden fence, bright flowerbeds, a red tricycle and a leafy tree",
+    "reuse_of": null,
+    "seed": 20263759,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-215541-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\s09_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260720-215541-kidsong-baa-baa-black-sheep-a-classic-sing-along-for-toddl-shots\\review\\s09_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  },
+  "expected_children": 1,
+  "cast_text": "One adorable Black toddler: Nala, a 3-year-old girl with deep brown skin, neat cornrow braids, wearing a yellow pinafore dress over a white t-shirt, white tights and pink sneakers",
+  "cast_version": "1.1.0"
+}

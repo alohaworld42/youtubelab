@@ -1,0 +1,359 @@
+{% extends "base.html" %}
+{% set active = 'takes' %}
+{% block title %}Take-Review — Brainrot Studio{% endblock %}
+
+{% block head %}
+<style>
+  .card .meta-line{color:var(--muted);font-size:12px;margin:2px 0}
+  .card-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .card h3{margin:0;font-size:16px}
+
+  .kind-badge{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;
+    padding:3px 9px;border-radius:20px;background:var(--surface2);color:var(--violet-bright)}
+  .kind-badge.cut{color:var(--acid)}
+  .kind-badge.script,.kind-badge.shotlist{color:var(--ok)}
+  .age{color:var(--muted);font-size:12px;margin-left:auto}
+
+  .contact-sheet{max-width:100%;border-radius:10px;background:#000;display:block;margin:6px 0 10px}
+  .card video{width:100%;border-radius:10px;background:#000;display:block;margin:6px 0 10px}
+
+  .reasons{color:var(--muted);font-size:12px;margin:4px 0 0}
+
+  form.review-form{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+  .reason-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:6px 14px;margin-bottom:10px}
+  .reason-grid label,.hint-grid label{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text);cursor:pointer}
+  .hint-grid{display:flex;gap:16px;flex-wrap:wrap;margin:6px 0 10px}
+  .other-notes{width:100%;background:var(--surface2);border:1px solid var(--line);border-radius:8px;
+    color:var(--text);padding:8px 10px;font-size:13px;font-family:inherit;margin-bottom:10px;resize:vertical}
+  .form-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .form-row label{color:var(--muted);font-size:12px}
+  .score-input{width:80px}
+  .btn.accept{background:#166534;color:#fff}
+  .btn.accept:hover{background:#15803d}
+  .btn.reject{background:#7f1d1d;color:#fff}
+  .btn.reject:hover{background:#991b1b}
+  .section-label{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:4px 0}
+  .empty-state{color:var(--muted);font-size:14px;padding:20px 0}
+  .queue-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .pager{display:flex;gap:8px;align-items:center;margin:18px 0 0}
+  .pager .btn{padding:8px 12px}
+  .refresh-state{color:var(--muted);font-size:12px;margin-left:auto}
+  .refresh-state.paused{color:var(--warn)}
+  .kbd{background:var(--surface2);border:1px solid var(--line);border-radius:5px;
+    padding:1px 6px;font-size:11px;font-family:ui-monospace,Menlo,monospace;color:var(--muted)}
+
+  /* Reference data (cut list, shot list, lyrics) and the reject-reason form are
+     both collapsed by default. Expanded, they made one cut card ~1100px tall and
+     the queue 23,410px — 28 phone screens for 16 takes — with the accept button
+     below the fold on every single one. You look at the video, you decide; the
+     tables are there when a decision is not obvious. */
+  details.ref,details.detail-panel{margin:6px 0 10px}
+  details.ref>summary,details.detail-panel>summary{cursor:pointer;color:var(--muted);font-size:12px;
+    padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface2);
+    list-style:none;user-select:none}
+  details.ref>summary::-webkit-details-marker,
+  details.detail-panel>summary::-webkit-details-marker{display:none}
+  details.ref>summary::before,details.detail-panel>summary::before{content:"▸ ";display:inline-block;
+    transition:transform .12s ease}
+  details[open].ref>summary::before,details[open].detail-panel>summary::before{content:"▾ "}
+  details.ref>summary:hover,details.detail-panel>summary:hover{color:var(--text);border-color:var(--muted)}
+  details.ref table{margin-top:8px}
+  details.detail-panel{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
+
+  /* The decision row: big enough to hit with a thumb, first thing under the
+     media. 44px is the minimum comfortable touch target. */
+  .decision-row{margin:4px 0 2px}
+  .decision-row .btn{min-height:44px;padding:11px 20px;font-size:15px;flex:1 1 140px}
+  @media (min-width:640px){.decision-row .btn{flex:0 0 auto}}
+</style>
+{% endblock %}
+
+{% block content %}
+<h1>Take-Review</h1>
+<p class="muted" style="margin:-8px 0 16px">
+  Lokale Freigabe — Accept/Reject schreibt genau die <code>response.json</code>, auf die die
+  Render-Pipeline schon wartet. Null LLM-Tokens pro Review.
+  <span class="kbd-hint">Tastatur: <span class="kbd">a</span> annehmen · <span class="kbd">r</span> ablehnen · <span class="kbd">j</span>/<span class="kbd">k</span> nächster/vorheriger Take.</span>
+</p>
+
+{% if notice == 'accepted' %}
+  <div class="notice ok">✅ Verdict gespeichert: angenommen.</div>
+{% elif notice == 'rejected' %}
+  <div class="notice ok">❌ Verdict gespeichert: abgelehnt.</div>
+{% elif notice == 'already-answered' %}
+  <div class="notice warn">Dieser Take war schon beantwortet — nichts überschrieben.</div>
+{% endif %}
+
+<div class="queue-head">
+  <span class="section-label" style="margin:0">Offen ({{ total }}){% if pages > 1 %} · Seite {{ page }}/{{ pages }}{% endif %}</span>
+  <span class="refresh-state" id="refresh-state">Auto-Refresh aktiv</span>
+</div>
+
+{% if pending %}
+{% for item in pending %}
+<div class="card review-item" tabindex="-1">
+  <div class="card-head">
+    <span class="kind-badge {{ item.kind }}">{{ item.kind }}</span>
+    <h3>{{ item.video_base }}</h3>
+    <span class="age" title="{{ "%.0f"|format(item.age_seconds) }} Sekunden">wartet seit {{ item.age_seconds|duration }}</span>
+  </div>
+
+  {% if item.kind == "shot" %}
+    <div class="meta-line">shot {{ item.shot_id }} &middot; take {{ item.take }}</div>
+    {% if item.contact_sheet %}
+    <img class="contact-sheet" loading="lazy"
+         src="/artifact/{{ item.contact_sheet }}"
+         alt="Contact sheet für Shot {{ item.shot_id }}, Take {{ item.take }}">
+    {% endif %}
+    <div class="table-wrap">
+    <table>
+      <tbody>
+        <tr><th>Shot type</th><td>{{ item.shot.shot_type or '' }}</td></tr>
+        <tr><th>Characters</th><td>{{ item.shot.characters }}</td></tr>
+        <tr><th>Action</th><td>{{ item.shot.action or '' }}</td></tr>
+        <tr><th>Camera</th><td>{{ item.shot.camera or '' }}</td></tr>
+        <tr><th>Setting</th><td>{{ item.shot.setting or '' }}</td></tr>
+      </tbody>
+    </table>
+    </div>
+    {% if item.heuristic and item.heuristic.reasons %}
+    <div class="reasons">heuristic flags: {{ item.heuristic.reasons|join(', ') }}</div>
+    {% endif %}
+
+  {% elif item.kind == "script" %}
+    <div class="meta-line">title: {{ item.song.title or '(none)' }}</div>
+    <div class="meta-line">characters: {{ item.song.characters or '(none)' }}</div>
+    {% if item.song.verses %}
+    <details class="ref">
+      <summary>Liedtext ({{ item.song.verses|length }} Strophen)</summary>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Verse</th><th>Lines</th></tr></thead>
+      <tbody>
+        {% for v in item.song.verses %}
+        <tr><td>{{ loop.index0 }}</td><td>{{ (v.lines or [])|join(' / ') }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    </details>
+    {% endif %}
+    {% if item.programmatic_verdict %}
+    <div class="reasons">programmatic verdict: {{ 'accept' if item.programmatic_verdict.accept else 'reject' }}
+      {% if item.programmatic_verdict.reasons %} — {{ item.programmatic_verdict.reasons|join(', ') }}{% endif %}</div>
+    {% endif %}
+
+  {% elif item.kind == "shotlist" %}
+    <div class="meta-line">{{ item.shot_count }} shots &middot; title: {{ item.song.title or '(none)' }}</div>
+    {% if item.shots %}
+    <details class="ref">
+      <summary>Shot-Liste ({{ item.shots|length }} Shots)</summary>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Id</th><th>Type</th><th>Action</th><th>Camera</th><th>Characters</th></tr></thead>
+      <tbody>
+        {% for s in item.shots %}
+        <tr><td>{{ s.id }}</td><td>{{ s.shot_type or '' }}</td><td>{{ s.action or '' }}</td><td>{{ s.camera or '' }}</td><td>{{ s.characters }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    </details>
+    {% endif %}
+    {% if item.programmatic_verdict %}
+    <div class="reasons">programmatic verdict: {{ 'accept' if item.programmatic_verdict.accept else 'reject' }}
+      {% if item.programmatic_verdict.reasons %} — {{ item.programmatic_verdict.reasons|join(', ') }}{% endif %}</div>
+    {% endif %}
+
+  {% elif item.kind == "cut" %}
+    {% if item.video_path %}
+    <video controls preload="none" src="/artifact/{{ item.video_path }}"></video>
+    {% endif %}
+    {% if item.cut_list_summary %}
+    <details class="ref">
+      <summary>Schnittliste ({{ item.cut_list_summary|length }} Schnitte)</summary>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Shot</th><th>Start</th><th>End</th><th>Src</th></tr></thead>
+      <tbody>
+        {% for c in item.cut_list_summary %}
+        <tr><td>{{ c.shot_id }}</td><td>{{ '%.2f'|format(c.start) }}s</td><td>{{ '%.2f'|format(c.end) }}s</td><td>{{ c.src }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    </details>
+    {% endif %}
+    {% if item.programmatic_verdict %}
+    <div class="reasons">programmatic verdict: {{ 'accept' if item.programmatic_verdict.accept else 'reject' }}
+      {% if item.programmatic_verdict.reasons %} — {{ item.programmatic_verdict.reasons|join(', ') }}{% endif %}</div>
+    {% endif %}
+  {% endif %}
+
+  <form class="review-form" method="post" action="/kidsong-review/submit">
+    <input type="hidden" name="response_path" value="{{ item.response_path }}">
+    <input type="hidden" name="page" value="{{ page }}">
+
+    <!-- The decision, directly under the thing being judged. It used to sit
+         below the full reference table — measured 1626px down a 844px phone
+         screen, i.e. two screens of scrolling past the video to reach the
+         button that judges it. Accepting is the common case and now costs no
+         scrolling; rejecting opens the detail panel below. -->
+    <div class="form-row decision-row">
+      <button class="btn accept" type="submit" name="accept" value="true">&#9989; Accept</button>
+      <button class="btn reject" type="submit" name="accept" value="false">&#10060; Reject</button>
+      <span class="reasons accept-blocked" style="display:none">Reject-Gründe angehakt — Accept ist gesperrt.</span>
+    </div>
+
+    <details class="detail-panel">
+    <summary>Gründe, Notiz &amp; Score</summary>
+
+    <div class="section-label">Reject-Gründe (ein Haken = Reject)</div>
+    <div class="reason-grid">
+      <label><input type="checkbox" name="reasons" value="object logic"> Object logic</label>
+      <label><input type="checkbox" name="reasons" value="anatomy/skin-tone"> Anatomy / skin-tone</label>
+      <label><input type="checkbox" name="reasons" value="cast integrity"> Cast integrity</label>
+      <label><input type="checkbox" name="reasons" value="wardrobe"> Wardrobe</label>
+      <label><input type="checkbox" name="reasons" value="action fidelity"> Action fidelity</label>
+      <label><input type="checkbox" name="reasons" value="setting fidelity"> Setting fidelity</label>
+      <label><input type="checkbox" name="reasons" value="temporal coherence"> Temporal coherence</label>
+      <label><input type="checkbox" name="reasons" value="wholesomeness"> Wholesomeness</label>
+    </div>
+    <textarea class="other-notes" name="other_notes" rows="2"
+              placeholder="Notiz (optional, Freitext — blockiert ein Accept nicht)"></textarea>
+
+    {% if item.kind == "shot" %}
+    <div class="section-label">Retry hints (nur Shots)</div>
+    <div class="hint-grid">
+      <label><input type="checkbox" name="seed_bump" value="true"> seed_bump</label>
+      <label><input type="checkbox" name="simplify_action" value="true"> simplify_action</label>
+      <label><input type="checkbox" name="force_i2v" value="true"> force_i2v</label>
+    </div>
+    {% endif %}
+
+    <div class="form-row">
+      <label for="score-{{ loop.index }}">score (optional, 0–1)</label>
+      <input class="score-input" type="number" step="0.05" min="0" max="1" name="score" id="score-{{ loop.index }}">
+    </div>
+    </details>
+  </form>
+</div>
+{% endfor %}
+
+{% if pages > 1 %}
+<div class="pager">
+  {% if page > 1 %}<a class="btn ghost" href="?page={{ page - 1 }}">&larr; Neuere</a>{% endif %}
+  <span class="muted">Seite {{ page }} von {{ pages }}</span>
+  {% if page < pages %}<a class="btn ghost" href="?page={{ page + 1 }}">Ältere &rarr;</a>{% endif %}
+</div>
+{% endif %}
+
+{% else %}
+<div class="empty-state">Nichts offen — alle Gates beantwortet. 🎉</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+// --- non-destructive auto-refresh -------------------------------------------
+// This page used to carry a hard meta-refresh header set to 8 seconds, which
+// reloaded the document on a timer — mid-review it wiped every ticked checkbox and
+// typed note, reset the scroll position and restarted any playing cut video.
+// Reviewing a take takes longer than 8s, so the queue was effectively
+// un-fillable. Now: only reload while the reviewer is idle, and remember where
+// they were.
+const REFRESH_MS = 8000;
+const stateEl = document.getElementById('refresh-state');
+
+function isBusy(){
+  const a = document.activeElement;
+  if (a && ['INPUT','TEXTAREA','SELECT','BUTTON'].includes(a.tagName)) return 'Eingabe aktiv';
+  const dirty = [...document.querySelectorAll('.review-form')].some(f =>
+    [...f.querySelectorAll('input[type=checkbox]')].some(c => c.checked) ||
+    [...f.querySelectorAll('textarea, input[type=number]')].some(i => i.value.trim() !== '')
+  );
+  if (dirty) return 'Formular ausgefüllt';
+  const playing = [...document.querySelectorAll('video, audio')].some(m => !m.paused && !m.ended);
+  if (playing) return 'Wiedergabe läuft';
+  if (document.hidden) return 'Tab im Hintergrund';
+  return null;
+}
+
+setInterval(() => {
+  const reason = isBusy();
+  if (reason){
+    stateEl.textContent = 'Auto-Refresh pausiert (' + reason + ')';
+    stateEl.classList.add('paused');
+    return;
+  }
+  stateEl.textContent = 'Auto-Refresh aktiv';
+  stateEl.classList.remove('paused');
+  sessionStorage.setItem('reviewScroll', String(window.scrollY));
+  location.reload();
+}, REFRESH_MS);
+
+// Restore twice: once now, and again after `load`. The contact sheets are
+// lazy-loaded and carry no intrinsic size, so at script time the document is
+// still short and a scrollTo past its current height silently clamps to the
+// bottom — the restore has to run again once the images have taken up space.
+const savedScroll = sessionStorage.getItem('reviewScroll');
+if (savedScroll){
+  const y = parseInt(savedScroll, 10) || 0;
+  sessionStorage.removeItem('reviewScroll');
+  window.scrollTo(0, y);
+  window.addEventListener('load', () => window.scrollTo(0, y), {once: true});
+}
+
+// --- reject reasons really do mean reject ------------------------------------
+// The server enforces this too (a hand-rolled POST can't sneak an accept past
+// it); here it just stops the reviewer from clicking a button that would do
+// something other than what it says.
+function syncAcceptState(form){
+  const anyReason = [...form.querySelectorAll('input[name=reasons]')].some(c => c.checked);
+  const acceptBtn = form.querySelector('.btn.accept');
+  const hint = form.querySelector('.accept-blocked');
+  acceptBtn.disabled = anyReason;
+  hint.style.display = anyReason ? 'inline' : 'none';
+}
+document.querySelectorAll('.review-form').forEach(form => {
+  form.addEventListener('change', e => {
+    if (e.target.name === 'reasons') syncAcceptState(form);
+  });
+  // One submit per verdict: the redirect can lag behind an impatient second
+  // click, and the second POST would hit the already-answered guard.
+  form.addEventListener('submit', () => {
+    form.querySelectorAll('button[type=submit]').forEach(b => b.disabled = true);
+  });
+  syncAcceptState(form);
+});
+
+// --- keyboard review ---------------------------------------------------------
+// The whole point of this page is speed: hundreds of takes, one glance each.
+const items = [...document.querySelectorAll('.review-item')];
+let cursor = 0;
+// `scroll` is false for the initial highlight on purpose: scrollIntoView here
+// would fire right after the scroll-position restore above and undo it, so the
+// page would still jump to the top on every auto-refresh — the exact thing the
+// restore exists to prevent.
+function focusItem(i, scroll){
+  if (!items.length) return;
+  cursor = Math.max(0, Math.min(items.length - 1, i));
+  if (scroll) items[cursor].scrollIntoView({behavior:'smooth', block:'center'});
+  items.forEach((el, n) => el.style.borderColor = n === cursor ? 'var(--acid)' : '');
+}
+document.addEventListener('keydown', e => {
+  const a = document.activeElement;
+  if (a && ['INPUT','TEXTAREA','SELECT'].includes(a.tagName)) return;
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === 'j'){ focusItem(cursor + 1, true); }
+  else if (e.key === 'k'){ focusItem(cursor - 1, true); }
+  else if (e.key === 'a' || e.key === 'r'){
+    const item = items[cursor];
+    if (!item) return;
+    const btn = item.querySelector(e.key === 'a' ? '.btn.accept' : '.btn.reject');
+    if (btn && !btn.disabled) btn.click();
+  }
+});
+if (items.length) focusItem(0, false);
+</script>
+{% endblock %}

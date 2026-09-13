@@ -1,0 +1,91 @@
+# secrets & tokens — NEVER commit these
+config.json
+client_secret.json
+client_secret_*.json
+*.apps.googleusercontent.com.json
+keys/
+token.json
+tokens/
+.env
+nul
+
+# studio state
+# studio.db IS committed on purpose: it is the channel roster (names, schedules,
+# profiles, branding) and a second developer needs the same channels to appear.
+# It holds NO secrets -- OAuth tokens live in tokens/ (ignored above) and the db
+# stores only a repo-RELATIVE path to them. The -wal/-shm sidecars stay ignored:
+# transient SQLite journal state, not content. Binary file: it does not merge, so
+# coordinate before two people change channels at once.
+studio.db-wal
+studio.db-shm
+logs/
+
+# generated output (videos, scene images, test renders — everything)
+# …EXCEPT the QC JSON telemetry (shot lists, verdicts, review logs): the cloud
+# quality-manager routine mines those from the git checkout. Media (mp4/png/wav)
+# stays local-only — channel inventory, never committed.
+output/*
+!output/.gitkeep
+!output/*-shots.json
+!output/*-song.json
+!output/*.beats.json
+!output/*-shots/
+output/*-shots/*
+!output/*-shots/review/
+output/*-shots/review/*.png
+
+# downloaded asset cache
+assets/cache/
+assets/gameplay/ch*/
+
+# short-video-maker container output
+videos/
+
+# ComfyUI (separate cloned app + multi-GB model weights, not project source)
+comfyui/
+
+# user assets (big binaries)
+assets/gameplay/*.mp4
+assets/gameplay/*.mov
+assets/gameplay/*.mkv
+assets/gameplay/*.webm
+assets/music/*
+assets/characters/*.png
+
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# ACE-Step runner scratch (progress estimates written to CWD)
+.cache/
+
+# moviepy temp files from interrupted assembles
+*TEMP_MPY_wvf_snd.mp4
+*.staging.mp4
+*.part.mp4
+*.failed.mp4
+examples/*.mp4
+
+# ==== lab/ (Consistency-Lab) ====
+# lokale Dateien, niemals committen (vom lab/.gitignore uebernommen)
+lab/Claudetempfiles/
+lab/.hf_cache/
+lab/logs/*.log
+lab/logs/*.err.log
+lab/logs/*.out.log
+lab/runs/*/qc/frames/
+lab/runs/*/graphs/
+# Lab-Renderergebnisse (MP4/PNG) und Laeufe: nur JSON/Logs sind wertvoll
+lab/runs/*
+!lab/runs/**/*.json
+!lab/runs/**/*.log
+!lab/runs/**/review/
+
+# ==== h3_r2v/ (H3 Reference-to-Video Beweis) ====
+h3_r2v/Claudetempfiles/
+h3_r2v/logs/
+h3_r2v/output/
+
+# ==== cast_refs/ (nur PNG-Canonicals) ====

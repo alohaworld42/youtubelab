@@ -1,0 +1,15 @@
+{
+  "hash": "b7a37a4f9b7dbb1323f7b730f4b8f2a5d515d0cdf00598ed7602fec78da19fd2",
+  "params": {
+    "enabled": true,
+    "logo": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\assets/intro/zubibop_logo.png",
+    "path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\assets/intro/zubibop_intro.mp4",
+    "seconds": 4.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "target_lufs": -14.0,
+    "version": 3
+  },
+  "version": 3
+}

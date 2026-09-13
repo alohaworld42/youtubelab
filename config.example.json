@@ -1,0 +1,1034 @@
+{
+  "_comment": "Copy this file to config.json and edit. Secrets (API keys) go in environment variables, NOT here.",
+  "render_engine": "moviepy",
+  "_render_engine_comment": "moviepy = built-in pipeline (edge-tts + Whisper + Pillow captions + MoviePy). svm = short-video-maker (Remotion renderer, scene-based Pexels B-roll, Kokoro TTS, animated captions) via its HTTP API; auto-started as a Docker container by the launcher. Falls back to moviepy if svm is unreachable. A style preset can override this.",
+  "svm": {
+    "_comment": "short-video-maker settings (render_engine=svm). The launcher runs the container on this host.",
+    "enabled": true,
+    "host": "http://127.0.0.1:3123",
+    "orientation": "portrait",
+    "caption_position": "center",
+    "padding_back_ms": 1500,
+    "timeout_seconds": 900,
+    "voice": "",
+    "_voice_comment": "Kokoro voice id (e.g. am_adam, af_bella). Empty = pick by style. See GET /api/voices.",
+    "music": "",
+    "_music_comment": "Music tag (e.g. chill, happy, upbeat). Empty = pick by style. See GET /api/music-tags.",
+    "music_volume": ""
+  },
+  "llm": {
+    "backend": "ollama",
+    "_backend_options": "groq | ollama | gemini",
+    "groq_model": "llama-3.3-70b-versatile",
+    "ollama_model": "llama3.1",
+    "ollama_host": "http://localhost:11434",
+    "gemini_model": "gemini-1.5-flash"
+  },
+  "voices": {
+    "_comment": "edge-tts voice names. Run `edge-tts --list-voices` to see all of them. Channels can override these per-channel in the UI.",
+    "narrator": "en-US-AndrewMultilingualNeural",
+    "speaker_a": "en-US-GuyNeural",
+    "speaker_b": "en-US-AriaNeural",
+    "rate": "+8%",
+    "_rate_comment": "Speeds up speech a touch; brainrot videos are usually fast. Use e.g. +0% to disable."
+  },
+  "whisper": {
+    "model_size": "small",
+    "_model_options": "tiny | base | small | medium | large-v3  (bigger = more accurate, slower)",
+    "device": "cuda",
+    "_device_options": "cuda (NVIDIA GPU) | cpu",
+    "compute_type": "float16",
+    "_compute_comment": "Use float16 on GPU, int8 on CPU."
+  },
+  "captions": {
+    "font_path": "C:/Windows/Fonts/arialbd.ttf",
+    "_font_comment": "Path to a bold .ttf. For real brainrot energy download a chunky font (see README) and point here.",
+    "font_size": 110,
+    "fill_color": [
+      255,
+      255,
+      255
+    ],
+    "highlight_color": [
+      255,
+      222,
+      0
+    ],
+    "stroke_color": [
+      0,
+      0,
+      0
+    ],
+    "stroke_width": 14,
+    "words_per_group": 1,
+    "_words_per_group_comment": "1 = punchy one-word-at-a-time. 2-3 = phrases.",
+    "pop_in": true,
+    "pop_seconds": 0.14,
+    "_pop_comment": "Each caption pops in (scales up with a slight overshoot) instead of appearing statically. false = old behavior.",
+    "vertical_position": 0.62,
+    "_vertical_comment": "0.0 = top, 1.0 = bottom. 0.62 sits just below center.",
+    "uppercase": true
+  },
+  "motion": {
+    "_comment": "Native animated motion graphics (Remotion-style, but local: Pillow + MoviePy, no Docker/GPU). Components animate in, hold, fade out, timed to the transcript. Two sources feed it: (1) per-line 'graphic' specs the LLM attaches in the script, (2) auto stat-counters for spoken numbers. Types: stat (big number rolls up + label), card (key-phrase card), compare (two growing bars).",
+    "enabled": true,
+    "auto_stats": true,
+    "_auto_stats_comment": "Detect spoken numbers and animate them as stat-counters even when the LLM attached no graphic. Set false to only show LLM-authored graphics.",
+    "max_count": 5,
+    "_max_count_comment": "Hard cap on graphics per video so the screen never gets busy.",
+    "min_gap_seconds": 0.8,
+    "_min_gap_comment": "Minimum spacing between two graphics; auto stat-counters that would overlap an LLM graphic are dropped.",
+    "hold_seconds": 0.5,
+    "_hold_comment": "Extra seconds a graphic lingers after its line finishes, so it reads.",
+    "vertical_position": 0.34,
+    "_vertical_comment": "Center of the graphic. 0.0 = top, 1.0 = bottom. Sits above the word captions (0.62), below avatars.",
+    "font_path": "C:/Windows/Fonts/arialbd.ttf",
+    "uppercase": true,
+    "radius": 44,
+    "accent_color": [
+      255,
+      214,
+      40
+    ],
+    "accent_b_color": [
+      83,
+      196,
+      255
+    ],
+    "_accent_comment": "accent_color = stat/counter fill and the first compare bar; accent_b_color = second compare bar.",
+    "stat_font_size": 200,
+    "stat_text_color": [
+      18,
+      16,
+      8
+    ],
+    "label_font_size": 72,
+    "label_text_color": [
+      255,
+      255,
+      255
+    ],
+    "card_font_size": 88,
+    "card_color": [
+      22,
+      20,
+      30
+    ],
+    "card_text_color": [
+      255,
+      255,
+      255
+    ],
+    "flash": true,
+    "flash_opacity": 0.16,
+    "flash_seconds": 0.1,
+    "_flash_comment": "Brief white flash when a graphic lands. Kept subtle on purpose — this is emphasis, not a strobe."
+  },
+  "highlights": {
+    "_comment": "Number/stat DETECTION over the Whisper word timeline (digits or spelled-out like 'three'). Feeds the motion engine's auto stat-counters; rendering/animation lives in the 'motion' block above.",
+    "enabled": true,
+    "max_count": 4,
+    "_max_count_comment": "Upper bound on auto-detected numbers per video.",
+    "min_gap_seconds": 3.0,
+    "hold_seconds": 0.6,
+    "_hold_comment": "Extra seconds added to a detected number's end time.",
+    "max_extra_words": 1,
+    "_extra_words_comment": "How many short trailing words (e.g. a unit like 'GB') join the number as its label."
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "gpu_scene_mode": false,
+    "_gpu_scene_mode_comment": "false (default) = the 2D types (reddit/facts/scary/conversation) use a gameplay/stock background, unchanged. true = render their scenes on the GPU via the render-style registry and the ltx23_t2v_toon graph (studio/gpu_scenes.py, driven by the mature ComfyClient). Meant for a SEPARATE non-kids channel — carries no children/identity clause and is fully separate from made_for_kids. Tune via studio.gpu_scenes (style/negative/max_scenes/dims). Off = byte-identical.",
+    "mute_gameplay": true,
+    "music_volume": 0.06,
+    "_music_comment": "0 = no background music. Files come from assets/music/.",
+    "show_character_avatars": true,
+    "avatar_height_ratio": 0.18,
+    "avatar_vertical_position": 0.16,
+    "max_seconds": 170,
+    "_max_seconds_comment": "Hard cap so it always qualifies as a Short (<3 min).",
+    "crf": 18,
+    "_crf_comment": "x264 quality: lower = better/larger. 18 = visually lossless-ish; MoviePy default bitrate looked mushy.",
+    "x264_preset": "medium",
+    "background_palette": [
+      [
+        255,
+        94,
+        158
+      ],
+      [
+        83,
+        196,
+        255
+      ],
+      [
+        255,
+        214,
+        90
+      ]
+    ],
+    "_palette_comment": "Colors for the locally generated animated background (used when no clip fits)."
+  },
+  "camera": {
+    "_comment": "Virtual camera: Higgsfield-style cinematic moves rendered locally on the CPU (Pillow + MoviePy, no GPU/AI). Animates a crop window over the background — push-ins, drift pans, ken burns, punch-ins, handheld shake — one move per spoken line ('beat'), plus whip-pan or crossfade transitions. The LLM can pin a move to a line via a per-line 'camera' field (like 'graphic').",
+    "enabled": true,
+    "intensity": 0.6,
+    "_intensity_comment": "0-1: how far zooms/pans travel. 0.6 = lively but not seasick.",
+    "moves": [
+      "push_in",
+      "pull_out",
+      "drift_pan",
+      "ken_burns",
+      "punch_in",
+      "handheld"
+    ],
+    "_moves_comment": "Pool of moves picked per beat (never the same twice in a row). Remove aggressive ones (punch_in, handheld) for calmer content.",
+    "sync": "lines",
+    "min_beat_seconds": 2.5,
+    "max_beat_seconds": 7.0,
+    "_beat_comment": "Camera beats follow script lines; shorter lines merge, longer ones split within these bounds.",
+    "max_zoom": 1.3,
+    "_zoom_comment": "Zoom cap. Higher crops deeper into the source and softens 1080p footage.",
+    "shake": 0.35,
+    "_shake_comment": "0-1: smooth handheld wobble mixed into every move (0 = tripod).",
+    "transition": "whip_pan",
+    "_transition_options": "whip_pan | crossfade | none. whip_pan = fast blurred sweep between beats/scenes.",
+    "transition_seconds": 0.24,
+    "apply_to_generated": false,
+    "_generated_comment": "Also move the camera over the generated gradient background (it already pans by itself).",
+    "seed": null,
+    "_seed_comment": "Set an integer for reproducible camera choreography; null = varies per video.",
+    "sfx": true,
+    "sfx_volume": 0.4,
+    "_sfx_comment": "Synthesized whoosh sound under each whip-pan transition (no asset files needed). 0 volume or false = silent cuts.",
+    "impulses": true,
+    "impulse_zoom": 0.05,
+    "impulse_seconds": 0.35,
+    "_impulses_comment": "Short decaying zoom punch on the background whenever a motion graphic lands (beat-synced emphasis)."
+  },
+  "grade": {
+    "_comment": "Cinematic color grade on the background layer only (captions/graphics stay clean): S-curve contrast, warmth tint, saturation, vignette, optional film grain. One numpy pass per frame, CPU-only.",
+    "enabled": true,
+    "saturation": 1.25,
+    "_saturation_comment": "1.0 = untouched. 1.2-1.4 = punchy short-form look.",
+    "contrast": 0.15,
+    "_contrast_comment": "0-1 blend toward an S-curve. 0 = flat, 0.3+ = crunchy.",
+    "warmth": 0.06,
+    "_warmth_comment": "Positive = warmer (red up, blue down), negative = cooler. Keep within ±0.15.",
+    "vignette": 0.35,
+    "_vignette_comment": "0-1 corner darkening; pulls the eye to the center where captions live.",
+    "grain": 0.0,
+    "_grain_comment": "0-1 film grain. Subtle at 0.05; off by default (gameplay compresses badly with grain)."
+  },
+  "hook": {
+    "_comment": "Intro hook: the video title stamped on screen for the first ~1.5s (slams in oversized, settles, pops out). Emoji are stripped (fonts can't draw them).",
+    "enabled": true,
+    "seconds": 1.4,
+    "delay_seconds": 0.1,
+    "font_size": 116,
+    "vertical_position": 0.18,
+    "_vertical_comment": "Card center. Sits above the motion graphics (0.34) and captions (0.62).",
+    "uppercase": true
+  },
+  "progress_bar": {
+    "_comment": "Thin retention bar that fills over the video's length.",
+    "enabled": true,
+    "height": 12,
+    "color": [
+      255,
+      214,
+      40
+    ],
+    "opacity": 0.85,
+    "track_opacity": 0.18,
+    "position": "bottom",
+    "_position_options": "bottom | top"
+  },
+  "assets": {
+    "source_order": [
+      "gameplay",
+      "stock",
+      "generated"
+    ],
+    "_order_comment": "Background tiers per video: channel gameplay clips, topic-matched stock (Pexels/Pixabay), locally generated color animation. Styles/channels can override.",
+    "stock_query_bias": "",
+    "_bias_comment": "Words appended to every stock search, e.g. '3d cartoon animation' for a kids look.",
+    "min_stock_seconds": 6,
+    "_min_stock_comment": "Prefer stock clips at least this long so short clips don't visibly loop."
+  },
+  "comfyui": {
+    "_comment": "Local AI video generation via a running ComfyUI server (recommended model: LTX-Video / LTX-2, the only one that fits 8GB VRAM like an RTX 4060). Off by default; the 'aivideo' asset tier is skipped when disabled or the server is unreachable, so nothing breaks.",
+    "enabled": false,
+    "host": "http://127.0.0.1:8188",
+    "workflow_path": "studio/comfy_workflows/ltx_t2v.json",
+    "_workflow_comment": "Path to a ComfyUI API-format workflow JSON (exported via 'Save (API Format)'). Must contain a positive-prompt text node and a video/output save node.",
+    "prompt_node_title": "positive",
+    "_prompt_node_comment": "Title (or id) of the CLIPTextEncode node whose text we overwrite with the generated prompt. Give that node the title 'positive' in ComfyUI, or set its node id here.",
+    "prompt_template": "3d cartoon animation, {topic}, colorful, cute, friendly, soft lighting, for children, high quality",
+    "frames": 97,
+    "width": 640,
+    "height": 1088,
+    "frame_rate": 24,
+    "timeout_seconds": 600,
+    "max_scenes": 6,
+    "_max_scenes_comment": "Scene mode: upper bound on generated clips per video (~3.5 min GPU time each on an RTX 4060).",
+    "scene_prompt_template": "3d cartoon animation for children, {characters}, {visual}, bright colorful colors, cute, friendly, soft studio lighting, smooth gentle motion, high quality render"
+  },
+  "higgsfield": {
+    "_comment": "Cloud AI scene generation via the Higgsfield platform API (platform.higgsfield.ai) — the no-GPU alternative to ComfyUI. PAID per clip (credits; failed/nsfw jobs are refunded). Off by default; needs HIGGSFIELD_API_KEY + HIGGSFIELD_API_SECRET (.env or keys/higgsfield_api_key + keys/higgsfield_api_secret). Scene mode tries ComfyUI first, then this; video.scene_provider = 'higgsfield' pins it.",
+    "enabled": false,
+    "model": "bytedance/seedance/v1/lite/text-to-video",
+    "_model_comment": "Any text-to-video model id from https://cloud.higgsfield.ai/explore. A wrong id just makes scene mode fall back to the normal background.",
+    "aspect_ratio": "9:16",
+    "resolution": "720p",
+    "durations": [
+      5,
+      10
+    ],
+    "_durations_comment": "Clip lengths (seconds) the model accepts; each scene books the smallest one that covers it (assemble trims/loops the rest).",
+    "poll_seconds": 5,
+    "timeout_seconds": 600,
+    "max_scenes": 6,
+    "_max_scenes_comment": "Upper bound on paid clips per video — this caps the credit spend.",
+    "params": {},
+    "_params_comment": "Extra model-specific request fields passed through verbatim (e.g. {\"quality\": \"high\"}).",
+    "scene_prompt_template": "3d cartoon animation for children, {characters}, {visual}, bright colorful colors, cute, friendly, soft studio lighting, smooth gentle camera motion, high quality render"
+  },
+  "seedance": {
+    "_comment": "Offline-safe client for ByteDance's Seedance 2.5 cloud video model (pipeline/kidsong/seedance.py) -- an alternative to the local ComfyUI/LTX render path for the kidsong director loop. PAID per second of billed clip duration. Off by default; budget.dry_run defaults TRUE even when 'enabled' is true, so flipping 'enabled' alone still never touches the network or spends money -- budget.dry_run must ALSO be set to false. Needs SEEDANCE_API_KEY (.env or keys/seedance_api_key); SEEDANCE_BASE_URL optionally overrides base_url below.",
+    "enabled": false,
+    "base_url": "https://ark.seedance.bytedance.com",
+    "_base_url_comment": "PLACEHOLDER -- ByteDance has not published a public REST endpoint for Seedance 2.5 as of 2026-08-02. Replace with the real host once one exists. Construction hard-fails (SeedanceRejected) unless this host is also listed in allowed_hosts below.",
+    "allowed_hosts": [
+      "ark.seedance.bytedance.com"
+    ],
+    "_allowed_hosts_comment": "Host allowlist for base_url, checked at construction (pipeline/kidsong/seedance.py's _check_host_allowed). This is a made_for_kids channel -- third-party reseller/aggregator endpoints for Seedance are out of scope BY POLICY, not by accident, so only ByteDance's own API host(s) belong here.",
+    "model": "seedance-2.5",
+    "resolution": "720p",
+    "_resolution_comment": "HARD-CAPPED at 720p in code (_capped_resolution) no matter what this says -- the channel's final output is 1080p and kidsong shots render at 896x512, so anything above 720p is pure waste. Setting this to 1080p/2k/4k just gets silently (once-per-process-logged) clamped back down to 720p.",
+    "aspect_ratio": "16:9",
+    "_aspect_ratio_comment": "kidsong shots render LANDSCAPE (kidsong.shot is 896x512, ~16:9) even though the final cut is portrait -- see kidsong.shot's own _size_comment. Overridden automatically when a shot's WIDTH/HEIGHT patch maps to a different KNOWN standard ratio (16:9/9:16/1:1/4:3/3:4/21:9); 896x512 itself reduces to 7:4, which isn't a standard bucket, so it falls back to this value (close enough: 1.75 vs 1.778).",
+    "durations": [4, 6, 8, 12],
+    "_durations_comment": "Billed clip-length buckets; each shot books the smallest one that covers its FRAMES/kidsong.shot.fps length (pick_duration -- same smallest-that-covers-it-else-largest pattern as studio/higgsfield.py's pick_duration), and the assembler trims/loops the rest. kidsong.shot.max_frames=81 at kidsong.shot.fps=24 is 3.375s, which books the 4s bucket.",
+    "generate_audio": false,
+    "_generate_audio_comment": "Always forced to false in the actual request payload regardless of this value -- ACE-Step sings the lyrics, so a co-generated Seedance audio track would just be discarded downstream. Don't pay for it.",
+    "max_reference_images": 1,
+    "negative_prompt_field": "negative_prompt",
+    "_negative_prompt_field_comment": "Payload field the NEGATIVE patch maps to. Set to \"\" if a deployment turns out not to support a dedicated negative-prompt field -- the translate layer then folds NEGATIVE into the prompt as an 'avoid: ...' clause instead of dropping it (logged once, never silently).",
+    "poll_seconds": 5,
+    "timeout_seconds": 600,
+    "params": {},
+    "_params_comment": "Extra model-specific request fields passed through verbatim (e.g. {\"quality\": \"high\"}).",
+    "budget": {
+      "_comment": "Spend controls. A running per-episode ledger is written next to the shots it pays for (<base>-shots/spend.json, atomic write) and checked BEFORE every submit -- in both dry_run and live mode, so a config that would blow the budget is caught even while just previewing.",
+      "dry_run": true,
+      "_dry_run_comment": "true (default -- ALWAYS start here) = every render()/stage_input_image() call logs its estimated cost and raises SeedanceDryRun before any HTTP request is made; nothing is ever submitted or uploaded. Must be explicitly set false to actually spend money.",
+      "price_per_second_usd": 0.06,
+      "_price_per_second_comment": "OPERATOR-SUPPLIED. There is no published rate card for Seedance 2.5 as of 2026-08-02 -- this is a placeholder for local budgeting math only, not a citation of a real price. 0.06 approximates a ~$6/episode local-equivalent baseline: ~18 shots x ~3.4s x ~1.6 takes (retries) =~ 98 billed seconds x $0.06/s =~ $5.88.",
+      "max_usd_per_episode": 10.0,
+      "max_clips_per_episode": 40
+    }
+  },
+  "styles": {
+    "_comment": "Named look&feel presets, deep-merged over this config. Channels pick one; 'kids' is a preschool look: colorful animated backgrounds instead of gameplay, friendly rounded captions, louder music. Deliberately NOT described as an imitation of any existing kids' brand -- see docs/quality/SOURCES.md; look-alike drift is a ship-blocking finding, so neither this config nor the prompts should point anyone at one.",
+    "brainrot": {
+      "assets": {
+        "source_order": [
+          "gameplay",
+          "stock",
+          "generated"
+        ],
+        "stock_query_bias": "gameplay arcade neon"
+      },
+      "video": {
+        "music_volume": 0.06
+      },
+      "camera": {
+        "intensity": 0.7,
+        "shake": 0.45
+      },
+      "grade": {
+        "saturation": 1.35,
+        "vignette": 0.4
+      },
+      "hook": {
+        "seconds": 1.3
+      }
+    },
+    "kids": {
+      "captions": {
+        "font_path": "C:/Windows/Fonts/ARLRDBD.TTF",
+        "font_size": 92,
+        "fill_color": [
+          255,
+          255,
+          255
+        ],
+        "stroke_color": [
+          120,
+          60,
+          160
+        ],
+        "stroke_width": 6,
+        "words_per_group": 3,
+        "uppercase": false,
+        "vertical_position": 0.7,
+        "pill": {
+          "enabled": true,
+          "color": [
+            255,
+            88,
+            160
+          ],
+          "opacity": 235,
+          "radius": 42,
+          "pad_x": 42,
+          "pad_y": 22
+        }
+      },
+      "video": {
+        "music_volume": 0.22,
+        "show_character_avatars": false,
+        "scene_mode": true,
+        "_scene_comment": "One generated AI clip per scene (needs ComfyUI or the Higgsfield cloud API); falls back to stock/generated if neither is available.",
+        "background_palette": [
+          [
+            255,
+            137,
+            189
+          ],
+          [
+            122,
+            208,
+            255
+          ],
+          [
+            255,
+            224,
+            102
+          ],
+          [
+            148,
+            235,
+            173
+          ]
+        ]
+      },
+      "assets": {
+        "source_order": [
+          "aivideo",
+          "stock",
+          "generated"
+        ],
+        "stock_query_bias": "3d cartoon animation colorful kids"
+      },
+      "camera": {
+        "intensity": 0.35,
+        "moves": [
+          "push_in",
+          "pull_out",
+          "drift_pan",
+          "ken_burns"
+        ],
+        "shake": 0.1,
+        "transition": "crossfade"
+      },
+      "grade": {
+        "saturation": 1.15,
+        "contrast": 0.1,
+        "warmth": 0.04,
+        "vignette": 0.15
+      },
+      "motion": {
+        "flash": false
+      },
+      "hook": {
+        "seconds": 1.8,
+        "uppercase": false
+      },
+      "progress_bar": {
+        "color": [
+          255,
+          88,
+          160
+        ],
+        "height": 14
+      },
+      "youtube": {
+        "made_for_kids": true,
+        "category_id": "24"
+      }
+    },
+    "clean": {
+      "captions": {
+        "font_path": "C:/Windows/Fonts/seguibl.ttf",
+        "font_size": 84,
+        "stroke_width": 8,
+        "words_per_group": 2,
+        "uppercase": false,
+        "pill": {
+          "enabled": true,
+          "color": [
+            12,
+            12,
+            16
+          ],
+          "opacity": 200,
+          "radius": 26,
+          "pad_x": 34,
+          "pad_y": 18
+        }
+      },
+      "assets": {
+        "source_order": [
+          "stock",
+          "gameplay",
+          "generated"
+        ],
+        "stock_query_bias": "cinematic aesthetic"
+      },
+      "video": {
+        "music_volume": 0.1,
+        "show_character_avatars": false
+      },
+      "camera": {
+        "intensity": 0.5,
+        "shake": 0.15
+      },
+      "grade": {
+        "saturation": 1.1,
+        "contrast": 0.12,
+        "warmth": -0.02,
+        "vignette": 0.3,
+        "grain": 0.05
+      },
+      "motion": {
+        "flash_opacity": 0.1
+      },
+      "progress_bar": {
+        "color": [
+          240,
+          240,
+          245
+        ],
+        "height": 8
+      }
+    }
+  },
+  "kidsong": {
+    "_comment": "Kids Song video type: SDXL scene images rendered on your GPU. Models download once (~7 GB) into hf_home.",
+    "image_model": "stabilityai/stable-diffusion-xl-base-1.0",
+    "image_width": 832,
+    "image_height": 1216,
+    "steps": 28,
+    "guidance": 6.5,
+    "seed": 20260717,
+    "hf_home": "D:/brainrot/hf",
+    "_hf_home_comment": "Where diffusion models are cached. Point at a drive with space.",
+    "voice": "en-US-AnaNeural",
+    "voice_rate": "+4%",
+    "music_volume": 0.16,
+    "language": "en",
+    "_language_comment": "Language of the SUNG content: lyrics, title/description/tags, on-screen captions, and the singing voice. 'en' (default) is byte-identical to before. 'de' switches the lyrics libraries to their .de.json variants (prompts/pd_songs.de.json, prompts/learning_songs.de.json), the fallback songs to German, the Whisper transcription language to German (verse alignment + captions), the craft gate to its German-safe profile, and — for the edge-tts singer — the default voice to a de-DE child voice. VISUAL prompts (shot/scene text for the image/video model) ALWAYS stay English regardless: LTX/Gemma/SDXL are English-trained, so library `scene`/`scene_hint` fields must be written in English even for a German song. Per-channel override: set on the channel (threaded via the scheduler) so one machine can run English and German channels side by side.",
+    "lyrics_source": "auto",
+    "_lyrics_source_options": "auto (DEFAULT: write a TOPICAL song about the job's topic with the LLM, gate it through script_qc.review_script, retry up to lyrics_llm_attempts times feeding the rejection reasons back into the prompt, and fall back to the best public-domain library match only if the LLM cannot produce a passing song — restores topic->song coherence so a 'balance bike' topic yields an actual balance-bike song) | public_domain (pick a curated public-domain nursery rhyme from prompts/pd_songs.json — only the WORDS are reused, ACE-Step still generates a fresh melody; topic-mapped then least-recently-used rotation, never touches the LLM) | llm (write an original song with the configured LLM, gated by the same craft checks as auto but with NO library fallback)",
+    "lyrics_llm_attempts": 5,
+    "_lyrics_llm_attempts_comment": "How many times the auto/llm paths ask the LLM for a song, feeding each script_qc rejection's reasons back into the prompt, before giving up (auto then ships the best topical attempt above lyrics_topical_floor, else the library; llm ships its best attempt). More attempts raise the chance one clears the floor so more episodes ship topical. Default 5.",
+    "lyrics_topical_floor": 0.6,
+    "_lyrics_topical_floor_comment": "auto mode: when no LLM attempt fully passes the craft gate, ship the best attempt anyway if its score >= this floor (a topical song with minor craft flaws — has the hook, mostly rhymes) rather than a perfectly-crafted but OFF-TOPIC library song. Coherence is the top priority. 0.6 separates 'minor flaws' (~0.65) from 'unsingable' (<=0.45, still falls to the library). Set >= 1.0 for the strict gate.",
+    "singer": "ace",
+    "_singer_options": "ace (ACE-Step sings the lyrics with a full arrangement) | tts (edge-tts child voice + synth music bed)",
+    "song_style": "children's nursery rhyme, cheerful upbeat kids song, cute female child voice, simple very repetitive catchy melody, singalong hook that repeats, gentle bouncy tempo, playful, bright, warm",
+    "song_seconds": 60,
+    "sing_coherence": {
+      "_comment": "ACE-Step's 5Hz 'thinking' LM (ace_runner.py: thinking=True, use_cot_metas=True) replans bpm/arrangement on every render -- the seed only pins the DiT noise, so a scrambled render is a dice roll, not a deterministic bug. After singing, pipeline.kidsong.generate measures the render's beat-grid phase-fit resultant (edit.py's _fit_phase; 1.0 = rock-steady phase, 0.0 = scattered) and re-sings with seed+1, seed+2, ... when it is below min_resultant, up to max_attempts total tries, keeping whichever attempt scored highest (even if none cleared the bar -- logged loudly). Measured 2026-07-24: resultant 0.54 at 99.38 bpm sang clean; 0.235 at 129bpm and 0.068 at 86bpm were audibly scrambled -- 0.25 sits just above the scrambled cluster and matches edit.py's own _GRID_MIN_RESULTANT floor. Only gates a FRESH render: a resumed run reuses its existing wav untouched (re-singing would desync the beat grid and every take already cut against it).",
+      "min_resultant": 0.25,
+      "max_attempts": 3
+    },
+    "audio_clean": {
+      "_comment": "Post-processing of the ACE-Step render before anything downstream uses it (pipeline/kidsong/audio_clean.py). ACE-Step reliably prepends a loud broadband junk transient and leaves seconds of dead air at the end; both are trimmed, the cut points are faded, and the track is loudness-normalized. The CLEANED duration drives the beat grid, verse timing and the cut list, so the song fits the video.",
+      "enabled": true,
+      "_enabled_comment": "false = ship the raw render untouched (the old behavior). The cut_qc 'audio noisy opening' gate still runs either way.",
+      "max_head_trim_seconds": 2.0,
+      "_max_head_comment": "Hard safety cap on the lead-in trim so a bad detection can never eat the song. Measured real junk lead-ins are 0.02-0.10s, so 2.0 is ~20x the worst observed case; a detection past the cap is clamped to it and only applied if the capped region still measures as junk.",
+      "max_tail_trim_seconds": 20.0,
+      "_max_tail_comment": "Cap on the trailing trim. Much more generous than the head cap on purpose: what gets removed here is dead air (1.5-13.3s measured across five renders, i.e. up to 22% of a 60s video), which is unambiguous. A quiet outro is protected by the junk classifier, not by this cap.",
+      "fade_ms": 30.0,
+      "_fade_comment": "Fade in/out length in milliseconds, applied after trimming. The cut lands mid-waveform, and stepping from a non-zero sample to silence is exactly what a click is.",
+      "loudness_lufs": -14.0,
+      "_loudness_comment": "Integrated loudness target (LUFS), EBU R128 via ffmpeg loudnorm, two-pass. -14 is what YouTube normalizes to: master here and playback is unchanged by YouTube, and every episode of the channel matches. Measured spread across five renders: 3.1 dB before, 0.30 dB after.",
+      "loudness_true_peak": -1.0,
+      "_true_peak_comment": "True-peak ceiling in dBTP. -1.0 leaves headroom for lossy-codec overshoot on YouTube's transcode.",
+      "loudness_range": 20.0,
+      "_loudness_range_comment": "Loudness range target (LU), at loudnorm's maximum on purpose. If this is set BELOW the material's own range, loudnorm switches from linear to dynamic mode and compresses — which both missed the target by 2.1 dB in testing and squashes the dynamics that cut_qc's musicality gate measures. Lower it only if you deliberately want compression."
+    },
+    "animate": true,
+    "_animate_comment": "true = animate each scene with image-to-video on the GPU (slower, real motion). false = Ken Burns stills.",
+    "video_backend": "wan",
+    "_video_backend_options": "wan (clean coherent motion, default) | ltx (much faster but morphs/smears characters)",
+    "video_model": "Lightricks/LTX-Video-0.9.1",
+    "wan_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "clip_width": 480,
+    "clip_height": 832,
+    "clip_frames": 49,
+    "clip_fps": 24,
+    "video_steps": 30,
+    "video_guidance": 5.0,
+    "sequential_offload": true,
+    "_sequential_offload_comment": "true = lowest VRAM (works while other apps use the GPU), slower. Set false for speed when the GPU is free.",
+    "mode": "director",
+    "render_style": "pixar_toon",
+    "_render_style_comment": "Which entry of render_styles below is the active look. Unknown/absent names fall back to 'pixar_toon' (logged, never fatal). Channels can override per-channel via the deep-merge style system. To COMPARE two looks rather than just pick one, do not edit this key and re-render from scratch (a fresh run writes a different song and shot list): use `python -m pipeline.kidsong.generate --restyle <base> --style <name>`, which re-renders an existing episode under another style holding the song, shot list, sung audio and every per-shot seed fixed. Unknown names are a hard error there, unlike here, so an A/B can never silently compare a style against itself.",
+    "render_styles": {
+      "_comment": "Named render-style registry: each entry is one visual look the kidsong pipeline can render, decoupling the single look that used to be hardcoded. Resolved by pipeline/kidsong/render_style.py (resolve_style); generate.py reads the active entry to pick the ComfyUI graph, patch the LORA_STYLE node, and build the shot prompt. Any key an entry omits falls back to the pixar_toon defaults, so a partial entry is safe.",
+      "pixar_toon": {
+        "_comment": "The channel's established Pixar-style 3D toon look — EXACTLY the pre-registry behaviour, kept byte-identical as the regression baseline.",
+        "workflow_base": "ltx23_t2v_toon",
+        "_workflow_base_comment": "ComfyUI workflow file under workflows/ (no .json). generate.py appends '_hires' to this when kidsong.shot.hires_pass is true (-> ltx23_t2v_toon_hires). The shared i2v graph gets the same suffix via render_style.i2v_workflow_name (-> ltx23_i2v_toon_hires); it is not a per-style key.",
+        "style_lora": "ltx23_pixar_toon.safetensors",
+        "_style_lora_comment": "LoRA file swapped onto the LoraLoaderModelOnly node titled LORA_STYLE. A string value swaps the file; paired with style_strength it sets both inputs.",
+        "style_strength": 1.0,
+        "_style_strength_comment": "strength_model on the LORA_STYLE node. 1.0 = full Pixar-toon LoRA. 0.0 neutralizes it (the LoRA loads but contributes nothing) — how a look can reuse the same graph with no new workflow file.",
+        "style_trigger": "P1x4r",
+        "_style_trigger_comment": "Trigger token prefixed to every shot prompt (the LoRA's activation word). Empty string = no trigger prefix.",
+        "prompt_skeleton": "a high-quality 3D CGI toon animation in a preschool show style.",
+        "_prompt_skeleton_comment": "The prose that opens every shot prompt, right after the trigger. Describes the medium/look in film-style language the LTX-2 Gemma text encoder follows.",
+        "identity_clause": "Every child on screen is one of these Black toddlers — no other children appear.",
+        "_identity_clause_comment": "The child-identity clamp sentence held verbatim in every children-on-screen prompt. Measurably reduced invented/off-cast children; kept identical across looks.",
+        "prompt_tail": "A warm key light from one side with a soft cool rim light along hair and shoulders, gentle soft-edged shadows. The set is lovingly dressed with two or three simple props that fit the location, kept clear around the children — bold happy colors, a joyful everyday toddler moment.",
+        "_prompt_tail_comment": "The lighting/set sentences that close every children-on-screen prompt (the counterpart of prompt_skeleton). 48 words. Empty string = no tail. WARNING: this text goes to the Gemma-3 encoder, not to an LLM — it once said 'concrete props' meaning 'specific, tangible' and the encoder rendered grey stone blocks as set dressing in every shot. Avoid words with a material reading."
+      },
+      "pixar_toon_concise": {
+        "_comment": "The B arm of the prompt-length experiment: pixar_toon with a shorter lighting/set tail and NOTHING else changed (every omitted key falls back to the pixar_toon defaults, so the graph, LoRA, trigger, skeleton and identity clause are identical). Composed prompts across the shipped corpus run min 166 / median 184 / p90 231 / max 270 words against the ~200-word cap the RunDiffusion guide recommends (docs/quality/SOURCES.md); the length is dominated by the three wardrobe descriptions in the identity sentence — the load-bearing part — so the tail is what should give. Set kidsong.render_style to this name, re-render the same episode on the same seeds, and compare.",
+        "prompt_tail": "A warm key light with a soft cool rim light, gentle soft-edged shadows. Two or three simple props fit the location, kept clear around the children — bold happy colors.",
+        "_prompt_tail_comment": "29 words instead of 48, keeping the key/rim/shadow direction and the prop-and-color guidance and dropping the restatements."
+      },
+      "pixar_toon_lean": {
+        "_comment": "The leanest arm that cuts NO cast information: pixar_toon with the concise tail AND the duplicated half of the identity clause removed. Every prompt already carries a count clamp ('No other children appear anywhere in the frame, foreground or background.' / 'No other children are visible in frame.'), so the identity clause's trailing '— no other children appear' asserts the same constraint a second time. What the clause uniquely says is the IDENTITY constraint, and that is kept verbatim. Saves 24 words per child prompt (19 tail + 5 clause) without dropping a single wardrobe, skin or hair descriptor. Try it with: python -m pipeline.kidsong.generate --restyle <base> --style pixar_toon_lean",
+        "identity_clause": "Every child on screen is one of these Black toddlers.",
+        "_identity_clause_comment": "pixar_toon's clause minus the redundant '— no other children appear'. The count clamp that precedes it in every prompt already states that, and states it more precisely (it names foreground and background). QM-030 lever (a).",
+        "prompt_tail": "A warm key light with a soft cool rim light, gentle soft-edged shadows. Two or three simple props fit the location, kept clear around the children — bold happy colors.",
+        "_prompt_tail_comment": "Same 29-word tail as pixar_toon_concise."
+      },
+      "flat_storybook": {
+        "_comment": "A soft flat 2D storybook-illustration look. DOWNLOAD-FREE: reuses the same toon workflow graphs but sets style_strength 0.0 so the Pixar LoRA loads yet contributes nothing (no new workflow file, no node-count change). Only the prompt skeleton and the neutralized LoRA differ from pixar_toon.",
+        "workflow_base": "ltx23_t2v_toon",
+        "style_lora": "ltx23_pixar_toon.safetensors",
+        "_style_lora_comment": "Same file as pixar_toon on purpose — nothing new to download. It is neutralized by style_strength 0.0 below.",
+        "style_strength": 0.0,
+        "_style_strength_comment": "0.0 = the LoRA is loaded but has no effect, so the base model renders the look driven entirely by the prompt_skeleton.",
+        "style_trigger": "",
+        "_style_trigger_comment": "Empty: the flat look is prompt-driven, not LoRA-triggered, so no activation token is prefixed.",
+        "prompt_skeleton": "a soft flat 2D storybook illustration with bold simple shapes, flat matte colors and gentle rounded outlines, in a warm picture-book style.",
+        "_prompt_skeleton_comment": "Steers the base model toward a flat picture-book look instead of 3D CGI.",
+        "identity_clause": "Every child on screen is one of these Black toddlers — no other children appear.",
+        "_identity_clause_comment": "Same identity clamp as pixar_toon — the cast is unchanged, only the rendering style differs."
+      },
+      "claymation": {
+        "_comment": "A handcrafted stop-motion claymation look — the channel's own brand asset (the ZubiBop logo) is already a clay character, so this is the style that follows the logo instead of fighting it. Also the strongest visual differentiator from the many glossy-3D-CGI Cocomelon-alike channels. LoRA: vrgamedevgirl84/LTX_2.3_Clay_Mation_Style_LoRa (free, HuggingFace), downloaded to D:/brainrot/comfy-models/loras/Claymation.safetensors — same drop-in mechanism as the Pixar LoRA, no new workflow file.",
+        "workflow_base": "ltx23_t2v_toon",
+        "style_lora": "Claymation.safetensors",
+        "style_strength": 1.0,
+        "_style_strength_comment": "1.0 per the model card's own recommendation (no lower value suggested).",
+        "style_trigger": "claymation style, stop motion clay, handcrafted clay character",
+        "_style_trigger_comment": "The model card lists several equivalent trigger phrases (claymation style / stop motion clay / handcrafted clay character / clay diorama / sculpted clay figure); these three are prefixed to every prompt.",
+        "prompt_skeleton": "a handcrafted claymation stop-motion diorama, characters sculpted from soft rounded clay with visible fingerprints and hand-shaped texture, a miniature clay set, warm cinematic lighting and shallow depth of field, a cozy preschool show style.",
+        "identity_clause": "Every child on screen is one of these Black toddlers, sculpted in the same clay style — no other children appear.",
+        "_identity_clause_comment": "Same cast-integrity clamp as pixar_toon, reworded so it doesn't contradict the clay material description."
+      },
+      "felt": {
+        "_comment": "A cozy handcrafted felt-cutout diorama look — softer/plusher than claymation, closer to the high-contrast tactile aesthetic that engages babies rather than toddlers. LoRA: 'LTX 2.3 - Cozy Felt' by vrgamedevgirl84 (free), downloaded to D:/brainrot/comfy-models/loras/CozyFelt.safetensors.",
+        "workflow_base": "ltx23_t2v_toon",
+        "style_lora": "CozyFelt.safetensors",
+        "style_strength": 1.0,
+        "_style_strength_comment": "1.0 per the model card ('Strength: 1').",
+        "style_trigger": "F3ltCut0u7, felt cutout style, handcrafted felt diorama",
+        "_style_trigger_comment": "F3ltCut0u7 is the model's main (leetspeak) trigger token per its card; the plain-English phrases are added for robustness.",
+        "prompt_skeleton": "a cozy handcrafted felt cutout diorama, characters and scenery assembled from soft plush felt pieces with visible stitching and fuzzy fibers, layered felt shapes, a warm storybook preschool style.",
+        "identity_clause": "Every child on screen is one of these Black toddlers, made of the same felt materials — no other children appear.",
+        "_identity_clause_comment": "Same cast-integrity clamp as pixar_toon, reworded so it doesn't contradict the felt material description."
+      },
+      "explainer_clean": {
+        "_comment": "Clean explainer look for the hyperframes channels. DOWNLOAD-FREE: same graphs as pixar_toon with style_strength 0.0, so the toon LoRA loads but contributes nothing and the look is driven entirely by the prompt skeleton. No child cast, so identity_clause and prompt_tail are empty — both exist to clamp the three-toddler cast and would inject children into an explainer frame.",
+        "workflow_base": "ltx23_t2v_explainer",
+        "style_lora": "ltx23_pixar_toon.safetensors",
+        "style_strength": 0.0,
+        "style_trigger": "",
+        "prompt_skeleton": "a clean modern explainer animation with bold flat geometric shapes, generous negative space, crisp edges and a calm restrained palette, in a professional motion-graphics style.",
+        "identity_clause": "",
+        "prompt_tail": "Even diffuse lighting with soft contact shadows, an uncluttered background, one clear focal element per frame.",
+        "_workflow_base_comment": "Eigener Graph, abgeleitet aus ltx23_t2v_toon: identische Node-Titel (derselbe Patch-Code greift), identische Auflösung/Frames/Sigmas (dasselbe VRAM-Budget auf der 12GB-Karte), aber LoRA-Stärke 0.0 und ein NEGATIVE-Prompt der Kinder und Cartoon-Figuren aus dem Bild hält — der Toon-Graph ist auf Kleinkinder ausgelegt, ein Erklärvideo darf keine bekommen."
+      },
+      "meme_pop": {
+        "_comment": "High-contrast punchy look for the brainrot shorts channel. DOWNLOAD-FREE, same mechanism as explainer_clean. identity_clause empty: no fixed cast.",
+        "workflow_base": "ltx23_t2v_meme",
+        "style_lora": "ltx23_pixar_toon.safetensors",
+        "style_strength": 0.0,
+        "style_trigger": "",
+        "prompt_skeleton": "a punchy high-contrast stylised animation with saturated colors, chunky forms and exaggerated proportions, in a bold internet-native graphic style.",
+        "identity_clause": "",
+        "prompt_tail": "Hard directional light, strong rim separation, one loud focal subject centred in frame.",
+        "_workflow_base_comment": "Eigener Graph, abgeleitet aus ltx23_t2v_toon wie explainer_clean; NEGATIVE haelt eingebrannten Text und Wasserzeichen heraus."
+      }
+    },
+    "quality": "custom",
+    "_quality_comment": "Quality tier resolved at the start of a director-mode render (pipeline/kidsong/generate.py::resolve_quality). Values: draft | final | custom. An explicit tier from quality_tiers OVERRIDES the individual shot/review/director keys below; custom (or an absent/unknown value) leaves them EXACTLY as-is and is byte-identical to a pipeline with no tiers at all — that is the shipped default, so nobody is silently switched to draft. RECOMMENDATION for throughput: set this to \"draft\" so every episode renders fast, then produce the expensive final version of a chosen episode on demand with `python -m pipeline.kidsong.generate --finalize <base>` (it reuses that draft's song, shot list and sung audio, re-renders at final quality under a new base, and never touches the draft).",
+    "quality_tiers": {
+      "_comment": "The knobs each tier bundles, as OVERRIDES on the base config: a tier only changes the keys it names, everything else is inherited. Missing tiers/keys fall back to the code defaults in generate.py (_QUALITY_TIER_DEFAULTS), so a partial entry is safe.",
+      "draft": {
+        "_comment": "Fast entwurf for throughput: skip the 2x hires refine pass, render fewer frames per shot, plan fewer unique shots, and review automatically (no blocking vision-review waits). A draft KEEPS its working audio so --finalize can reuse the same sung take.",
+        "hires_pass": false,
+        "frames_scale": 0.6,
+        "_frames_scale_comment": "Multiplier on the per-shot frame count (1.0 = full). 0.6 renders ~40% fewer frames per shot for a faster draft; the beat-aligned cut may loop a shorter shot, which is acceptable for a preview.",
+        "max_unique_shots": 12,
+        "_max_unique_comment": "Lower than the base director.max_unique_shots so a draft renders fewer distinct shots. Only affects NEW draft runs (resume/finalize reuse the existing plan).",
+        "reviewer": "heuristic"
+      },
+      "final": {
+        "_comment": "Full-fidelity endfassung: force the hires pass on; frames, shot count and reviewer are inherited from the base config (\"keep configured\"). This is what --finalize forces.",
+        "hires_pass": true
+      }
+    },
+    "shot": {
+      "width": 896,
+      "height": 512,
+      "frames": 97,
+      "fps": 24,
+      "hires_pass": true,
+      "style_lora": "ltx23_pixar_toon.safetensors",
+      "style_trigger": "P1x4r",
+      "style_strength": 1.0,
+      "_size_comment": "LANDSCAPE, and authoritative: kidsong.generate patches WIDTH/HEIGHT into the ComfyUI graph per render. Both must be multiples of 32 (LTX EmptyLTXVLatentVideo uses step=32 and builds its latent as height//32 x width//32). 896x512 is aspect 1.75 against the 1920x1080 output's 1.778, so the cut only trims ~1.5% of height. These used to be dead keys while the graphs rendered a hardcoded portrait 512x896, which the 16:9 cut then cropped by ~69% of its height and cut off heads and feet.",
+      "_hires_comment": "true = 2x latent refine to 1792x1024 (~4 min/shot, near-broadcast quality now that the refine sigma order is fixed). false = fast 896x512 base pass. Governs BOTH the t2v graph and the i2v graph (keyframe-first/reference-anchored shots included) — before ltx23_i2v_toon_hires existed, anchored shots silently skipped the refine and shipped soft.",
+      "max_frames": 81,
+      "_max_frames_comment": "Bisected on the i2v-hires graph (2026-07-24): 81 (3.4s) verified, 89+ renders black. The t2v-hires graph alone was good to 121 and black at 241 — the i2v refine tightens the envelope. Bisect before raising (render one shot per candidate frame count and eyeball a contact sheet).",
+      "i2v_sigmas": "1.0000, 0.9937, 0.9875, 0.9812, 0.9750, 0.9094, 0.7250, 0.4219, 0.0",
+      "_i2v_sigmas_comment": "Sampling schedule for the reference-anchored image-to-video re-render (reference_anchor below). Defaults to the official 9-step schedule flf2v needed, because at the channel's 3-step distilled schedule the interior of a bridged clip collapsed. i2v conditions ONLY frame 0, so it MAY survive 3 steps where flf2v (two guides) could not — but that is UNVERIFIED until a GPU proof; keep the 9-step until it's measured. Patched onto the SIGMAS node of the active i2v graph (workflows/ltx23_i2v_toon.json, or ltx23_i2v_toon_hires.json when shot.hires_pass) — the hires graph's refine stage has its own SIGMAS_REFINE node this patch never touches."
+    },
+    "decreep": {
+      "enabled": false,
+      "hook_camera_budget": 1,
+      "_comment": "De-creep prompt grammar (opt-in; false = byte-identical legacy prompts). enabled=true replaces the hardcoded 'face the camera as they move' with a per-shot eyeline: an explicit `gaze` field when present, else eyes on the story subject / on each other / on their own hands — never the lens. Camera-address becomes a designated SPECIAL EVENT: at most hook_camera_budget shots per episode (first shot of a hook verse) face the camera, always with a warm natural smile and natural blinking. Also swaps the repeated-shot performance beats and the smile/hold verb entries to non-lens variants. Workflow negatives against approaching/staring at the lens ship un-gated (pure strengthening).",
+      "_status_note": "Ships OFF until the output/_ab_decreep GPU A/B proves it on pixels."
+    },
+    "storyboard": {
+      "enabled": false,
+      "attempts": 3,
+      "_comment": "Storyboard brain (opt-in; false = legacy canned beat pool). enabled=true builds a per-verse story arc (discover -> try -> grow -> celebrate) tied to the song topic with the local LLM (pipeline/kidsong/storyboard.py, prompts/kidsong_storyboard.txt), gated deterministically (real verb per beat, no martial/scary language, gaze target per beat, camera-address <= 1 beat, no concrete cast names), retried `attempts` times with the rejection reasons fed back, and falls back to a deterministic topic-derived arc — never the 'sings along with a happy face' filler. Beats carry {name} placeholders the director substitutes via its own rotation.",
+      "_status_note": "Ships OFF until the output/_ab_decreep GPU A/B proves it on pixels."
+    },
+    "keyframe_first": {
+      "enabled": false,
+      "identity_refs": false,
+      "identity_retries": 8,
+      "identity_min_margin": 0.0,
+      "prop_gate": true,
+      "prop_min_prob": 0.6,
+      "_prop_gate_comment": "Prop-presence gate on keyframes (inert without a shot prop or without CLIP): a shot whose storyboard beat names an interaction object (shot['prop'], plumbed from the board's beats) must SHOW that object in its keyframe before the shot animates — i2v carries frame 0 forward, so a prop missing in the keyframe is a prop missing for the whole take (the measured vanishing-umbrella defect). identity_check.prop_presence scores P(prop visible) via zero-shot CLIP; below prop_min_prob the keyframe re-renders inside the SAME identity_retries budget (identity outranks prop — never sacrificed), best attempt kept, never blocking. 0.6 is a conservative uncalibrated default; see prop_presence's docstring for the offline calibration procedure.",
+      "_comment": "Keyframe-first rendering (opt-in; false = byte-identical t2v). enabled=true pre-renders every pending shot's FIRST FRAME with Z-Image Turbo (batched before the LTX loop, client.free() between — both models do not fit in 12GB together), then animates each keyframe with the ltx23_i2v_toon graph (INPUT_IMAGE + the 9-step i2v_sigmas). Z-Image reads the exact head-count sentence far more reliably than the video model, so the correct children are baked into frame 0 and clone-collapse (the same child rendered 2-3x) cannot start from a wrong count. Includes wide/group shots (where clones are worst); insert/subject-only shots and reuse shots are exempt. A failed keyframe degrades that one shot to t2v, never blocks the episode. Keyframes cache under <base>-shots/keyframes/ (resume-safe). Takes precedence over reference_anchor.always; reviewer force_i2v becomes moot.",
+      "_identity_refs_comment": "identity_refs=true routes each SINGLE-SUBJECT keyframe through the FLUX.2 klein reference graph, anchored on the child's canonical reference (output/_cast_refs/<id>/canonical.png, auto-generated at render start via refs.ensure_reference). Pins identity where text alone drifts a solo child into a castmate (measured: solo Kofi -> Zuri's afro puffs). klein is a stochastic 4-step sample, so identity_retries re-renders a keyframe (CLIP-scored by pipeline.kidsong.identity_check against every cast reference) until it matches the intended child more than any other (margin >= identity_min_margin), up to identity_retries times, keeping the best. Needs the CLIP model cached under HF_HOME and the references present; missing either -> text-only keyframe, byte-identical. Group keyframes are never identity-retried (no single identity to verify).",
+      "_status_note": "Ships OFF until the output/_ab_decreep GPU A/B proves it on pixels."
+    },
+    "reference_anchor": {
+      "_comment": "Phase 3 pixel anchoring for character identity. When the reviewer rejects a shot for duplicate/off-model children (the force_i2v hint) AND the shot is a single-subject shot (exactly one cast child) AND a canonical reference image exists for that child (output/_cast_refs/<id>/canonical.png, rendered by Z-Image Turbo via pipeline/kidsong/refs.py or harvested from accepted footage), the shot is re-rendered image-to-video FROM that reference instead of fresh text-to-video — pixel-anchoring the identity instead of describing it in text. Wide/group shots have no single correct image to feed, so they are deliberately left to the normal t2v retry path. With enabled=false, OR with no reference present, force_i2v stays inert and rendering is byte-identical to a pipeline without this feature.",
+      "enabled": false,
+      "_enabled_comment": "false since 2026-07-24: anchoring shots on the _cast_refs stills cut a SECOND visual style into episodes (refs render in their own look — measured on rain-rain-storyfix-final, solo closeups toy-look vs film-CGI ensembles). Keyframe-first + keyframe_first.identity_refs carries identity in ONE consistent style instead. Set true only when the cast refs match the active render style.",
+      "_style_warning": "reference_anchor.always (proactive anchoring of every solo shot) has the same style-mixing hazard, amplified — with the i2v hires re-injection the ref's look survives the whole clip."
+    },
+    "reference": {
+      "_comment": "Z-Image Turbo reference-still render size (pipeline/kidsong/refs.py, workflows/zimage_ref.json). Portrait suits a standing single toddler; both must be multiples of 16 (the EmptySD3LatentImage step). The i2v graph's LTXVPreprocess resizes the still to the shot's frame size, so this need not match kidsong.shot.width/height.",
+      "width": 768,
+      "height": 1024
+    },
+    "content_mode": "song",
+    "_content_mode_comment": "song (default) = sung nursery-rhyme episodes, unchanged. learning = educational letter/number/shape songs from prompts/learning_songs.json: the taught item (a big letter A, the numeral 3, a red circle) becomes each verse's story_subject — one shot per verse shows the item alone as an insert, and the verse's last shot has a child point at it. Reuses the whole director/sing/beat/edit/QC/intro/registry stack. Best on its own channel. With 'song', byte-identical to before.",
+    "staging": "ensemble",
+    "_staging_comment": "Who is on screen, per shot. 'ensemble' (default, byte-identical) = the legacy round-robin: solo body slots rotate Zuri->Kofi->Nala mechanically and every storyboard verse carries one group beat. 'story' = STORY-DRIVEN CASTING (the owner's red-thread rule): the storyboard owns who plays — one PROTAGONIST child (deterministic md5 of the song title over the cast bible, override via kidsong.protagonist) carries every solo body slot through all verses; a PARTNER child (next in bible order, override kidsong.partner) appears only in the board's single role='partner' beat, planned as an explicit TWO-child medium shot (never a solo shot whose text implies invisible friends — the measured non-cast-child invasion vector); the whole cast stages only at gathering moments: the opening wide, the share verse's one shared moment, the celebrate finale, plus a forced closing group shot (the second bookend). Requires kidsong.storyboard.enabled; without a board the plan falls back to the ensemble rotation, logged, byte-identically.",
+    "protagonist": "",
+    "partner": "",
+    "_protagonist_partner_comment": "Optional cast-bible ids (zuri/kofi/nala or their aliases) overriding staging='story''s deterministic picks. Empty = derive from the song title (protagonist) / next-in-bible-order (partner). An unresolvable value or partner==protagonist logs a warning and falls back — never breaks a plan.",
+    "learning_card": {
+      "_comment": "Z-Image Turbo card size for a taught item, rendered by refs.generate_card to output/_learning_cards/. Only used in content_mode=learning.",
+      "width": 1024,
+      "height": 1024
+    },
+    "director": {
+      "target_shot_seconds": 2.8,
+      "max_unique_shots": 16,
+      "reuse_chorus_shots": true,
+      "min_shot_seconds": 1.4,
+      "max_shot_seconds": 4.5,
+      "enforce_camera_variety": false
+    },
+    "_director_scene_mode_comment": "Scene-mode Phase 1 knobs (opt-in, all shown here at TODAY'S defaults -- omit them entirely for byte-identical behaviour). min_shot_seconds/max_shot_seconds (defaults 1.4/4.5, pipeline/kidsong/director.py's _MIN_SHOT_SECONDS/_MAX_SHOT_SECONDS) are the per-shot duration bounds _num_shots_for/_tile plan against; raise max_shot_seconds (and target_shot_seconds above, which clamps against these same bounds) together to get FEWER, LONGER shots -- also raise kidsong.review.max_cut_seconds below to match, or the cut QC gate will reject the longer cuts it produces. THIRD knob, easy to miss: _shot_bounds also clamps max_shot_seconds to the longest take the renderer can actually produce, (kidsong.shot.max_frames - fps/4)/fps -- at the shipped max_frames=81 that is 3.13s, BELOW the 4.5s default, so raising max_shot_seconds alone is a no-op (director.py logs a warning when this clamp bites). Raise kidsong.shot.max_frames too, and bisect it first (see its own comment) because the i2v-hires graph renders black above 81. enforce_camera_variety (default false) runs a deterministic post-pass so no two adjacent non-reuse shots repeat the same camera move, cycling static/slow push-in/slow pull-back/gentle pan left/gentle pan right; the wide establishing opener stays static and a reused shot keeps its source shot's camera either way.",
+    "review": {
+      "reviewer": "external",
+      "max_retries_per_shot": 2,
+      "frames_per_shot": 5,
+      "max_cut_seconds": 5.0,
+      "min_cut_seconds": 1.4,
+      "_cut_seconds_comment": "The cut-duration window cut_qc._check_cuts gates 'cut duration out of range' against (pipeline/kidsong/cut_qc.py's _MIN_CUT/_MAX_CUT). Both are opt-in and shown here at TODAY'S defaults -- omit for byte-identical behaviour. They must move WITH kidsong.director.min_shot_seconds/max_shot_seconds: a shot the director plans outside this window is rejected here, once per cut, and the episode fails its own gate and never reaches Final/ with nothing pointing at the config key that caused it.",
+      "external_timeout": 120,
+      "unattended_after_timeouts": 2,
+      "external_first_probe": 0,
+      "script": true,
+      "cut": true,
+      "shot_auto_accept": {
+        "enabled": false,
+        "surface_reasons": [],
+        "max_children": 1,
+        "_max_children_comment": "Even with enabled=true, a shot staging MORE expected children than this is never blind-auto-accepted — it always writes a vision request. Group shots are where clone-collapse and invented non-cast children live, and the heuristic cannot see either (measured: every group take of the pixar-full episode shipped score-1.0 with zero inspection). 0/null = no cap (the pre-cap behavior). The backlog drain honors the same cap."
+      },
+      "_shot_auto_accept_note": "Per-shot review PREFILTER, default OFF since 2026-07-24. The heuristic (black/blank/static/strobe/crowd-collapse) cannot see video-stage phantom heads — partial faces at frame edges and foreground back-of-head blobs that the i2v stage grows during motion on keyframes that were clean (measured on twinkle-twinkle takes) — so aggressive auto-accept ships them. Keep OFF whenever a vision answerer runs (auto_review --watch with the local `claude` CLI); every take then gets a real vision review. Set enabled=true only to trade that safety for throughput when no answerer is available and the queue floods.",
+      "min_vision_coverage": 0.8,
+      "require_group_vision": true,
+      "_require_group_vision_comment": "Promote gate (default ON; skipped when reviewer='heuristic'): every take used in the cut whose shot stages >1 expected children needs an ACCEPTING <take>.response.json on disk, else the episode ends needs_review instead of promoting — group shots must never ship sight-unseen (clone-collapse/invented-children territory the heuristic cannot see). Backfilled responses count; recovery = answer the queue / run auto_review, then --resume/--finalize. With staging='story' only ~2-3 group shots exist per episode.",
+      "require_approved": false,
+      "_require_approved_comment": "Promote gate (default OFF): when true, a cut containing any slot covered by a take QC never accepted (an exhausted shot's best REJECTED take — the 'best take covers the slot' behavior) is assembled for review but NOT promoted; the run ends needs_review with the offending shot ids logged. Turn on when quality outranks throughput.",
+      "comfy_infra_retries": 3,
+      "auto": {
+        "enabled": true,
+        "poll_seconds": 10,
+        "model": "claude-sonnet-5",
+        "claude_cmd": "claude",
+        "max_age_hours": 48,
+        "_comment": "QM-010 headless answerer for the external vision review gate (pipeline/kidsong/auto_review.py). Run `python -m pipeline.kidsong.auto_review --watch` alongside the scheduler/CLI so shot, cut, script and shotlist review requests never sit unanswered when nobody is at the browser -- it embeds the scene-plausibility rubric (or a matching cut/script/shotlist prompt), shells out to the local `claude` CLI headlessly, and writes the same response.json the browser queue would. The QC criteria themselves are untouched; this only makes sure the vision gate that already exists actually gets exercised. enabled=false makes the CLI entry point exit immediately without answering anything (requests/contact sheets are still written by the gates either way). poll_seconds: --watch loop interval; --once drains the current backlog and exits. model / claude_cmd: passed straight to `claude -p <prompt> --model <model> ... `; override claude_cmd to a full path if `claude` is not on PATH in the environment this runs in (e.g. a scheduled task). max_age_hours: leave stale requests (older than this) pending rather than spending tokens on a dead run's backlog -- override per-invocation with --include-stale."
+      },
+      "_min_vision_coverage_comment": "QM-010 promote gate. Before a cut is moved into Final/, the fraction of the shots actually used in it whose take has a REAL vision-reviewed response.json on disk (not just the in-run heuristic fallback -- see the 'unattended mode' / 'external review timed out' reasons above) must be >= this threshold, or promotion is refused: the staging .mp4 is left in place, a loud structured line is logged naming the coverage/threshold/uncovered shots, and a {'gate': 'vision_coverage', ...} entry is appended to review_log.json. This is a hard backstop, not a soft flag -- there is no override flag, because the heuristic (blur/black/static/strobe) cannot see the content-safety rubric (identity, wardrobe, scary faces, staging) at all. Default 0.8. 0 disables the gate outright. Also auto-disabled when reviewer (below) is 'heuristic', since then there is no vision path to measure by configuration. Recovery when a run gets gated: run the auto-reviewer (pipeline/kidsong/auto_review.py) or answer the pending requests in <base>-shots/review/ via the browser queue -- responses backfill onto disk -- then re-run --resume <base> or --finalize <base>; coverage is recomputed from disk on that next run and can now pass.",
+      "_comfy_infra_retries_comment": "How many times a ComfyUI infra failure (timeout, dropped connection, a dead/wedged server -- see comfy.render_timeout and ComfyUnreachableError) retries the SAME shot attempt before giving up, with an exponential backoff (5s, 15s, 45s) and a client.free() between tries. Separate budget from max_retries_per_shot above: an infra retry is not a QC verdict on the take, so it never burns a QC re-roll. Only after exhausting this does the failure abort the shot (and, as a last resort, the episode) the old way.",
+      "_first_probe_comment": "OPT-IN, 0 = off (default). Seconds to wait at a gate BEFORE anybody has answered anything in this run; external_timeout applies from then on. With unattended_after_timeouts=2 the first two gates of every run always pay the full external_timeout before unattended mode can engage (2 x 120s = 4 min/episode). Setting this to e.g. 30 cuts that probe to 1 min. The risk it buys: a human who IS at the browser but slow to click loses their say on the run's first two gates (they fall through to the programmatic verdict). The moment ANY request is answered this stops applying for the rest of the run. Leave at 0 unless you are running genuinely unattended batches.",
+      "_reviewer_comment": "external = heuristics + blocking vision review (Claude/human writes response.json per take; falls back to heuristics after external_timeout). heuristic = fully automatic.",
+      "_script_comment": "true = run review_script/review_shotlist QC before rendering shots (script_qc.py). false = skip that gate.",
+      "_cut_comment": "true = run review_cut QC on the assembled edit before promoting it to Final/ (cut_qc.py). false = skip that gate.",
+      "_timeout_comment": "120s: with the browser review UI, un-reviewed takes fall back to heuristics quickly instead of idling the GPU 15min per shot.",
+      "_unattended_comment": "After this many CONSECUTIVE unanswered external-review requests in one run (nobody answered), ALL FOUR gates of that run — script, shotlist, per-shot and cut — stop waiting and go straight to their own programmatic verdict. The counter is shared run-wide, so the script gate discovering nobody is home spares the shotlist, shot and cut gates from each rediscovering it at the cost of a full external_timeout (measured: 8 min/episode of idle wall clock before this was shared). Requests/contact sheets are still written for later manual review, and if a human answers ANY skipped request, full waiting resumes for the rest of the run. Never weakens a QC gate itself, only how long it waits for a person."
+    },
+    "output": {
+      "width": 1920,
+      "height": 1080
+    },
+    "_output_comment": "kidsong renders WIDE 16:9 like real preschool TV; classic types stay vertical Shorts (video.width/height).",
+    "captions": {
+      "enabled": false,
+      "vertical_position": 0.8
+    },
+    "_captions_comment": "enabled=false: NO on-screen lyrics. The channel does not want burnt-in subtitles — the songs are sung and the visuals carry the episode, so the text was just clutter over the characters. Set true to bring them back; nothing else has to change. Disabling only drops the visual layer: the Whisper word alignment behind it still drives verse timing and the beat-aligned cut, so the edit is unaffected. vertical_position is the caption baseline as a fraction of the WIDE frame height, used only when enabled — captions.vertical_position (0.62) was tuned for the 9:16 Shorts frame; in 16:9 that same fraction lands dead centre, over the characters' mouths. 0.80 puts sing-along lyrics in the lower third. Only the vertical position is overridden here — font, size and colours still come from the global captions block.",
+    "intro": {
+      "enabled": true,
+      "path": "assets/intro/zubibop_intro.mp4",
+      "logo": "assets/intro/zubibop_logo.png",
+      "seconds": 4.0,
+      "target_lufs": -14.0,
+      "at_assemble": false
+    },
+    "_intro_comment": "Fixed ZubiBop branding sting played before EVERY episode, the way preschool shows open every episode identically. Built ONCE by pipeline/kidsong/intro.py and cached at `path`; every render reuses that identical file, so episodes cannot drift apart. Rebuild with `python -m pipeline.kidsong.intro --rebuild`.",
+    "_intro_enabled_comment": "false = ship episodes with no intro. A missing/unreadable `logo` also degrades to no-intro (logged, never fatal).",
+    "_intro_path_comment": "Cache location. A sibling zubibop_intro.json stores the content hash (logo bytes + geometry/timing + intro.py _VERSION + this block); a mismatch triggers an automatic rebuild.",
+    "_intro_seconds_comment": "Short enough that a toddler does not skip it, long enough to register. The sting is synthesised to fit and ramps to true silence over the final 12% so it always ends cleanly before the song starts.",
+    "_intro_target_lufs_comment": "Integrated loudness the sting is gain-matched to, so the intro does not blast the viewer ahead of the song. -14 matches how the songs master (measured -13.9 LUFS on a reference episode).",
+    "_intro_at_assemble_comment": "false (default) = edit.assemble does NOT prepend the intro, because cut_qc runs on assemble's output and checks video duration against SONG duration (0.5s tolerance) plus black seams at song-time offsets — a 4s intro would fail that gate on every render. The intro belongs AFTER cut QC, at promotion to Final/: call edit.prepend_intro(final_path, cfg). Set true only once cut_qc is offset-aware.",
+    "lipsync": {
+      "enabled": false,
+      "python": "D:/brainrot/lipsync-test/venv/Scripts/python.exe",
+      "wav2lip_src": "D:/brainrot/lipsync-test/orig",
+      "repo": "D:/brainrot/lipsync-test/wav2lip-onnx-HQ",
+      "checkpoint": "D:/brainrot/lipsync-test/orig/wav2lip_gan.pth",
+      "model": "96px",
+      "enhancer": "none",
+      "shot_types": [
+        "closeup",
+        "medium"
+      ],
+      "pads": 4,
+      "det_thresh": 0.3,
+      "timeout_seconds": 1800
+    },
+    "_lipsync_comment": "Real Wav2Lip lip-sync as a GATED post-process, OFF by default — with enabled=false the pipeline is byte-identical to today (pipeline.kidsong.lipsync.apply returns its inputs unchanged and generate.py never imports the heavy worker). When on, it runs AFTER the beat-aligned cut (edit.build_cut_list): each closeup/medium cut's SONG-TIME window is sliced from output/<base>.wav, the shot take + slice are shelled into the isolated lipsync interpreter, and the mouth is driven from the audio while body/camera/background/animation stay put. Multi-face: only the centered/largest singing face is driven; edge/background faces and detection-drop frames pass through untouched. Any per-shot failure ships that shot un-synced (never corrupts an episode). Output goes to output/_lipsync/<base>/ — existing takes/finals are never touched.",
+    "_lipsync_python_comment": "Interpreter of the isolated lipsync env (like ace_python): carries torch + the wav2lip-onnx-HQ repo + the checkpoint. The repo venv only orchestrates (slice audio, call subprocess, collect result); it never imports torch/cv2 from lipsync.py.",
+    "_lipsync_model_comment": "96px is the only checkpoint shipped/pixel-verified on our toon faces (the gold-standard TORCH wav2lip_gan.pth; the onnx exports in that tree have a near-dead audio branch and are avoided). '384px' is accepted for forward-compat but the worker errors out (and the shot passes through) until a 384 checkpoint is provided. 96px softens the lower face slightly — set enhancer:'light' for a gentle unsharp (NOT GFPGAN/GPEN, which de-stylize toward realism and break the toon look).",
+    "_lipsync_shot_types_comment": "Which shot_types get lip-synced. closeup/medium single-subject shots have a clear singing face; wides, inserts (object closeups) and subject-only shots do not and are skipped.",
+    "lm_model": null,
+    "_lm_model_comment": "5Hz LM checkpoint id, or null to let ACE-Step's get_gpu_config pick the tier default (the verified-good path on a 12GB card: acestep-5Hz-lm-0.6B). Pin a string like 'acestep-5Hz-lm-1.7B' to override.",
+    "ace_python": "D:/brainrot/ace-venv/Scripts/python.exe",
+    "_ace_python_comment": "Python of the official isolated ACE-Step env (Python 3.12 / torch 2.7.1 / transformers 4.57 / ACE-Step 1.5). sing_song shells out to pipeline/kidsong/ace_runner.py under this interpreter; the repo venv never imports ACE-Step (in-process it produced corrupted audio)."
+  },
+  "youtube": {
+    "privacy": "private",
+    "_privacy_options": "private | unlisted | public  (start with private while testing!)",
+    "category_id": "24",
+    "_category_comment": "24 = Entertainment.",
+    "made_for_kids": false,
+    "append_shorts_tag": true
+  },
+  "ai_disclosure": {
+    "_comment": "Says on every published video that a machine made it. EU AI Act Art. 50 transparency duties apply from 2026-08-02; YouTube's altered/synthetic-content rule applies independently of them. See pipeline/ai_disclosure.py for which duty binds whom.",
+    "enabled": true,
+    "description_note": "Dieses Video wurde mit Hilfe von künstlicher Intelligenz erstellt. / This video was created using artificial intelligence.",
+    "_description_note_comment": "Appended once to every upload's description, after any #Shorts tag. Set enabled=false to publish without it.",
+    "youtube_synthetic_media": "auto",
+    "_youtube_synthetic_media_comment": "status.containsSyntheticMedia on videos.insert. 'auto' = declare, EXCEPT for the animated_video_types below, which YouTube's own policy exempts. true/false force it either way.",
+    "animated_video_types": [
+      "kidsong"
+    ],
+    "_animated_video_types_comment": "Wholly animated output. A stylised toon is not 'realistic altered or synthetic content', and declaring it as such would be a wrong label, not a safe one.",
+    "embed_metadata": true,
+    "_embed_metadata_comment": "Writes the note into the finished MP4's container tags (ffmpeg stream copy), so the file carries the disclosure even off-platform.",
+    "_description_note_by_language_comment": "Per-language override for description_note. studio/branding.py picks the entry matching the channel's language column; a channel whose language is not listed falls back to description_note. A German channel must not carry an English-only disclosure and vice versa — the point of the disclosure is that the viewer reads it.",
+    "description_note_by_language": {
+      "de": "Dieses Video wurde mit Hilfe von künstlicher Intelligenz erstellt.",
+      "en": "This video was created using artificial intelligence."
+    }
+  },
+  "studio": {
+    "_comment": "Automation settings for the multi-channel studio (scheduler, review queue, assets).",
+    "tick_seconds": 15,
+    "_tick_comment": "How often the background worker checks for due work.",
+    "max_attempts": 3,
+    "_attempts_comment": "Render/upload retries before a job is marked failed.",
+    "daily_upload_cap": 6,
+    "_cap_comment": "YouTube API quota: ~6 uploads/day per Google Cloud project (10k units, 1600/upload).",
+    "auto_ideas_batch": 5,
+    "_ideas_comment": "How many ideas the LLM generates when a channel's queue is empty.",
+    "max_cache_gb": 5,
+    "_cache_comment": "Downloaded stock/gameplay cache limit; oldest files are pruned first.",
+    "gameplay_max_minutes": 8,
+    "_gameplay_comment": "yt-dlp downloads only the first N minutes of a gameplay video (a background loop needs no more; without this a clip can be 1-2 GB)."
+  },
+  "gpu_lock": {
+    "_comment": "Cross-process mutex so the studio scheduler thread and a CLI batch (python -m pipeline.kidsong.generate, see output/batch_queue.ps1) never start a GPU render (ComfyUI / ACE-Step / Whisper-cuda) at the same time on this single-GPU machine — that collision has already killed a render. Backed by a lockfile under paths.output_dir holding the holder's pid; a dead holder's lock is detected as stale (pid no longer running) and stolen automatically, so it can never deadlock after a crash.",
+    "lock_file": "gpu_render.lock",
+    "cli_wait_timeout_seconds": 7200,
+    "_cli_wait_comment": "How long the CLI entry point (pipeline/kidsong/generate.py __main__) blocks waiting for the lock, printing a periodic status message, before giving up with a loud error. A full kidsong render can legitimately hold the lock well over an hour (many shots x comfyui.render_timeout), so this is a generous safety net for a genuinely stuck lock, not a normal-case limit. The scheduler thread never blocks on this: it just quietly skips that tick (no failed job, no burned retry) and tries again next tick.",
+    "poll_seconds": 2.0,
+    "_poll_comment": "How often the CLI re-checks the lock while waiting."
+  },
+  "paths": {
+    "gameplay_dir": "assets/gameplay",
+    "characters_dir": "assets/characters",
+    "music_dir": "assets/music",
+    "output_dir": "output"
+  },
+  "comfy": {
+    "_comment": "Drives pipeline.kidsong.comfy.ComfyClient (the director-mode kidsong render loop) -- separate from the 'comfyui' block above, which is the older scene-clip path.",
+    "url": "http://127.0.0.1:8188",
+    "path": "C:/Users/Aloha/Desktop/projects/ComfyUI",
+    "python": "C:/Users/Aloha/Desktop/projects/ComfyUI/venv/Scripts/python.exe",
+    "autostart": true,
+    "startup_timeout": 180,
+    "render_timeout": 600,
+    "_render_timeout_comment": "Seconds to wait for ONE shot render. Measured real shot renders: 100-214s (median ~120s); 600 is ~3x the slowest observed, not a generous multi-hour ceiling like the old 1800. Safe to lower because pipeline.kidsong.generate's per-shot infra-retry loop (kidsong.review.comfy_infra_retries) now recovers from a hung/dead server on its own -- previously a wedged server hit this timeout once and killed the WHOLE episode with zero retries (measured: 1800s hung on shot s00 vs. ~200s on a fresh server for the same shot)."
+  },
+  "content_profiles": {
+    "_comment": "One entry per kind of channel this studio runs. A channel row names its profile in channels.content_profile; the profile decides which generator runs, in which language, and with which look. Overrides are applied on top of the base config exactly like styles are (pipeline.config.merge_overrides), so a profile only names what it changes. An unknown or empty profile falls back to deriving everything from the channel's default_video_type, which is the pre-profile behaviour.",
+    "_general_path_comment": "pipeline/generate.py branches to the kidsong pipeline ONLY when video_type == 'kidsong' (pipeline/generate.py ~line 106); every other video_type -- including hyperframes and brainrot -- runs the SAME general path, which never reads cfg['kidsong'].*. Setting only overrides.kidsong.* (this block's old shape) therefore did nothing for hyperframes/brainrot. The keys the general path actually reads: voices (edge-tts voice per speaker -- pipeline/tts.py synthesize()/_voice_for()), whisper.language (Whisper transcription decode language, default 'en' -- pipeline/captions.py transcribe_words()/get_word_timestamps(), read because pipeline/generate.py's own get_word_timestamps() call at line ~159 passes no explicit language), and a top-level 'style' field on the profile entry (a cfg['styles'] preset name, applied by studio/profiles.py::apply_profile via pipeline.config.apply_style -- the same mechanism pipeline/generate.py's own --style flag and studio/scheduler.py's per-job style use). kidsong.render_style is the one kidsong-path key the general path CAN reach, but only through the opt-in GPU scene tier (studio/gpu_scenes.py): video.gpu_scene_mode (pipeline/generate.py ~line 194) must be true AND studio.gpu_scenes.enabled (studio/gpu_scenes.py::_conf) must be true, else it is dead exactly like before. When both are on, kidsong.render_style names an entry in kidsong.render_styles whose workflow_base is the actual ComfyUI graph (pipeline/kidsong/render_style.py::resolve_style).",
+    "kidsong_de": {
+      "video_type": "kidsong",
+      "language": "de",
+      "overrides": {
+        "kidsong": {
+          "language": "de",
+          "render_style": "pixar_toon"
+        },
+        "whisper": {
+          "language": "de",
+          "_comment": "Inert for the kidsong pipeline itself (pipeline/kidsong/generate.py passes language=kidsong.language explicitly to get_word_timestamps(), never falling through to whisper.language) -- set anyway for consistency with the general-path profiles below and in case a future kidsong call site ever omits its explicit language."
+        },
+        "language": "de"
+      }
+    },
+    "kidsong_en": {
+      "video_type": "kidsong",
+      "language": "en",
+      "overrides": {
+        "kidsong": {
+          "language": "en",
+          "render_style": "pixar_toon"
+        },
+        "whisper": {
+          "language": "en"
+        },
+        "language": "en"
+      }
+    },
+    "hyperframes_de": {
+      "video_type": "hyperframes",
+      "language": "de",
+      "style": "clean",
+      "overrides": {
+        "voices": {
+          "narrator": "de-DE-ConradNeural",
+          "speaker_a": "de-DE-KillianNeural",
+          "speaker_b": "de-DE-KatjaNeural"
+        },
+        "whisper": {
+          "language": "de"
+        },
+        "kidsong": {
+          "language": "de",
+          "render_style": "explainer_clean"
+        },
+        "video": {
+          "gpu_scene_mode": true
+        },
+        "studio": {
+          "gpu_scenes": {
+            "enabled": true
+          }
+        },
+        "language": "de"
+      }
+    },
+    "hyperframes_en": {
+      "video_type": "hyperframes",
+      "language": "en",
+      "style": "clean",
+      "overrides": {
+        "voices": {
+          "narrator": "en-US-AndrewMultilingualNeural",
+          "speaker_a": "en-US-GuyNeural",
+          "speaker_b": "en-US-AriaNeural"
+        },
+        "whisper": {
+          "language": "en"
+        },
+        "kidsong": {
+          "language": "en",
+          "render_style": "explainer_clean"
+        },
+        "video": {
+          "gpu_scene_mode": true
+        },
+        "studio": {
+          "gpu_scenes": {
+            "enabled": true
+          }
+        },
+        "language": "en"
+      }
+    },
+    "brainrot_short": {
+      "video_type": "brainrot",
+      "language": "en",
+      "style": "brainrot",
+      "overrides": {
+        "whisper": {
+          "language": "en"
+        },
+        "kidsong": {
+          "render_style": "meme_pop"
+        },
+        "video": {
+          "gpu_scene_mode": true
+        },
+        "studio": {
+          "gpu_scenes": {
+            "enabled": true
+          }
+        },
+        "language": "en"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "shot_id": "s08",
+  "take": "s08_a0",
+  "shot": {
+    "id": "s08",
+    "verse": 2,
+    "lyric_span": [
+      0,
+      0
+    ],
+    "start": 30.0,
+    "end": 33.808,
+    "shot_type": "wide",
+    "characters": [
+      "Amira"
+    ],
+    "action": "The kids brush their teeth with big smiles",
+    "camera": "slow push-in",
+    "setting": "The three friends are brushing their teeth together, smiling at each other in the mirror.",
+    "reuse_of": null,
+    "seed": 20341338,
+    "status": "planned"
+  },
+  "video_path": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\s08_a0.mp4",
+  "contact_sheet": "C:\\Users\\Aloha\\Desktop\\projects\\youtubegenerator\\output\\20260719-120132-kidsong-bennys-brushing-fun-shots\\review\\s08_a0.png",
+  "heuristic": {
+    "accept": true,
+    "score": 1.0,
+    "reasons": [],
+    "retry_hints": {
+      "seed_bump": false,
+      "simplify_action": false,
+      "force_i2v": false
+    }
+  }
+}
