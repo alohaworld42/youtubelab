@@ -408,6 +408,10 @@ def main():
 
     cast_cfg = load_json(args.cast)
     shots_cfg = load_json(args.shots)
+    cast_dir = os.path.dirname(os.path.abspath(args.cast))
+    for c in cast_cfg["cast"]:
+        if c.get("ref") and not os.path.isabs(c["ref"]):
+            c["ref"] = os.path.abspath(os.path.join(cast_dir, c["ref"]))
     cast_by_id = {c["id"]: c for c in cast_cfg["cast"]}
     style = cast_cfg.get("style", "")
     no_extra = cast_cfg.get("no_extra", "")

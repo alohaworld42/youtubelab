@@ -8,7 +8,7 @@ Beispiele:
   ... -Reel
 #>
 param(
-  [string]$ComfyRoot = "C:\Users\admin\AppData\Local\Comfy-Desktop\ComfyUI-Installs\ComfyUI\ComfyUI",
+  [string]$ComfyRoot = "",
   [string]$Python = "",
   [string]$Template = "",
   [string]$Shots = "",
@@ -34,6 +34,21 @@ foreach ($d in @($config, $scripts, $outDir, $logs, $tmp)) {
 $env:PYTHONUTF8 = '1'
 $env:PYTHONIOENCODING = 'utf-8'
 
+# ---- ComfyRoot auto-erkennen (Fallback: bekannte Standardpfade) ----
+if (-not $ComfyRoot) {
+  $known = @(
+    (Join-Path $env:LOCALAPPDATA 'Comfy-Desktop\ComfyUI-Installs\ComfyUI\ComfyUI'),
+    (Join-Path $env:USERPROFILE 'ComfyUI\ComfyUI'),
+    (Join-Path $proj 'ComfyUI')
+  )
+  foreach ($k in $known) { if ($k -and (Test-Path (Join-Path $k 'main.py'))) { $ComfyRoot = $k; break } }
+  if (-not $ComfyRoot) {
+    Write-Host "FEHLER: ComfyUI nicht gefunden. -ComfyRoot <Pfad> angeben."
+    exit 1
+  }
+  Write-Host "ComfyRoot auto-erkannt: $ComfyRoot"
+}
+
 $driver = Join-Path $scripts 'render_shots_ref.py'
 if (-not (Test-Path $driver)) { Write-Host "FEHLER: $driver fehlt"; exit 1 }
 
@@ -42,11 +57,9 @@ if (-not $Python) {
   $cands = @(
     (Join-Path $ComfyRoot '.venv\Scripts\python.exe'),
     (Join-Path $ComfyRoot 'venv\Scripts\python.exe'),
-    'C:\Users\admin\AppData\Local\Comfy-Desktop\ComfyUI-Installs\ComfyUI\ComfyUI\.venv\Scripts\python.exe',
-    'C:\Users\admin\Desktop\Projects\youtubegenerator\comfyui\.venv\Scripts\python.exe',
-    'C:\Users\admin\Desktop\Projects\youtubegenerator\.venv\Scripts\python.exe',
     "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe",
-    "$env:LOCALAPPDATA\Programs\Python\Python311\python.exe"
+    "$env:LOCALAPPDATA\Programs\Python\Python311\python.exe",
+    "$env:LOCALAPPDATA\Programs\Python\Python310\python.exe"
   )
   foreach ($c in $cands) { if ($c -and (Test-Path $c)) { $Python = $c; break } }
   if (-not $Python) { $Python = 'py' }

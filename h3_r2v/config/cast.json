@@ -6,19 +6,19 @@
       "id": "zuri",
       "name": "Zuri",
       "role": "girl",
-      "ref": "C:\\Users\\admin\\Desktop\\Projects\\ref_video_test_wan\\cast_refs\\zuri\\canonical.png"
+      "ref": "../../cast_refs/zuri/canonical.png"
     },
     {
       "id": "kofi",
       "name": "Kofi",
       "role": "boy",
-      "ref": "C:\\Users\\admin\\Desktop\\Projects\\ref_video_test_wan\\cast_refs\\kofi\\canonical.png"
+      "ref": "../../cast_refs/kofi/canonical.png"
     },
     {
       "id": "nala",
       "name": "Nala",
       "role": "girl",
-      "ref": "C:\\Users\\admin\\Desktop\\Projects\\ref_video_test_wan\\cast_refs\\nala\\canonical.png"
+      "ref": "../../cast_refs/nala/canonical.png"
     }
   ]
 }
