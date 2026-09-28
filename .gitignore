@@ -89,3 +89,7 @@ h3_r2v/logs/
 h3_r2v/output/
 
 # ==== cast_refs/ (nur PNG-Canonicals) ====
+
+# ==== extern geladene Tools/Modelle (per setup/download_assets.ps1) ====
+latentsync/
+espeak-ng/

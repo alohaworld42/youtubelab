@@ -1,0 +1,15 @@
+{
+  "title": "Gartenlied",
+  "fps": 24,
+  "transition_sec": 0.5,
+  "shots": [
+    {"id": "shot_01", "transition": "cut", "text": "Zuri"},
+    {"id": "shot_02", "transition": "fade", "text": "Kofi"},
+    {"id": "shot_03", "transition": "fade", "text": "Nala"},
+    {"id": "shot_04", "transition": "fade", "text": "Zuri und Kofi"},
+    {"id": "shot_05", "transition": "fade", "text": "Kofi und Nala"},
+    {"id": "shot_06", "transition": "fade", "text": "Zuri und Nala"},
+    {"id": "shot_07", "transition": "fade", "text": "Alle drei"},
+    {"id": "shot_08", "transition": "fade", "text": "Auf Wiedersehen"}
+  ]
+}
