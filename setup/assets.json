@@ -209,6 +209,14 @@
       "note": "Wan 2.2 VAE"
     },
     {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/custom_nodes/ComfyUI_DiffRhythm/diffrhythm/g2p/sources/g2p_chinese_model/poly_bert_model.onnx",
+      "url": "https://huggingface.co/inference-sh/diff-rythm-g2p-chinese-model/resolve/main/poly_bert_model.onnx",
+      "size_mb": 73,
+      "size_bytes": 76583333,
+      "sha256": null,
+      "note": "Polyphonic BERT model for Chinese G2P (DiffRhythm)"
+    },
+    {
       "path": "latentsync/checkpoints/latentsync_unet.pt",
       "url": "https://huggingface.co/ByteDance/LatentSync-1.5/resolve/main/latentsync_unet.pt",
       "size_mb": 4837,
@@ -289,17 +297,42 @@
       "target_dir": "latentsync"
     },
     {
-      "name": "comfyui",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "commit": "ee71d5c4993f29086b27fde1629a945ae48425bf",
-      "target_dir": "comfyui/ComfyUI_windows_portable/ComfyUI"
-    },
-    {
       "name": "comfyui_portable",
-      "url": "https://github.com/comfyanonymous/ComfyUI/releases/download/v0.3.10/ComfyUI_windows_portable_nvidia_cu121_or_cpu.7z",
+      "url": "https://github.com/Comfy-Org/ComfyUI/releases/download/v0.36.0/ComfyUI_windows_portable_nvidia_cu126.7z",
       "target_dir": "comfyui/ComfyUI_windows_portable",
-      "note": "ComfyUI Windows portable release with CUDA 12.1"
+      "note": "ComfyUI Windows portable v0.36.0 with CUDA 12.6"
     }
   ],
-  "total_size_mb": 92747
+  "custom_nodes": [
+    {
+      "name": "ComfyUI-GGUF",
+      "url": "https://github.com/city96/ComfyUI-GGUF",
+      "target_dir": "comfyui/ComfyUI_windows_portable/ComfyUI/custom_nodes/ComfyUI-GGUF",
+      "has_requirements": true,
+      "large_models": []
+    },
+    {
+      "name": "ComfyUI_DiffRhythm",
+      "url": "https://github.com/billwuhao/ComfyUI_DiffRhythm",
+      "target_dir": "comfyui/ComfyUI_windows_portable/ComfyUI/custom_nodes/ComfyUI_DiffRhythm",
+      "has_requirements": true,
+      "large_models": [
+        {
+          "relative_path": "diffrhythm/g2p/sources/g2p_chinese_model/poly_bert_model.onnx",
+          "url": "https://huggingface.co/inference-sh/diff-rythm-g2p-chinese-model/resolve/main/poly_bert_model.onnx",
+          "size_mb": 73,
+          "size_bytes": 76583333,
+          "note": "Polyphonic BERT model for Chinese G2P"
+        }
+      ]
+    },
+    {
+      "name": "YuE2-ComfyUI",
+      "url": "https://github.com/pytraveler/YuE2-ComfyUI",
+      "target_dir": "comfyui/ComfyUI_windows_portable/ComfyUI/custom_nodes/YuE2-ComfyUI",
+      "has_requirements": true,
+      "large_models": []
+    }
+  ],
+  "total_size_mb": 92820
 }

@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Downloads all large assets ignored by git (ComfyUI models, LatentSync, espeak-ng, ComfyUI portable).
+    Downloads all large assets ignored by git (ComfyUI models, LatentSync, espeak-ng, ComfyUI portable, Custom Nodes).
 
 .DESCRIPTION
     Idempotent download script for setting up a fresh Windows PC.
@@ -10,7 +10,7 @@
     List only what would be downloaded, show total size, do not download.
 
 .PARAMETER Only
-    Limit to specific component: comfyui, latentsync, espeak, comfyui_portable
+    Limit to specific component: comfyui, latentsync, espeak, comfyui_portable, customnodes
 
 .EXAMPLE
     powershell -ExecutionPolicy Bypass -File setup\download_assets.ps1
@@ -20,11 +20,14 @@
 
 .EXAMPLE
     powershell -ExecutionPolicy Bypass -File setup\download_assets.ps1 -Only comfyui
+
+.EXAMPLE
+    powershell -ExecutionPolicy Bypass -File setup\download_assets.ps1 -Only customnodes
 #>
 
 param(
     [switch]$DryRun,
-    [ValidateSet('comfyui','latentsync','espeak','comfyui_portable')]
+    [ValidateSet('comfyui','latentsync','espeak','comfyui_portable','customnodes')]
     [string]$Only
 )
 
@@ -86,7 +89,8 @@ function Clone-Or-Update-Repo {
     param(
         [string]$url,
         [string]$commit,
-        [string]$targetDir
+        [string]$targetDir,
+        [switch]$Shallow
     )
 
     $targetPath = Join-Path $repoRoot $targetDir
@@ -99,10 +103,39 @@ function Clone-Or-Update-Repo {
         Write-Host "  Cloning: $url -> $targetDir"
         $parent = Split-Path -Parent $targetPath
         if (-not (Test-Path $parent)) { New-Item -ItemType Directory -Path $parent -Force | Out-Null }
-        git clone $url $targetPath
-        Write-Host "  Checking out commit: $commit"
-        git -C $targetPath checkout $commit
+        $cloneArgs = @('clone')
+        if ($Shallow) { $cloneArgs += '--depth', '1' }
+        $cloneArgs += $url, $targetPath
+        git $cloneArgs
+        if ($commit) {
+            Write-Host "  Checking out commit: $commit"
+            git -C $targetPath checkout $commit
+        }
     }
+}
+
+function Install-CustomNodeRequirements {
+    param([string]$nodeDir)
+
+    $reqPath = Join-Path $nodeDir 'requirements.txt'
+    if (-not (Test-Path $reqPath)) {
+        Write-Host "  No requirements.txt found, skipping pip install"
+        return
+    }
+
+    $pythonExe = Join-Path $repoRoot 'comfyui\ComfyUI_windows_portable\python_embeded\python.exe'
+    if (-not (Test-Path $pythonExe)) {
+        Write-Warning "  Embedded Python not found at $pythonExe, trying system python"
+        $pythonExe = 'python'
+    }
+
+    Write-Host "  Installing requirements from $reqPath using $pythonExe"
+    $args = @('-m', 'pip', 'install', '-r', $reqPath)
+    $exitCode = (Start-Process -FilePath $pythonExe -ArgumentList $args -Wait -PassThru).ExitCode
+    if ($exitCode -ne 0) {
+        throw "pip install failed with exit code $exitCode for $reqPath"
+    }
+    Write-Host "  Requirements installed successfully"
 }
 
 function Extract-7z {
@@ -135,18 +168,32 @@ $stats = @{ ok=0; skipped=0; missing_url=0; failed=0; total_bytes=0 }
 # 1. ComfyUI Portable
 if (-not $Only -or $Only -eq 'comfyui_portable') {
     $portable = $manifest.repos | Where-Object { $_.name -eq 'comfyui_portable' } | Select-Object -First 1
+    if (-not $portable) {
+        # Fallback: check for portable in custom_nodes or new structure
+        $portable = $manifest | Select-Object -ExpandProperty comfyui_portable -ErrorAction SilentlyContinue
+    }
+    
+    # Find portable in repos (new structure) or as top-level property
+    if (-not $portable) {
+        $portable = $manifest.repos | Where-Object { $_.name -eq 'comfyui_portable' } | Select-Object -First 1
+    }
+    
     if ($portable) {
         $targetDir = Join-Path $repoRoot $portable.target_dir
-        $archiveName = 'ComfyUI_windows_portable_nvidia_cu121_or_cpu.7z'
-        $archivePath = [System.IO.Path]::Combine($repoRoot, 'comfyui', $archiveName)
+        $archiveName = 'ComfyUI_windows_portable_nvidia_cu126.7z'
+        $archivePath = Join-Path (Join-Path $repoRoot 'comfyui') $archiveName
 
-        if (-not (Test-Path (Join-Path $targetDir 'ComfyUI'))) {
-            $stats.total_bytes += 1.5GB # approximate
-            Write-Host "ComfyUI Portable: MISSING (will download ~1.5 GB)"
+        # Check if ComfyUI is already extracted (look for main.py or comfyui_version.py)
+        $comfyuiMain = Join-Path $targetDir 'ComfyUI\main.py'
+        $comfyuiVer = Join-Path $targetDir 'ComfyUI\comfyui_version.py'
+        
+        if (-not (Test-Path $comfyuiMain) -and -not (Test-Path $comfyuiVer)) {
+            $stats.total_bytes += 1859361599 # actual size of cu126 asset
+            Write-Host "ComfyUI Portable (v0.36.0 cu126): MISSING (will download ~1.7 GB)"
             if (-not $DryRun) {
                 if (-not (Test-Path $archivePath)) {
                     Write-Host "  Downloading ComfyUI portable..."
-                    Download-File $portable.url $archivePath 1500000000
+                    Download-File $portable.url $archivePath 1859361599
                 }
                 Extract-7z $archivePath (Join-Path $repoRoot 'comfyui')
                 Write-Host "  ComfyUI portable extracted."
@@ -156,10 +203,12 @@ if (-not $Only -or $Only -eq 'comfyui_portable') {
             Write-Host "ComfyUI Portable: OK (already extracted)"
             $stats.ok++
         }
+    } else {
+        Write-Warning "ComfyUI portable entry not found in manifest"
     }
 }
 
-# 2. Repos (latentsync, comfyui)
+# 2. Repos (latentsync)
 $reposToProcess = $manifest.repos | Where-Object { $_.name -ne 'comfyui_portable' }
 if ($Only) {
     $reposToProcess = $reposToProcess | Where-Object { $_.name -eq $Only }
@@ -180,7 +229,68 @@ foreach ($repo in $reposToProcess) {
     }
 }
 
-# 3. Files
+# 3. Custom Nodes
+if (-not $Only -or $Only -eq 'customnodes') {
+    if ($manifest.custom_nodes) {
+        foreach ($node in $manifest.custom_nodes) {
+            $targetPath = Join-Path $repoRoot $node.target_dir
+            $needsClone = -not (Test-Path (Join-Path $targetPath '.git'))
+            
+            if ($needsClone) {
+                Write-Host "Custom Node $($node.name): MISSING (will clone)"
+                $stats.missing_url++
+                if (-not $DryRun) {
+                    Clone-Or-Update-Repo $node.url '' $node.target_dir -Shallow
+                    if ($node.has_requirements) {
+                        Install-CustomNodeRequirements $targetPath
+                    }
+                }
+            } else {
+                Write-Host "Custom Node $($node.name): OK (exists)"
+                $stats.ok++
+                # Still check requirements if not in dry run
+                if (-not $DryRun -and $node.has_requirements) {
+                    Write-Host "  Checking requirements for $($node.name)..."
+                    Install-CustomNodeRequirements $targetPath
+                }
+            }
+
+            # Handle large models inside custom node
+            if ($node.large_models) {
+                foreach ($model in $node.large_models) {
+                    $destPath = Join-Path $targetPath $model.relative_path
+                    $expectedBytes = [long]$model.size_bytes
+                    $exists = Test-FileExistsAndSize $destPath $expectedBytes
+
+                    if ($exists) {
+                        Write-Host "  Model OK: $($model.relative_path) ($(Get-HumanSize $expectedBytes))"
+                        $stats.skipped++
+                    } elseif ($model.url) {
+                        $stats.total_bytes += $expectedBytes
+                        Write-Host "  Model MISSING: $($model.relative_path) ($(Get-HumanSize $expectedBytes))"
+                        $stats.missing_url++
+                        if (-not $DryRun) {
+                            try {
+                                Download-File $model.url $destPath $expectedBytes
+                                $stats.ok++
+                            } catch {
+                                Write-Error "  FAILED: $($model.relative_path) - $_"
+                                $stats.failed++
+                            }
+                        }
+                    } else {
+                        Write-Host "  Model NO URL: $($model.relative_path) ($(Get-HumanSize $expectedBytes)) - $($model.note)"
+                        $stats.missing_url++
+                    }
+                }
+            }
+        }
+    } else {
+        Write-Host "No custom_nodes section in manifest"
+    }
+}
+
+# 4. Files (models, checkpoints, etc.)
 $filesToProcess = $manifest.files
 if ($Only) {
     switch ($Only) {
@@ -188,6 +298,7 @@ if ($Only) {
         'latentsync' { $filesToProcess = $filesToProcess | Where-Object { $_.path -like 'latentsync/*' } }
         'espeak' { $filesToProcess = $filesToProcess | Where-Object { $_.path -like 'espeak-ng/*' } }
         'comfyui_portable' { $filesToProcess = @() }
+        'customnodes' { $filesToProcess = @() }
     }
 }
 
@@ -218,7 +329,7 @@ foreach ($file in $filesToProcess) {
     }
 }
 
-# 4. espeak-ng MSI extraction
+# 5. espeak-ng MSI extraction
 if (-not $Only -or $Only -eq 'espeak') {
     $msiPath = Join-Path $repoRoot 'espeak-ng\espeak-ng.msi'
     $extractDir = Join-Path $repoRoot 'espeak-ng\eSpeak NG'
@@ -230,7 +341,7 @@ if (-not $Only -or $Only -eq 'espeak') {
     }
 }
 
-# 5. LatentSync auxiliary models extraction
+# 6. LatentSync auxiliary models extraction
 if (-not $Only -or $Only -eq 'latentsync') {
     $zipPath = Join-Path $repoRoot 'latentsync\checkpoints\auxiliary\buffalo_l.zip'
     $extractDir = Join-Path $repoRoot 'latentsync\checkpoints\auxiliary\models\buffalo_l'
