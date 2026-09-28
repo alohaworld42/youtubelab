@@ -106,11 +106,11 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/eval-model/eval.safetensors",
-      "url": null,
+      "url": "https://huggingface.co/spaces/ASLP-lab/DiffRhythm/resolve/main/pretrained/eval.safetensors",
       "size_mb": 96,
       "size_bytes": 100792276,
       "sha256": null,
-      "note": "DiffRhythm eval model - not found in any ASLP-lab DiffRhythm repo"
+      "note": "HF Space ASLP-lab/DiffRhythm pretrained, byte-identisch"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/MuQ-large-msd-iter/model.safetensors",
@@ -226,11 +226,11 @@
     },
     {
       "path": "latentsync/checkpoints/auxiliary/buffalo_l.zip",
-      "url": null,
+      "url": "https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip",
       "size_mb": 275,
       "size_bytes": 288621354,
       "sha256": null,
-      "note": "InsightFace Buffalo_L face detection model - not available as single zip on HF; individual ONNX files available from immich-app/buffalo_l and other repos"
+      "note": "InsightFace v0.7 Release, byte-identisch"
     },
     {
       "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/1k3d68.onnx",
