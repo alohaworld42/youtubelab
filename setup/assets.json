@@ -1,0 +1,305 @@
+{
+  "files": [
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/checkpoints/ace_step_v1_3.5b.safetensors",
+      "url": "https://huggingface.co/ACE-Step/ACE-Step-v1-3.5b/resolve/main/ace_step_v1_3.5b.safetensors",
+      "size_mb": 7343,
+      "size_bytes": 7699743341,
+      "sha256": null,
+      "note": "ACE-Step v1.3.5B checkpoint for music generation"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/checkpoints/yue2_3b_bf16.safetensors",
+      "url": "https://huggingface.co/m-a-p/YuE2-3B-BF16/resolve/main/yue2_3b_bf16.safetensors",
+      "size_mb": 7439,
+      "size_bytes": 7799983228,
+      "sha256": null,
+      "note": "YuE2 3B BF16 music generation model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/diffusion_models/flux-2-klein-4b.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/flux2-klein/resolve/main/split_files/diffusion_models/flux-2-klein-4b.safetensors",
+      "size_mb": 7392,
+      "size_bytes": 7751105712,
+      "sha256": null,
+      "note": "Flux.2-Klein 4B diffusion model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_ti2v_5B_fp16.safetensors",
+      "size_mb": 9536,
+      "size_bytes": 9999658848,
+      "sha256": null,
+      "note": "Wan 2.2 TI2V 5B FP16 diffusion model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/diffusion_models/z_image_turbo_int8_convrot.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_int8_convrot.safetensors",
+      "size_mb": 5914,
+      "size_bytes": 6201001296,
+      "sha256": null,
+      "note": "Z-Image Turbo INT8 convrot diffusion model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "size_mb": 1866,
+      "size_bytes": 1956193000,
+      "sha256": null,
+      "note": "Minimax H3 FL2V Turbo 8-step LoRA"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/text_encoders/joy-encoder-Q4_K_M.gguf",
+      "url": "https://huggingface.co/Comfy-Org/Joy-Caption-Pre-Quantized/resolve/main/joy-encoder-Q4_K_M.gguf",
+      "size_mb": 18847,
+      "size_bytes": 19762150208,
+      "sha256": null,
+      "note": "Joy-Caption encoder Q4_K_M quantized"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/text_encoders/qwen3vl_32b_minimax_h3-Q2_K_M.gguf",
+      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/qwen3vl_32b_minimax_h3-Q2_K_M.gguf",
+      "size_mb": 12495,
+      "size_bytes": 13102161024,
+      "sha256": null,
+      "note": "Qwen3-VL 32B Minimax H3 Q2_K_M quantized"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/text_encoders/qwen_3_4b.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/flux2-klein/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+      "size_mb": 7672,
+      "size_bytes": 8044982048,
+      "sha256": null,
+      "note": "Qwen 3 4B text encoder for Flux"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "size_mb": 6424,
+      "size_bytes": 6735906897,
+      "sha256": null,
+      "note": "UMT5 XXL FP8 text encoder for Wan"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/cfm_full_model.pt",
+      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/cfm_full_model.pt",
+      "size_mb": 2116,
+      "size_bytes": 2218708010,
+      "sha256": null,
+      "note": "DiffRhythm full CFM model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/cfm_model_v1_2.pt",
+      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/cfm_model_v1_2.pt",
+      "size_mb": 2116,
+      "size_bytes": 2218709125,
+      "sha256": null,
+      "note": "DiffRhythm CFM model v1.2"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/vae_model.pt",
+      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/vae_model.pt",
+      "size_mb": 596,
+      "size_bytes": 624520127,
+      "sha256": null,
+      "note": "DiffRhythm VAE model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/eval-model/eval.safetensors",
+      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/eval-model/eval.safetensors",
+      "size_mb": 96,
+      "size_bytes": 100792276,
+      "sha256": null,
+      "note": "DiffRhythm eval model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/MuQ-large-msd-iter/model.safetensors",
+      "url": "https://huggingface.co/Open-MusicLM/MuQ-large-msd-iter/resolve/main/model.safetensors",
+      "size_mb": 1272,
+      "size_bytes": 1333825096,
+      "sha256": null,
+      "note": "MuQ Large MSD Iter model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/MuQ-large-msd-iter/pytorch_model.bin",
+      "url": "https://huggingface.co/Open-MusicLM/MuQ-large-msd-iter/resolve/main/pytorch_model.bin",
+      "size_mb": 1272,
+      "size_bytes": 1333965438,
+      "sha256": null,
+      "note": "MuQ Large MSD Iter PyTorch model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/MuQ-MuLan-large/pytorch_model.bin",
+      "url": "https://huggingface.co/Open-MusicLM/MuQ-MuLan-large/resolve/main/pytorch_model.bin",
+      "size_mb": 2531,
+      "size_bytes": 2653954401,
+      "sha256": null,
+      "note": "MuQ MuLan Large PyTorch model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/xlm-roberta-base/model.safetensors",
+      "url": "https://huggingface.co/xlm-roberta-base/resolve/main/model.safetensors",
+      "size_mb": 1064,
+      "size_bytes": 1115567652,
+      "sha256": null,
+      "note": "XLM-RoBERTa base model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/xlm-roberta-base/pytorch_model.bin",
+      "url": "https://huggingface.co/xlm-roberta-base/resolve/main/pytorch_model.bin",
+      "size_mb": 1064,
+      "size_bytes": 1115590446,
+      "sha256": null,
+      "note": "XLM-RoBERTa base PyTorch model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/unet/minimax_h3_fl2va_pruned-Q4_K.gguf",
+      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_fl2va_pruned-Q4_K.gguf",
+      "size_mb": 11028,
+      "size_bytes": 11564180576,
+      "sha256": null,
+      "note": "Minimax H3 FL2VA pruned Q4_K quantized UNet"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/upscale_models/RealESRGAN_x4plus.pth",
+      "url": "https://huggingface.co/1038lab/ComfyUI-FlashVSR/resolve/main/models/RealESRGAN_x4plus.pth",
+      "size_mb": 64,
+      "size_bytes": 67040989,
+      "sha256": null,
+      "note": "RealESRGAN x4 plus upscale model"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/vae/ae.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
+      "size_mb": 320,
+      "size_bytes": 335304388,
+      "sha256": null,
+      "note": "AE VAE for Z-Image Turbo"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/vae/flux2-vae.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/flux2-klein/resolve/main/split_files/vae/flux2-vae.safetensors",
+      "size_mb": 321,
+      "size_bytes": 336211292,
+      "sha256": null,
+      "note": "Flux.2 VAE"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/vae/minimax_h3_audio_vae_fp32.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_audio_vae_fp32.safetensors",
+      "size_mb": 577,
+      "size_bytes": 605254808,
+      "sha256": null,
+      "note": "Minimax H3 Audio VAE FP32"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/vae/minimax_h3_video_vae_fp16.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_video_vae_fp16.safetensors",
+      "size_mb": 4967,
+      "size_bytes": 5207808496,
+      "sha256": null,
+      "note": "Minimax H3 Video VAE FP16"
+    },
+    {
+      "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/vae/wan2.2_vae.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan2.2_vae.safetensors",
+      "size_mb": 1344,
+      "size_bytes": 1409400960,
+      "sha256": null,
+      "note": "Wan 2.2 VAE"
+    },
+    {
+      "path": "latentsync/checkpoints/latentsync_unet.pt",
+      "url": "https://huggingface.co/ByteDance/LatentSync-1.5/resolve/main/latentsync_unet.pt",
+      "size_mb": 4837,
+      "size_bytes": 5072348184,
+      "sha256": null,
+      "note": "LatentSync 1.5 UNet checkpoint"
+    },
+    {
+      "path": "latentsync/checkpoints/auxiliary/buffalo_l.zip",
+      "url": "https://huggingface.co/ByteDance/LatentSync-1.5/resolve/main/checkpoints/auxiliary/buffalo_l.zip",
+      "size_mb": 275,
+      "size_bytes": 288621354,
+      "sha256": null,
+      "note": "InsightFace Buffalo_L face detection model"
+    },
+    {
+      "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/1k3d68.onnx",
+      "url": null,
+      "size_mb": 137,
+      "size_bytes": 143607619,
+      "sha256": null,
+      "note": "Extracted from buffalo_l.zip - 1k3d68 ONNX model"
+    },
+    {
+      "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/2d106det.onnx",
+      "url": null,
+      "size_mb": 5,
+      "size_bytes": 5030888,
+      "sha256": null,
+      "note": "Extracted from buffalo_l.zip - 2d106det ONNX model"
+    },
+    {
+      "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/det_10g.onnx",
+      "url": null,
+      "size_mb": 16,
+      "size_bytes": 16923827,
+      "sha256": null,
+      "note": "Extracted from buffalo_l.zip - det_10g ONNX model"
+    },
+    {
+      "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/genderage.onnx",
+      "url": null,
+      "size_mb": 1,
+      "size_bytes": 1322532,
+      "sha256": null,
+      "note": "Extracted from buffalo_l.zip - genderage ONNX model"
+    },
+    {
+      "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/w600k_r50.onnx",
+      "url": null,
+      "size_mb": 166,
+      "size_bytes": 174383860,
+      "sha256": null,
+      "note": "Extracted from buffalo_l.zip - w600k_r50 ONNX model"
+    },
+    {
+      "path": "latentsync/checkpoints/whisper/tiny.pt",
+      "url": "https://huggingface.co/ByteDance/LatentSync-1.5/resolve/main/checkpoints/whisper/tiny.pt",
+      "size_mb": 72,
+      "size_bytes": 75572083,
+      "sha256": null,
+      "note": "Whisper tiny model for LatentSync"
+    },
+    {
+      "path": "espeak-ng/espeak-ng.msi",
+      "url": "https://github.com/espeak-ng/espeak-ng/releases/download/1.52/espeak-ng.msi",
+      "size_mb": 1,
+      "size_bytes": 385024,
+      "sha256": null,
+      "note": "eSpeak-NG 1.52 Windows installer"
+    }
+  ],
+  "repos": [
+    {
+      "name": "latentsync",
+      "url": "https://github.com/bytedance/LatentSync",
+      "commit": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+      "target_dir": "latentsync"
+    },
+    {
+      "name": "comfyui",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "commit": "ee71d5c4993f29086b27fde1629a945ae48425bf",
+      "target_dir": "comfyui/ComfyUI_windows_portable/ComfyUI"
+    },
+    {
+      "name": "comfyui_portable",
+      "url": "https://github.com/comfyanonymous/ComfyUI/releases/download/v0.3.10/ComfyUI_windows_portable_nvidia_cu121_or_cpu.7z",
+      "target_dir": "comfyui/ComfyUI_windows_portable",
+      "note": "ComfyUI Windows portable release with CUDA 12.1"
+    }
+  ],
+  "total_size_mb": 92747
+}

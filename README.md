@@ -51,6 +51,28 @@ python app.py
   - `text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors` (Comfy-Org)
   - `vae/minimax_h3_video_vae_fp16.safetensors`, `vae/minimax_h3_audio_vae_fp32.safetensors`
 
+## Neuer PC / Setup
+
+Auf einem frischen Windows-PC genügt:
+
+```powershell
+git clone <repo-url>
+powershell -ExecutionPolicy Bypass -File setup\download_assets.ps1
+```
+
+Das Skript lädt idempotent alle großen Dateien, die **nicht** im Git liegen (`.gitignore: comfyui/, latentsync/, espeak-ng/`):
+
+- **ComfyUI Modelle** (>20 MB): Checkpoints, Diffusion Models, LoRAs, Text Encoders, VAEs, Upscale Models, TTS/DiffRhythm Models
+- **ComfyUI Portable** (Windows NVIDIA CUDA 12.1 Release)
+- **LatentSync** Repo + Checkpoints (UNet, Whisper, InsightFace Buffalo_L)
+- **espeak-ng** MSI + administrative Entpackung
+
+Optionen:
+- `-DryRun` — listet nur, was fehlt + Gesamtgröße
+- `-Only comfyui|latentsync|espeak|comfyui_portable` — nur eine Komponente
+
+Voraussetzungen: `curl.exe` (Windows 10+), `git`, `7z` (7-Zip), `msiexec`.
+
 ## Wichtige Erkenntnisse (GGUF-Kompatibilität)
 
 MiniMax-H3 GGUFs von **unsloth** und **leejet** haben `kv_count=0` (keine Metadaten) → **unbrauchbar** für `CLIPLoaderGGUF`/`UnetLoaderGGUF`.  
