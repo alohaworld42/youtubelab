@@ -2,19 +2,19 @@
   "files": [
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/checkpoints/ace_step_v1_3.5b.safetensors",
-      "url": "https://huggingface.co/ACE-Step/ACE-Step-v1-3.5b/resolve/main/ace_step_v1_3.5b.safetensors",
-      "size_mb": 7343,
-      "size_bytes": 7699743341,
+      "url": "https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B/resolve/main/ace_step_transformer/diffusion_pytorch_model.safetensors",
+      "size_mb": 6306,
+      "size_bytes": 6611422728,
       "sha256": null,
-      "note": "ACE-Step v1.3.5B checkpoint for music generation"
+      "note": "ACE-Step v1.3.5B checkpoint for music generation (ace_step_transformer/diffusion_pytorch_model.safetensors)"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/checkpoints/yue2_3b_bf16.safetensors",
-      "url": "https://huggingface.co/m-a-p/YuE2-3B-BF16/resolve/main/yue2_3b_bf16.safetensors",
-      "size_mb": 7439,
-      "size_bytes": 7799983228,
+      "url": "https://huggingface.co/m-a-p/YuE2-3B/resolve/main/model.safetensors",
+      "size_mb": 6926,
+      "size_bytes": 7261441640,
       "sha256": null,
-      "note": "YuE2 3B BF16 music generation model"
+      "note": "YuE2 3B music generation model"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/diffusion_models/flux-2-klein-4b.safetensors",
@@ -42,7 +42,7 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
-      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
       "size_mb": 1866,
       "size_bytes": 1956193000,
       "sha256": null,
@@ -50,19 +50,19 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/text_encoders/joy-encoder-Q4_K_M.gguf",
-      "url": "https://huggingface.co/Comfy-Org/Joy-Caption-Pre-Quantized/resolve/main/joy-encoder-Q4_K_M.gguf",
-      "size_mb": 18847,
-      "size_bytes": 19762150208,
+      "url": "https://huggingface.co/mradermacher/llama-joycaption-beta-one-hf-llava-GGUF/resolve/main/llama-joycaption-beta-one-hf-llava.Q4_K_M.gguf",
+      "size_mb": 4693,
+      "size_bytes": 4920736416,
       "sha256": null,
-      "note": "Joy-Caption encoder Q4_K_M quantized"
+      "note": "Joy-Caption LLaVA Q4_K_M quantized (LLM part only)"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/text_encoders/qwen3vl_32b_minimax_h3-Q2_K_M.gguf",
-      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/qwen3vl_32b_minimax_h3-Q2_K_M.gguf",
+      "url": null,
       "size_mb": 12495,
       "size_bytes": 13102161024,
       "sha256": null,
-      "note": "Qwen3-VL 32B Minimax H3 Q2_K_M quantized"
+      "note": "Qwen3-VL 32B Minimax H3 Q2_K_M quantized - not found on HF; available variants: Q3_K_S (pottokao), Q2 (Raretutor, 8.5GB), BF16/INT8/NVFP4 (Comfy-Org/MiniMax-H3)"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/text_encoders/qwen_3_4b.safetensors",
@@ -82,23 +82,23 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/cfm_full_model.pt",
-      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/cfm_full_model.pt",
+      "url": "https://huggingface.co/ASLP-lab/DiffRhythm-full/resolve/main/cfm_model.pt",
       "size_mb": 2116,
       "size_bytes": 2218708010,
       "sha256": null,
-      "note": "DiffRhythm full CFM model"
+      "note": "DiffRhythm full CFM model (file named cfm_model.pt in repo)"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/cfm_model_v1_2.pt",
-      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/cfm_model_v1_2.pt",
+      "url": "https://huggingface.co/ASLP-lab/DiffRhythm-1_2/resolve/main/cfm_model.pt",
       "size_mb": 2116,
       "size_bytes": 2218709125,
       "sha256": null,
-      "note": "DiffRhythm CFM model v1.2"
+      "note": "DiffRhythm CFM model v1.2 (file named cfm_model.pt in repo)"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/vae_model.pt",
-      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/vae_model.pt",
+      "url": "https://huggingface.co/ASLP-lab/DiffRhythm-vae/resolve/main/vae_model.pt",
       "size_mb": 596,
       "size_bytes": 624520127,
       "sha256": null,
@@ -106,15 +106,15 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/eval-model/eval.safetensors",
-      "url": "https://huggingface.co/ASLP-lab/DiffRhythm/resolve/main/eval-model/eval.safetensors",
+      "url": null,
       "size_mb": 96,
       "size_bytes": 100792276,
       "sha256": null,
-      "note": "DiffRhythm eval model"
+      "note": "DiffRhythm eval model - not found in any ASLP-lab DiffRhythm repo"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/MuQ-large-msd-iter/model.safetensors",
-      "url": "https://huggingface.co/Open-MusicLM/MuQ-large-msd-iter/resolve/main/model.safetensors",
+      "url": "https://huggingface.co/OpenMuQ/MuQ-large-msd-iter/resolve/main/model.safetensors",
       "size_mb": 1272,
       "size_bytes": 1333825096,
       "sha256": null,
@@ -122,7 +122,7 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/MuQ-large-msd-iter/pytorch_model.bin",
-      "url": "https://huggingface.co/Open-MusicLM/MuQ-large-msd-iter/resolve/main/pytorch_model.bin",
+      "url": "https://huggingface.co/OpenMuQ/MuQ-large-msd-iter/resolve/main/pytorch_model.bin",
       "size_mb": 1272,
       "size_bytes": 1333965438,
       "sha256": null,
@@ -130,7 +130,7 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/TTS/DiffRhythm/MuQ-MuLan-large/pytorch_model.bin",
-      "url": "https://huggingface.co/Open-MusicLM/MuQ-MuLan-large/resolve/main/pytorch_model.bin",
+      "url": "https://huggingface.co/OpenMuQ/MuQ-MuLan-large/resolve/main/pytorch_model.bin",
       "size_mb": 2531,
       "size_bytes": 2653954401,
       "sha256": null,
@@ -154,15 +154,15 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/unet/minimax_h3_fl2va_pruned-Q4_K.gguf",
-      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_fl2va_pruned-Q4_K.gguf",
+      "url": null,
       "size_mb": 11028,
       "size_bytes": 11564180576,
       "sha256": null,
-      "note": "Minimax H3 FL2VA pruned Q4_K quantized UNet"
+      "note": "Minimax H3 FL2VA pruned Q4_K quantized UNet - not found; available: IQ1_M/IQ1_S (MarxistLeninist, ~4.5GB/4GB), int8_convrot (Asirus/Comfy-Org)"
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/upscale_models/RealESRGAN_x4plus.pth",
-      "url": "https://huggingface.co/1038lab/ComfyUI-FlashVSR/resolve/main/models/RealESRGAN_x4plus.pth",
+      "url": "https://huggingface.co/schwgHao/RealESRGAN_x4plus/resolve/main/RealESRGAN_x4plus.pth",
       "size_mb": 64,
       "size_bytes": 67040989,
       "sha256": null,
@@ -186,7 +186,7 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/vae/minimax_h3_audio_vae_fp32.safetensors",
-      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_audio_vae_fp32.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors",
       "size_mb": 577,
       "size_bytes": 605254808,
       "sha256": null,
@@ -194,7 +194,7 @@
     },
     {
       "path": "comfyui/ComfyUI_windows_portable/ComfyUI/models/vae/minimax_h3_video_vae_fp16.safetensors",
-      "url": "https://huggingface.co/Comfy-Org/Minimax-H3-resources/resolve/main/minimax_h3_video_vae_fp16.safetensors",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors",
       "size_mb": 4967,
       "size_bytes": 5207808496,
       "sha256": null,
@@ -226,11 +226,11 @@
     },
     {
       "path": "latentsync/checkpoints/auxiliary/buffalo_l.zip",
-      "url": "https://huggingface.co/ByteDance/LatentSync-1.5/resolve/main/checkpoints/auxiliary/buffalo_l.zip",
+      "url": null,
       "size_mb": 275,
       "size_bytes": 288621354,
       "sha256": null,
-      "note": "InsightFace Buffalo_L face detection model"
+      "note": "InsightFace Buffalo_L face detection model - not available as single zip on HF; individual ONNX files available from immich-app/buffalo_l and other repos"
     },
     {
       "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/1k3d68.onnx",
@@ -238,7 +238,7 @@
       "size_mb": 137,
       "size_bytes": 143607619,
       "sha256": null,
-      "note": "Extracted from buffalo_l.zip - 1k3d68 ONNX model"
+      "note": "Extracted from buffalo_l.zip - 1k3d68 ONNX model (available in immich-app/buffalo_l recognition folder)"
     },
     {
       "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/2d106det.onnx",
@@ -254,7 +254,7 @@
       "size_mb": 16,
       "size_bytes": 16923827,
       "sha256": null,
-      "note": "Extracted from buffalo_l.zip - det_10g ONNX model"
+      "note": "Extracted from buffalo_l.zip - det_10g ONNX model (matches immich-app/buffalo_l/detection/model.onnx size)"
     },
     {
       "path": "latentsync/checkpoints/auxiliary/models/buffalo_l/genderage.onnx",
@@ -274,7 +274,7 @@
     },
     {
       "path": "latentsync/checkpoints/whisper/tiny.pt",
-      "url": "https://huggingface.co/ByteDance/LatentSync-1.5/resolve/main/checkpoints/whisper/tiny.pt",
+      "url": "https://huggingface.co/ByteDance/LatentSync-1.5/resolve/main/whisper/tiny.pt",
       "size_mb": 72,
       "size_bytes": 75572083,
       "sha256": null,
@@ -282,11 +282,11 @@
     },
     {
       "path": "espeak-ng/espeak-ng.msi",
-      "url": "https://github.com/espeak-ng/espeak-ng/releases/download/1.52/espeak-ng.msi",
-      "size_mb": 1,
-      "size_bytes": 385024,
+      "url": "https://github.com/espeak-ng/espeak-ng/releases/download/1.51/espeak-ng-X64.msi",
+      "size_mb": 6,
+      "size_bytes": 5999185,
       "sha256": null,
-      "note": "eSpeak-NG 1.52 Windows installer"
+      "note": "eSpeak-NG 1.51 Windows x64 installer (latest release; 1.52 does not exist)"
     }
   ],
   "repos": [
@@ -334,5 +334,5 @@
       "large_models": []
     }
   ],
-  "total_size_mb": 92820
+  "total_size_mb": 85678
 }
